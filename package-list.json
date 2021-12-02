@@ -1,0 +1,13 @@
+{
+ "package-id" : "hl7.eu.fhir.gh-ips",
+ "title" : "Gravitate Health HL7 FHIR Implementation Guide (FHIR R4)", 
+ "canonical" : "http://hl7.eu/fhir/ig/gravitate-health-ips", 
+ "introduction" : "The introduction that should appear in the FHIR IG registry",
+ "list" : [{
+  "version" : "current",
+  "desc" : "Continuous Integration Build (latest in version control)",
+  "path" : "https://build.fhir.org/ig/hl7-eu/gravitate-health-ips",
+  "status" : "ci-build",
+  "current" : true
+ }]
+}
