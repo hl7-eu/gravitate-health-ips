@@ -28,6 +28,9 @@ Description: "Example of International Patient Summary for Helen Gravitate"
 * entry[+].fullUrl = "urn:uuid:c90b943a-3d8e-4f14-b56d-5c5c208b2065" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
 * entry[=].resource = c90b943a-3d8e-4f14-b56d-5c5c208b2065
 
+* entry[+].fullUrl = "urn:uuid:c872135e-f219-4f32-8fd6-7099009abf42" // Medication Request 1
+* entry[=].resource = c872135e-f219-4f32-8fd6-7099009abf42
+
 
 /*----
 * entry[+].fullUrl = "urn:uuid:fbc29713-c2bc-4ebd-9422-8a8326d5f908" // Medication Statement 3
@@ -334,6 +337,7 @@ Usage: #inline
 * medicationReference = Reference(urn:uuid:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3) "Monuril 3g granules for oral solution"
 * subject = Reference(urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
+* basedOn = Reference(MedicationStatement/c872135e-f219-4f32-8fd6-7099009abf42)
 /*===
 * effectivePeriod.start = "2015-05-01"
 * dosage.text = "80 mg/day"
@@ -429,3 +433,12 @@ Usage: #inline
 * ingredient.strength.denominator.unit = "ml"
 * ingredient.strength.denominator.system = $ucum
 * ingredient.strength.denominator.code = #ml
+
+
+Instance: c872135e-f219-4f32-8fd6-7099009abf42
+InstanceOf: MedicationRequest
+Usage: #inline
+* status = #active
+* intent = #order
+* subject = Reference(Patient/urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) 
+* medicationReference = Reference(urn:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3) "Monuril"
