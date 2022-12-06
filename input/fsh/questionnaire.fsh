@@ -203,7 +203,7 @@ Instance: QuestionnaireResponse-example
 InstanceOf: QuestionnaireResponse
 Description: "Questionnaire Response example"
 
-* status = #active
+* status = #completed
 //* description = "An questionnaire to gather personal info regarding mental stability"
 
 * item[+]
