@@ -205,7 +205,7 @@ Description: "Questionnaire Response example"
 
 * status = #completed
 //* description = "An questionnaire to gather personal info regarding mental stability"
-
+* questionnaire = "https://server.fire.ly/r4/Questionnaire/196f47ee-45c1-470e-888c-742cb0098b72"
 * item[+]
   * linkId = "age"
   * answer.valueQuantity = 20 'a'
