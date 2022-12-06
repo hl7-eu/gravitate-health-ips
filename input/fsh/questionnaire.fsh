@@ -23,11 +23,21 @@ Description: "Questionnaire"
   * answerOption[+].valueCoding = https://system-so-and-so#Low "Low"
   * answerOption[+].valueCoding = https://system-so-and-so#Medium "Medium"
   * answerOption[+].valueCoding = https://system-so-and-so#High "High"
-  
+
+* item[+]
+  * linkId = "sex"
+  * type = #choice
+  * prefix = "3"
+  * text = "Please state you gender."
+  * answerOption[+].valueCoding = https://system-so-and-so#F "Female"
+  * answerOption[+].valueCoding = https://system-so-and-so#M "Male"
+  * answerOption[+].valueCoding = https://system-so-and-so#O "Other"
+  * answerOption[+].valueCoding = https://system-so-and-so#ND "Non-Disclosed"
+
 * item[+]
   * linkId = "workLife"
   * type = #choice
-  * prefix = "3"
+  * prefix = "4"
   * text = "How's your work Life ?"
   * answerOption[+].valueCoding = https://system-so-and-so#U "Unemployed/Retired"
   * answerOption[+].valueCoding = https://system-so-and-so#EM "Employed Manual"
@@ -37,7 +47,7 @@ Description: "Questionnaire"
 * item[+]
   * linkId = "smoking"
   * type = #choice
-  * prefix = "4"
+  * prefix = "5"
   * text = "How many cigaretes do you smoke per day?"
   * answerOption[+].valueCoding = https://system-so-and-so#1 "Non Smoker"
   * answerOption[+].valueCoding = https://system-so-and-so#1 "1-5"
@@ -47,18 +57,26 @@ Description: "Questionnaire"
 * item[+]
   * linkId = "physical"
   * type = #choice
-  * prefix = "5"
+  * prefix = "6"
   * text = "How is your physical activity?"
   * answerOption[+].valueCoding = https://system-so-and-so#None "None"
   * answerOption[+].valueCoding = https://system-so-and-so#Low "Low"
   * answerOption[+].valueCoding = https://system-so-and-so#Medium "Medium"
   * answerOption[+].valueCoding = https://system-so-and-so#High "High"
-  
+
+* item[+]
+  * linkId = "organized"
+  * type = #choice
+  * prefix = "7"
+  * text = "How organized are you?"
+  * answerOption[+].valueCoding = https://system-so-and-so#Low "Low"
+  * answerOption[+].valueCoding = https://system-so-and-so#Medium "Medium"
+  * answerOption[+].valueCoding = https://system-so-and-so#High "High"
 
 * item[+]
   * linkId = "extrovert"
   * type = #choice
-  * prefix = "6"
+  * prefix = "8"
   * text = "How Extrovert do you feel?"
   * answerOption[+].valueCoding = https://system-so-and-so#Low "Low"
   * answerOption[+].valueCoding = https://system-so-and-so#Medium "Medium"
@@ -68,7 +86,7 @@ Description: "Questionnaire"
 * item[+]
   * linkId = "emotional"
   * type = #choice
-  * prefix = "7"
+  * prefix = "9"
   * text = "How emotional do you feel?"
   * answerOption[+].valueCoding = https://system-so-and-so#Low "Low"
   * answerOption[+].valueCoding = https://system-so-and-so#Medium "Medium"
@@ -77,7 +95,7 @@ Description: "Questionnaire"
 * item[+]
   * linkId = "nrdiagnoses"
   * type = #choice
-  * prefix = "8"
+  * prefix = "10"
   * text = "Nr of Diagnoses that you have?"
   * answerOption[+].valueCoding = https://system-so-and-so#N "None"
   * answerOption[+].valueCoding = https://system-so-and-so#SINGLE "single"
@@ -88,7 +106,7 @@ Description: "Questionnaire"
 * item[+]
   * linkId = "chronic"
   * type = #boolean
-  * prefix = "9"
+  * prefix = "11"
   * text = "Do you have a chronic afliction?"
 
 
@@ -96,7 +114,7 @@ Description: "Questionnaire"
 * item[+]
   * linkId = "nrmedicine"
   * type = #choice
-  * prefix = "10"
+  * prefix = "12"
   * text = "Nr of medicines that you have?"
   * answerOption[+].valueCoding = https://system-so-and-so#N "None"
   * answerOption[+].valueCoding = https://system-so-and-so#SINGLE "single"
@@ -106,7 +124,7 @@ Description: "Questionnaire"
 * item[+]
   * linkId = "healthadvice"
   * type = #choice
-  * prefix = "11"
+  * prefix = "13"
   * text = "Did you receive any health advice?"
   * answerOption[+].valueCoding = https://system-so-and-so#N "None"
   * answerOption[+].valueCoding = https://system-so-and-so#SINGLE "single"
@@ -116,7 +134,7 @@ Description: "Questionnaire"
 * item[+]
   * linkId = "concern"
   * type = #choice
-  * prefix = "12"
+  * prefix = "14"
   * text = "Did you have any concern domains?"
   * answerOption[+].valueCoding = https://system-so-and-so#N "None"
   * answerOption[+].valueCoding = https://system-so-and-so#SINGLE "single"
@@ -127,7 +145,7 @@ Description: "Questionnaire"
 * item[+]
   * linkId = "shareinfo"
   * type = #choice
-  * prefix = "13"
+  * prefix = "15"
   * text = "How willing are you to share information?"
   * answerOption[+].valueCoding = https://system-so-and-so#Low "Low"
   * answerOption[+].valueCoding = https://system-so-and-so#Medium "Medium"
@@ -136,7 +154,7 @@ Description: "Questionnaire"
 * item[+]
   * linkId = "mood"
   * type = #choice
-  * prefix = "14"
+  * prefix = "16"
   * text = "How's your mood level?"
   * answerOption[+].valueCoding = https://system-so-and-so#Low "Low"
   * answerOption[+].valueCoding = https://system-so-and-so#Medium "Medium"
@@ -145,7 +163,7 @@ Description: "Questionnaire"
 * item[+]
   * linkId = "autonomy"
   * type = #choice
-  * prefix = "15"
+  * prefix = "17"
   * text = "How's your Autonomy?"
   * answerOption[+].valueCoding = https://system-so-and-so#Low "Low"
   * answerOption[+].valueCoding = https://system-so-and-so#Medium "Medium"
@@ -154,17 +172,27 @@ Description: "Questionnaire"
 * item[+]
   * linkId = "healthliteracy"
   * type = #choice
-  * prefix = "16"
+  * prefix = "18"
   * text = "How's your level of health literacy?"
   * answerOption[+].valueCoding = https://system-so-and-so#Low "Low"
   * answerOption[+].valueCoding = https://system-so-and-so#Medium "Medium"
   * answerOption[+].valueCoding = https://system-so-and-so#High "High"
   
+
+* item[+]
+  * linkId = "digitalliteracy"
+  * type = #choice
+  * prefix = "19"
+  * text = "How's your level of digital literacy?"
+  * answerOption[+].valueCoding = https://system-so-and-so#Low "Low"
+  * answerOption[+].valueCoding = https://system-so-and-so#Medium "Medium"
+  * answerOption[+].valueCoding = https://system-so-and-so#High "High"
   
+
 * item[+]
   * linkId = "toolsupport"
   * type = #choice
-  * prefix = "17"
+  * prefix = "20"
   * text = "How's your level of tool support interest?"
   * answerOption[+].valueCoding = https://system-so-and-so#Low "Low"
   * answerOption[+].valueCoding = https://system-so-and-so#Medium "Medium"
@@ -187,6 +215,10 @@ Description: "Questionnaire Response example"
   * answer.valueCoding = https://system-so-and-so#None "None"
 
 * item[+]
+  * linkId = "sex" 
+  * answer.valueCoding = https://system-so-and-so#F "Female"
+
+* item[+]
   * linkId = "workLife"
   * answer.valueCoding = https://system-so-and-so#U "Unemployed/Retired"
 
@@ -196,6 +228,10 @@ Description: "Questionnaire Response example"
   
 * item[+]
   * linkId = "physical"
+  * answer.valueCoding = https://system-so-and-so#None "None"
+
+* item[+]
+  * linkId = "organized"
   * answer.valueCoding = https://system-so-and-so#None "None"
 
 * item[+]
@@ -246,7 +282,12 @@ Description: "Questionnaire Response example"
 * item[+]
   * linkId = "healthliteracy"
   * answer.valueCoding = https://system-so-and-so#Low "Low"
+
+* item[+]
+  * linkId = "digitalliteracy"
+  * answer.valueCoding = https://system-so-and-so#Low "Low"
   
+
 * item[+]
   * linkId = "toolsupport"
   * answer.valueCoding = https://system-so-and-so#Low "Low"
