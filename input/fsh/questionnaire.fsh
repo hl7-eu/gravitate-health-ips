@@ -208,44 +208,44 @@ Description: "Questionnaire Response example"
 
 * item[+]
   * linkId = "age"
-  * answer.valueQuantity = 1 'months'
+  * answer.valueQuantity = 20 'a'
 
 * item[+]
   * linkId = "social-sup" 
-  * answer.valueCoding = https://system-so-and-so#None "None"
+  * answer.valueCoding = https://system-so-and-so.com#None "None"
 
 * item[+]
   * linkId = "sex" 
-  * answer.valueCoding = https://system-so-and-so#F "Female"
+  * answer.valueCoding = https://system-so-and-so.com#F "Female"
 
 * item[+]
   * linkId = "workLife"
-  * answer.valueCoding = https://system-so-and-so#U "Unemployed/Retired"
+  * answer.valueCoding = https://system-so-and-so.com#U "Unemployed/Retired"
 
 * item[+]
   * linkId = "smoking"
-  * answer.valueCoding = https://system-so-and-so#1 "Non Smoker"
+  * answer.valueCoding = https://system-so-and-so.com#1 "Non Smoker"
   
 * item[+]
   * linkId = "physical"
-  * answer.valueCoding = https://system-so-and-so#None "None"
+  * answer.valueCoding = https://system-so-and-so.com#None "None"
 
 * item[+]
   * linkId = "organized"
-  * answer.valueCoding = https://system-so-and-so#None "None"
+  * answer.valueCoding = https://system-so-and-so.com#None "None"
 
 * item[+]
   * linkId = "extrovert"
-  * answer.valueCoding = https://system-so-and-so#Low "Low"
+  * answer.valueCoding = https://system-so-and-so.com#Low "Low"
 
 * item[+]
   * linkId = "emotional"
-  * answer.valueCoding = https://system-so-and-so#Low "Low"
+  * answer.valueCoding = https://system-so-and-so.com#Low "Low"
 
   
 * item[+]
   * linkId = "nrdiagnoses"
-  * answer.valueCoding = hhttps://system-so-and-so#SINGLE "single"
+  * answer.valueCoding = https://system-so-and-so.com#SINGLE "single"
 
 * item[+]
   * linkId = "chronic"
@@ -254,40 +254,40 @@ Description: "Questionnaire Response example"
 
 * item[+]
   * linkId = "nrmedicine"
-  * answer.valueCoding = hhttps://system-so-and-so#SINGLE "single"
+  * answer.valueCoding = https://system-so-and-so.com#SINGLE "single"
 
   
 * item[+]
   * linkId = "healthadvice"
-  * answer.valueCoding = hhttps://system-so-and-so#SINGLE "single"
+  * answer.valueCoding = https://system-so-and-so.com#SINGLE "single"
 
 
 * item[+]
   * linkId = "concern"
-  * answer.valueCoding = hhttps://system-so-and-so#SINGLE "single"
+  * answer.valueCoding = https://system-so-and-so.com#SINGLE "single"
 
 
 * item[+]
   * linkId = "shareinfo"
-  * answer.valueCoding = https://system-so-and-so#Low "Low"
+  * answer.valueCoding = https://system-so-and-so.com#Low "Low"
  
 * item[+]
   * linkId = "mood"
-  * answer.valueCoding = https://system-so-and-so#Low "Low"
+  * answer.valueCoding = https://system-so-and-so.com#Low "Low"
  
 * item[+]
   * linkId = "autonomy"
-  * answer.valueCoding = https://system-so-and-so#Low "Low"
+  * answer.valueCoding = https://system-so-and-so.com#Low "Low"
   
 * item[+]
   * linkId = "healthliteracy"
-  * answer.valueCoding = https://system-so-and-so#Low "Low"
+  * answer.valueCoding = https://system-so-and-so.com#Low "Low"
 
 * item[+]
   * linkId = "digitalliteracy"
-  * answer.valueCoding = https://system-so-and-so#Low "Low"
+  * answer.valueCoding = https://system-so-and-so.com#Low "Low"
   
 
 * item[+]
   * linkId = "toolsupport"
-  * answer.valueCoding = https://system-so-and-so#Low "Low"
+  * answer.valueCoding = https://system-so-and-so.com#Low "Low"
