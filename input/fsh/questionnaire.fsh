@@ -169,3 +169,84 @@ Description: "Questionnaire"
   * answerOption[+].valueCoding = https://system-so-and-so#Low "Low"
   * answerOption[+].valueCoding = https://system-so-and-so#Medium "Medium"
   * answerOption[+].valueCoding = https://system-so-and-so#High "High"
+
+
+Instance: QuestionnaireResponse-example
+InstanceOf: QuestionnaireResponse
+Description: "Questionnaire Response example"
+
+* status = #active
+//* description = "An questionnaire to gather personal info regarding mental stability"
+
+* item[+]
+  * linkId = "age"
+  * answer.valueQuantity = 1 'months'
+
+* item[+]
+  * linkId = "social-sup" 
+  * answer.valueCoding = https://system-so-and-so#None "None"
+
+* item[+]
+  * linkId = "workLife"
+  * answer.valueCoding = https://system-so-and-so#U "Unemployed/Retired"
+
+* item[+]
+  * linkId = "smoking"
+  * answer.valueCoding = https://system-so-and-so#1 "Non Smoker"
+  
+* item[+]
+  * linkId = "physical"
+  * answer.valueCoding = https://system-so-and-so#None "None"
+
+* item[+]
+  * linkId = "extrovert"
+  * answer.valueCoding = https://system-so-and-so#Low "Low"
+
+* item[+]
+  * linkId = "emotional"
+  * answer.valueCoding = https://system-so-and-so#Low "Low"
+
+  
+* item[+]
+  * linkId = "nrdiagnoses"
+  * answer.valueCoding = hhttps://system-so-and-so#SINGLE "single"
+
+* item[+]
+  * linkId = "chronic"
+  * answer.valueBoolean = false
+
+
+* item[+]
+  * linkId = "nrmedicine"
+  * answer.valueCoding = hhttps://system-so-and-so#SINGLE "single"
+
+  
+* item[+]
+  * linkId = "healthadvice"
+  * answer.valueCoding = hhttps://system-so-and-so#SINGLE "single"
+
+
+* item[+]
+  * linkId = "concern"
+  * answer.valueCoding = hhttps://system-so-and-so#SINGLE "single"
+
+
+* item[+]
+  * linkId = "shareinfo"
+  * answer.valueCoding = https://system-so-and-so#Low "Low"
+ 
+* item[+]
+  * linkId = "mood"
+  * answer.valueCoding = https://system-so-and-so#Low "Low"
+ 
+* item[+]
+  * linkId = "autonomy"
+  * answer.valueCoding = https://system-so-and-so#Low "Low"
+  
+* item[+]
+  * linkId = "healthliteracy"
+  * answer.valueCoding = https://system-so-and-so#Low "Low"
+  
+* item[+]
+  * linkId = "toolsupport"
+  * answer.valueCoding = https://system-so-and-so#Low "Low"
