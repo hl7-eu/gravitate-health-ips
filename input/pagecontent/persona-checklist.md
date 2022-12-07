@@ -2,24 +2,24 @@
 
 | Dimension              | IPS                                      |
 |------------------------|------------------------------------------|
-| Age                    |subject.birthDate                         |
-| Social Support/ family |                                          |
+| Age                    | subject.birthDate                        |
+| Social Support/ family | N/A                                      |
 | Sex                    | subject.gender                           |
-| Work Life              |                                          |
+| Work Life              | N/A                                      |
 | Smoking, ongoing       | Social History                           |
-| Physical Activity      |                                          |
-| Organized              |                                          |
-| Extrovert/introvert    |                                          |
-| Emotional/Rational     |                                          |
+| Physical Activity      | N/A                                      |
+| Organized              | N/A                                      |
+| Extrovert/introvert    | N/A                                      |
+| Emotional/Rational     | N/A                                      |
 | # diagnoses            | ProblemList Section                      |
 | Chronic Afliction      | secondary interpretation of Problem List |
 | # Medicines            | MedicationSummary Section                |
-| Health Advice received |                                          |
-| Concern Domains        |                                          |
-| Share info Willingly   |                                          |
-| Mood Level             |                                          |
+| Health Advice received | N/A                                      |
+| Concern Domains        | N/A                                      |
+| Share info Willingly   | N/A                                      |
+| Mood Level             | N/A                                      |
 | Autonomy               | Functional Status                        |
-| Health Literacy        |                                          |
-| Digital Literacy       |                                          |
-| Tool Support Interest  |                                          |
+| Health Literacy        | N/A                                      |
+| Digital Literacy       | N/A                                      |
+| Tool Support Interest  | N/A                                      |
 
