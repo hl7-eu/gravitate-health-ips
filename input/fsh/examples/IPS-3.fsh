@@ -3,13 +3,13 @@
 
 Instance: gravitate-ips-3
 InstanceOf: Bundle
-Title:   "Maria Gravitate's IPS"
+Title:   "IPS Example 3"
 Usage: #example
-Description: "Example of International Patient Summary for Maria Gravitate"
+Description: "Example of International Patient Summary for Gravitate"
 
 //https://github.com/hl7-eu/gravitate-health-ips/blob/master/input/fsh/examples/maria-ips.fsh
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
-* identifier.value = "maria-ips-1"
+* identifier.value = "ips-3"
 * type = #document
 * timestamp = "2021-09-03T08:38:00+02:00"
 * entry[0].fullUrl = "urn:uuid:2fa5b223-ebce-4f39-9c66-5dc014f73572" // Composition
@@ -50,10 +50,10 @@ Description: "Example of International Patient Summary for Maria Gravitate"
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73572
 InstanceOf: Composition
 Usage: #inline
-* id = "gravitate-maria"
+* id = "gravitate-ips-1"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "Maria Gravitate"
+* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "Example 1 Gravitate"
 * date = "2018-07-10T15:22:00+02:00"
 * author = Reference(urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d8) "Dr. Anna Karlsson"
 * title = "Patient Summary (Maria Gravitate)"

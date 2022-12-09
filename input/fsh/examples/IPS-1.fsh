@@ -2,13 +2,13 @@
 
 Instance: gravitate-ips-1
 InstanceOf: Bundle
-Title:   "Maria Gravitate's IPS"
+Title:   "IPS Example 1"
 Usage: #example
-Description: "Example of International Patient Summary for Maria Gravitate"
+Description: "Example of International Patient Summary for Gravitate"
 
 //https://github.com/hl7-eu/gravitate-health-ips/blob/master/input/fsh/examples/maria-ips.fsh
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
-* identifier.value = "maria-ips-1"
+* identifier.value = "ips-1"
 * type = #document
 * timestamp = "2021-09-03T08:38:00+02:00"
 * entry[0].fullUrl = "urn:uuid:2fa5b223-ebce-4f39-9c66-5dc014f73572" // Composition
