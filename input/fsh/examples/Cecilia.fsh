@@ -1,75 +1,77 @@
-Instance: gravitate-maria
+Instance: gravitate-Cecilia
 InstanceOf: Bundle
-Title:   "Maria Gravitate's IPS"
+Title:   "Cecilia Gravitate's IPS"
 Usage: #example
-Description: "Example of International Patient Summary for Maria Gravitate"
+Description: "Example of International Patient Summary for Cecilia Gravitate"
 
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
-* identifier.value = "maria-ips-1"
+* identifier.value = "Cecilia-ips-1"
 * type = #document
 * timestamp = "2021-09-03T08:38:00+02:00"
-* entry[0].fullUrl = "urn:uuid:2fa5b223-ebce-4f39-9c66-5dc014f73572" // Composition
-* entry[=].resource = 2fa5b223-ebce-4f39-9c66-5dc014f73572
-* entry[+].fullUrl = "urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5" // Patient
-* entry[=].resource = c154158f-6a43-4ab7-8443-e7f4bf915dd5
-* entry[+].fullUrl = "urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d8" // Practictioner
-* entry[=].resource = 1ece89c5-fda3-4db9-ace6-decbe6c603d8
-* entry[+].fullUrl = "urn:uuid:1dff4474-fa08-4f45-8260-dbb23094bf07" // Allergy
-* entry[=].resource = 1dff4474-fa08-4f45-8260-dbb23094bf07
-* entry[+].fullUrl = "urn:uuid:bcc79261-142c-48ec-b032-f3f9af49ec58" // Condition 1
-* entry[=].resource = bcc79261-142c-48ec-b032-f3f9af49ec58
-* entry[+].fullUrl = "urn:uuid:a4a9d90a-d1b0-4d60-82f0-c52343dc6256" // Condition 2
-* entry[=].resource = a4a9d90a-d1b0-4d60-82f0-c52343dc6256
-* entry[+].fullUrl = "urn:uuid:f06b7cf8-c15c-4288-a0f9-45a1026e5130" // Condition 3
-* entry[=].resource = f06b7cf8-c15c-4288-a0f9-45a1026e5130
+* entry[0].fullUrl = "urn:uuid:93ee42d0-4c5f-4bf7-8894-bb21ef80dbc5" // Composition
+* entry[=].resource = cecilia-comp
+* entry[+].fullUrl = "urn:uuid:f68aa05c-63e2-4305-992b-a421f743e328" // Patient
+* entry[=].resource = cecilia-patient
+* entry[+].fullUrl = "urn:uuid:2153a841-3c69-47cb-948d-1d97ce20eb61" // Practictioner
+* entry[=].resource = cecilia-pract
+
+* entry[+].fullUrl = "urn:uuid:7b69285e-bf3a-4b8d-a30f-8effd6059a4f" // Condition 1
+* entry[=].resource = cecilia-cond-1
+* entry[+].fullUrl = "urn:uuid:ebb1a59f-a249-40dd-9868-25879bc9bb71" // Condition 2
+* entry[=].resource = cecilia-cond-2
+* entry[+].fullUrl = "urn:uuid:0d4addd6-c3ee-468c-9202-026a24293f32" // Condition 3
+* entry[=].resource = cecilia-cond-3
+* entry[+].fullUrl = "urn:uuid:c2a8ea98-cf92-4f57-933c-7d857fb20b1d" // Condition 3
+* entry[=].resource = cecilia-cond-4
+
 * entry[+].fullUrl = "urn:uuid:29074ca4-efcb-4ff4-8446-feed2399a899" // Medication Statement 1
-* entry[=].resource = 29074ca4-efcb-4ff4-8446-feed2399a899
+* entry[=].resource = cecilia-med-stat-1
 * entry[+].fullUrl = "urn:uuid:f6cb1218-f81c-4338-80d8-3c10910f78fd" // Medication Statement 2
-* entry[=].resource = f6cb1218-f81c-4338-80d8-3c10910f78fd
+* entry[=].resource = cecilia-med-stat-2
 * entry[+].fullUrl = "urn:uuid:f26084c9-b1c8-46d9-acb2-1d400ade87ba" // Medication Statement 3
-* entry[=].resource = f26084c9-b1c8-46d9-acb2-1d400ade87ba
-* entry[+].fullUrl = "urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe36b" // Medication 1
-* entry[=].resource = b50ae644-e0b7-4007-809f-26f493cbe36b
-* entry[+].fullUrl = "urn:uuid:de131e15-ed13-4b31-b38c-3204a84d99c7" // Medication 2
-* entry[=].resource = de131e15-ed13-4b31-b38c-3204a84d99c7
-* entry[+].fullUrl = "urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef10" // Medication 3
-* entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2ef10
+* entry[=].resource = cecilia-med-stat-3
+
+* entry[+].fullUrl = "urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe36c" // Medication 1
+* entry[=].resource = b50ae644-e0b7-4007-809f-26f493cbe36c
+* entry[+].fullUrl = "urn:uuid:de131e15-ed13-4b31-b38c-3204a84d99c4" // Medication 2
+* entry[=].resource = de131e15-ed13-4b31-b38c-3204a84d99c4
+* entry[+].fullUrl = "urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef19" // Medication 3
+* entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2ef19
+
+
 // ======== COMPOSITION
-Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73572
+Instance: cecilia-comp
 InstanceOf: Composition
 Usage: #inline
-* id = "gravitate-maria"
+* id = "gravitate-Cecilia"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "Maria Gravitate"
+* subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * date = "2018-07-10T15:22:00+02:00"
-* author = Reference(urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d8) "Dr. Anna Karlsson"
-* title = "Patient Summary (Maria Gravitate)"
+* author = Reference(cecilia-pract) "Dr. Anna Karlsson"
+* title = "Patient Summary (Cecilia Gravitate)"
 * confidentiality = #N
-* section[0].title = "Allergies and Intolerances"
-* section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<ul>
-		<li>Hay fever (pollen)</li>
-	</ul>
-</div>"
-* section[=].entry = Reference(urn:uuid:1dff4474-fa08-4f45-8260-dbb23094bf07) "Hay fever (pollen)"
+
+
 // ======== PROBLEMS
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	<ul>
-		<li>Psoriasis</li>
-		<li>Hypertension</li>
-		<li>Congestive heart failure</li>
+		<li>COPD</li>
+        <li>Diabetes type 2</li>
+		<li>Osteoporosis</li>
+		<li>Congestive Heart Failure</li>
 	</ul>
 </div>"
-* section[=].entry[0] = Reference(urn:uuid:bcc79261-142c-48ec-b032-f3f9af49ec58) "Psoriasis"
-* section[=].entry[+] = Reference(urn:uuid:f06b7cf8-c15c-4288-a0f9-45a1026e5130) "Hypertension" // "Essential (primary) hypertension"
-* section[=].entry[+] = Reference(urn:uuid:a4a9d90a-d1b0-4d60-82f0-c52343dc6256) "Congestive heart failure"
+* section[=].entry[0] = Reference(urn:uuid:7b69285e-bf3a-4b8d-a30f-8effd6059a4f) "COPD"
+* section[=].entry[+] = Reference(urn:uuid:0d4addd6-c3ee-468c-9202-026a24293f32) "Diabetese Type 2" // "Essential (primary) hypertension"
+* section[=].entry[+] = Reference(urn:uuid:c2a8ea98-cf92-4f57-933c-7d857fb20b1d) "Osteoporosis"
+* section[=].entry[+] = Reference(urn:uuid:ebb1a59f-a249-40dd-9868-25879bc9bb71) "Congestive Heart Failure"
+
+
 // ======== MEDICATIONS
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
@@ -122,11 +124,12 @@ Usage: #inline
 		</tbody>
 	</table>
 </div>"
-* section[=].entry[0] = Reference(urn:uuid:29074ca4-efcb-4ff4-8446-feed2399a899) "Dimethyl fumarate 30 mg Gastro-resistant tablet"
-* section[=].entry[+] = Reference(urn:uuid:f6cb1218-f81c-4338-80d8-3c10910f78fd) "Irbesartan 75 mg Tablet"
-* section[=].entry[+] = Reference(urn:uuid:f26084c9-b1c8-46d9-acb2-1d400ade87ba) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* section[=].entry[0] = Reference(cecilia-med-stat-1) "Fosamax 70 mg tablets"
+* section[=].entry[+] = Reference(cecilia-med-stat-2) "Monuril 3 g granules for oral solution"
+* section[=].entry[+] = Reference(cecilia-med-stat-3) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+
 // == PATIENT ===
-Instance: c154158f-6a43-4ab7-8443-e7f4bf915dd5
+Instance: cecilia-patient
 InstanceOf: Patient
 Usage: #inline
 * extension.extension.url = "code"
@@ -134,17 +137,17 @@ Usage: #inline
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	Maria Gravitate, Female, 75 years old (1946-05-05)
+	Cecilia Gravitate, Female, 75 years old (1946-05-05)
 </div>"
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
-* identifier[=].value = "maria-1"
+* identifier[=].value = "Cecilia-1"
 * active = true
 * name.family = "Gravitate"
-* name.given = "Maria"
+* name.given = "Cecilia"
 * gender = #female
 * birthDate = "1946-05-05"
 // == Practitioner ===
-Instance: 1ece89c5-fda3-4db9-ace6-decbe6c603d8
+Instance: cecilia-pract
 InstanceOf: Practitioner
 Usage: #inline
 * text.status = #generated
@@ -154,34 +157,23 @@ Usage: #inline
 * name.family = "Karlsson"
 * name.given = "Anne"
 * name.prefix = "Dr."
-// == ALLERGIES ===
-Instance: 1dff4474-fa08-4f45-8260-dbb23094bf07
-InstanceOf: AllergyIntolerance
-Usage: #inline
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	Hay fever
-</div>"
-* clinicalStatus = $allergyintolerance-clinical#active
-* verificationStatus = $allergyintolerance-verification#confirmed
-* code = $sct#256259004 "Pollen"
-* reaction.manifestation = $sct#21719001 "Allergic rhinitis caused by pollen"
-* reaction.manifestation.text = "Hay fever"
-* patient = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "Maria Gravitate"
+
+
+
 // == CONDITIONS ===
-Instance: bcc79261-142c-48ec-b032-f3f9af49ec58
+Instance: cecilia-cond-1
 InstanceOf: Condition
 Usage: #inline
-* code.text = "Psoriasis"
+* code.text = "COPD"
 * clinicalStatus = $condition-clinical#active
 * code = $sct#9014002 "Psoriasis"
 * code.text = "Psoriasis"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "Maria Gravitate"
+* subject = Reference(cecilia-patient) "Cecilia Gravitate"
 // * onsetDateTime = "2015-08-01"
-* asserter = Reference(urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d8) "Dr. Anna Karlsson"
+* asserter = Reference(urn:uuid:2153a841-3c69-47cb-948d-1d97ce20eb61) "Dr. Anna Karlsson"
 
 // --- "Congestive heart failure"
-Instance: a4a9d90a-d1b0-4d60-82f0-c52343dc6256
+Instance: cecilia-cond-2
 InstanceOf: Condition
 Usage: #inline
 * text.status = #generated
@@ -191,19 +183,30 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#42343007 "Congestive heart failure"
 * code.text = "Congestive heart failure"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "Maria Gravitate"
+* subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * onsetDateTime = "2015"
-* asserter = Reference(urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d8) "Dr. Anna Karlsson"
-Instance: f06b7cf8-c15c-4288-a0f9-45a1026e5130
+* asserter = Reference(urn:uuid:2153a841-3c69-47cb-948d-1d97ce20eb61) "Dr. Anna Karlsson"
+
+Instance: cecilia-cond-3
 InstanceOf: Condition
 Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#38341003 "HT - Hypertension"
 * code.text = "Hypertension"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "Maria Gravitate"
+* subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * onsetDateTime = "1993"
+
+Instance: cecilia-cond-4
+InstanceOf: Condition
+Usage: #inline
+* clinicalStatus = $condition-clinical#active
+* code = $sct#38341003 "HT - Hypertension"
+* code.text = "Hypertension"
+* subject = Reference(cecilia-patient) "Cecilia Gravitate"
+* onsetDateTime = "1993"
+
 // ====== MEDICATION STATEMENTS
-Instance: 29074ca4-efcb-4ff4-8446-feed2399a899
+Instance: cecilia-med-stat-1
 InstanceOf: MedicationStatement
 Usage: #inline
 * text.status = #generated
@@ -236,46 +239,28 @@ Usage: #inline
 	</table>
 </div>"
 * status = #active
-* medicationReference = Reference(urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe36b) "Dimethyl fumarate 30 mg Tablet"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "Maria Gravitate"
+* medicationReference = Reference(urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe36c) "Dimethyl fumarate 30 mg Tablet"
+* subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
-/*===
-* effectivePeriod.start = "2015-05-01"
-* dosage.text = "80 mg/day"
-* dosage.timing.repeat.frequency = 1
-* dosage.timing.repeat.period = 1
-* dosage.timing.repeat.periodUnit = #d
-===*/
-Instance: f6cb1218-f81c-4338-80d8-3c10910f78fd
+
+Instance: cecilia-med-stat-2
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(urn:uuid:de131e15-ed13-4b31-b38c-3204a84d99c7) "Irbesartan 75 mg Tablet"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "Maria Gravitate"
+* medicationReference = Reference(urn:uuid:de131e15-ed13-4b31-b38c-3204a84d99c4) "Irbesartan 75 mg Tablet"
+* subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
-/*===
-* effectivePeriod.start = "2015-05-01"
-* dosage.text = "80 mg/day"
-* dosage.timing.repeat.frequency = 1
-* dosage.timing.repeat.period = 1
-* dosage.timing.repeat.periodUnit = #d
-===*/
-Instance: f26084c9-b1c8-46d9-acb2-1d400ade87ba
+
+Instance: cecilia-med-stat-3
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef10) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "Maria Gravitate"
+* medicationReference = Reference(urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef19) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * dosage.route = $edqm#20049000	"Nasal use"
-/*===
-* effectivePeriod.start = "2015-05-01"
-* dosage.text = "80 mg/day"
-* dosage.timing.repeat.frequency = 1
-* dosage.timing.repeat.period = 1
-* dosage.timing.repeat.periodUnit = #d
-===*/
+
 // ====== MEDICATIONS
-Instance: b50ae644-e0b7-4007-809f-26f493cbe36b
+Instance: b50ae644-e0b7-4007-809f-26f493cbe36c
 InstanceOf: Medication
 Usage: #inline
 * code.coding[0] = $spor-man#EU/1/17/1201/001 "Skilarence"
@@ -292,7 +277,7 @@ Usage: #inline
 * ingredient.strength.denominator.unit = "Tablet"
 * ingredient.strength.denominator.system = $ucum
 * ingredient.strength.denominator.code = #{tablet}
-Instance: de131e15-ed13-4b31-b38c-3204a84d99c7
+Instance: de131e15-ed13-4b31-b38c-3204a84d99c4
 InstanceOf: Medication
 Usage: #inline
 * code.coding[0] = $spor-man#EMEA/H/C/000142 "Karvea"
@@ -309,7 +294,7 @@ Usage: #inline
 * ingredient.strength.denominator.unit = "Tablet"
 * ingredient.strength.denominator.system = $ucum
 * ingredient.strength.denominator.code = #{tablet}
-Instance: 9ac3356c-4ea4-4814-84c3-235484f2ef10
+Instance: 9ac3356c-4ea4-4814-84c3-235484f2ef19
 InstanceOf: Medication
 Usage: #inline
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
