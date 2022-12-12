@@ -29,6 +29,8 @@ dependencies:
   hl7.fhir.uv.ips: current
 parameters:
   show-inherited-invariants: false
+  path-liquid: "liquid"
+
 copyrightYear: 2021+
 releaseLabel: CI Build
 
