@@ -79,7 +79,9 @@ effects on my physical health
 // ======== COMPOSITION
 Instance: matilda-comp
 InstanceOf: Composition
-Usage: #inline
+Title:   "Matilda Gravitate's IPS Composition"
+Usage: #example
+Description: "Example of International Patient Summary for Matilda Gravitate"
 * id = "gravitate-Matilda"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
@@ -95,9 +97,6 @@ Usage: #inline
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
 * section[=].text.status = #generated
-
- 	   // <li>Psoriasis</li> 
-		// <li>Hypertension</li>
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	<ul>
 		<li>Diabetes type 1</li>
@@ -111,30 +110,6 @@ Usage: #inline
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
 * section[=].text.status = #generated
-
-/*---------------
-			<tr>
-				<td>Karvea</td>
-				<td>EMEA/H/C/000142</td>
-				<td>irbesartan (J0E2756Z7N)</td>
-				<td>irbesartan</td>
-				<td>C09DA04</td>
-				<td>75 mg</td>
-				<td>Tablet</td>
-				<td>Oral use</td>
-			</tr>
-			<tr>
-				<td>Boots Decongestant 0.05% w/v Nasal spray</td>
-				<td>PL 16028/0049</td>
-				<td>oxymetazoline hydrochloride (K89MJ0S5VY)</td>
-				<td>oxymetazoline hydrochloride</td>
-				<td>R01AA05</td>
-				<td>0.05 mg / 1 ml</td>
-				<td>Nasal spray, solution</td>
-				<td>Nasal use</td>
-			</tr>
-----------------*/
-
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	<table>
 		<thead>
@@ -179,7 +154,6 @@ Usage: #inline
 
 
 // == PATIENT ===
-// TO BE REVIEWED, changed the name
 Instance: matilda-patient
 InstanceOf: Patient
 Usage: #inline
@@ -187,8 +161,6 @@ Usage: #inline
 * extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#GB "United Kingdom"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
 * text.status = #generated
-
-// text TO BE REVIEWED
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	Matilda Gravitate, Female, 75 years old (1946-05-05) 
 </div>"
@@ -199,8 +171,10 @@ Usage: #inline
 * name.given = "Matilda"
 * gender = #female
 * birthDate = "1946-05-05" // TO BE REVIEWED
+
+
 // == Practitioner ===
-// TO BE REVIEWED,
+
 Instance: matilda-pract
 InstanceOf: Practitioner
 Usage: #inline
@@ -214,19 +188,6 @@ Usage: #inline
 
 // == CONDITIONS ===
 
-/*  === REMOVED FOR THE TIME BEING
-Instance: 914a0d82-accd-4e54-bfa4-07c278522ef5
-InstanceOf: Condition
-Usage: #inline
-* code.text = "Psoriasis"
-* clinicalStatus = $condition-clinical#active
-* code = $sct#9014002 "Psoriasis"
-* code.text = "Psoriasis"
-* subject = Reference(matilda-patient) "Matilda Gravitate"
-// * onsetDateTime = "2015-08-01"
-* asserter = Reference(urn:uuid:45cd0bd4-f685-4117-a9f0-5c53fffb7266) "Dr. Anna Karlsson"
-
-==== */
 
 // --- "Diabetes type 1"
 Instance: matilda-cond-1
@@ -244,16 +205,7 @@ Usage: #inline
 * onsetDateTime = "2015"
 * asserter = Reference(urn:uuid:45cd0bd4-f685-4117-a9f0-5c53fffb7266) "Dr. Anna Karlsson"
 
-/*==== removed for the time being 
-Instance: e77dd0c2-f0cd-46cd-abfb-7a00149eff68
-InstanceOf: Condition
-Usage: #inline
-* clinicalStatus = $condition-clinical#active
-* code = $sct#38341003 "HT - Hypertension"
-* code.text = "Hypertension"
-* subject = Reference(matilda-patient) "Matilda Gravitate"
-* onsetDateTime = "1993"
-=== */
+
 
 // ====== MEDICATION STATEMENTS
 Instance: matilda-cond-2
@@ -292,13 +244,7 @@ Usage: #inline
 * medicationReference = Reference(urn:uuid:9d7be868-8264-4d94-ad04-ef04ecc92e51) "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
 * dosage.route = $edqm#20066000 "Subcutaneous use"
-/*===
-* effectivePeriod.start = "2015-05-01"
-* dosage.text = "80 mg/day"
-* dosage.timing.repeat.frequency = 1
-* dosage.timing.repeat.period = 1
-* dosage.timing.repeat.periodUnit = #d
-===*/
+
 
 
 Instance: matilda-med-stat-1
@@ -350,11 +296,9 @@ Usage: #inline
 
 // ====== MEDICATIONS
 
-// TO BE REVIEWED
 Instance: 9d7be868-8264-4d94-ad04-ef04ecc92e51
 InstanceOf: Medication
 Usage: #inline
-
 
 * code.coding[0] = $spor-man#EU/1/96/007/035 "Humalog Mix50"
 * code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "insulin lispro, 100 units/ml, suspension for injection"

@@ -83,7 +83,9 @@ Physical exercise (gym)
 // ====================================================== COMPOSITION ======================================================
 Instance: pedro-comp
 InstanceOf: Composition
-Usage: #inline
+Title:   "Pedro Gravitate's IPS Composition"
+Usage: #example
+Description: "Example of International Patient Summary for Pedro Gravitate"
 * id = "gravitate-Pedro"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
