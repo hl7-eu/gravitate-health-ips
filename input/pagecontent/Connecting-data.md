@@ -9,19 +9,20 @@ For G-lens purposes, we need 4 main aspects:
    
 ## Persona's Dimensions checklist
 
-Taking into account the persona vector, there are at least two paths:
+These are the persona's dimensions. It is true that some could be inferred from IPS directly or indirectly. But only some take part in the mandatory sections of IPS as can be seen below. For the ones not possible to be inferred from IPS, there are at least two paths:
 
-1. Assuming a lot of data comes from validated questionnaires, we can represent it as a pair of Questionnaire/QuestionnaireResponse
-2. Creating Simple Observations for all of them and coupling them together as message, document, etc
+1. Assuming a lot of data comes from validated questionnaires, we can represent it as a pair of Questionnaire/QuestionnaireResponse and then transform them into Observations/Conditions
+2. Third parties (Social Worker, phycologist, physician, nurse, etc) asserts the observations/Condition directly for all/part of the dimensions. 
+   
+Then, in both cases, observation can be coupled together as a document or message to be transmitted along with IPS.
 
-It is true that some could be infered from IPS directly or indirectly. But only some take part in the mandatory sections of IPS as can be seen below.
 
 | Dimension              | IPS                                      | Terminology Examples                                                         | (validity) Questionnaire suggestion   |
 |------------------------|------------------------------------------|------------------------------------------------------------------------------|----------------------------|
 | Age                    | subject.birthDate                        |                                                                              |                            |
 | Social Support/ family | N/A                                      | 91663-5 Social support index [MOS Social Support Survey]                     | \- 1.[paper](https://www.researchgate.net/publication/301305243_A_Multidimensional_Approach_to_Social_Support_The_Questionnaire_on_the_Frequency_of_and_Satisfaction_with_Social_Support_QFSSS)                           |
 | Sex                    | subject.gender                           |                                                                              |                            |
-| WorkLife               | N/A                                      |                                                                              | \- 1.[paper](https://pubmed.ncbi.nlm.nih.gov/19839663/)                        |
+| WorkLife               | N/A                                      |                                                                              |  [PRAPARE](https://prapare.org/) \- 2.[paper](https://pubmed.ncbi.nlm.nih.gov/19839663/)                        |
 | Smoking,ongoing        | Social History                           |                                                                              |                            |
 | Physical Activity      | N/A                                      |                                                                              | \-  1.[paper](https://journals.lww.com/acsm-msse/Fulltext/2003/08000/International_Physical_Activity_Questionnaire_.20.aspx#FUA1A-20) 2.[questions](https://sites.google.com/site/theipaq/questionnaire_links)                        |
 | Organized              | N/A                                      |                                                                              |                            |
@@ -39,9 +40,10 @@ It is true that some could be infered from IPS directly or indirectly. But only 
 | Digital Literacy       | N/A                                      |                                                                              |   \+ 1.[revision](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7889415/) 1.[paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9394541/)                         |
 | Tool Support Interest  | N/A                                      |                                                                              |                            |
 
+
 ## Possible rules to test
-1. Maria has a prescription of Dovato (dolutegravir / lamivudine), Biktarvy (bictegravir / emtricitabine / tenofovir alafenamide) which are contraindicated (both for HIV and reduce efficacy)
-2. Maria has a prescription of Pentasa (mesalamine), Biktarvy (bictegravir / emtricitabine / tenofovir alafenamide) which are contraindicated (kidney impact)
+1. Pedro has a prescription of Dovato (dolutegravir / lamivudine), Biktarvy (bictegravir / emtricitabine / tenofovir alafenamide) which are contraindicated (both for HIV and reduce efficacy)
+2. Pedro has a prescription of Pentasa (mesalamine), Biktarvy (bictegravir / emtricitabine / tenofovir alafenamide) which are contraindicated (kidney impact)
 
 3. Person A has lactose intolerance and is prescribed Karvea which has lactose as excipient
 4. Person B has been prescribed Humalog and Furosemide which are contraindicated since sulfonamides can cause hypoglycaemia
