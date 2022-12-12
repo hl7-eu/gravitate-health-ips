@@ -43,7 +43,7 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 // ======== COMPOSITION
 Instance: cecilia-comp
 InstanceOf: Composition
-Title:   "Cecilia Gravitate's IPS Composition"
+Title:   "[Composition] Cecilia Gravitate's IPS"
 Usage: #example
 Description: "Example of International Patient Summary for Cecilia Gravitate"
 * id = "gravitate-Cecilia"
@@ -68,10 +68,10 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 		<li>Congestive Heart Failure</li>
 	</ul>
 </div>"
-* section[=].entry[0] = Reference(urn:uuid:7b69285e-bf3a-4b8d-a30f-8effd6059a4f) "COPD"
-* section[=].entry[+] = Reference(urn:uuid:0d4addd6-c3ee-468c-9202-026a24293f32) "Diabetese Type 2" // "Essential (primary) hypertension"
-* section[=].entry[+] = Reference(urn:uuid:c2a8ea98-cf92-4f57-933c-7d857fb20b1d) "Osteoporosis"
-* section[=].entry[+] = Reference(urn:uuid:ebb1a59f-a249-40dd-9868-25879bc9bb71) "Congestive Heart Failure"
+* section[=].entry[0] = Reference(cecilia-cond-1) "COPD"
+* section[=].entry[+] = Reference(cecilia-cond-2) "Diabetese Type 2" // "Essential (primary) hypertension"
+* section[=].entry[+] = Reference(cecilia-cond-3) "Osteoporosis"
+* section[=].entry[+] = Reference(cecilia-cond-4) "Congestive Heart Failure"
 
 
 // ======== MEDICATIONS
@@ -127,20 +127,18 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 	</table>
 </div>"
 * section[=].entry[0] = Reference(cecilia-med-stat-1) "Fosamax 70 mg tablets"
-* section[=].entry[+] = Reference(cecilia-med-stat-2) "Monuril 3 g granules for oral solution"
-* section[=].entry[+] = Reference(cecilia-med-stat-3) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* section[=].entry[+] = Reference(cecilia-med-stat-2) "Metformina+sitagliptina"
+* section[=].entry[+] = Reference(cecilia-med-stat-3) "Fluticasona 92mcg+vilanterol 22mcg"
+* section[=].entry[+] = Reference(cecilia-med-stat-4) "Digoxin"
+
 
 // == PATIENT ===
 Instance: cecilia-patient
 InstanceOf: Patient
 Usage: #inline
 * extension.extension.url = "code"
-* extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#NO "Norway"
+* extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#SWE "Sweden"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	Cecilia Gravitate, Female, 75 years old (1946-05-05)
-</div>"
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier[=].value = "Cecilia-1"
 * active = true
@@ -261,6 +259,14 @@ Usage: #inline
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * dosage.route = $edqm#20049000	"Nasal use"
 
+Instance: cecilia-med-stat-4
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationReference = Reference(urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef19) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* subject = Reference(cecilia-patient) "Cecilia Gravitate"
+* dosage.route = $edqm#20049000	"Nasal use"
+
 // ====== MEDICATIONS
 Instance: b50ae644-e0b7-4007-809f-26f493cbe36c
 InstanceOf: Medication
@@ -271,14 +277,10 @@ Usage: #inline
 * form = $edqm#10225000 "Gastro-resistant tablet"
 * ingredient.itemCodeableConcept = $unii#FO2303MNI2 "dimethyl fumarate"
 * ingredient.itemCodeableConcept.text = "dimethyl fumarate"
-* ingredient.strength.numerator.value = 30
-* ingredient.strength.numerator.unit = "mg"
-* ingredient.strength.numerator.system = $ucum
-* ingredient.strength.numerator.code = #mg
-* ingredient.strength.denominator.value = 1
-* ingredient.strength.denominator.unit = "Tablet"
-* ingredient.strength.denominator.system = $ucum
-* ingredient.strength.denominator.code = #{tablet}
+* ingredient.strength.numerator = 30 'mg'
+* ingredient.strength.denominator = 1 'tablet'
+
+
 Instance: de131e15-ed13-4b31-b38c-3204a84d99c4
 InstanceOf: Medication
 Usage: #inline
@@ -288,14 +290,9 @@ Usage: #inline
 * form = $edqm#10219000 "Tablet"
 * ingredient.itemCodeableConcept = $unii#J0E2756Z7N "irbesartan"
 * ingredient.itemCodeableConcept.text = "irbesartan"
-* ingredient.strength.numerator.value = 75
-* ingredient.strength.numerator.unit = "mg"
-* ingredient.strength.numerator.system = $ucum
-* ingredient.strength.numerator.code = #mg
-* ingredient.strength.denominator.value = 1
-* ingredient.strength.denominator.unit = "Tablet"
-* ingredient.strength.denominator.system = $ucum
-* ingredient.strength.denominator.code = #{tablet}
+* ingredient.strength.numerator = 75 'mg'
+* ingredient.strength.denominator = 1 'tablet'
+
 Instance: 9ac3356c-4ea4-4814-84c3-235484f2ef19
 InstanceOf: Medication
 Usage: #inline
@@ -306,11 +303,5 @@ Usage: #inline
 * form.text = "Nasal spray, solution"
 * ingredient.itemCodeableConcept = $unii#K89MJ0S5VY "oxymetazoline hydrochloride"
 * ingredient.itemCodeableConcept.text = "oxymetazoline hydrochloride"
-* ingredient.strength.numerator.value = 0.05
-* ingredient.strength.numerator.unit = "mg"
-* ingredient.strength.numerator.system = $ucum
-* ingredient.strength.numerator.code = #mg
-* ingredient.strength.denominator.value = 1
-* ingredient.strength.denominator.unit = "ml"
-* ingredient.strength.denominator.system = $ucum
-* ingredient.strength.denominator.code = #ml
+* ingredient.strength.numerator = 0.05 'mg'
+* ingredient.strength.denominator = 1 'ml'

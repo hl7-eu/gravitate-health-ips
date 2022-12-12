@@ -40,7 +40,7 @@ Description: "Example of International Patient Summary for Gravitate"
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73573
 InstanceOf: Composition
-Title:   "IPS Example 2 Composition"
+Title:   "[Composition] IPS Example 2 IPS"
 Usage: #example
 
 * id = "ips-example-2"
