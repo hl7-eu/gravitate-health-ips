@@ -1,9 +1,9 @@
 // @Name: Instance Example
 // @Description: An example of an instance of a Patient resource
 
-Instance: Questionnaire
+Instance: Questionnaire-example
 InstanceOf: Questionnaire
-Description: "Questionnaire"
+Description: "Questionnaire Example"
 
 * status = #active
 * description = "An questionnaire to gather personal info regarding mental stability"
