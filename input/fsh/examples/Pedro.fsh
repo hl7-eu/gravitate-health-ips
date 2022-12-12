@@ -166,12 +166,12 @@ Description: "Example of International Patient Summary for Pedro Gravitate"
 		</tbody>
 	</table>
 </div>"
-* section[=].entry[0] = Reference(pedro-med-stat-1) "Dolutegravir/Lamivudina"
+* section[=].entry[0] = Reference(pedro-med-stat-1) "Dovato lamivudine and dolutegravir, 300 mg/50 mg"
 * section[=].entry[+] = Reference(pedro-med-stat-2) "Mirtazapine 15 mg"
 * section[=].entry[+] = Reference(pedro-med-stat-3) "Calcium carbonate 500 mg"
-* section[=].entry[+] = Reference(pedro-med-stat-4) "Cinitrapide 1mg"
+* section[=].entry[+] = Reference(pedro-med-stat-4) "Cinitrapide 1 mg"
 * section[=].entry[+] = Reference(pedro-med-stat-5) "Collagen and magnesium supplements"
-* section[=].entry[+] = Reference(pedro-med-stat-6) "Vitamin c supplements"
+* section[=].entry[+] = Reference(pedro-med-stat-6) "Vitamin C supplements"
 * section[=].entry[+] = Reference(pedro-med-stat-7) "Protein supplements"
 
 
@@ -324,17 +324,17 @@ InstanceOf: Medication
 Usage: #inline
 
 * code.coding[0] = $spor-man#EU/1/19/1370/001 "Dovato 50 mg/300 mg 30 tablets" 
-* code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "lamivudine and dolutegravir, 50 mg/300 mg, tablets" //TODO
+* code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "lamivudine and dolutegravir, 300 mg/50 mg, tablets" //TODO
 * code.coding[+] = http://snomed.info/sct/83821000000107#13884911000001102 "Dovato 50 mg/300 mg tablet" //TODO
 * code.coding[+] = $atc#J05AR25 "lamivudine and dolutegravir"
 * form = $edqm#10220000 "Coated tablet"
 * ingredient.itemCodeableConcept = $unii#2T8Q726O95 "lamivudine"
 * ingredient.itemCodeableConcept.text = "lamivudine"
-* ingredient.strength.numerator = 50 'mg'
+* ingredient.strength.numerator = 300 'mg'
 * ingredient.strength.denominator = 1 'tablet'
 * ingredient[+].itemCodeableConcept = $unii#DKO1W9H7M1 "dolutegravir"
 * ingredient[=].itemCodeableConcept.text = "dolutegravir"
-* ingredient[=].strength.numerator = 300 'mg'
+* ingredient[=].strength.numerator = 50 'mg'
 * ingredient[=].strength.denominator = 1 'tablet'
 
 // "Mirtazapine 15 mg"

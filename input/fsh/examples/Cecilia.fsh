@@ -127,8 +127,8 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 	</table>
 </div>"
 * section[=].entry[0] = Reference(cecilia-med-stat-1) "Fosamax 70 mg tablets"
-* section[=].entry[+] = Reference(cecilia-med-stat-2) "Metformina+sitagliptina"
-* section[=].entry[+] = Reference(cecilia-med-stat-3) "Fluticasona 92mcg+vilanterol 22mcg"
+* section[=].entry[+] = Reference(cecilia-med-stat-2) "Metformine + sitagliptine"
+* section[=].entry[+] = Reference(cecilia-med-stat-3) "Fluticasone 92mcg + vilanterol 22mcg"
 * section[=].entry[+] = Reference(cecilia-med-stat-4) "Digoxin"
 
 

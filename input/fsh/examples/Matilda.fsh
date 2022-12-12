@@ -69,9 +69,9 @@ effects on my physical health
 // ======== COMPOSITION
 Instance: matilda-comp
 InstanceOf: Composition
-Title:   "Matilda Gravitate's IPS Composition"
+Title:   "[Composition] Matilda Gravitate's IPS"
 Usage: #example
-Description: "Example of International Patient Summary for Matilda Gravitate"
+Description: "Example of International Patient Summary Composition for Matilda Gravitate"
 * id = "gravitate-Matilda"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"

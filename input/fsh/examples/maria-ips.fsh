@@ -38,7 +38,9 @@ Description: "Example of International Patient Summary for Maria Gravitate"
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73572
 InstanceOf: Composition
-Usage: #inline
+Title:   "[Composition] Maria Gravitate's IPS"
+Usage: #example
+Description: "Example of International Patient Summary Composition for Maria Gravitate"
 * id = "gravitate-maria"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
