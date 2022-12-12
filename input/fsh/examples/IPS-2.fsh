@@ -2,7 +2,7 @@
 
 Instance: gravitate-ips-2
 InstanceOf: Bundle
-Title:   "IPS Example 2"
+Title:   "IPS Example 2 Document"
 Usage: #example
 Description: "Example of International Patient Summary for Gravitate"
 
@@ -40,8 +40,10 @@ Description: "Example of International Patient Summary for Gravitate"
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73573
 InstanceOf: Composition
-Usage: #inline
-* id = "gravitate-maria"
+Title:   "IPS Example 2 Composition"
+Usage: #example
+
+* id = "ips-example-2"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd3) "Maria Gravitate"

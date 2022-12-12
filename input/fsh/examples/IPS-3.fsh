@@ -3,7 +3,7 @@
 
 Instance: gravitate-ips-3
 InstanceOf: Bundle
-Title:   "IPS Example 3"
+Title:   "IPS Example 3 Document"
 Usage: #example
 Description: "Example of International Patient Summary for Gravitate"
 
@@ -49,7 +49,8 @@ Description: "Example of International Patient Summary for Gravitate"
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73571
 InstanceOf: Composition
-Usage: #inline
+Title:   "IPS Example 3 Composition"
+Usage: #example
 * id = "gravitate-ips-1"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
@@ -410,7 +411,7 @@ Usage: #inline
 // --- "Pregnancy"
 Instance: e06e43a1-38d4-468f-8c35-f7f12da91061
 InstanceOf: Observation
-Usage: #example
+Usage: #inline
 * status = #final
 * code = http://loinc.org#82810-3 "Pregnancy status"
 * subject = Reference(Patient/patient-example-female)

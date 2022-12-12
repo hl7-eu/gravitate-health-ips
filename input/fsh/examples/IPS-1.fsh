@@ -2,7 +2,7 @@
 
 Instance: gravitate-ips-1
 InstanceOf: Bundle
-Title:   "IPS Example 1"
+Title:   "IPS Example 1 Document"
 Usage: #example
 Description: "Example of International Patient Summary for Gravitate"
 
@@ -39,11 +39,13 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[=].resource = de131e15-ed13-4b31-b38c-3204a84d99c5
 * entry[+].fullUrl = "urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef15" // Medication 3
 * entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2ef15
+
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73575
 InstanceOf: Composition
-Usage: #inline
-* id = "gravitate-maria"
+Title:   "IPS Example 1"
+Usage: #Example
+* id = "ips-example-1"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
