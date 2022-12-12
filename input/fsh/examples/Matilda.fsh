@@ -35,36 +35,37 @@ effects on my physical health
 * identifier.value = "Matilda-ips-1"
 * type = #document
 * timestamp = "2021-04-18T09:22:00+02:00"
-* entry[0].fullUrl = "urn:uuid:5702fd1d-dd26-402e-a7c0-7629a5d9bba1" // Composition
-* entry[=].resource = 5702fd1d-dd26-402e-a7c0-7629a5d9bba1
+* entry[0].fullUrl = "matilda-comp" // Composition
+* entry[=].resource = matilda-comp
 * entry[+].fullUrl = "matilda-patient" // Patient
 * entry[=].resource = matilda-patient
-* entry[+].fullUrl = "urn:uuid:45cd0bd4-f685-4117-a9f0-5c53fffb7266" // Practictioner
-* entry[=].resource = 45cd0bd4-f685-4117-a9f0-5c53fffb7266
-* entry[+].fullUrl = "urn:uuid:cb6e84fa-4302-4569-ac1c-6b1b32507d16" // Allergy - Lactose
-* entry[=].resource = cb6e84fa-4302-4569-ac1c-6b1b32507d16
-// * entry[+].fullUrl = "urn:uuid:914a0d82-accd-4e54-bfa4-07c278522ef5" // Condition 1
-// * entry[=].resource = 914a0d82-accd-4e54-bfa4-07c278522ef5
-* entry[+].fullUrl = "urn:uuid:de06df6b-0967-4b01-822b-7cfeea970aa7" // Condition 2
-* entry[=].resource = de06df6b-0967-4b01-822b-7cfeea970aa7
-// * entry[+].fullUrl = "urn:uuid:e77dd0c2-f0cd-46cd-abfb-7a00149eff68" // Condition 3
-// * entry[=].resource = e77dd0c2-f0cd-46cd-abfb-7a00149eff68
-* entry[+].fullUrl = "urn:uuid:18eb9898-dea7-4c5e-b097-e507e011747b" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-* entry[=].resource = 18eb9898-dea7-4c5e-b097-e507e011747b
-* entry[+].fullUrl = "urn:uuid:c90b943a-3d8e-4f14-b56d-5c5c208b2065" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = c90b943a-3d8e-4f14-b56d-5c5c208b2065
+* entry[+].fullUrl = "matilda-pract" // Practictioner
+* entry[=].resource = matilda-pract
 
-* entry[+].fullUrl = "urn:uuid:c872135e-f219-4f32-8fd6-7099009abf42" // Medication Request 1
-* entry[=].resource = c872135e-f219-4f32-8fd6-7099009abf42
+
+
+
+* entry[+].fullUrl = "matilda-cond-1" // Condition 1
+* entry[=].resource = matilda-cond-1
+
+* entry[+].fullUrl = "matilda-med-stat-1" // Medication Statement 1 - "Humira 40 mg"
+* entry[=].resource = matilda-med-stat-1
+* entry[+].fullUrl = "matilda-med-stat-2" // Medication Statement 2 - "Paracetamol 500 mg"
+* entry[=].resource = matilda-med-stat-2
+* entry[+].fullUrl = "matilda-med-stat-3" // Medication Statement 2 - "Pentasa 1 g"
+* entry[=].resource = matilda-med-stat-3
 
 
 * entry[+].fullUrl = "urn:uuid:9d7be868-8264-4d94-ad04-ef04ecc92e51" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 * entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92e51
 
 
-* entry[+].fullUrl = "urn:uuid:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et" // Medication 2
+* entry[+].fullUrl = "urn:uuid:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et" // Medication 2 "Paracetamol 500 mg"
 * entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et
 
+
+* entry[+].fullUrl = "urn:uuid:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu" // Medication 3 - "Pentasa 1 g"
+* entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu
 
 // ======== COMPOSITION
 Instance: matilda-comp
@@ -77,7 +78,7 @@ Description: "Example of International Patient Summary Composition for Matilda G
 * type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
 * date = "2018-07-10T15:22:00+02:00"
-* author = Reference(urn:uuid:45cd0bd4-f685-4117-a9f0-5c53fffb7266) "Dr. Ana Lopez" 
+* author = Reference(matilda-pract) "Dr. Ana Lopez" 
 * title = "Patient Summary (Matilda Gravitate)"
 * confidentiality = #N
 
@@ -93,7 +94,7 @@ Description: "Example of International Patient Summary Composition for Matilda G
 	</ul>
 </div>"
 
-* section[=].entry[+] = Reference(urn:uuid:de06df6b-0967-4b01-822b-7cfeea970aa7) "Crohn's disease"
+* section[=].entry[+] = Reference(matilda-cond-1) "Crohn's disease"
 
 // ======== MEDICATIONS
 * section[+].title = "Medication Summary"
@@ -147,9 +148,9 @@ Description: "Example of International Patient Summary Composition for Matilda G
 		</tbody>
 	</table>
 </div>"
-* section[=].entry[0] = Reference(urn:uuid:18eb9898-dea7-4c5e-b097-e507e011747b) "Humira 40 mg"
-* section[=].entry[+] = Reference(urn:uuid:c90b943a-3d8e-4f14-b56d-5c5c208b2065) "Paracetamol 500 mg"
-* section[=].entry[+] = Reference(urn:uuid:fbc29713-c2bc-4ebd-9422-8a8326d5f908) "Pentasa 1g mesalazine"
+* section[=].entry[0] = Reference(matilda-med-stat-1) "Humira 40 mg"
+* section[=].entry[+] = Reference(matilda-med-stat-2) "Paracetamol 500 mg"
+* section[=].entry[+] = Reference(matilda-med-stat-3) "Pentasa 1g mesalazine"
 
 
 // == PATIENT ===
@@ -207,35 +208,6 @@ Instance: matilda-med-stat-1
 InstanceOf: MedicationStatement
 Usage: #inline
 
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<table>
-		<thead>
-			<tr>
-				<th>Brand Name</th>
-				<th>MAN</th>
-				<th>Active Substance</th>
-				<th>Common Name</th>
-				<th>ATC</th>
-				<th>Strength</th>
-				<th>Dose Form</th>
-				<th>RoA</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Monuril 3 g granules for oral solution</td>
-				<td>PL31654/0006</td>
-				<td>FOSFOMYCIN (2N81MY12TE)</td>
-				<td>fosfomycin</td>
-				<td>J01XX01</td>
-				<td>3 g (as trometamol: 5.631g/sachet)</td>
-				<td>Granules for oral solution</td>
-				<td>Oral use</td>
-			</tr>
-		</tbody>
-	</table>
-</div>"
 * status = #active
 * medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et) "Monuril 3g granules for oral solution"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
@@ -245,7 +217,7 @@ Instance: matilda-med-stat-2
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785y) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
 * dosage.route = $edqm#20049000	"Nasal use"
 
@@ -253,7 +225,7 @@ Instance: matilda-med-stat-3
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785y) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e51) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
 * dosage.route = $edqm#20049000	"Nasal use"
 
@@ -288,15 +260,15 @@ Usage: #inline
 * code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "Fosfomycin, 3g, Granules for oral solution"
 * code.coding[+] = $atc#J01XX01 "fosfomycin"
 * form = $edqm#10112000 "Granules for oral solution"
-
-
 * ingredient.itemCodeableConcept = $unii#7FXW6U30GY "FOSFOMYCIN TROMETHAMINE"
 * ingredient.itemCodeableConcept.text = "FOSFOMYCIN TROMETAMOL"
 * ingredient.strength.numerator = 5.631 'g'
-* ingredient.strength.denominator = 1 'sachet'
+* ingredient.strength.denominator = 1 '{sachet}'
 
 
-Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785y
+
+
+Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu
 InstanceOf: Medication
 Usage: #inline
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"

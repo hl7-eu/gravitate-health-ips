@@ -9,11 +9,11 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 * identifier.value = "Cecilia-ips-1"
 * type = #document
 * timestamp = "2021-09-03T08:38:00+02:00"
-* entry[0].fullUrl = "urn:uuid:93ee42d0-4c5f-4bf7-8894-bb21ef80dbc5" // Composition
+* entry[0].fullUrl = "cecilia-comp" // Composition
 * entry[=].resource = cecilia-comp
-* entry[+].fullUrl = "urn:uuid:f68aa05c-63e2-4305-992b-a421f743e328" // Patient
+* entry[+].fullUrl = "cecilia-patient" // Patient
 * entry[=].resource = cecilia-patient
-* entry[+].fullUrl = "urn:uuid:2153a841-3c69-47cb-948d-1d97ce20eb61" // Practictioner
+* entry[+].fullUrl = "cecilia-pract" // Practictioner
 * entry[=].resource = cecilia-pract
 
 * entry[+].fullUrl = "urn:uuid:7b69285e-bf3a-4b8d-a30f-8effd6059a4f" // Condition 1

@@ -16,28 +16,28 @@ Taking into account the persona vector, there are at least two paths:
 
 It is true that some could be infered from IPS directly or indirectly. But only some take part in the mandatory sections of IPS as can be seen below.
 
-| Dimension              | IPS                                      | Terminology Examples                                                          |
-|------------------------|------------------------------------------|-------------------------------------------------------------------------------|
-| Age                    | subject.birthDate                        |                                                                               |
-| Social Support/ family | N/A                                      | 91663-5 Social support index [MOS Social Support Survey]                      |
-| Sex                    | subject.gender                           |                                                                               |
-| WorkLife               | N/A                                      |                                                                               |
-| Smoking,ongoing        | Social History                           |                                                                               |
-| Physical Activity      | N/A                                      |                                                                               |
-| Organized              | N/A                                      |                                                                               |
-| Extrovert/introvert    | N/A                                      |                                                                               |
-| Emotional/Rational     | N/A                                      |                                                                               |
-| # diagnoses            | ProblemList Section                      |                                                                               |
-| Chronic Afliction      | secondary interpretation of Problem List |                                                                               |
-| # Medicines            | MedicationSummary Section                |                                                                               |
-| Health Advice received | N/A                                      |                                                                               |
-| Concern Domains        | N/A                                      |                                                                               |
-| Share info Willingly   | N/A                                      |                                                                               |
-| Mood Level             | N/A                                      | 65457-4 First of all, how are you feeling today compared to your usual state |
-| Autonomy               | Functional Status                        |                                                                               |
-| Health Literacy        | N/A                                      | 85450-5 Health literacy and communication total                               |
-| Digital Literacy       | N/A                                      |                                                                               |
-| Tool Support Interest  | N/A                                      |                                                                               |
+| Dimension              | IPS                                      | Terminology Examples                                                         | (validity) Questionnaire suggestion   |
+|------------------------|------------------------------------------|------------------------------------------------------------------------------|----------------------------|
+| Age                    | subject.birthDate                        |                                                                              |                            |
+| Social Support/ family | N/A                                      | 91663-5 Social support index [MOS Social Support Survey]                     | \- [paper](https://www.researchgate.net/publication/301305243_A_Multidimensional_Approach_to_Social_Support_The_Questionnaire_on_the_Frequency_of_and_Satisfaction_with_Social_Support_QFSSS)                           |
+| Sex                    | subject.gender                           |                                                                              |                            |
+| WorkLife               | N/A                                      |                                                                              | \- [paper](https://pubmed.ncbi.nlm.nih.gov/19839663/)                        |
+| Smoking,ongoing        | Social History                           |                                                                              |                            |
+| Physical Activity      | N/A                                      |                                                                              | \-  [paper](https://journals.lww.com/acsm-msse/Fulltext/2003/08000/International_Physical_Activity_Questionnaire_.20.aspx#FUA1A-20) [questions](https://sites.google.com/site/theipaq/questionnaire_links)                        |
+| Organized              | N/A                                      |                                                                              |                            |
+| Extrovert/introvert    | N/A                                      |                                                                              |                            |
+| Emotional/Rational     | N/A                                      |                                                                              |                            |
+| # diagnoses            | ProblemList Section                      |                                                                              |                            |
+| Chronic Afliction      | secondary interpretation of Problem List |                                                                              |                            |
+| # Medicines            | MedicationSummary Section                |                                                                              |                            |
+| Health Advice received | N/A                                      |                                                                              |                            |
+| Concern Domains        | N/A                                      |                                                                              |                            |
+| Share info Willingly   | N/A                                      |                                                                              |                            |
+| Mood Level             | N/A                                      | 65457-4 First of all, how are you feeling today compared to your usual state | \- [paper](https://d1wqtxts1xzle7.cloudfront.net/53247538/Development_short_questionnaire_epidemologic_studies_child_depression_Angold_Messer_1995-libre.pdf?1495551322=&response-content-disposition=inline%3B+filename%3DDEVELOPME_NT_OF_A_SHORT_QUESTIONNAIRE_FO.pdf&Expires=1670866969&Signature=E--~gd9gStyfqRYGb5Jebs85fO3SWXM7WidTjFGdUsEvjXhYt7BauqMXAoxlSLumfSpL8rJipNhir9VnpHZUexkF-Ez8f7n6-ZmmmB2lm~10AhXPIkcF8ADE-NClBU-9~KBekDK3YC6JVRaslXYcWogz71pq1UT0WUjsAh-hj9frLj3PSUW9lr-YlNLWr85OWN70ocnow7ZKvyWER6~OpGOXt-dnZekPBltsIPtdLZBgJarzeGXe1fmJediJCBWgj4waXEgoTaQsOuJy8DJ2UtHOnsWWKexl2ZGSEaHlAzDG797SGdzLursC~QA8sRcEZ4zCEChmEsRP-GUwT6tkKA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)    [paper2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/)                       |
+| Autonomy               | Functional Status                        |                                                                              |                            |
+| Health Literacy        | N/A                                      | 85450-5 Health literacy and communication total                              |   European Health Literacy Survey Questionnaire (HLS-EU-Q)   [example paper](https://journals.lww.com/cancernursingonline/Abstract/2018/03000/Validation_of_the_European_Health_Literacy_Survey.14.aspx)                      |
+| Digital Literacy       | N/A                                      |                                                                              |   \+ [revision](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7889415/) [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9394541/)                         |
+| Tool Support Interest  | N/A                                      |                                                                              |                            |
 
 ## Possible rules to test
 1. Maria has a prescription of Dovato (dolutegravir / lamivudine), Biktarvy (bictegravir / emtricitabine / tenofovir alafenamide) which are contraindicated (both for HIV and reduce efficacy)
