@@ -244,10 +244,7 @@ Usage: #inline
 * form = $edqm#11202000 "Suspension for injection"
 * ingredient.itemCodeableConcept = $unii#GFX7QIS1II "insulin lispro"
 * ingredient.itemCodeableConcept.text = "insulin lispro"
-* ingredient.strength.numerator.value = 100
-* ingredient.strength.numerator.unit = "units"
-* ingredient.strength.numerator.system = $ucum
-* ingredient.strength.numerator.code = #U
+* ingredient.strength.numerator = 100 'U'
 * ingredient.strength.denominator = 1 'ml'
 
 
