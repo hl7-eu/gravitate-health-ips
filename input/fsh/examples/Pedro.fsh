@@ -18,16 +18,19 @@ winter and hiking the rest of the year.
 Health Conditions
 HIV (diagnosed with 38 years)
 Depression
+IBS
 
 Medication & Therapies
 Prescribed by doctor
 Dolutegravir/Lamivudina
 Mirtazapine 15 mg
 Calcium
+
 Additional (non prescribed)
 -Collagen and magnesium supplements
 -Vitamin c supplements
 -Protein supplements
+
 Physical exercise (gym)
 
 
@@ -50,6 +53,10 @@ Physical exercise (gym)
 
 * entry[+].fullUrl = "urn:uuid:pedro-cond-2" // Condition 2
 * entry[=].resource = pedro-cond-2
+
+* entry[+].fullUrl = "urn:uuid:pedro-cond-3" // Condition 3
+* entry[=].resource = pedro-cond-3
+
 
 * entry[+].fullUrl = "urn:uuid:pedro-med-stat-1" // Medication Statement 1 - "
 * entry[=].resource = pedro-med-stat-1
@@ -117,10 +124,13 @@ Description: "Example of International Patient Summary for Pedro Gravitate"
 	<ul>
 		<li>HIV</li>
         <li>Depression</li>
+		<li>IBS</li>
+
 	</ul>
 </div>"
 * section[=].entry[0] = Reference(pedro-cond-1) "HIV"
 * section[=].entry[+] = Reference(pedro-cond-2) "Depression" 
+* section[=].entry[+] = Reference(pedro-cond-3) "IBS" 
 
 // ====================================================== MEDICATIONS
 * section[+].title = "Medication Summary"
@@ -251,6 +261,19 @@ Usage: #inline
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * onsetDateTime = "2018"
 * asserter = Reference(pedro-pract) "Dr. Xavier García"
+
+// --- HIV
+Instance: pedro-cond-3
+InstanceOf: Condition
+Usage: #inline
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+	IBS
+</div>"
+* clinicalStatus = $condition-clinical#active
+* code = $sct#10743008 "Irritable bowel syndrome"
+* code.text = "Irritable bowel syndrome"
+* subject = Reference(pedro-patient) "Pedro Gravitate"
 
 
 // ====================================================== MEDICATION STATEMENTS ======================================================
