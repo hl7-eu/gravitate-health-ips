@@ -202,7 +202,7 @@ Usage: #inline
 * reaction.substance = http://snomed.info/sct#47703008 "lactose"
 * reaction.manifestation[0] = http://snomed.info/sct#21522001 "Abdominal pain"
 * reaction.manifestation[+] = http://snomed.info/sct#116289008 "Abdominal bloating"
-* reaction.manifestation[+] = http://snomed.info/sct#62315008 "Diarrhoea"
+* reaction.manifestation[+] = http://snomed.info/sct#62315008 "Diarrhea"
 
 
 

@@ -291,7 +291,7 @@ InstanceOf: MedicationStatement
 Usage: #inline
 
 * status = #active
-* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4) "Monuril 3g granules for oral solution"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77854) "Monuril 3g granules for oral solution"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -300,7 +300,7 @@ Instance: pedro-med-stat-3
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(urn:uuid:6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -308,7 +308,7 @@ Instance: pedro-med-stat-4
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(urn:uuid:6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77854) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -317,7 +317,7 @@ Instance: pedro-med-stat-5
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77855) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -326,7 +326,7 @@ Instance: pedro-med-stat-6
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77856) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -335,7 +335,7 @@ Instance: pedro-med-stat-7
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77857) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -348,7 +348,7 @@ Usage: #inline
 
 * code.coding[0] = $spor-man#EU/1/19/1370/001 "Dovato 50 mg/300 mg 30 tablets" 
 * code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "lamivudine and dolutegravir, 300 mg/50 mg, tablets" //TODO
-* code.coding[+] = http://snomed.info/sct/83821000000107#13884911000001102 "Dovato 50 mg/300 mg tablet" //TODO
+* code.coding[+] = http://snomed.info/sct#13884911000001102 "Dovato 50 mg/300 mg tablet" //TODO
 * code.coding[+] = $atc#J05AR25 "lamivudine and dolutegravir"
 * form = $edqm#10220000 "Coated tablet"
 * ingredient.itemCodeableConcept = $unii#2T8Q726O95 "lamivudine"
@@ -358,7 +358,7 @@ Usage: #inline
 * ingredient[+].itemCodeableConcept = $unii#DKO1W9H7M1 "dolutegravir"
 * ingredient[=].itemCodeableConcept.text = "dolutegravir"
 * ingredient[=].strength.numerator = 50 'mg'
-* ingredient[=].strength.denominator = 1 'tablet'
+* ingredient[=].strength.denominator = 1 '{tablet}'
 
 // "Mirtazapine 15 mg"
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4
@@ -371,7 +371,7 @@ Usage: #inline
 * ingredient.itemCodeableConcept = $unii#A051Q2099Q "Mirtazapine"
 * ingredient.itemCodeableConcept.text = "Mirtazapine"
 * ingredient.strength.numerator = 15 'g'
-* ingredient.strength.denominator = 1 'tablet'
+* ingredient.strength.denominator = 1 '{tablet}'
 
 // "Calcium carbonate 500 mg"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785g
@@ -385,7 +385,7 @@ Usage: #inline
 * ingredient.itemCodeableConcept = $unii#H0G9379FGK "Calcium carbonate"
 * ingredient.itemCodeableConcept.text = "calcium carbonate"
 * ingredient.strength.numerator = 500 'mg'
-* ingredient.strength.denominator = 1 'tablet'
+* ingredient.strength.denominator = 1 '{tablet}'
 
 //"Cinitrapide 1mg"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77854
@@ -399,7 +399,7 @@ Usage: #inline
 * ingredient.itemCodeableConcept = $unii#R8I97I2L24 "CINITAPRIDE"
 * ingredient.itemCodeableConcept.text = "CINITAPRIDE"
 * ingredient.strength.numerator = 1 'mg'
-* ingredient.strength.denominator = 1 'tablet'
+* ingredient.strength.denominator = 1 '{tablet}'
 
 //"Collagen and magnesium supplements"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77855
