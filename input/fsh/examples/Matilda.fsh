@@ -75,7 +75,7 @@ Usage: #example
 Description: "Example of International Patient Summary Composition for Matilda Gravitate"
 * id = "gravitate-Matilda"
 * status = #final
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><b>Id:</b> gravitate-Matilda<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Matilda Gravitate<br/><b>Sections:</b> <br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4) </li><br/><ul><li><b>Entry:</b> <a href="Condition/matilda-cond-1">Crohn's disease</a> </li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0) </li><br/><ul><li><b>Entry:</b> <a href="MedicationStatement/matilda-med-stat-1">Humira 40 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/matilda-med-stat-2">Paracetamol 500 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/matilda-med-stat-3">Pentasa 1g mesalazine</a> </li><br/></ul></ul></div>"""
+* text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><b>Id:</b> gravitate-Matilda<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Matilda Gravitate<br/><b>Sections:</b> <br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4) </li><br/><ul><li><b>Entry:</b> <a href="Condition-matilda-cond-1.html">Crohn's disease</a> </li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0) </li><br/><ul><li><b>Entry:</b> <a href="MedicationStatement-matilda-med-stat-1.html">Humira 40 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-matilda-med-stat-2.html">Paracetamol 500 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-matilda-med-stat-3.html">Pentasa 1g mesalazine</a> </li><br/></ul></ul></div>"""
 * text.status = #generated
 
 
@@ -122,10 +122,6 @@ Usage: #example
 Instance: matilda-pract
 InstanceOf: Practitioner
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	Dr. Ana Lopez
-</div>"
 * name.family = "Lopez"
 * name.given = "Ana"
 * name.prefix = "Dr."
@@ -137,10 +133,6 @@ Usage: #example
 Instance: matilda-cond-1
 InstanceOf: Condition
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	Crohn's disease 
-</div>"
 * clinicalStatus = $condition-clinical#active
 * code = $sct#34000006 "Crohn's disease"
 * code.text = "Crohn's disease"

@@ -107,9 +107,8 @@ Usage: #example
 Description: "Example of International Patient Summary for Pedro Gravitate"
 * id = "gravitate-Pedro"
 * status = #final
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><b>Id:</b> gravitate-Pedro<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Pedro Gravitate<br/><b>Sections:</b> <br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4) </li><br/><ul><li><b>Entry:</b> <a href="Condition/pedro-cond-1">HIV</a> </li><br/><li><b>Entry:</b> <a href="Condition/pedro-cond-2">Depression</a> </li><br/><li><b>Entry:</b> <a href="Condition/pedro-cond-3">IBS</a> </li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0) </li><br/><ul><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-1">Dovato lamivudine and dolutegravir, 300 mg/50 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-2">Mirtazapine 15 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-3">Calcium carbonate 500 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-4">Cinitrapide 1 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-5">Collagen and magnesium supplements</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-6">Vitamin C supplements</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-7">Protein supplements</a> </li><br/></ul></ul></div>"""
+* text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><b>Id:</b> gravitate-Pedro<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Pedro Gravitate<br/><b>Sections:</b> <br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4) </li><br/><ul><li><b>Entry:</b> <a href="Condition-pedro-cond-1.html">HIV</a> </li><br/><li><b>Entry:</b> <a href="Condition-pedro-cond-2.html">Depression</a> </li><br/><li><b>Entry:</b> <a href="Condition-pedro-cond-3.html">IBS</a> </li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0) </li><br/><ul><li><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-1.html">Dovato lamivudine and dolutegravir, 300 mg/50 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-2.html">Mirtazapine 15 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-3.html">Calcium carbonate 500 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-4.html">Cinitrapide 1 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-5.html">Collagen and magnesium supplements</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-6.html">Vitamin C supplements</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-7.html">Protein supplements</a> </li><br/></ul></ul></div>"""
 * text.status = #generated
-
 * type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * date = "2018-07-10T15:22:00+02:00"
@@ -175,10 +174,7 @@ Depression
 Instance: pedro-pract
 InstanceOf: Practitioner
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	Dr. Xavier García
-</div>"
+
 * name.family = "García"
 * name.given = "Xavier"
 * name.prefix = "Dr."
@@ -190,10 +186,7 @@ Usage: #example
 Instance: pedro-cond-1
 InstanceOf: Condition
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	Depression
-</div>"
+
 * clinicalStatus = $condition-clinical#active
 * code = $sct#35489007 "Depressive disorder (disorder)"
 * code.text = "Depressive disorder (disorder)"
@@ -203,10 +196,7 @@ Usage: #example
 Instance: pedro-cond-2
 InstanceOf: Condition
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	HIV (2018)
-</div>"
+
 * clinicalStatus = $condition-clinical#active
 * code = $sct#86406008 "Human immunodeficiency virus infection"
 * code.text = "Human immunodeficiency virus infection"
@@ -218,10 +208,7 @@ Usage: #example
 Instance: pedro-cond-3
 InstanceOf: Condition
 Usage: #example
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	IBS
-</div>"
+
 * clinicalStatus = $condition-clinical#active
 * code = $sct#10743008 "Irritable bowel syndrome"
 * code.text = "Irritable bowel syndrome"
