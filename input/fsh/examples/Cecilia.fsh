@@ -51,6 +51,8 @@ Usage: #example
 Description: "Example of International Patient Summary for Cecilia Gravitate"
 * id = "gravitate-Cecilia"
 * status = #final
+* text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><b>Id:</b> gravitate-Cecilia<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Cecilia Gravitate<br/><b>Sections:</b> <br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4) </li><br/><ul><li><b>Entry:</b> <a href="Condition/cecilia-cond-1">COPD</a> </li><br/><li><b>Entry:</b> <a href="Condition/cecilia-cond-2">Diabetese Type 2</a> </li><br/><li><b>Entry:</b> <a href="Condition/cecilia-cond-3">Osteoporosis</a> </li><br/><li><b>Entry:</b> <a href="Condition/cecilia-cond-4">Congestive Heart Failure</a> </li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0) </li><br/><ul><li><b>Entry:</b> <a href="MedicationStatement/cecilia-med-stat-1">Fosamax 70 mg tablets</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/cecilia-med-stat-2">Metformine + sitagliptine</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/cecilia-med-stat-3">Fluticasone 92mcg + vilanterol 22mcg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/cecilia-med-stat-4">Digoxin</a> </li><br/></ul></ul></div>"""
+* text.status = #generated
 * type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * date = "2018-07-10T15:22:00+02:00"

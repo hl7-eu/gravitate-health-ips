@@ -1,19 +1,19 @@
 <div>
   {% if id.exists() %}
     <b>Id:</b>
-    {{id}}{% endif %}
+    {{ id }}{% endif %}
   <br/>
   {% if status.exists() %}
     <b>status:</b>
-    {{status}}{% endif %}
+    {{ status }}{% endif %}
   <br/>
   {% if type.exists() %}
     <b>Type:</b>
-    {{type.coding.display}}{% endif %}
+    {{ type.coding.display }}{% endif %}
   <br/>
   {% if subject.exists() %}
     <b>Subject:</b>
-    <a>{{subject.display}}</a>
+    <a>{{ subject.display }}</a>
   {% endif %}
 
   <br/>
@@ -24,7 +24,7 @@
     {% for sec in section %}
       <li>
 
-        {{sec.title}}
+        {{ sec.title }}
 
       </li>
       <ul>
@@ -33,7 +33,7 @@
 
           <li>
 
-            {{entr.display}}
+            {{ entr.display }}
 
           </li>
         {% endfor %}

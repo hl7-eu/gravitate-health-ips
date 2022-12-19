@@ -75,6 +75,10 @@ Usage: #example
 Description: "Example of International Patient Summary Composition for Matilda Gravitate"
 * id = "gravitate-Matilda"
 * status = #final
+* text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><b>Id:</b> gravitate-Matilda<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Matilda Gravitate<br/><b>Sections:</b> <br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4) </li><br/><ul><li><b>Entry:</b> <a href="Condition/matilda-cond-1">Crohn's disease</a> </li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0) </li><br/><ul><li><b>Entry:</b> <a href="MedicationStatement/matilda-med-stat-1">Humira 40 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/matilda-med-stat-2">Paracetamol 500 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/matilda-med-stat-3">Pentasa 1g mesalazine</a> </li><br/></ul></ul></div>"""
+* text.status = #generated
+
+
 * type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
 * date = "2018-07-10T15:22:00+02:00"

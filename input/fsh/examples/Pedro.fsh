@@ -107,6 +107,9 @@ Usage: #example
 Description: "Example of International Patient Summary for Pedro Gravitate"
 * id = "gravitate-Pedro"
 * status = #final
+* text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><b>Id:</b> gravitate-Pedro<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Pedro Gravitate<br/><b>Sections:</b> <br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4) </li><br/><ul><li><b>Entry:</b> <a href="Condition/pedro-cond-1">HIV</a> </li><br/><li><b>Entry:</b> <a href="Condition/pedro-cond-2">Depression</a> </li><br/><li><b>Entry:</b> <a href="Condition/pedro-cond-3">IBS</a> </li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0) </li><br/><ul><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-1">Dovato lamivudine and dolutegravir, 300 mg/50 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-2">Mirtazapine 15 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-3">Calcium carbonate 500 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-4">Cinitrapide 1 mg</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-5">Collagen and magnesium supplements</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-6">Vitamin C supplements</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement/pedro-med-stat-7">Protein supplements</a> </li><br/></ul></ul></div>"""
+* text.status = #generated
+
 * type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * date = "2018-07-10T15:22:00+02:00"
