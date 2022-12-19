@@ -62,15 +62,6 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 // ======== PROBLEMS
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<ul>
-		<li>COPD</li>
-        <li>Diabetes type 2</li>
-		<li>Osteoporosis</li>
-		<li>Congestive Heart Failure</li>
-	</ul>
-</div>"
 * section[=].entry[0] = Reference(cecilia-cond-1) "COPD"
 * section[=].entry[+] = Reference(cecilia-cond-2) "Diabetese Type 2" // "Essential (primary) hypertension"
 * section[=].entry[+] = Reference(cecilia-cond-3) "Osteoporosis"
@@ -80,55 +71,6 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 // ======== MEDICATIONS
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<table>
-		<thead>
-			<tr>
-				<th>Brand Name</th>
-				<th>MAN</th>
-				<th>Active Substance</th>
-				<th>Common Name</th>
-				<th>ATC</th>
-				<th>Strength</th>
-				<th>Dose Form</th>
-				<th>RoA</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Skilarence</td>
-				<td>EU/1/17/1201/001</td>
-				<td>dimethyl fumarate (FO2303MNI2)</td>
-				<td>dimethyl fumarate</td>
-				<td>L04AX07</td>
-				<td>30 mg</td>
-				<td>Gastro-resistant tablet</td>
-				<td>Oral use</td>
-			</tr>
-			<tr>
-				<td>Karvea</td>
-				<td>EMEA/H/C/000142</td>
-				<td>irbesartan (J0E2756Z7N)</td>
-				<td>irbesartan</td>
-				<td>C09DA04</td>
-				<td>75 mg</td>
-				<td>Tablet</td>
-				<td>Oral use</td>
-			</tr>
-			<tr>
-				<td>Boots Decongestant 0.05% w/v Nasal spray</td>
-				<td>PL 16028/0049</td>
-				<td>oxymetazoline hydrochloride (K89MJ0S5VY)</td>
-				<td>oxymetazoline hydrochloride</td>
-				<td>R01AA05</td>
-				<td>0.05 mg / 1 ml</td>
-				<td>Nasal spray, solution</td>
-				<td>Nasal use</td>
-			</tr>
-		</tbody>
-	</table>
-</div>"
 * section[=].entry[0] = Reference(cecilia-med-stat-1) "Fosamax 70 mg tablets"
 * section[=].entry[+] = Reference(cecilia-med-stat-2) "Metformine + sitagliptine"
 * section[=].entry[+] = Reference(cecilia-med-stat-3) "Fluticasone 92mcg + vilanterol 22mcg"

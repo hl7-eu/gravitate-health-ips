@@ -53,87 +53,28 @@ Title:   "[Composition] IPS Example 1 IPS"
 * author = Reference(urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d5) "Dr. Anna Karlsson"
 * title = "Patient Summary (Maria Gravitate)"
 * confidentiality = #N
+
 * section[0].title = "Allergies and Intolerances"
 * section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<ul>
-		<li>Hay fever (pollen)</li>
-        <li>Lactose Intolerance</li>
-	</ul>
-</div>"
 * section[=].entry = Reference(urn:uuid:1dff4474-fa08-4f45-8260-dbb23094bf05) "Hay fever (pollen)"
 * section[=].entry = Reference(urn:uuid:9d18cddb-8e58-4fbb-82ec-09cc561ac805) "Lactose Intolerance"
 
 // ======== PROBLEMS
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<ul>
-		<li>Psoriasis</li>
-		<li>Hypertension</li>
-		<li>Congestive heart failure</li>
-	</ul>
-</div>"
 * section[=].entry[0] = Reference(urn:uuid:bcc79261-142c-48ec-b032-f3f9af49ec55) "Psoriasis"
 * section[=].entry[+] = Reference(urn:uuid:f06b7cf8-c15c-4288-a0f9-45a1026e5135) "Hypertension" // "Essential (primary) hypertension"
 * section[=].entry[+] = Reference(urn:uuid:a4a9d90a-d1b0-4d60-82f0-c52343dc6255) "Congestive heart failure"
+
 // ======== MEDICATIONS
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<table>
-		<thead>
-			<tr>
-				<th>Brand Name</th>
-				<th>MAN</th>
-				<th>Active Substance</th>
-				<th>Common Name</th>
-				<th>ATC</th>
-				<th>Strength</th>
-				<th>Dose Form</th>
-				<th>RoA</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Skilarence</td>
-				<td>EU/1/17/1201/001</td>
-				<td>dimethyl fumarate (FO2303MNI2)</td>
-				<td>dimethyl fumarate</td>
-				<td>L04AX07</td>
-				<td>30 mg</td>
-				<td>Gastro-resistant tablet</td>
-				<td>Oral use</td>
-			</tr>
-			<tr>
-				<td>Karvea</td>
-				<td>EMEA/H/C/000142</td>
-				<td>irbesartan (J0E2756Z7N)</td>
-				<td>irbesartan</td>
-				<td>C09DA04</td>
-				<td>75 mg</td>
-				<td>Tablet</td>
-				<td>Oral use</td>
-			</tr>
-			<tr>
-				<td>Boots Decongestant 0.05% w/v Nasal spray</td>
-				<td>PL 16028/0049</td>
-				<td>oxymetazoline hydrochloride (K89MJ0S5VY)</td>
-				<td>oxymetazoline hydrochloride</td>
-				<td>R01AA05</td>
-				<td>0.05 mg / 1 ml</td>
-				<td>Nasal spray, solution</td>
-				<td>Nasal use</td>
-			</tr>
-		</tbody>
-	</table>
-</div>"
 * section[=].entry[0] = Reference(urn:uuid:29074ca4-efcb-4ff4-8446-feed2399a895) "Dimethyl fumarate 30 mg Gastro-resistant tablet"
 * section[=].entry[+] = Reference(urn:uuid:f6cb1218-f81c-4338-80d8-3c10910f78f5) "Irbesartan 75 mg Tablet"
 * section[=].entry[+] = Reference(urn:uuid:f26084c9-b1c8-46d9-acb2-1d400ade87b5) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+
+
+
 // == PATIENT ===
 Instance: c154158f-6a43-4ab7-8443-e7f4bf915dd6
 InstanceOf: Patient

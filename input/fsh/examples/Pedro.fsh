@@ -118,16 +118,6 @@ Description: "Example of International Patient Summary for Pedro Gravitate"
 // ====================================================== PROBLEMS
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
-* section[=].text.status = #generated
-
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<ul>
-		<li>HIV</li>
-        <li>Depression</li>
-		<li>IBS</li>
-
-	</ul>
-</div>"
 * section[=].entry[0] = Reference(pedro-cond-1) "HIV"
 * section[=].entry[+] = Reference(pedro-cond-2) "Depression" 
 * section[=].entry[+] = Reference(pedro-cond-3) "IBS" 
@@ -135,47 +125,6 @@ Description: "Example of International Patient Summary for Pedro Gravitate"
 // ====================================================== MEDICATIONS
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
-* section[=].text.status = #generated
-
-
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<table>
-		<thead>
-			<tr>
-				<th>Brand Name</th>
-				<th>MAN</th>
-				<th>Active Substance</th>
-				<th>Common Name</th>
-				<th>ATC</th>
-				<th>Strength</th>
-				<th>Dose Form</th>
-				<th>RoA</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Humalog Mix50 Insulin KwikPen, 3ml pre-fill</td>
-				<td>EU/1/96/007/035</td>
-				<td>insulin lispro (GFX7QIS1II)</td>
-				<td>insulin lispro</td>
-				<td>A10AD04</td>
-				<td>100 U/ml</td>
-				<td>Suspension for injection</td>
-				<td>Subcutaneous use</td>
-			</tr>
-			<tr>
-				<td>Monuril 3 g granules for oral solution</td>
-				<td>PL31654/0006</td>
-				<td>FOSFOMYCIN (2N81MY12TE)</td>
-				<td>fosfomycin</td>
-				<td>J01XX01</td>
-				<td>3 g (as trometamol: 5.631g/sachet)</td>
-				<td>Granules for oral solution</td>
-				<td>Oral use</td>
-			</tr>
-		</tbody>
-	</table>
-</div>"
 * section[=].entry[0] = Reference(pedro-med-stat-1) "Dovato lamivudine and dolutegravir, 300 mg/50 mg"
 * section[=].entry[+] = Reference(pedro-med-stat-2) "Mirtazapine 15 mg"
 * section[=].entry[+] = Reference(pedro-med-stat-3) "Calcium carbonate 500 mg"
@@ -189,7 +138,7 @@ Description: "Example of International Patient Summary for Pedro Gravitate"
 // ====================================================== PATIENT ======================================================
 Instance: pedro-patient
 InstanceOf: Patient
-Usage: #inline
+Usage: #example
 * extension.extension.url = "code"
 * extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#ES "Spain"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
@@ -222,7 +171,7 @@ Depression
 // ====================================================== Practitioner =========================================================
 Instance: pedro-pract
 InstanceOf: Practitioner
-Usage: #inline
+Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	Dr. Xavier García
@@ -237,7 +186,7 @@ Usage: #inline
 // --- Depression
 Instance: pedro-cond-1
 InstanceOf: Condition
-Usage: #inline
+Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	Depression
@@ -250,7 +199,7 @@ Usage: #inline
 // --- HIV
 Instance: pedro-cond-2
 InstanceOf: Condition
-Usage: #inline
+Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	HIV (2018)
@@ -265,7 +214,7 @@ Usage: #inline
 // --- HIV
 Instance: pedro-cond-3
 InstanceOf: Condition
-Usage: #inline
+Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	IBS
@@ -279,7 +228,7 @@ Usage: #inline
 // ====================================================== MEDICATION STATEMENTS ======================================================
 Instance: pedro-med-stat-1
 InstanceOf: MedicationStatement
-Usage: #inline
+Usage: #example
 * status = #active
 * medicationReference = Reference(urn:uuid:9d7be868-8264-4d94-ad04-ef04ecc92e52) "Dovato 50 mg/300 mg (Dolutegravir/ Lamivudine) tablets"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
@@ -288,7 +237,7 @@ Usage: #inline
 
 Instance: pedro-med-stat-2
 InstanceOf: MedicationStatement
-Usage: #inline
+Usage: #example
 
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77854) "Monuril 3g granules for oral solution"
@@ -298,7 +247,7 @@ Usage: #inline
 
 Instance: pedro-med-stat-3
 InstanceOf: MedicationStatement
-Usage: #inline
+Usage: #example
 * status = #active
 * medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
@@ -306,7 +255,7 @@ Usage: #inline
 
 Instance: pedro-med-stat-4
 InstanceOf: MedicationStatement
-Usage: #inline
+Usage: #example
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77854) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
@@ -315,7 +264,7 @@ Usage: #inline
 
 Instance: pedro-med-stat-5
 InstanceOf: MedicationStatement
-Usage: #inline
+Usage: #example
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77855) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
@@ -324,7 +273,7 @@ Usage: #inline
 
 Instance: pedro-med-stat-6
 InstanceOf: MedicationStatement
-Usage: #inline
+Usage: #example
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77856) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
@@ -333,7 +282,7 @@ Usage: #inline
 
 Instance: pedro-med-stat-7
 InstanceOf: MedicationStatement
-Usage: #inline
+Usage: #example
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77857) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
@@ -344,7 +293,7 @@ Usage: #inline
 // "Dolutegravir/Lamivudina"
 Instance: 9d7be868-8264-4d94-ad04-ef04ecc92e52
 InstanceOf: Medication
-Usage: #inline
+Usage: #example
 
 * code.coding[0] = $spor-man#EU/1/19/1370/001 "Dovato 50 mg/300 mg 30 tablets" 
 * code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "lamivudine and dolutegravir, 300 mg/50 mg, tablets" //TODO
@@ -363,7 +312,7 @@ Usage: #inline
 // "Mirtazapine 15 mg"
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4
 InstanceOf: Medication
-Usage: #inline
+Usage: #example
 * code.coding[0] = $spor-man#PL31654/0006 "" //TODO
 * code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "" //TODO
 * code.coding[+] = $atc#N06AX11 "mirtazapine"
@@ -376,7 +325,7 @@ Usage: #inline
 // "Calcium carbonate 500 mg"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785g
 InstanceOf: Medication
-Usage: #inline
+Usage: #example
 * code.coding[0] = $fake-man-sys#16028/0049 "Calcium carbonate 500 mg" //TODO
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium carbonate 500 mg" //TODO
 * code.coding[+] = $atc#A12AA04 "calcium carbonate"
@@ -390,7 +339,7 @@ Usage: #inline
 //"Cinitrapide 1mg"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77854
 InstanceOf: Medication
-Usage: #inline
+Usage: #example
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray" //TODO
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution" //TODO
 * code.coding[+] = $atc#A03FA08 "Cinitapride"
@@ -404,7 +353,7 @@ Usage: #inline
 //"Collagen and magnesium supplements"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77855
 InstanceOf: Medication
-Usage: #inline
+Usage: #example
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"
@@ -418,7 +367,7 @@ Usage: #inline
 // "Vitamin c supplements"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77856
 InstanceOf: Medication
-Usage: #inline
+Usage: #example
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"
@@ -432,7 +381,7 @@ Usage: #inline
 //  "Protein supplements"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77857
 InstanceOf: Medication
-Usage: #inline
+Usage: #example
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"

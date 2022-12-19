@@ -55,3 +55,18 @@ menu:
   Copyright: copyright.html
 
 FSHOnly: false
+
+
+groups:
+  GroupA:
+    name: Pedro
+    description: Pedro IPS Resources
+    resources:
+      - StructureDefinition/animal-patient
+      - StructureDefinition/arm-procedure
+  GroupB:
+    name: Group B
+    description: The Beta Group
+    resources:
+      - StructureDefinition/bark-control
+      - StructureDefinition/bee-sting

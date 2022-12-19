@@ -87,67 +87,11 @@ Description: "Example of International Patient Summary Composition for Matilda G
 // ======== PROBLEMS
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<ul>
-		<li>Crohn's disease</li>
-	</ul>
-</div>"
-
 * section[=].entry[+] = Reference(matilda-cond-1) "Crohn's disease"
 
 // ======== MEDICATIONS
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<table>
-		<thead>
-			<tr>
-				<th>Brand Name</th>
-				<th>MAN</th>
-				<th>Active Substance</th>
-				<th>Common Name</th>
-				<th>ATC</th>
-				<th>Strength</th>
-				<th>Dose Form</th>
-				<th>RoA</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Humalog Mix50 Insulin KwikPen, 3ml pre-fill</td>
-				<td>EU/1/96/007/035</td>
-				<td>insulin lispro (GFX7QIS1II)</td>
-				<td>insulin lispro</td>
-				<td>A10AD04</td>
-				<td>100 U/ml</td>
-				<td>Suspension for injection</td>
-				<td>Subcutaneous use</td>
-			</tr>
-			<tr>
-				<td>Monuril 3 g granules for oral solution</td>
-				<td>PL31654/0006</td>
-				<td>FOSFOMYCIN (2N81MY12TE)</td>
-				<td>fosfomycin</td>
-				<td>J01XX01</td>
-				<td>3 g (as trometamol: 5.631g/sachet)</td>
-				<td>Granules for oral solution</td>
-				<td>Oral use</td>
-			</tr>
-			<tr>
-				<td>Monuril 3 g granules for oral solution</td>
-				<td>PL31654/0006</td>
-				<td>FOSFOMYCIN (2N81MY12TE)</td>
-				<td>fosfomycin</td>
-				<td>J01XX01</td>
-				<td>3 g (as trometamol: 5.631g/sachet)</td>
-				<td>Granules for oral solution</td>
-				<td>Oral use</td>
-			</tr>
-		</tbody>
-	</table>
-</div>"
 * section[=].entry[0] = Reference(matilda-med-stat-1) "Humira 40 mg"
 * section[=].entry[+] = Reference(matilda-med-stat-2) "Paracetamol 500 mg"
 * section[=].entry[+] = Reference(matilda-med-stat-3) "Pentasa 1g mesalazine"
