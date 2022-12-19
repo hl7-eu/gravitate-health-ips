@@ -138,7 +138,7 @@ Usage: #example
 * code.text = "Crohn's disease"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
 * onsetDateTime = "2015"
-* asserter = Reference(urn:uuid:45cd0bd4-f685-4117-a9f0-5c53fffb7266) "Dr. Ana Lopez"
+* asserter = Reference(matilda-pract) "Dr. Ana Lopez"
 
 
 
@@ -149,25 +149,25 @@ InstanceOf: MedicationStatement
 Usage: #example
 
 * status = #active
-* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et) "Monuril 3g granules for oral solution"
+* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et) "Humira 40 mg"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
-* dosage.route = $edqm#20053000 "Oral use"
+* dosage.route = $edqm#20066000 "Subcutaneous use"
 
 Instance: matilda-med-stat-2
 InstanceOf: MedicationStatement
 Usage: #example
 * status = #active
-* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu) "PARACETAMOL 500 MG"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
-* dosage.route = $edqm#20049000	"Nasal use"
+* dosage.route = $edqm#20053000 "Oral use"
 
 Instance: matilda-med-stat-3
 InstanceOf: MedicationStatement
 Usage: #example
 * status = #active
-* medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e51) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e51) "Pentasa 1g mesalazine"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
-* dosage.route = $edqm#20049000	"Nasal use"
+* dosage.route = $edqm#20053000 "Oral use"
 
 
 // ====== MEDICATIONS
@@ -176,15 +176,15 @@ Instance: 9d7be868-8264-4d94-ad04-ef04ecc92e51
 InstanceOf: Medication
 Usage: #example
 
-* code.coding[0] = $spor-man#EU/1/96/007/035 "Humalog Mix50"
-* code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "insulin lispro, 100 units/ml, suspension for injection"
+* code.coding[0] = $spor-man#EU/1/96/007/035 "Humira 40 mg"
+//* code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "Humira 40 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
 // UK dm+d "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens"
-* code.coding[+] = http://snomed.info/sct#388454007 "Product containing insulin lispro (medicinal product)"
-* code.coding[+] = $atc#A10AD04 "insulin lispro"
-* form = $edqm#11202000 "Suspension for injection"
-* ingredient.itemCodeableConcept = $unii#GFX7QIS1II "insulin lispro"
-* ingredient.itemCodeableConcept.text = "insulin lispro"
-* ingredient.strength.numerator = 100 'U'
+//* code.coding[+] = http://snomed.info/sct#388454007 "Product containing insulin lispro (medicinal product)"
+* code.coding[+] = $atc#L04AB04 "adalimumab"
+* form = $edqm#11201000 "Solution for injection"
+* ingredient.itemCodeableConcept = $unii#FYS6T7F842 "adalimumab"
+* ingredient.itemCodeableConcept.text = "adalimumab"
+* ingredient.strength.numerator = 40 'mg'
 * ingredient.strength.denominator = 1 'ml'
 
 
@@ -193,27 +193,32 @@ InstanceOf: Medication
 Usage: #example
 
 
-* code.coding[0] = $spor-man#PL31654/0006 "Monuril"
-* code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "Fosfomycin, 3g, Granules for oral solution"
-* code.coding[+] = $atc#J01XX01 "fosfomycin"
-* form = $edqm#10112000 "Granules for oral solution"
-* ingredient.itemCodeableConcept = $unii#7FXW6U30GY "FOSFOMYCIN TROMETHAMINE"
-* ingredient.itemCodeableConcept.text = "FOSFOMYCIN TROMETAMOL"
-* ingredient.strength.numerator = 5.631 'g'
-* ingredient.strength.denominator = 1 '{sachet}'
-
+//* code.coding[0] = $spor-man#PL31654/0006 "Monuril"
+//* code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "Fosfomycin, 3g, Granules for oral solution"
+* code.coding[+] = $atc#N02BE01 "paracetamol"
+* form = $edqm#10220000 "Coated tablet"
+* ingredient.itemCodeableConcept = $unii#362O9ITL9D "ACETAMINOPHEN"
+* ingredient.itemCodeableConcept.text = "ACETAMINOPHEN"
+* ingredient.strength.numerator = 500 'mg'
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.code = #15054000
+* ingredient.strength.denominator.system = $edqm
+* ingredient.strength.denominator.unit = "Tablet"
 
 
 
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu
 InstanceOf: Medication
 Usage: #example
-* code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
-* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
-* code.coding[+] = $atc#R01AA05 "oxymetazoline"
-// * form = $edqm#10808000 "Nasal spray, solution"
-* form.text = "Nasal spray, solution"
-* ingredient.itemCodeableConcept = $unii#K89MJ0S5VY "oxymetazoline hydrochloride"
-* ingredient.itemCodeableConcept.text = "oxymetazoline hydrochloride"
-* ingredient.strength.numerator = 0.05 'mg'
-* ingredient.strength.denominator = 1 'ml'
+//* code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
+//* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
+* code.coding[+] = $atc#A07EC02 "mesalazine"
+* form = $edqm#10219000 "Tablet"
+* form.text = "Tablet"
+* ingredient.itemCodeableConcept = $unii#4Q81I59GXC "MESALAMINE"
+* ingredient.itemCodeableConcept.text = "MESALAMINE"
+* ingredient.strength.numerator = 1000 'mg'
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.code = #15054000
+* ingredient.strength.denominator.system = $edqm
+* ingredient.strength.denominator.unit = "Tablet"

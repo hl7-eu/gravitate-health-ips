@@ -147,8 +147,8 @@ Usage: #inline
 * name.given = "Helen"
 * gender = #female
 * birthDate = "1946-05-05" // TO BE REVIEWED
+
 // == Practitioner ===
-// TO BE REVIEWED,
 Instance: 45cd0bd4-f685-4117-a9f0-5c53fffb7266
 InstanceOf: Practitioner
 Usage: #inline
@@ -160,7 +160,7 @@ Usage: #inline
 * name.given = "Anne"
 * name.prefix = "Dr."
 // == ALLERGIES ===
-// TO BE REVIEWED,
+
 Instance: cb6e84fa-4302-4569-ac1c-6b1b32507d16
 InstanceOf: AllergyIntolerance
 Usage: #inline

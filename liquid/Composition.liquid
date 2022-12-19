@@ -1,0 +1,52 @@
+<div>
+  {% if text.exists() %}
+    {{ text.div }}
+  {% else %}
+
+    {% if id.exists() %}
+      <b>Id:</b>
+      {{ id }}{% endif %}
+    <br/>
+    {% if status.exists() %}
+      <b>status:</b>
+      {{ status }}{% endif %}
+    <br/>
+    {% if type.exists() %}
+      <b>Type:</b>
+      {{ type.coding.display }}{% endif %}
+    <br/>
+    {% if subject.exists() %}
+      <b>Subject:</b>
+      <a>{{ subject.display }}</a>
+    {% endif %}
+
+    <br/>
+    <b>Sections:</b>
+    <br/>
+
+    <ul>
+      {% for sec in section %}
+        <li>
+
+          {{ sec.title }}
+
+        </li>
+        <ul>
+
+          {% for entr in sec.entry %}
+
+            <li>
+
+              {{ entr.display }}
+
+            </li>
+          {% endfor %}
+        </ul>
+
+      {% endfor %}
+
+    </ul>
+
+  {% endif %}
+
+</div>

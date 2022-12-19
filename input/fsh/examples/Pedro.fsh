@@ -120,8 +120,8 @@ Description: "Example of International Patient Summary for Pedro Gravitate"
 // ====================================================== PROBLEMS
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
-* section[=].entry[0] = Reference(pedro-cond-1) "HIV"
-* section[=].entry[+] = Reference(pedro-cond-2) "Depression" 
+* section[=].entry[0] = Reference(pedro-cond-1) "Depression"
+* section[=].entry[+] = Reference(pedro-cond-2) "HIV" 
 * section[=].entry[+] = Reference(pedro-cond-3) "IBS" 
 
 // ====================================================== MEDICATIONS
@@ -204,7 +204,7 @@ Usage: #example
 * onsetDateTime = "2018"
 * asserter = Reference(pedro-pract) "Dr. Xavier García"
 
-// --- HIV
+// --- IBS
 Instance: pedro-cond-3
 InstanceOf: Condition
 Usage: #example
@@ -230,7 +230,7 @@ InstanceOf: MedicationStatement
 Usage: #example
 
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "Monuril 3g granules for oral solution"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "Mirtazapine 30 mg Coated Tablet"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -239,7 +239,7 @@ Instance: pedro-med-stat-3
 InstanceOf: MedicationStatement
 Usage: #example
 * status = #active
-* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4) "Calcium Carbonate 500 mg"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -247,7 +247,7 @@ Instance: pedro-med-stat-4
 InstanceOf: MedicationStatement
 Usage: #example
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77854) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77854) "cinitrapide 1 mg"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -256,7 +256,7 @@ Instance: pedro-med-stat-5
 InstanceOf: MedicationStatement
 Usage: #example
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77855) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77855) "Collagen and magnesium supplements"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -265,7 +265,7 @@ Instance: pedro-med-stat-6
 InstanceOf: MedicationStatement
 Usage: #example
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77856) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77856) "Vitaminc C supplement"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -274,7 +274,7 @@ Instance: pedro-med-stat-7
 InstanceOf: MedicationStatement
 Usage: #example
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77857) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77857) "Protein supplements"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -313,8 +313,8 @@ Usage: #example
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4
 InstanceOf: Medication
 Usage: #example
-* code.coding[0] = $spor-man#PL31654/0006 "" //TODO
-* code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "" //TODO
+* code.coding[0] = $spor-man#PL31654/0006 "MIRTAZAPINA CINFA 15 mg Coated Tablet" //TODO
+//* code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "" //TODO
 * code.coding[+] = $atc#N06AX11 "mirtazapine"
 * form = $edqm#10220000 "Coated tablet"
 * ingredient.itemCodeableConcept = $unii#A051Q2099Q "Mirtazapine"
@@ -331,7 +331,7 @@ Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785g
 InstanceOf: Medication
 Usage: #example
 * code.coding[0] = $fake-man-sys#16028/0049 "Calcium carbonate 500 mg" //TODO
-* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium carbonate 500 mg" //TODO
+//* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium carbonate 500 mg" //TODO
 * code.coding[+] = $atc#A12AA04 "calcium carbonate"
 * form = $edqm#10228000 "Chewable tablet"
 * form.text = "Chewable tablet"
@@ -348,7 +348,7 @@ Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77854
 InstanceOf: Medication
 Usage: #example
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray" //TODO
-* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution" //TODO
+//* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution" //TODO
 * code.coding[+] = $atc#A03FA08 "Cinitapride"
 * form = $edqm#10228000 "Chewable tablet"
 * form.text = "Chewable tablet"
@@ -366,7 +366,7 @@ Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77855
 InstanceOf: Medication
 Usage: #example
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
-* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
+//* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"
 * form = $edqm#10808000 "Nasal spray, solution"
 * form.text = "Nasal spray, solution"
@@ -380,12 +380,12 @@ Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77856
 InstanceOf: Medication
 Usage: #example
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
-* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
+//* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"
 * form = $edqm#10808000 "Nasal spray, solution"
 * form.text = "Nasal spray, solution"
-* ingredient.itemCodeableConcept = $unii#K89MJ0S5VY "oxymetazoline hydrochloride"
-* ingredient.itemCodeableConcept.text = "oxymetazoline hydrochloride"
+* ingredient.itemCodeableConcept = $unii#PQ6CK8PD0R "ASCORBIC ACID"
+* ingredient.itemCodeableConcept.text = "Vitamin C"
 * ingredient.strength.numerator = 0.05 'mg'
 * ingredient.strength.denominator = 1 'ml'
 
@@ -394,7 +394,7 @@ Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77857
 InstanceOf: Medication
 Usage: #example
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
-* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
+//* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"
 * form = $edqm#10808000 "Nasal spray, solution"
 * form.text = "Nasal spray, solution"

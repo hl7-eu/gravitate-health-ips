@@ -67,7 +67,7 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 * section[=].entry[0] = Reference(cecilia-cond-1) "COPD"
 * section[=].entry[+] = Reference(cecilia-cond-2) "Diabetese Type 2" // "Essential (primary) hypertension"
 * section[=].entry[+] = Reference(cecilia-cond-3) "Osteoporosis"
-* section[=].entry[+] = Reference(cecilia-cond-4) "Congestive Heart Failure"
+* section[=].entry[+] = Reference(cecilia-cond-4) "Congestive Heart Failure" 
 
 
 // ======== MEDICATIONS
@@ -93,6 +93,7 @@ Usage: #example
 * name.given = "Cecilia"
 * gender = #female
 * birthDate = "1946-05-05"
+
 // == Practitioner ===
 Instance: cecilia-pract
 InstanceOf: Practitioner
@@ -107,10 +108,10 @@ Usage: #example
 Instance: cecilia-cond-1
 InstanceOf: Condition
 Usage: #example
-* code.text = "COPD"
+
 * clinicalStatus = $condition-clinical#active
-* code = $sct#9014002 "Psoriasis"
-* code.text = "Psoriasis"
+* code = $sct#42343007 "Chronic obstructive lung disease"
+* code.text = "COPD - Chronic obstructive pulmonary disease"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
 // * onsetDateTime = "2015-08-01"
 * asserter = Reference(cecilia-pract) "Dr. Anna Karlsson"
@@ -131,8 +132,8 @@ Instance: cecilia-cond-3
 InstanceOf: Condition
 Usage: #example
 * clinicalStatus = $condition-clinical#active
-* code = $sct#38341003 "HT - Hypertension"
-* code.text = "Hypertension"
+* code = $sct#64859006 "Osteoporosis"
+* code.text = "Osteoporosis"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * onsetDateTime = "1993"
 
@@ -140,10 +141,10 @@ Instance: cecilia-cond-4
 InstanceOf: Condition
 Usage: #example
 * clinicalStatus = $condition-clinical#active
-* code = $sct#38341003 "HT - Hypertension"
-* code.text = "Hypertension"
+* code = $sct#44054006 "Diabetes mellitus type 2"
+* code.text = "Diabetes mellitus type 2"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
-* onsetDateTime = "1993"
+
 
 // ====== MEDICATION STATEMENTS
 Instance: cecilia-med-stat-1
