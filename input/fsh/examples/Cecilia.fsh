@@ -16,21 +16,24 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 * entry[+].fullUrl = "cecilia-pract" // Practictioner
 * entry[=].resource = cecilia-pract
 
-* entry[+].fullUrl = "urn:uuid:7b69285e-bf3a-4b8d-a30f-8effd6059a4f" // Condition 1
+* entry[+].fullUrl = "cecilia-cond-1" // Condition 1
 * entry[=].resource = cecilia-cond-1
-* entry[+].fullUrl = "urn:uuid:ebb1a59f-a249-40dd-9868-25879bc9bb71" // Condition 2
+* entry[+].fullUrl = "cecilia-cond-2" // Condition 2
 * entry[=].resource = cecilia-cond-2
-* entry[+].fullUrl = "urn:uuid:0d4addd6-c3ee-468c-9202-026a24293f32" // Condition 3
+* entry[+].fullUrl = "cecilia-cond-3" // Condition 3
 * entry[=].resource = cecilia-cond-3
-* entry[+].fullUrl = "urn:uuid:c2a8ea98-cf92-4f57-933c-7d857fb20b1d" // Condition 3
+* entry[+].fullUrl = "cecilia-cond-4" // Condition 3
 * entry[=].resource = cecilia-cond-4
 
-* entry[+].fullUrl = "urn:uuid:29074ca4-efcb-4ff4-8446-feed2399a899" // Medication Statement 1
+* entry[+].fullUrl = "cecilia-med-stat-1" // Medication Statement 1
 * entry[=].resource = cecilia-med-stat-1
-* entry[+].fullUrl = "urn:uuid:f6cb1218-f81c-4338-80d8-3c10910f78fd" // Medication Statement 2
+* entry[+].fullUrl = "cecilia-med-stat-2" // Medication Statement 2
 * entry[=].resource = cecilia-med-stat-2
-* entry[+].fullUrl = "urn:uuid:f26084c9-b1c8-46d9-acb2-1d400ade87ba" // Medication Statement 3
+* entry[+].fullUrl = "cecilia-med-stat-3" // Medication Statement 3
 * entry[=].resource = cecilia-med-stat-3
+* entry[+].fullUrl = "cecilia-med-stat-4" // Medication Statement 4
+* entry[=].resource = cecilia-med-stat-4
+
 
 * entry[+].fullUrl = "urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe36c" // Medication 1
 * entry[=].resource = b50ae644-e0b7-4007-809f-26f493cbe36c
@@ -170,7 +173,7 @@ Usage: #inline
 * code.text = "Psoriasis"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
 // * onsetDateTime = "2015-08-01"
-* asserter = Reference(urn:uuid:2153a841-3c69-47cb-948d-1d97ce20eb61) "Dr. Anna Karlsson"
+* asserter = Reference(cecilia-pract) "Dr. Anna Karlsson"
 
 // --- "Congestive heart failure"
 Instance: cecilia-cond-2
@@ -185,7 +188,7 @@ Usage: #inline
 * code.text = "Congestive heart failure"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * onsetDateTime = "2015"
-* asserter = Reference(urn:uuid:2153a841-3c69-47cb-948d-1d97ce20eb61) "Dr. Anna Karlsson"
+* asserter = Reference(cecilia-pract) "Dr. Anna Karlsson"
 
 Instance: cecilia-cond-3
 InstanceOf: Condition
