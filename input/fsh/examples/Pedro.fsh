@@ -40,63 +40,63 @@ Physical exercise (gym)
 * identifier.value = "Pedro-ips-1"
 * type = #document
 * timestamp = "2021-04-18T09:22:00+02:00"
-* entry[0].fullUrl = "urn:uuid:5702fd1d-dd26-402e-a7c0-7629a5d9bba1" // Composition
+* entry[0].fullUrl = "5702fd1d-dd26-402e-a7c0-7629a5d9bba1" // Composition
 * entry[=].resource = pedro-comp
-* entry[+].fullUrl = "urn:uuid:pedro-patient" // Patient
+* entry[+].fullUrl = "pedro-patient" // Patient
 * entry[=].resource = pedro-patient
-* entry[+].fullUrl = "urn:uuid:pedro-pract" // Practictioner
+* entry[+].fullUrl = "pedro-pract" // Practictioner
 * entry[=].resource = pedro-pract
 
 
-* entry[+].fullUrl = "urn:uuid:pedro-cond-1" // Condition 2
+* entry[+].fullUrl = "pedro-cond-1" // Condition 2
 * entry[=].resource = pedro-cond-1
 
-* entry[+].fullUrl = "urn:uuid:pedro-cond-2" // Condition 2
+* entry[+].fullUrl = "pedro-cond-2" // Condition 2
 * entry[=].resource = pedro-cond-2
 
-* entry[+].fullUrl = "urn:uuid:pedro-cond-3" // Condition 3
+* entry[+].fullUrl = "pedro-cond-3" // Condition 3
 * entry[=].resource = pedro-cond-3
 
 
-* entry[+].fullUrl = "urn:uuid:pedro-med-stat-1" // Medication Statement 1 - "
+* entry[+].fullUrl = "pedro-med-stat-1" // Medication Statement 1 - "
 * entry[=].resource = pedro-med-stat-1
-* entry[+].fullUrl = "urn:uuid:pedro-med-stat-2" // Medication Statement 2 -
+* entry[+].fullUrl = "pedro-med-stat-2" // Medication Statement 2 -
 * entry[=].resource = pedro-med-stat-2
 
-* entry[+].fullUrl = "urn:uuid:pedro-med-stat-3" // Medication Statement 2 -
+* entry[+].fullUrl = "pedro-med-stat-3" // Medication Statement 2 -
 * entry[=].resource = pedro-med-stat-3
 
-* entry[+].fullUrl = "urn:uuid:pedro-med-stat-4" // Medication Statement 2 -
+* entry[+].fullUrl = "pedro-med-stat-4" // Medication Statement 2 -
 * entry[=].resource = pedro-med-stat-4
 
-* entry[+].fullUrl = "urn:uuid:pedro-med-stat-5" // Medication Statement 2 -
+* entry[+].fullUrl = "pedro-med-stat-5" // Medication Statement 2 -
 * entry[=].resource = pedro-med-stat-5
 
-* entry[+].fullUrl = "urn:uuid:pedro-med-stat-6" // Medication Statement 2 -
+* entry[+].fullUrl = "pedro-med-stat-6" // Medication Statement 2 -
 * entry[=].resource = pedro-med-stat-6
 
-* entry[+].fullUrl = "urn:uuid:pedro-med-stat-7" // Medication Statement 2 -
+* entry[+].fullUrl = "pedro-med-stat-7" // Medication Statement 2 -
 * entry[=].resource = pedro-med-stat-7
 
-* entry[+].fullUrl = "urn:uuid:9d7be868-8264-4d94-ad04-ef04ecc92e52" // Medication 1 - 
+* entry[+].fullUrl = "9d7be868-8264-4d94-ad04-ef04ecc92e52" // Medication 1 - 
 * entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92e52
 
-* entry[+].fullUrl = "urn:uuid:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4" // Medication 2
+* entry[+].fullUrl = "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4" // Medication 2
 * entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4
 
-* entry[+].fullUrl = "urn:uuid:6f4151e9-91f6-4f1e-adc3-fb94dda7785g" // Medication 3
+* entry[+].fullUrl = "6f4151e9-91f6-4f1e-adc3-fb94dda7785g" // Medication 3
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda7785g
 
-* entry[+].fullUrl = "urn:uuid:6f4151e9-91f6-4f1e-adc3-fb94dda77854" // Medication 4
+* entry[+].fullUrl = "6f4151e9-91f6-4f1e-adc3-fb94dda77854" // Medication 4
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda77854
 
-* entry[+].fullUrl = "urn:uuid:6f4151e9-91f6-4f1e-adc3-fb94dda77855" // Medication 5
+* entry[+].fullUrl = "6f4151e9-91f6-4f1e-adc3-fb94dda77855" // Medication 5
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda77855
 
-* entry[+].fullUrl = "urn:uuid:6f4151e9-91f6-4f1e-adc3-fb94dda77856" // Medication 6
+* entry[+].fullUrl = "6f4151e9-91f6-4f1e-adc3-fb94dda77856" // Medication 6
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda77856
 
-* entry[+].fullUrl = "urn:uuid:6f4151e9-91f6-4f1e-adc3-fb94dda77857" // Medication 7
+* entry[+].fullUrl = "6f4151e9-91f6-4f1e-adc3-fb94dda77857" // Medication 7
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda77857
 
 // ====================================================== COMPOSITION ======================================================
@@ -230,7 +230,7 @@ Instance: pedro-med-stat-1
 InstanceOf: MedicationStatement
 Usage: #example
 * status = #active
-* medicationReference = Reference(urn:uuid:9d7be868-8264-4d94-ad04-ef04ecc92e52) "Dovato 50 mg/300 mg (Dolutegravir/ Lamivudine) tablets"
+* medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e52) "Dovato 50 mg/300 mg (Dolutegravir/ Lamivudine) tablets"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -297,7 +297,7 @@ Usage: #example
 
 * code.coding[0] = $spor-man#EU/1/19/1370/001 "Dovato 50 mg/300 mg 30 tablets" 
 * code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "lamivudine and dolutegravir, 300 mg/50 mg, tablets" //TODO
-* code.coding[+] = http://snomed.info/sct#13884911000001102 "Dovato 50 mg/300 mg tablet" //TODO
+* code.coding[+] = http://snomed.info/sct#787165000 "Dolutegravir- and lamivudine-containing product in oral dose form" 
 * code.coding[+] = $atc#J05AR25 "lamivudine and dolutegravir"
 * form = $edqm#10220000 "Coated tablet"
 * ingredient.itemCodeableConcept = $unii#2T8Q726O95 "lamivudine"
@@ -320,7 +320,11 @@ Usage: #example
 * ingredient.itemCodeableConcept = $unii#A051Q2099Q "Mirtazapine"
 * ingredient.itemCodeableConcept.text = "Mirtazapine"
 * ingredient.strength.numerator = 15 'g'
-* ingredient.strength.denominator = 1 '{tablet}'
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.code = #15054000
+* ingredient.strength.denominator.system = $edqm
+* ingredient.strength.denominator.unit = "Tablet"
+
 
 // "Calcium carbonate 500 mg"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785g
@@ -334,7 +338,10 @@ Usage: #example
 * ingredient.itemCodeableConcept = $unii#H0G9379FGK "Calcium carbonate"
 * ingredient.itemCodeableConcept.text = "calcium carbonate"
 * ingredient.strength.numerator = 500 'mg'
-* ingredient.strength.denominator = 1 '{tablet}'
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.code = #15054000
+* ingredient.strength.denominator.system = $edqm
+* ingredient.strength.denominator.unit = "Tablet"
 
 //"Cinitrapide 1mg"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77854
@@ -348,7 +355,11 @@ Usage: #example
 * ingredient.itemCodeableConcept = $unii#R8I97I2L24 "CINITAPRIDE"
 * ingredient.itemCodeableConcept.text = "CINITAPRIDE"
 * ingredient.strength.numerator = 1 'mg'
-* ingredient.strength.denominator = 1 '{tablet}'
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.code = #15054000
+* ingredient.strength.denominator.system = $edqm
+* ingredient.strength.denominator.unit = "Tablet"
+
 
 //"Collagen and magnesium supplements"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77855

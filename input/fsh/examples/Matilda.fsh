@@ -56,15 +56,15 @@ effects on my physical health
 * entry[=].resource = matilda-med-stat-3
 
 
-* entry[+].fullUrl = "urn:uuid:9d7be868-8264-4d94-ad04-ef04ecc92e51" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[+].fullUrl = "9d7be868-8264-4d94-ad04-ef04ecc92e51" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 * entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92e51
 
 
-* entry[+].fullUrl = "urn:uuid:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et" // Medication 2 "Paracetamol 500 mg"
+* entry[+].fullUrl = "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et" // Medication 2 "Paracetamol 500 mg"
 * entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et
 
 
-* entry[+].fullUrl = "urn:uuid:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu" // Medication 3 - "Pentasa 1 g"
+* entry[+].fullUrl = "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu" // Medication 3 - "Pentasa 1 g"
 * entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu
 
 // ======== COMPOSITION
@@ -183,7 +183,7 @@ Usage: #inline
 * code.coding[0] = $spor-man#EU/1/96/007/035 "Humalog Mix50"
 * code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "insulin lispro, 100 units/ml, suspension for injection"
 // UK dm+d "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens"
-* code.coding[+] = http://snomed.info/sct/83821000000107#13884911000001102 "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens"
+* code.coding[+] = http://snomed.info/sct#13884911000001102 "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens"
 * code.coding[+] = $atc#A10AD04 "insulin lispro"
 * form = $edqm#11202000 "Suspension for injection"
 * ingredient.itemCodeableConcept = $unii#GFX7QIS1II "insulin lispro"
