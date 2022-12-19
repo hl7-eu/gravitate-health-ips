@@ -240,7 +240,7 @@ InstanceOf: MedicationStatement
 Usage: #example
 
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77854) "Monuril 3g granules for oral solution"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "Monuril 3g granules for oral solution"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -300,15 +300,24 @@ Usage: #example
 * code.coding[+] = http://snomed.info/sct#787165000 "Dolutegravir- and lamivudine-containing product in oral dose form" 
 * code.coding[+] = $atc#J05AR25 "lamivudine and dolutegravir"
 * form = $edqm#10220000 "Coated tablet"
+
 * ingredient.itemCodeableConcept = $unii#2T8Q726O95 "lamivudine"
 * ingredient.itemCodeableConcept.text = "lamivudine"
 * ingredient.strength.numerator = 300 'mg'
-* ingredient.strength.denominator = 1 'tablet'
+
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.code = #15054000
+* ingredient.strength.denominator.system = $edqm
+* ingredient.strength.denominator.unit = "Tablet"
+
 * ingredient[+].itemCodeableConcept = $unii#DKO1W9H7M1 "dolutegravir"
 * ingredient[=].itemCodeableConcept.text = "dolutegravir"
 * ingredient[=].strength.numerator = 50 'mg'
-* ingredient[=].strength.denominator = 1 '{tablet}'
 
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.code = #15054000
+* ingredient.strength.denominator.system = $edqm
+* ingredient.strength.denominator.unit = "Tablet"
 // "Mirtazapine 15 mg"
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4
 InstanceOf: Medication

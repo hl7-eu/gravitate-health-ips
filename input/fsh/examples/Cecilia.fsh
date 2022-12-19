@@ -154,37 +154,8 @@ Usage: #inline
 Instance: cecilia-med-stat-1
 InstanceOf: MedicationStatement
 Usage: #inline
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<table>
-		<thead>
-			<tr>
-				<th>Brand Name</th>
-				<th>MAN</th>
-				<th>Active Substance</th>
-				<th>Common Name</th>
-				<th>ATC</th>
-				<th>Strength</th>
-				<th>Dose Form</th>
-				<th>RoA</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Skilarence</td>
-				<td>EU/1/17/1201/001</td>
-				<td>dimethyl fumarate (FO2303MNI2)</td>
-				<td>dimethyl fumarate</td>
-				<td>L04AX07</td>
-				<td>30 mg</td>
-				<td>Gastro-resistant tablet</td>
-				<td>Oral use</td>
-			</tr>
-		</tbody>
-	</table>
-</div>"
 * status = #active
-* medicationReference = Reference(urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe36c) "Dimethyl fumarate 30 mg Tablet"
+* medicationReference = Reference(b50ae644-e0b7-4007-809f-26f493cbe36c) "Dimethyl fumarate 30 mg Tablet"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -192,7 +163,7 @@ Instance: cecilia-med-stat-2
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(urn:uuid:de131e15-ed13-4b31-b38c-3204a84d99c4) "Irbesartan 75 mg Tablet"
+* medicationReference = Reference(de131e15-ed13-4b31-b38c-3204a84d99c4) "Irbesartan 75 mg Tablet"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -200,7 +171,7 @@ Instance: cecilia-med-stat-3
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef19) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(9ac3356c-4ea4-4814-84c3-235484f2ef19) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * dosage.route = $edqm#20049000	"Nasal use"
 
@@ -208,7 +179,7 @@ Instance: cecilia-med-stat-4
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef19) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* medicationReference = Reference(9ac3356c-4ea4-4814-84c3-235484f2ef19) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
 * dosage.route = $edqm#20049000	"Nasal use"
 
@@ -223,8 +194,10 @@ Usage: #inline
 * ingredient.itemCodeableConcept = $unii#FO2303MNI2 "dimethyl fumarate"
 * ingredient.itemCodeableConcept.text = "dimethyl fumarate"
 * ingredient.strength.numerator = 30 'mg'
-* ingredient.strength.denominator = 1 'tablet'
-
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.code = #15054000
+* ingredient.strength.denominator.system = $edqm
+* ingredient.strength.denominator.unit = "Tablet"
 
 Instance: de131e15-ed13-4b31-b38c-3204a84d99c4
 InstanceOf: Medication
@@ -236,7 +209,11 @@ Usage: #inline
 * ingredient.itemCodeableConcept = $unii#J0E2756Z7N "irbesartan"
 * ingredient.itemCodeableConcept.text = "irbesartan"
 * ingredient.strength.numerator = 75 'mg'
-* ingredient.strength.denominator = 1 'tablet'
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.code = #15054000
+* ingredient.strength.denominator.system = $edqm
+* ingredient.strength.denominator.unit = "Tablet"
+
 
 Instance: 9ac3356c-4ea4-4814-84c3-235484f2ef19
 InstanceOf: Medication

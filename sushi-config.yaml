@@ -41,7 +41,7 @@ releaseLabel: CI Build
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
-  Table of Contents: toc.md
+  Table of Contents: toc.html
   Contextual information:
     Connections: connections.html
     Use Case: use-case-example.html
