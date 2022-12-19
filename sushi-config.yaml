@@ -41,7 +41,7 @@ releaseLabel: CI Build
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
-  Table of Contents: toc.html
+  Table of Contents: toc.md
   Contextual information:
     Connections: connections.html
     Use Case: use-case-example.html
@@ -70,3 +70,21 @@ groups:
     resources:
       - Composition/gravitate-Cecilia
       - Bundle/gravitate-Cecilia
+  Helen:
+    name: Helen
+    description: Cecilia IPS Resources
+    resources:
+      - Composition/gravitate-helen
+      - Bundle/gravitate-helen
+  Matilda:
+    name: Matilda
+    description: Matilda IPS Resources
+    resources:
+      - Composition/gravitate-Matilda
+      - Bundle/gravitate-Matilda
+  Maria:
+    name: Maria
+    description: Maria IPS Resources
+    resources:
+      - Composition/gravitate-maria
+      - Bundle/gravitate-maria
