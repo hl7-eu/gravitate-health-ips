@@ -58,15 +58,15 @@ FSHOnly: false
 
 
 groups:
-  GroupA:
+  Pedro:
     name: Pedro
     description: Pedro IPS Resources
     resources:
-      - Composition/pedro-comp
-      - Bundle/gravitate-pedro
-  GroupB:
+      - Composition/gravitate-Pedro
+      - Bundle/gravitate-Pedro
+  Cecilia:
     name: Cecilia
     description: Cecilia IPS Resources
     resources:
-      - Composition/cecilia-comp
+      - Composition/gravitate-Cecilia
       - Bundle/gravitate-Cecilia

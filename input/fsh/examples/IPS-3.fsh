@@ -72,8 +72,6 @@ Usage: #example
 // ======== MEDICATIONS
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
-* section[=].text.status = #generated
-
 * section[=].entry[0] = Reference(urn:uuid:29074ca4-efcb-4ff4-8446-feed2399a891) "Dimethyl fumarate 30 mg Gastro-resistant tablet"
 * section[=].entry[+] = Reference(urn:uuid:f6cb1218-f81c-4338-80d8-3c10910f78f1) "Irbesartan 75 mg Tablet"
 * section[=].entry[+] = Reference(urn:uuid:f26084c9-b1c8-46d9-acb2-1d400ade87b1) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
