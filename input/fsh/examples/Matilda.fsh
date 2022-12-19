@@ -100,7 +100,7 @@ Description: "Example of International Patient Summary Composition for Matilda G
 // == PATIENT ===
 Instance: matilda-patient
 InstanceOf: Patient
-Usage: #inline
+Usage: #example
 * extension.extension.url = "code"
 * extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#ES "Spain"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
@@ -117,7 +117,7 @@ Usage: #inline
 
 Instance: matilda-pract
 InstanceOf: Practitioner
-Usage: #inline
+Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	Dr. Ana Lopez
@@ -132,7 +132,7 @@ Usage: #inline
 // --- "Diabetes type 1"
 Instance: matilda-cond-1
 InstanceOf: Condition
-Usage: #inline
+Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	Crohn's disease 
@@ -150,7 +150,7 @@ Usage: #inline
 
 Instance: matilda-med-stat-1
 InstanceOf: MedicationStatement
-Usage: #inline
+Usage: #example
 
 * status = #active
 * medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et) "Monuril 3g granules for oral solution"
@@ -159,7 +159,7 @@ Usage: #inline
 
 Instance: matilda-med-stat-2
 InstanceOf: MedicationStatement
-Usage: #inline
+Usage: #example
 * status = #active
 * medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
@@ -167,7 +167,7 @@ Usage: #inline
 
 Instance: matilda-med-stat-3
 InstanceOf: MedicationStatement
-Usage: #inline
+Usage: #example
 * status = #active
 * medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e51) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
@@ -178,7 +178,7 @@ Usage: #inline
 
 Instance: 9d7be868-8264-4d94-ad04-ef04ecc92e51
 InstanceOf: Medication
-Usage: #inline
+Usage: #example
 
 * code.coding[0] = $spor-man#EU/1/96/007/035 "Humalog Mix50"
 * code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "insulin lispro, 100 units/ml, suspension for injection"
@@ -194,7 +194,7 @@ Usage: #inline
 
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et
 InstanceOf: Medication
-Usage: #inline
+Usage: #example
 
 
 * code.coding[0] = $spor-man#PL31654/0006 "Monuril"
@@ -211,7 +211,7 @@ Usage: #inline
 
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu
 InstanceOf: Medication
-Usage: #inline
+Usage: #example
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"

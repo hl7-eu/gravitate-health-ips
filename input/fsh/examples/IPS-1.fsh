@@ -57,7 +57,7 @@ Title:   "[Composition] IPS Example 1 IPS"
 * section[0].title = "Allergies and Intolerances"
 * section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[=].entry = Reference(urn:uuid:1dff4474-fa08-4f45-8260-dbb23094bf05) "Hay fever (pollen)"
-* section[=].entry = Reference(urn:uuid:9d18cddb-8e58-4fbb-82ec-09cc561ac805) "Lactose Intolerance"
+* section[=].entry[+] = Reference(urn:uuid:9d18cddb-8e58-4fbb-82ec-09cc561ac805) "Lactose Intolerance"
 
 // ======== PROBLEMS
 * section[+].title = "Problem List"

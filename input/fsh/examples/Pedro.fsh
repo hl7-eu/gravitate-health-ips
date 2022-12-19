@@ -314,10 +314,11 @@ Usage: #example
 * ingredient[=].itemCodeableConcept.text = "dolutegravir"
 * ingredient[=].strength.numerator = 50 'mg'
 
-* ingredient.strength.denominator.value = 1
-* ingredient.strength.denominator.code = #15054000
-* ingredient.strength.denominator.system = $edqm
-* ingredient.strength.denominator.unit = "Tablet"
+* ingredient[=].strength.denominator.value = 1
+* ingredient[=].strength.denominator.code = #15054000
+* ingredient[=].strength.denominator.system = $edqm
+* ingredient[=].strength.denominator.unit = "Tablet"
+
 // "Mirtazapine 15 mg"
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4
 InstanceOf: Medication

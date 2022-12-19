@@ -300,7 +300,7 @@ Usage: #inline
 * medicationReference = Reference(urn:uuid:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3) "Monuril 3g granules for oral solution"
 * subject = Reference(urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
-* basedOn = Reference(MedicationStatement/c872135e-f219-4f32-8fd6-7099009abf42)
+* basedOn = Reference(c872135e-f219-4f32-8fd6-7099009abf42)
 /*===
 * effectivePeriod.start = "2015-05-01"
 * dosage.text = "80 mg/day"
@@ -335,7 +335,7 @@ Usage: #inline
 * code.coding[0] = $spor-man#EU/1/96/007/035 "Humalog Mix50"
 * code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "insulin lispro, 100 units/ml, suspension for injection"
 // UK dm+d "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens"
-* code.coding[+] = http://snomed.info/sct#13884911000001102 "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens"
+* code.coding[+] = http://snomed.info/sct#388454007 "Product containing insulin lispro (medicinal product)"
 * code.coding[+] = $atc#A10AD04 "insulin lispro"
 * form = $edqm#11202000 "Suspension for injection"
 * ingredient.itemCodeableConcept = $unii#GFX7QIS1II "insulin lispro"
@@ -403,5 +403,5 @@ InstanceOf: MedicationRequest
 Usage: #inline
 * status = #active
 * intent = #order
-* subject = Reference(Patient/urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) 
-* medicationReference = Reference(urn:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3) "Monuril"
+* subject = Reference(be61951b-44fc-4853-8822-f9d398193c50) 
+* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3) "Monuril"
