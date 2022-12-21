@@ -330,18 +330,26 @@ Usage: #example
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785g
 InstanceOf: Medication
 Usage: #example
-* code.coding[0] = $fake-man-sys#16028/0049 "Calcium carbonate 500 mg" //TODO
+* code.coding[0] = $fake-man-sys#16028/0049 "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" //TODO
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium carbonate 500 mg" //TODO
-* code.coding[+] = $atc#A12AA04 "calcium carbonate"
-* form = $edqm#10228000 "Chewable tablet"
-* form.text = "Chewable tablet"
+//* code.coding[+] = $atc#A12AA04 "calcium carbonate"
+* form = $edqm#10222000 "Effervescent tablet"
+* form.text = "Effervescent tablet"
 * ingredient.itemCodeableConcept = $unii#H0G9379FGK "Calcium carbonate"
 * ingredient.itemCodeableConcept.text = "calcium carbonate"
-* ingredient.strength.numerator = 500 'mg'
+* ingredient.strength.numerator = 1000 'mg'
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
 * ingredient.strength.denominator.unit = "Tablet"
+
+* ingredient[+].itemCodeableConcept = $unii#1C6V77QF41 "cholecalciferol"
+* ingredient[=].itemCodeableConcept.text = "cholecalciferol"
+* ingredient[=].strength.numerator = 880 'UI'
+* ingredient[=].strength.denominator.value = 1
+* ingredient[=].strength.denominator.code = #15054000
+* ingredient[=].strength.denominator.system = $edqm
+* ingredient[=].strength.denominator.unit = "Tablet"
 
 //"Cinitrapide 1mg"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77854
@@ -350,8 +358,8 @@ Usage: #example
 * code.coding[0] = $fake-man-sys#xxxxxx "BLASTON 1 mg tablets" //TODO
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution" //TODO
 * code.coding[+] = $atc#A03FA08 "Cinitapride"
-* form = $edqm#10228000 "Chewable tablet"
-* form.text = "Chewable tablet"
+* form = $edqm#10219000 "Tablet"
+* form.text = "Tablet"
 * ingredient.itemCodeableConcept = $unii#R8I97I2L24 "CINITAPRIDE"
 * ingredient.itemCodeableConcept.text = "CINITAPRIDE"
 * ingredient.strength.numerator = 1 'mg'
@@ -365,40 +373,38 @@ Usage: #example
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77855
 InstanceOf: Medication
 Usage: #example
-* code.coding[0] = $fake-man-sys#16028/0049 "Collagen and magnesium supplements" //TODO
+* code.coding[0] = $fake-man-sys#yyy "AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR" 
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
-* code.coding[+] = $atc#R01AA05 "oxymetazoline"
-* form = $edqm#10808000 "Nasal spray, solution"
-* form.text = "Nasal spray, solution"
-* ingredient.itemCodeableConcept = $unii#K89MJ0S5VY "oxymetazoline hydrochloride"
-* ingredient.itemCodeableConcept.text = "oxymetazoline hydrochloride"
-* ingredient.strength.numerator = 0.05 'mg'
-* ingredient.strength.denominator = 1 'ml'
+* form = $edqm#10201000 "Oral powder"
+* form.text = "Oral powder"
+* ingredient.itemCodeableConcept = $unii#I38ZP9992A "MAGNESIUM"
+* ingredient.itemCodeableConcept.text = "MAGNESIUM"
+* ingredient[+].itemCodeableConcept = $unii#S270N0TRQY "HYALURONIC ACID"
+* ingredient[=].itemCodeableConcept.text = "HYALURONIC ACID"
+* ingredient[+].itemCodeableConcept = $unii#PT3TGI7OIP "HUMAN TYPE I COLLAGEN"
+* ingredient[=].itemCodeableConcept.text = "HUMAN TYPE I COLLAGEN"
+
 
 // "Vitamin c supplements"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77856
 InstanceOf: Medication
 Usage: #example
-* code.coding[0] = $fake-man-sys#16028/0049 "Vitamin c supplements" //TODO
+* code.coding[0] = $fake-man-sys#kkk "SORIA NATURAL VITAMINA C 36 COMPRIMIDOS" 
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"
-* form = $edqm#10808000 "Nasal spray, solution"
-* form.text = "Nasal spray, solution"
+* form = $edqm#10227000 "Modified-release tablet"
+* form.text = "Modified-release tablet"
 * ingredient.itemCodeableConcept = $unii#PQ6CK8PD0R "ASCORBIC ACID"
 * ingredient.itemCodeableConcept.text = "Vitamin C"
-* ingredient.strength.numerator = 0.05 'mg'
-* ingredient.strength.denominator = 1 'ml'
+
 
 //  "Protein supplements"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77857
 InstanceOf: Medication
 Usage: #example
-* code.coding[0] = $fake-man-sys#16028/0049 "Protein supplements" //TODO
+* code.coding[0] = $fake-man-sys#zzzz "NATURES PLUS SPIRU-TEIN BATIDO PROTEINA SABOR COOKIES 525GR" 
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
-* code.coding[+] = $atc#R01AA05 "oxymetazoline"
-* form = $edqm#10808000 "Nasal spray, solution"
-* form.text = "Nasal spray, solution"
-* ingredient.itemCodeableConcept = $unii#K89MJ0S5VY "oxymetazoline hydrochloride"
-* ingredient.itemCodeableConcept.text = "oxymetazoline hydrochloride"
-* ingredient.strength.numerator = 0.05 'mg'
-* ingredient.strength.denominator = 1 'ml'
+* form = $edqm#10201000 "Oral powder"
+* form.text = "Oral powder"
+* ingredient.itemCodeableConcept = $unii#R44IWB3RN5 "SOY PROTEIN"
+* ingredient.itemCodeableConcept.text = "SOY PROTEIN"
