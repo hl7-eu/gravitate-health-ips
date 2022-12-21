@@ -65,9 +65,9 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
 * section[=].entry[0] = Reference(cecilia-cond-1) "COPD"
-* section[=].entry[+] = Reference(cecilia-cond-2) "Diabetese Type 2" // "Essential (primary) hypertension"
+* section[=].entry[+] = Reference(cecilia-cond-2) "Congestive Heart Failure" // "Essential (primary) hypertension"
 * section[=].entry[+] = Reference(cecilia-cond-3) "Osteoporosis"
-* section[=].entry[+] = Reference(cecilia-cond-4) "Congestive Heart Failure" 
+* section[=].entry[+] = Reference(cecilia-cond-4) "Diabetese Type 2" 
 
 
 // ======== MEDICATIONS

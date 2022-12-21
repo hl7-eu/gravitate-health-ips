@@ -230,7 +230,7 @@ InstanceOf: MedicationStatement
 Usage: #example
 
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "Mirtazapine 30 mg Coated Tablet"
+* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4) "Mirtazapine 30 mg Coated Tablet"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -239,7 +239,7 @@ Instance: pedro-med-stat-3
 InstanceOf: MedicationStatement
 Usage: #example
 * status = #active
-* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4) "Calcium Carbonate 500 mg"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "Calcium Carbonate 500 mg"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -347,7 +347,7 @@ Usage: #example
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77854
 InstanceOf: Medication
 Usage: #example
-* code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray" //TODO
+* code.coding[0] = $fake-man-sys#xxxxxx "BLASTON 1 mg tablets" //TODO
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution" //TODO
 * code.coding[+] = $atc#A03FA08 "Cinitapride"
 * form = $edqm#10228000 "Chewable tablet"
@@ -365,7 +365,7 @@ Usage: #example
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77855
 InstanceOf: Medication
 Usage: #example
-* code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
+* code.coding[0] = $fake-man-sys#16028/0049 "Collagen and magnesium supplements" //TODO
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"
 * form = $edqm#10808000 "Nasal spray, solution"
@@ -379,7 +379,7 @@ Usage: #example
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77856
 InstanceOf: Medication
 Usage: #example
-* code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
+* code.coding[0] = $fake-man-sys#16028/0049 "Vitamin c supplements" //TODO
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"
 * form = $edqm#10808000 "Nasal spray, solution"
@@ -393,7 +393,7 @@ Usage: #example
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77857
 InstanceOf: Medication
 Usage: #example
-* code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
+* code.coding[0] = $fake-man-sys#16028/0049 "Protein supplements" //TODO
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"
 * form = $edqm#10808000 "Nasal spray, solution"

@@ -149,7 +149,7 @@ InstanceOf: MedicationStatement
 Usage: #example
 
 * status = #active
-* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et) "Humira 40 mg"
+* medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e51) "Humira 40 mg"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
 * dosage.route = $edqm#20066000 "Subcutaneous use"
 
@@ -157,7 +157,7 @@ Instance: matilda-med-stat-2
 InstanceOf: MedicationStatement
 Usage: #example
 * status = #active
-* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu) "PARACETAMOL 500 MG"
+* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et) "PARACETAMOL 500 MG"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -165,7 +165,7 @@ Instance: matilda-med-stat-3
 InstanceOf: MedicationStatement
 Usage: #example
 * status = #active
-* medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e51) "Pentasa 1g mesalazine"
+* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu) "Pentasa 1g mesalazine"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -193,13 +193,13 @@ InstanceOf: Medication
 Usage: #example
 
 
-//* code.coding[0] = $spor-man#PL31654/0006 "Monuril"
+* code.coding[0] = $spor-man#PL31654/0006 "DOLOCATIL 1 g tablets"
 //* code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "Fosfomycin, 3g, Granules for oral solution"
 * code.coding[+] = $atc#N02BE01 "paracetamol"
 * form = $edqm#10220000 "Coated tablet"
 * ingredient.itemCodeableConcept = $unii#362O9ITL9D "ACETAMINOPHEN"
 * ingredient.itemCodeableConcept.text = "ACETAMINOPHEN"
-* ingredient.strength.numerator = 500 'mg'
+* ingredient.strength.numerator = 1000 'mg'
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
@@ -210,7 +210,7 @@ Usage: #example
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu
 InstanceOf: Medication
 Usage: #example
-//* code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
+* code.coding[0] = $fake-man-sys#16028/0049 "Pentasa Slow Release Tablets 1g"
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#A07EC02 "mesalazine"
 * form = $edqm#10219000 "Tablet"
