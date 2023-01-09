@@ -46,6 +46,34 @@
 {% for sec in composition.section %}
   <h4>{{ sec.title }}</h4>
 
+  {% if sec.title == "Allergies and Intolerances" %}
+    {% assign allergies = bundle.entry | where: "resource.resourceType", "AllergyIntolerance" %}
+    <div class="allergy">
+
+    {% for allergyr in allergies %}
+
+      {% assign allergy = allergyr.resource %}
+
+
+        {% if allergy.code %}
+          <b>Allergy:</b>
+          {{ allergy.code.coding[0].display }} ({{ allergy.code.coding[0].code }})<br/>{% endif %}
+        {% if allergy.verificationStatus %}
+          <b>verificationStatus:</b>
+        {{ allergy.verificationStatus.coding[0].display }} ({{ allergy.verificationStatus.coding[0].code }}) <br/>{% endif %}
+        {% if allergy.reaction %}
+          <b>Reacion:</b>
+          {{ allergy.reaction.manifestation[0].coding[0].display }} ({{ allergy.reaction.manifestation[0].coding[0].code }}) <br/>{% endif %}
+
+          <br/>
+      {% endfor %}
+      </div>
+      
+    </div>
+
+  {% endif %}
+
+
   {% if sec.title == "Problem List" %}
     {% assign conds = bundle.entry | where: "resource.resourceType", "Condition" %}
     <div class="condition">
@@ -93,7 +121,7 @@
           {% assign med_id = medstat.medicationReference.reference | replace: 'Medication/', '' %}
           {% assign medicationr = bundle.entry | where: "resource.id", med_id | first %}
           {% assign medication = medicationr.resource %}
-          <b>Medication:</b>
+          <b>Medication Detail:</b>
           <div class="medication inner">
 
             {% if medication.code %}

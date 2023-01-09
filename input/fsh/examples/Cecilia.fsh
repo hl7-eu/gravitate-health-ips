@@ -217,7 +217,7 @@ Usage: #inline
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"
-// * form = $edqm#10808000 "Nasal spray, solution"
+* form = $edqm#10808000 "Nasal spray, solution"
 * form.text = "Nasal spray, solution"
 * ingredient.itemCodeableConcept = $unii#K89MJ0S5VY "oxymetazoline hydrochloride"
 * ingredient.itemCodeableConcept.text = "oxymetazoline hydrochloride"

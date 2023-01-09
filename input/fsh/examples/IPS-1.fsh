@@ -2,7 +2,7 @@
 
 Instance: gravitate-ips-1
 InstanceOf: Bundle
-Title:   "IPS Example 1 Document"
+Title:   "IPS Example 1"
 Usage: #example
 Description: "Example of International Patient Summary for Gravitate"
 
@@ -43,7 +43,7 @@ Description: "Example of International Patient Summary for Gravitate"
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73575
 InstanceOf: Composition
-Usage: #example
+Usage: #inline
 Title:   "[Composition] IPS Example 1 IPS"
 * id = "ips-example-1"
 * status = #final

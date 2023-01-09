@@ -3,7 +3,7 @@
 
 Instance: gravitate-ips-3
 InstanceOf: Bundle
-Title:   "IPS Example 3 Document"
+Title:   "IPS Example 3"
 Usage: #example
 Description: "Example of International Patient Summary for Gravitate"
 
@@ -50,7 +50,7 @@ Description: "Example of International Patient Summary for Gravitate"
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73571
 InstanceOf: Composition
 Title:   "IPS Example 3 Composition"
-Usage: #example
+Usage: #inline
 
 * id = "ips-example-3"
 * status = #final
