@@ -47,7 +47,7 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 Instance: cecilia-comp
 InstanceOf: Composition
 Title:   "[Composition] Cecilia Gravitate's IPS"
-Usage: #example
+Usage: #inline
 Description: "Example of International Patient Summary for Cecilia Gravitate"
 * id = "gravitate-Cecilia"
 * status = #final
@@ -82,7 +82,7 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 // == PATIENT ===
 Instance: cecilia-patient
 InstanceOf: Patient
-Usage: #example
+Usage: #inline
 * extension.extension.url = "code"
 * extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#SWE "Sweden"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
@@ -97,7 +97,7 @@ Usage: #example
 // == Practitioner ===
 Instance: cecilia-pract
 InstanceOf: Practitioner
-Usage: #example
+Usage: #inline
 * name.family = "Karlsson"
 * name.given = "Anne"
 * name.prefix = "Dr."
@@ -107,7 +107,7 @@ Usage: #example
 // == CONDITIONS ===
 Instance: cecilia-cond-1
 InstanceOf: Condition
-Usage: #example
+Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
 * code = $sct#42343007 "Chronic obstructive lung disease"
@@ -119,7 +119,7 @@ Usage: #example
 // --- "Congestive heart failure"
 Instance: cecilia-cond-2
 InstanceOf: Condition
-Usage: #example
+Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
 * code = $sct#42343007 "Congestive heart failure"
@@ -130,7 +130,7 @@ Usage: #example
 
 Instance: cecilia-cond-3
 InstanceOf: Condition
-Usage: #example
+Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#64859006 "Osteoporosis"
 * code.text = "Osteoporosis"
@@ -139,7 +139,7 @@ Usage: #example
 
 Instance: cecilia-cond-4
 InstanceOf: Condition
-Usage: #example
+Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#44054006 "Diabetes mellitus type 2"
 * code.text = "Diabetes mellitus type 2"
@@ -149,7 +149,7 @@ Usage: #example
 // ====== MEDICATION STATEMENTS
 Instance: cecilia-med-stat-1
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 * status = #active
 * medicationReference = Reference(b50ae644-e0b7-4007-809f-26f493cbe36c) "Dimethyl fumarate 30 mg Tablet"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
@@ -157,7 +157,7 @@ Usage: #example
 
 Instance: cecilia-med-stat-2
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 * status = #active
 * medicationReference = Reference(de131e15-ed13-4b31-b38c-3204a84d99c4) "Irbesartan 75 mg Tablet"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
@@ -165,7 +165,7 @@ Usage: #example
 
 Instance: cecilia-med-stat-3
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 * status = #active
 * medicationReference = Reference(9ac3356c-4ea4-4814-84c3-235484f2ef19) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
@@ -173,7 +173,7 @@ Usage: #example
 
 Instance: cecilia-med-stat-4
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 * status = #active
 * medicationReference = Reference(9ac3356c-4ea4-4814-84c3-235484f2ef19) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
@@ -182,7 +182,7 @@ Usage: #example
 // ====== MEDICATIONS
 Instance: b50ae644-e0b7-4007-809f-26f493cbe36c
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 * code.coding[0] = $spor-man#EU/1/17/1201/001 "Skilarence"
 * code.coding[+] = $phpid#0x9982CA8A825D4561506CE808982E3B9D "dimethyl fumarate, 30 mg/ 1 tablet, Gastro-resistant tablet"
 * code.coding[+] = $atc#L04AX07 "dimethyl fumarate"
@@ -197,7 +197,7 @@ Usage: #example
 
 Instance: de131e15-ed13-4b31-b38c-3204a84d99c4
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 * code.coding[0] = $spor-man#EMEA/H/C/000142 "Karvea"
 * code.coding[+] = $phpid#0x8DFB446EDB3B8AE508AE493827A704E4 "Irbesartan, 75 mg/ 1 tablet, Tablet"
 * code.coding[+] = $atc#C09DA04 "irbesartan and diuretics"
@@ -213,7 +213,7 @@ Usage: #example
 
 Instance: 9ac3356c-4ea4-4814-84c3-235484f2ef19
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 * code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"

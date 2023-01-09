@@ -71,7 +71,7 @@ effects on my physical health
 Instance: matilda-comp
 InstanceOf: Composition
 Title:   "[Composition] Matilda Gravitate's IPS"
-Usage: #example
+Usage: #inline
 Description: "Example of International Patient Summary Composition for Matilda Gravitate"
 * id = "gravitate-Matilda"
 * status = #final
@@ -104,7 +104,7 @@ Description: "Example of International Patient Summary Composition for Matilda G
 // == PATIENT ===
 Instance: matilda-patient
 InstanceOf: Patient
-Usage: #example
+Usage: #inline
 * extension.extension.url = "code"
 * extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#ES "Spain"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
@@ -121,7 +121,7 @@ Usage: #example
 
 Instance: matilda-pract
 InstanceOf: Practitioner
-Usage: #example
+Usage: #inline
 * name.family = "Lopez"
 * name.given = "Ana"
 * name.prefix = "Dr."
@@ -132,7 +132,7 @@ Usage: #example
 // --- "Diabetes type 1"
 Instance: matilda-cond-1
 InstanceOf: Condition
-Usage: #example
+Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#34000006 "Crohn's disease"
 * code.text = "Crohn's disease"
@@ -146,7 +146,7 @@ Usage: #example
 
 Instance: matilda-med-stat-1
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 
 * status = #active
 * medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e51) "Humira 40 mg"
@@ -155,7 +155,7 @@ Usage: #example
 
 Instance: matilda-med-stat-2
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 * status = #active
 * medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et) "PARACETAMOL 500 MG"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
@@ -163,7 +163,7 @@ Usage: #example
 
 Instance: matilda-med-stat-3
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 * status = #active
 * medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu) "Pentasa 1g mesalazine"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
@@ -174,7 +174,7 @@ Usage: #example
 
 Instance: 9d7be868-8264-4d94-ad04-ef04ecc92e51
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 
 * code.coding[0] = $spor-man#EU/1/96/007/035 "Humira 40 mg"
 //* code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "Humira 40 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
@@ -190,7 +190,7 @@ Usage: #example
 
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 
 
 * code.coding[0] = $spor-man#PL31654/0006 "DOLOCATIL 1 g tablets"
@@ -209,7 +209,7 @@ Usage: #example
 
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 * code.coding[0] = $fake-man-sys#16028/0049 "Pentasa Slow Release Tablets 1g"
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#A07EC02 "mesalazine"

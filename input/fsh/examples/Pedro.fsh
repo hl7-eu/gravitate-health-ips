@@ -103,7 +103,7 @@ Physical exercise (gym)
 Instance: pedro-comp
 InstanceOf: Composition
 Title:   "Pedro Gravitate's IPS Composition"
-Usage: #example
+Usage: #inline
 Description: "Example of International Patient Summary for Pedro Gravitate"
 * id = "gravitate-Pedro"
 * status = #final
@@ -140,7 +140,7 @@ Description: "Example of International Patient Summary for Pedro Gravitate"
 // ====================================================== PATIENT ======================================================
 Instance: pedro-patient
 InstanceOf: Patient
-Usage: #example
+Usage: #inline
 * extension.extension.url = "code"
 * extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#ES "Spain"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
@@ -173,7 +173,7 @@ Depression
 // ====================================================== Practitioner =========================================================
 Instance: pedro-pract
 InstanceOf: Practitioner
-Usage: #example
+Usage: #inline
 
 * name.family = "García"
 * name.given = "Xavier"
@@ -185,7 +185,7 @@ Usage: #example
 // --- Depression
 Instance: pedro-cond-1
 InstanceOf: Condition
-Usage: #example
+Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
 * code = $sct#35489007 "Depressive disorder (disorder)"
@@ -195,7 +195,7 @@ Usage: #example
 // --- HIV
 Instance: pedro-cond-2
 InstanceOf: Condition
-Usage: #example
+Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
 * code = $sct#86406008 "Human immunodeficiency virus infection"
@@ -207,7 +207,7 @@ Usage: #example
 // --- IBS
 Instance: pedro-cond-3
 InstanceOf: Condition
-Usage: #example
+Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
 * code = $sct#10743008 "Irritable bowel syndrome"
@@ -218,7 +218,7 @@ Usage: #example
 // ====================================================== MEDICATION STATEMENTS ======================================================
 Instance: pedro-med-stat-1
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 * status = #active
 * medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e52) "Dovato 50 mg/300 mg (Dolutegravir/ Lamivudine) tablets"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
@@ -227,7 +227,7 @@ Usage: #example
 
 Instance: pedro-med-stat-2
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 
 * status = #active
 * medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4) "Mirtazapine 30 mg Coated Tablet"
@@ -237,7 +237,7 @@ Usage: #example
 
 Instance: pedro-med-stat-3
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
@@ -245,7 +245,7 @@ Usage: #example
 
 Instance: pedro-med-stat-4
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77854) "cinitrapide 1 mg"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
@@ -254,7 +254,7 @@ Usage: #example
 
 Instance: pedro-med-stat-5
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77855) "Collagen and magnesium supplements"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
@@ -263,7 +263,7 @@ Usage: #example
 
 Instance: pedro-med-stat-6
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77856) "Vitaminc C supplement"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
@@ -272,7 +272,7 @@ Usage: #example
 
 Instance: pedro-med-stat-7
 InstanceOf: MedicationStatement
-Usage: #example
+Usage: #inline
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77857) "Protein supplements"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
@@ -283,7 +283,7 @@ Usage: #example
 // "Dolutegravir/Lamivudina"
 Instance: 9d7be868-8264-4d94-ad04-ef04ecc92e52
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 
 * code.coding[0] = $spor-man#EU/1/19/1370/001 "Dovato 50 mg/300 mg 30 tablets" 
 * code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "lamivudine and dolutegravir, 300 mg/50 mg, tablets" //TODO
@@ -312,7 +312,7 @@ Usage: #example
 // "Mirtazapine 15 mg"
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 * code.coding[0] = $spor-man#PL31654/0006 "MIRTAZAPINA CINFA 15 mg Coated Tablet" //TODO
 //* code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "" //TODO
 * code.coding[+] = $atc#N06AX11 "mirtazapine"
@@ -329,7 +329,7 @@ Usage: #example
 // "Calcium carbonate 1000 mg + Vitamin D3 880 UI"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785g
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 * code.coding[0] = $fake-man-sys#16028/0049 "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" //TODO
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium carbonate 500 mg" //TODO
 //* code.coding[+] = $atc#A12AA04 "calcium carbonate"
@@ -354,7 +354,7 @@ Usage: #example
 //"Cinitrapide 1mg"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77854
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 * code.coding[0] = $fake-man-sys#xxxxxx "BLASTON 1 mg tablets" //TODO
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution" //TODO
 * code.coding[+] = $atc#A03FA08 "Cinitapride"
@@ -372,7 +372,7 @@ Usage: #example
 //"Collagen and magnesium supplements"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77855
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 * code.coding[0] = $fake-man-sys#yyy "AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR" 
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * form = $edqm#10201000 "Oral powder"
@@ -388,7 +388,7 @@ Usage: #example
 // "Vitamin c supplements"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77856
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 * code.coding[0] = $fake-man-sys#kkk "SORIA NATURAL VITAMINA C 36 COMPRIMIDOS" 
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#A11GA01 "ascorbic acid (vit C)"
@@ -401,7 +401,7 @@ Usage: #example
 //  "Protein supplements"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77857
 InstanceOf: Medication
-Usage: #example
+Usage: #inline
 * code.coding[0] = $fake-man-sys#zzzz "NATURES PLUS SPIRU-TEIN BATIDO PROTEINA SABOR COOKIES 525GR" 
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * form = $edqm#10201000 "Oral powder"

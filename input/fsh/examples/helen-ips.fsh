@@ -42,7 +42,7 @@ Description: "Example of International Patient Summary for Helen Gravitate"
 // ======== COMPOSITION
 Instance: 5702fd1d-dd26-402e-a7c0-7629a5d9bba1
 InstanceOf: Composition
-Usage: #example
+Usage: #inline
 Title:   "[Composition] Helen Gravitate's IPS"
 * id = "gravitate-helen"
 * status = #final
