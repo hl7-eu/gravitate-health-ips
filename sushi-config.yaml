@@ -57,34 +57,35 @@ menu:
 FSHOnly: false
 
 
-groups:
-  Pedro:
-    name: Pedro
-    description: Pedro IPS Resources
-    resources:
-      - Composition/gravitate-Pedro
-      - Bundle/gravitate-Pedro
-  Cecilia:
-    name: Cecilia
-    description: Cecilia IPS Resources
-    resources:
-      - Composition/gravitate-Cecilia
-      - Bundle/gravitate-Cecilia
-  Helen:
-    name: Helen
-    description: Cecilia IPS Resources
-    resources:
-      - Composition/gravitate-helen
-      - Bundle/gravitate-helen
-  Matilda:
-    name: Matilda
-    description: Matilda IPS Resources
-    resources:
-      - Composition/gravitate-Matilda
-      - Bundle/gravitate-Matilda
-  Maria:
-    name: Maria
-    description: Maria IPS Resources
-    resources:
-      - Composition/gravitate-maria
-      - Bundle/gravitate-maria
+#groups:
+#  Pedro:
+#    name: Pedro
+#    description: Pedro IPS Resources
+#    resources:
+#      - Composition/gravitate-Pedro
+#      - Bundle/gravitate-Pedro
+#  Cecilia:
+#    name: Cecilia
+#    description: Cecilia IPS Resources
+#    resources:
+#      - Composition/gravitate-Cecilia
+#      - Bundle/gravitate-Cecilia
+#  Helen:
+#    name: Helen
+#    description: Cecilia IPS Resources
+#    resources:
+#      - Composition/gravitate-helen
+#      - Bundle/gravitate-helen
+#  Matilda:
+#    name: Matilda
+#    description: Matilda IPS Resources
+#    resources:
+#      - Composition/gravitate-Matilda
+#     - Bundle/gravitate-Matilda
+# Maria:
+#    name: Maria
+#    description: Maria IPS Resources
+#    resources:
+#      - Composition/gravitate-maria
+#      - Bundle/gravitate-maria
+      
