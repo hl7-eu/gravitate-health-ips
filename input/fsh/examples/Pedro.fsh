@@ -239,7 +239,7 @@ Instance: pedro-med-stat-3
 InstanceOf: MedicationStatement
 Usage: #example
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "Calcium Carbonate 500 mg"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785g) "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -326,7 +326,7 @@ Usage: #example
 * ingredient.strength.denominator.unit = "Tablet"
 
 
-// "Calcium carbonate 500 mg"
+// "Calcium carbonate 1000 mg + Vitamin D3 880 UI"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785g
 InstanceOf: Medication
 Usage: #example
@@ -391,7 +391,7 @@ InstanceOf: Medication
 Usage: #example
 * code.coding[0] = $fake-man-sys#kkk "SORIA NATURAL VITAMINA C 36 COMPRIMIDOS" 
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
-* code.coding[+] = $atc#R01AA05 "oxymetazoline"
+* code.coding[+] = $atc#A11GA01 "ascorbic acid (vit C)"
 * form = $edqm#10227000 "Modified-release tablet"
 * form.text = "Modified-release tablet"
 * ingredient.itemCodeableConcept = $unii#PQ6CK8PD0R "ASCORBIC ACID"

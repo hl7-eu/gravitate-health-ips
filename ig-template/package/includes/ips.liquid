@@ -1,0 +1,141 @@
+{% if bundle.id %}
+  <b>id:</b>
+  {{ bundle.id }}{% endif %}
+<br/>
+
+{% assign compositionResource = bundle.entry | where: "resource.resourceType", "Composition" | first %}
+{% assign composition = compositionResource.resource %}
+
+<b>Composition</b>
+<br/>
+{% if composition.status %}
+  <b>status:</b>
+  {{ composition.status }}{% endif %}
+<br/>
+{% if composition.type %}
+  <b>Type:</b>
+  {{ composition.type.coding[0].display }}{% endif %}
+<br/>
+  <b>Subject:</b>
+  <div class="patient inner">
+
+  {% assign subr = bundle.entry | where: "resource.resourceType", "Patient" | first %}
+  {% assign pat = subr.resource %}
+  {% if pat.identifier %}
+    <b>identifier:</b>
+    {{ pat.identifier[0].value }}<br/>{% endif %}
+  {% if pat.name %}
+    <b>Name:</b>
+    {{ pat.name[0].given[0] }} {{ pat.name[0].family }}<br/>{% endif %}
+  {% if pat.active %}
+    <b>active:</b>
+    {{ pat.active }}<br/>{% endif %}
+  {% if pat.gender %}
+    <b>gender:</b>
+    {{ pat.gender }}<br/>{% endif %}
+  {% if pat.birthDate %}
+    <b>Birth Date:</b>
+    {{ pat.birthDate }}<br/>{% endif %}
+
+</div>
+<br/>
+<h3>Sections:</h3>
+<br/>
+
+
+{% for sec in composition.section %}
+  <h4>{{ sec.title }}</h4>
+
+  {% if sec.title == "Problem List" %}
+    {% assign conds = bundle.entry | where: "resource.resourceType", "Condition" %}
+    <div class="condition">
+
+    {% for condr in conds %}
+
+      {% assign cond = condr.resource %}
+
+
+        {% if cond.code %}
+          <b>Condition:</b>
+          {{ cond.code.text }} ({{ cond.code.coding[0].code }})<br/>{% endif %}
+        {% if cond.clinicalStatus %}
+          <b>clinicalStatus:</b>
+          {{ cond.clinicalStatus.coding[0].code }} <br/>{% endif %}
+        {% if cond.asserter %}
+          <b>asserter:</b>
+          {{ cond.asserter.display }} <br/>{% endif %}
+          {% if cond.onsetDateTime %}
+            <b>onsetDateTime:</b>
+            {{ cond.onsetDateTime }} <br/>
+          {% endif %}
+          <br/>
+      {% endfor %}
+      </div>
+
+    {% endif %}
+
+    {% if sec.title == "Medication Summary" %}
+      {% assign medstats = bundle.entry | where: "resource.resourceType", "MedicationStatement" %}
+      <div class="medicationStatement">
+
+      {% for medstatr in medstats %}
+
+        {% assign medstat = medstatr.resource %}
+
+
+          {% if medstat.medicationReference %}
+            <b>Medication:</b>
+            {{ medstat.medicationReference.display }} <br/>            {% endif %}
+
+            {% if medstat.status %}
+              <b>status:</b>
+              {{ medstat.status }} <br/>{% endif %}
+          {% assign med_id = medstat.medicationReference.reference | replace: 'Medication/', '' %}
+          {% assign medicationr = bundle.entry | where: "resource.id", med_id | first %}
+          {% assign medication = medicationr.resource %}
+          <b>Medication:</b>
+          <div class="medication inner">
+
+            {% if medication.code %}
+              {% for medcodes in medication.code.coding %}
+                <ul>
+                  <li>
+                    <b>System</b>
+                    {{ medcodes.system }}
+                    <b>Code:</b>
+                    {{ medcodes.code }} [{{ medcodes.display }}]</li>
+                </ul>
+
+              {% endfor %}
+            {% endif %}
+
+              {% if medication.form %}
+              <b>Dose Form:</b>
+              {{ medication.form.coding[0].display }} <br/>{% endif %}
+              {% for ingrs in medication.ingredient %}
+                <b>Ingredient:</b>
+                {{ ingrs.itemCodeableConcept.coding[0].display }} ({{ ingrs.itemCodeableConcept.coding[0].system }}#{{ ingrs.itemCodeableConcept.coding[0].code }}) <br/>
+                {% if ingrs.strength %}
+                  <b>strength:</b>
+                  {{ ingrs.strength.numerator.value }} {{ ingrs.strength.numerator.code }}/{{ ingrs.strength.denominator.value }} {{ ingrs.strength.denominator.unit }} <br/>
+                {% endif %}
+              {% endfor %}
+
+
+          </div>
+
+          {% if medstat.dosage[0].route %}
+            <b>Route:</b>
+            {{ medstat.dosage[0].route.coding[0].display }}<br/>{% endif %}
+          <br/>
+
+        {% endfor %}
+        <br/>
+
+      </div>
+      <br/>
+    {% endif %}
+
+  </ul>
+
+{% endfor %}
