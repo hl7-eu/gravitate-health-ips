@@ -139,7 +139,6 @@
 
               {% endfor %}
             {% endif %}
-          {% endif %}
 
               {% if medication.form %}
               <b>Dose Form:</b>
@@ -155,6 +154,7 @@
 
 
           </div>
+        {% endif %}
 
           {% if medstat.dosage[0].route %}
             <b>Route:</b>
