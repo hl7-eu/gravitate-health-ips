@@ -90,17 +90,13 @@ Usage: #inline
 * extension.extension.url = "code"
 * extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#NO "Norway"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	Maria Gravitate, Female, 75 years old (1946-05-05)
-</div>"
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier[=].value = "ips-3"
 * active = true
 * name.family = "Gravitate"
-* name.given = "Maria"
+* name.given = "IPS 3 example"
 * gender = #female
-* birthDate = "1946-05-05"
+* birthDate = "1978-05-05"
 // == Practitioner ===
 Instance: 1ece89c5-fda3-4db9-ace6-decbe6c603d1
 InstanceOf: Practitioner
@@ -346,7 +342,6 @@ InstanceOf: Observation
 Usage: #inline
 * status = #final
 * code = http://loinc.org#82810-3 "Pregnancy status"
-* subject = Reference(Patient/patient-example-female)
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd1)
 * effectiveDateTime = "2020-01-10"
 * valueCodeableConcept = http://loinc.org#LA15173-0 "Pregnant"
-* hasMember = Reference(Observation/pregnancy-edd-example)
