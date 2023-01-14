@@ -9,3 +9,4 @@ template
 /pandoc
 /input-cache
 /output
+.DS_Store
