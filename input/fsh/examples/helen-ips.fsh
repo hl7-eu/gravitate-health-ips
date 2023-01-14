@@ -31,13 +31,6 @@ Description: "Example of International Patient Summary for Helen Gravitate"
 * entry[+].fullUrl = "urn:uuid:c872135e-f219-4f32-8fd6-7099009abf42" // Medication Request 1
 * entry[=].resource = c872135e-f219-4f32-8fd6-7099009abf42
 
-
-/*----
-* entry[+].fullUrl = "urn:uuid:fbc29713-c2bc-4ebd-9422-8a8326d5f908" // Medication Statement 3
-* entry[=].resource = fbc29713-c2bc-4ebd-9422-8a8326d5f908
------------------*/
-
-
 * entry[+].fullUrl = "urn:uuid:9d7be868-8264-4d94-ad04-ef04ecc92e50" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 * entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92e50
 
@@ -45,15 +38,12 @@ Description: "Example of International Patient Summary for Helen Gravitate"
 * entry[+].fullUrl = "urn:uuid:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3" // Medication 2
 * entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3
 
-/*-----
-* entry[+].fullUrl = "urn:uuid:6f4151e9-91f6-4f1e-adc3-fb94dda7785f" // Medication 3
-* entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda7785f
---------- */
 
 // ======== COMPOSITION
 Instance: 5702fd1d-dd26-402e-a7c0-7629a5d9bba1
 InstanceOf: Composition
 Usage: #inline
+Title:   "[Composition] Helen Gravitate's IPS"
 * id = "gravitate-helen"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
@@ -62,10 +52,6 @@ Usage: #inline
 * author = Reference(urn:uuid:45cd0bd4-f685-4117-a9f0-5c53fffb7266) "Dr. Anna Karlsson" // to be updated ?
 * title = "Patient Summary (Helen Gravitate)"
 * confidentiality = #N
-
-// SECTION TO BE REVIEWED: ALL
-
-
 
 * section[0].title = "Allergies and Intolerances"
 * section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
@@ -96,29 +82,6 @@ Usage: #inline
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
 * section[=].text.status = #generated
-
-/*---------------
-			<tr>
-				<td>Karvea</td>
-				<td>EMEA/H/C/000142</td>
-				<td>irbesartan (J0E2756Z7N)</td>
-				<td>irbesartan</td>
-				<td>C09DA04</td>
-				<td>75 mg</td>
-				<td>Tablet</td>
-				<td>Oral use</td>
-			</tr>
-			<tr>
-				<td>Boots Decongestant 0.05% w/v Nasal spray</td>
-				<td>PL 16028/0049</td>
-				<td>oxymetazoline hydrochloride (K89MJ0S5VY)</td>
-				<td>oxymetazoline hydrochloride</td>
-				<td>R01AA05</td>
-				<td>0.05 mg / 1 ml</td>
-				<td>Nasal spray, solution</td>
-				<td>Nasal use</td>
-			</tr>
-----------------*/
 
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	<table>
@@ -184,8 +147,8 @@ Usage: #inline
 * name.given = "Helen"
 * gender = #female
 * birthDate = "1946-05-05" // TO BE REVIEWED
+
 // == Practitioner ===
-// TO BE REVIEWED,
 Instance: 45cd0bd4-f685-4117-a9f0-5c53fffb7266
 InstanceOf: Practitioner
 Usage: #inline
@@ -197,7 +160,7 @@ Usage: #inline
 * name.given = "Anne"
 * name.prefix = "Dr."
 // == ALLERGIES ===
-// TO BE REVIEWED,
+
 Instance: cb6e84fa-4302-4569-ac1c-6b1b32507d16
 InstanceOf: AllergyIntolerance
 Usage: #inline
@@ -337,7 +300,7 @@ Usage: #inline
 * medicationReference = Reference(urn:uuid:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3) "Monuril 3g granules for oral solution"
 * subject = Reference(urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
-* basedOn = Reference(MedicationStatement/c872135e-f219-4f32-8fd6-7099009abf42)
+* basedOn = Reference(c872135e-f219-4f32-8fd6-7099009abf42)
 /*===
 * effectivePeriod.start = "2015-05-01"
 * dosage.text = "80 mg/day"
@@ -372,7 +335,7 @@ Usage: #inline
 * code.coding[0] = $spor-man#EU/1/96/007/035 "Humalog Mix50"
 * code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "insulin lispro, 100 units/ml, suspension for injection"
 // UK dm+d "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens"
-* code.coding[+] = http://snomed.info/sct/83821000000107#13884911000001102 "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens"
+* code.coding[+] = http://snomed.info/sct#388454007 "Product containing insulin lispro (medicinal product)"
 * code.coding[+] = $atc#A10AD04 "insulin lispro"
 * form = $edqm#11202000 "Suspension for injection"
 * ingredient.itemCodeableConcept = $unii#GFX7QIS1II "insulin lispro"
@@ -440,5 +403,5 @@ InstanceOf: MedicationRequest
 Usage: #inline
 * status = #active
 * intent = #order
-* subject = Reference(Patient/urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) 
-* medicationReference = Reference(urn:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3) "Monuril"
+* subject = Reference(be61951b-44fc-4853-8822-f9d398193c50) 
+* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3) "Monuril"

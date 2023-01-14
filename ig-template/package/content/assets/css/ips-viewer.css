@@ -1,0 +1,26 @@
+.condition {
+    background: #d4f9ff;
+  }
+  .medicationStatement {
+    background: #fffbae;
+  }
+  
+  
+  .medication {
+    
+    background: #ffc4ae;
+  
+  }
+
+  .inner {
+    margin-left: 30px;
+  }
+
+
+  .patient {
+    background: #f1e2f5;
+  }
+  
+  .allergy {
+    background: #e8f5e2;
+  }

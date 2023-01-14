@@ -29,6 +29,8 @@ dependencies:
   hl7.fhir.uv.ips: current
 parameters:
   show-inherited-invariants: false
+  path-liquid: "liquid"
+
 copyrightYear: 2021+
 releaseLabel: CI Build
 
@@ -43,6 +45,7 @@ menu:
   Contextual information:
     Connections: connections.html
     Use Case: use-case-example.html
+    How Data connects: Connecting-data.html
   Capability Statements:
     SmPC / PL: CapabilityStatement-capability-statement-ema.html
   Artifact Index: artifacts.html
@@ -52,3 +55,37 @@ menu:
   Copyright: copyright.html
 
 FSHOnly: false
+
+
+#groups:
+#  Pedro:
+#    name: Pedro
+#    description: Pedro IPS Resources
+#    resources:
+#      - Composition/gravitate-Pedro
+#      - Bundle/gravitate-Pedro
+#  Cecilia:
+#    name: Cecilia
+#    description: Cecilia IPS Resources
+#    resources:
+#      - Composition/gravitate-Cecilia
+#      - Bundle/gravitate-Cecilia
+#  Helen:
+#    name: Helen
+#    description: Cecilia IPS Resources
+#    resources:
+#      - Composition/gravitate-helen
+#      - Bundle/gravitate-helen
+#  Matilda:
+#    name: Matilda
+#    description: Matilda IPS Resources
+#    resources:
+#      - Composition/gravitate-Matilda
+#     - Bundle/gravitate-Matilda
+# Maria:
+#    name: Maria
+#    description: Maria IPS Resources
+#    resources:
+#      - Composition/gravitate-maria
+#      - Bundle/gravitate-maria
+      
