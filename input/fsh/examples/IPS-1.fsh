@@ -122,7 +122,7 @@ Usage: #inline
 * code = $sct#256259004 "Pollen"
 * reaction.manifestation = $sct#21719001 "Allergic rhinitis caused by pollen"
 * reaction.manifestation.text = "Hay fever"
-* patient = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "Maria Gravitate"
+* patient = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "IPS 1"
 
 
 Instance: 9d18cddb-8e58-4fbb-82ec-09cc561ac805
@@ -137,7 +137,7 @@ Usage: #inline
 * type = #intolerance
 * category = #food
 * code = http://snomed.info/sct#782415009 "Intolerance to lactose"
-* patient = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
+* patient = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd6) "IPS 1"
 * onsetAge = 1 'a' "year"
 * recordedDate = "2009-10-09"
 * reaction.substance = http://snomed.info/sct#47703008 "lactose"
