@@ -10,3 +10,5 @@ template
 /input-cache
 /output
 .DS_Store
+.sdkmanrc
+.vscode/
