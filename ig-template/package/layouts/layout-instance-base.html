@@ -16,15 +16,6 @@
 {% include fragment-simpletable.html %}
 
 
-{% if '{{[type]}}' == 'Bundle' %}
-
-  {% assign filename = page.path | split: ".html" | first %} 
-  {% assign bundle = site.data[filename] %} 
-  {% include ips.liquid bundle=bundle %}
-
-{% endif %}
-
-
 
 {% unless example %}
   {% if '{{[type]}}' == 'CapabilityStatement' %}

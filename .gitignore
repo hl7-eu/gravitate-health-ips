@@ -9,5 +9,6 @@ template
 /pandoc
 /input-cache
 /output
-
 .DS_Store
+.sdkmanrc
+.vscode/
