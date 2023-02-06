@@ -11,33 +11,33 @@ Description: "Example of International Patient Summary for Gravitate"
 * identifier.value = "ips-1"
 * type = #document
 * timestamp = "2021-09-03T08:38:00+02:00"
-* entry[0].fullUrl = "urn:uuid:2fa5b223-ebce-4f39-9c66-5dc014f73575" // Composition
+* entry[0].fullUrl = "2fa5b223-ebce-4f39-9c66-5dc014f73575" // Composition
 * entry[=].resource = 2fa5b223-ebce-4f39-9c66-5dc014f73575
-* entry[+].fullUrl = "urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd6" // Patient
+* entry[+].fullUrl = "c154158f-6a43-4ab7-8443-e7f4bf915dd6" // Patient
 * entry[=].resource = c154158f-6a43-4ab7-8443-e7f4bf915dd6
-* entry[+].fullUrl = "urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d5" // Practictioner
+* entry[+].fullUrl = "1ece89c5-fda3-4db9-ace6-decbe6c603d5" // Practictioner
 * entry[=].resource = 1ece89c5-fda3-4db9-ace6-decbe6c603d5
-* entry[+].fullUrl = "urn:uuid:1dff4474-fa08-4f45-8260-dbb23094bf05" // Allergy
+* entry[+].fullUrl = "1dff4474-fa08-4f45-8260-dbb23094bf05" // Allergy
 * entry[=].resource = 1dff4474-fa08-4f45-8260-dbb23094bf05
-* entry[+].fullUrl = "urn:uuid:9d18cddb-8e58-4fbb-82ec-09cc561ac805" // Lactose Intolerance
+* entry[+].fullUrl = "9d18cddb-8e58-4fbb-82ec-09cc561ac805" // Lactose Intolerance
 * entry[=].resource = 9d18cddb-8e58-4fbb-82ec-09cc561ac805
-* entry[+].fullUrl = "urn:uuid:bcc79261-142c-48ec-b032-f3f9af49ec55" // Condition 1
+* entry[+].fullUrl = "bcc79261-142c-48ec-b032-f3f9af49ec55" // Condition 1
 * entry[=].resource = bcc79261-142c-48ec-b032-f3f9af49ec55
-* entry[+].fullUrl = "urn:uuid:a4a9d90a-d1b0-4d60-82f0-c52343dc6255" // Condition 2
+* entry[+].fullUrl = "a4a9d90a-d1b0-4d60-82f0-c52343dc6255" // Condition 2
 * entry[=].resource = a4a9d90a-d1b0-4d60-82f0-c52343dc6255
-* entry[+].fullUrl = "urn:uuid:f06b7cf8-c15c-4288-a0f9-45a1026e5135" // Condition 3
+* entry[+].fullUrl = "f06b7cf8-c15c-4288-a0f9-45a1026e5135" // Condition 3
 * entry[=].resource = f06b7cf8-c15c-4288-a0f9-45a1026e5135
-* entry[+].fullUrl = "urn:uuid:29074ca4-efcb-4ff4-8446-feed2399a895" // Medication Statement 1
+* entry[+].fullUrl = "29074ca4-efcb-4ff4-8446-feed2399a895" // Medication Statement 1
 * entry[=].resource = 29074ca4-efcb-4ff4-8446-feed2399a895
-* entry[+].fullUrl = "urn:uuid:f6cb1218-f81c-4338-80d8-3c10910f78f5" // Medication Statement 2
+* entry[+].fullUrl = "f6cb1218-f81c-4338-80d8-3c10910f78f5" // Medication Statement 2
 * entry[=].resource = f6cb1218-f81c-4338-80d8-3c10910f78f5
-* entry[+].fullUrl = "urn:uuid:f26084c9-b1c8-46d9-acb2-1d400ade87b5" // Medication Statement 3
+* entry[+].fullUrl = "f26084c9-b1c8-46d9-acb2-1d400ade87b5" // Medication Statement 3
 * entry[=].resource = f26084c9-b1c8-46d9-acb2-1d400ade87b5
-* entry[+].fullUrl = "urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe365" // Medication 1
+* entry[+].fullUrl = "b50ae644-e0b7-4007-809f-26f493cbe365" // Medication 1
 * entry[=].resource = b50ae644-e0b7-4007-809f-26f493cbe365
-* entry[+].fullUrl = "urn:uuid:de131e15-ed13-4b31-b38c-3204a84d99c5" // Medication 2
+* entry[+].fullUrl = "de131e15-ed13-4b31-b38c-3204a84d99c5" // Medication 2
 * entry[=].resource = de131e15-ed13-4b31-b38c-3204a84d99c5
-* entry[+].fullUrl = "urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef15" // Medication 3
+* entry[+].fullUrl = "9ac3356c-4ea4-4814-84c3-235484f2ef15" // Medication 3
 * entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2ef15
 
 // ======== COMPOSITION
@@ -48,30 +48,30 @@ Title:   "[Composition] IPS Example 1 IPS"
 * id = "ips-example-1"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
 * date = "2018-07-10T15:22:00+02:00"
-* author = Reference(urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d5) "Dr. Anna Karlsson"
+* author = Reference(1ece89c5-fda3-4db9-ace6-decbe6c603d5) "Dr. Anna Karlsson"
 * title = "Patient Summary (Maria Gravitate)"
 * confidentiality = #N
 
 * section[0].title = "Allergies and Intolerances"
 * section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[=].entry = Reference(urn:uuid:1dff4474-fa08-4f45-8260-dbb23094bf05) "Hay fever (pollen)"
-* section[=].entry[+] = Reference(urn:uuid:9d18cddb-8e58-4fbb-82ec-09cc561ac805) "Lactose Intolerance"
+* section[=].entry = Reference(1dff4474-fa08-4f45-8260-dbb23094bf05) "Hay fever (pollen)"
+* section[=].entry[+] = Reference(9d18cddb-8e58-4fbb-82ec-09cc561ac805) "Lactose Intolerance"
 
 // ======== PROBLEMS
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
-* section[=].entry[0] = Reference(urn:uuid:bcc79261-142c-48ec-b032-f3f9af49ec55) "Psoriasis"
-* section[=].entry[+] = Reference(urn:uuid:f06b7cf8-c15c-4288-a0f9-45a1026e5135) "Hypertension" // "Essential (primary) hypertension"
-* section[=].entry[+] = Reference(urn:uuid:a4a9d90a-d1b0-4d60-82f0-c52343dc6255) "Congestive heart failure"
+* section[=].entry[0] = Reference(bcc79261-142c-48ec-b032-f3f9af49ec55) "Psoriasis"
+* section[=].entry[+] = Reference(f06b7cf8-c15c-4288-a0f9-45a1026e5135) "Hypertension" // "Essential (primary) hypertension"
+* section[=].entry[+] = Reference(a4a9d90a-d1b0-4d60-82f0-c52343dc6255) "Congestive heart failure"
 
 // ======== MEDICATIONS
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
-* section[=].entry[0] = Reference(urn:uuid:29074ca4-efcb-4ff4-8446-feed2399a895) "Dimethyl fumarate 30 mg Gastro-resistant tablet"
-* section[=].entry[+] = Reference(urn:uuid:f6cb1218-f81c-4338-80d8-3c10910f78f5) "Irbesartan 75 mg Tablet"
-* section[=].entry[+] = Reference(urn:uuid:f26084c9-b1c8-46d9-acb2-1d400ade87b5) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* section[=].entry[0] = Reference(29074ca4-efcb-4ff4-8446-feed2399a895) "Dimethyl fumarate 30 mg Gastro-resistant tablet"
+* section[=].entry[+] = Reference(f6cb1218-f81c-4338-80d8-3c10910f78f5) "Irbesartan 75 mg Tablet"
+* section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade87b5) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 
 
 
@@ -122,7 +122,7 @@ Usage: #inline
 * code = $sct#256259004 "Pollen"
 * reaction.manifestation = $sct#21719001 "Allergic rhinitis caused by pollen"
 * reaction.manifestation.text = "Hay fever"
-* patient = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd5) "IPS 1"
+* patient = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd5) "IPS 1"
 
 
 Instance: 9d18cddb-8e58-4fbb-82ec-09cc561ac805
@@ -137,7 +137,7 @@ Usage: #inline
 * type = #intolerance
 * category = #food
 * code = http://snomed.info/sct#782415009 "Intolerance to lactose"
-* patient = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd6) "IPS 1"
+* patient = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd6) "IPS 1"
 * onsetAge = 1 'a' "year"
 * recordedDate = "2009-10-09"
 * reaction.substance = http://snomed.info/sct#47703008 "lactose"
@@ -155,9 +155,9 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#9014002 "Psoriasis"
 * code.text = "Psoriasis"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
 // * onsetDateTime = "2015-08-01"
-* asserter = Reference(urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d5) "Dr. Anna Karlsson"
+* asserter = Reference(1ece89c5-fda3-4db9-ace6-decbe6c603d5) "Dr. Anna Karlsson"
 
 // --- "Congestive heart failure"
 Instance: a4a9d90a-d1b0-4d60-82f0-c52343dc6255
@@ -170,9 +170,9 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#42343007 "Congestive heart failure"
 * code.text = "Congestive heart failure"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
 * onsetDateTime = "2015"
-* asserter = Reference(urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d5) "Dr. Anna Karlsson"
+* asserter = Reference(1ece89c5-fda3-4db9-ace6-decbe6c603d5) "Dr. Anna Karlsson"
 
 Instance: f06b7cf8-c15c-4288-a0f9-45a1026e5135 
 InstanceOf: Condition
@@ -180,7 +180,7 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#38341003 "HT - Hypertension"
 * code.text = "Hypertension"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
 * onsetDateTime = "1993"
 // ====== MEDICATION STATEMENTS
 Instance: 29074ca4-efcb-4ff4-8446-feed2399a895
@@ -216,8 +216,8 @@ Usage: #inline
 	</table>
 </div>"
 * status = #active
-* medicationReference = Reference(urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe365) "Dimethyl fumarate 30 mg Tablet"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
+* medicationReference = Reference(b50ae644-e0b7-4007-809f-26f493cbe365) "Dimethyl fumarate 30 mg Tablet"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 /*===
 * effectivePeriod.start = "2015-05-01"
@@ -230,8 +230,8 @@ Instance: f6cb1218-f81c-4338-80d8-3c10910f78f5
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(urn:uuid:de131e15-ed13-4b31-b38c-3204a84d99c5) "Irbesartan 75 mg Tablet"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
+* medicationReference = Reference(de131e15-ed13-4b31-b38c-3204a84d99c5) "Irbesartan 75 mg Tablet"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 /*===
 * effectivePeriod.start = "2015-05-01"
@@ -244,8 +244,8 @@ Instance: f26084c9-b1c8-46d9-acb2-1d400ade87b5
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef15) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
+* medicationReference = Reference(9ac3356c-4ea4-4814-84c3-235484f2ef15) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd6) "Maria Gravitate"
 * dosage.route = $edqm#20049000	"Nasal use"
 /*===
 * effectivePeriod.start = "2015-05-01"

@@ -30,6 +30,7 @@ dependencies:
 parameters:
   show-inherited-invariants: false
   path-liquid: "liquid"
+  produce-jekyll-data: true
 
 copyrightYear: 2021+
 releaseLabel: CI Build

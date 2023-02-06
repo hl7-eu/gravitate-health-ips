@@ -1,0 +1,171 @@
+{% if bundle.id %}
+  <b>id:</b>
+  {{ bundle.id }}{% endif %}
+<br/>
+
+{% assign compositionResource = bundle.entry | where: "resource.resourceType", "Composition" | first %}
+{% assign composition = compositionResource.resource %}
+
+{% if composition.status %}
+  <b>Composition status:</b>
+  {{ composition.status }}{% endif %}
+<br/>
+{% if composition.type %}
+  <b>Composition Type:</b>
+  {{ composition.type.coding[0].display }}{% endif %}
+<br/>
+<b>Subject:</b>
+<div class="patient block indent">
+
+  {% assign subr = bundle.entry | where: "resource.resourceType", "Patient" | first %}
+  {% assign pat = subr.resource %}
+  {% if pat.identifier %}
+    <b>identifier:</b>
+    {{ pat.identifier[0].value }}<br/>{% endif %}
+  {% if pat.name %}
+    <b>Name:</b>
+    {{ pat.name[0].given[0] }} {{ pat.name[0].family }}<br/>{% endif %}
+  {% if pat.active %}
+    <b>active:</b>
+    {{ pat.active }}<br/>{% endif %}
+  {% if pat.gender %}
+    <b>gender:</b>
+    {{ pat.gender }}<br/>{% endif %}
+  {% if pat.birthDate %}
+    <b>Birth Date:</b>
+    {{ pat.birthDate }}<br/>{% endif %}
+
+</div>
+<br/>
+<h3>Sections:</h3>
+<br/>
+
+
+{% for sec in composition.section %}
+  <h4>{{ sec.title }}</h4>
+
+  {% if sec.title == "Allergies and Intolerances" %}
+    {% assign allergies = bundle.entry | where: "resource.resourceType", "AllergyIntolerance" %}
+    <div class="allergy-container block">
+
+      {% for allergyr in allergies %}
+
+        {% assign allergy = allergyr.resource %}
+
+        <div class="allergy indent block">
+
+          {% if allergy.code %}
+            <b>Allergy:</b>
+            {{ allergy.code.coding[0].display }} ({{ allergy.code.coding[0].code }})<br/>{% endif %}
+          {% if allergy.clinicalStatus %}
+            <b>clinicalStatus:</b>
+            {{ allergy.clinicalStatus.coding[0].code }} <br/>{% endif %}
+          {% if allergy.verificationStatus %}
+            <b>verificationStatus:</b>
+            {{ allergy.verificationStatus.coding[0].code }} <br/>{% endif %}
+          {% if allergy.reaction %}
+            <b>Reaction:</b>
+            {{ allergy.reaction[0].manifestation[0].coding[0].display }} ({{ allergy.reaction[0].manifestation[0].coding[0].code }}) <br/>{% endif %}
+
+        </div>
+
+      {% endfor %}
+
+    </div>
+
+  {% endif %}
+
+
+  {% if sec.title == "Problem List" %}
+    {% assign conds = bundle.entry | where: "resource.resourceType", "Condition" %}
+    <div class="problem-list block">
+
+      {% for condr in conds %}
+
+        {% assign cond = condr.resource %}
+
+        <div class="condition indent block">
+
+          {% if cond.code %}
+            <b>Condition:</b>
+            {{ cond.code.text }} ({{ cond.code.coding[0].code }})<br/>{% endif %}
+          {% if cond.clinicalStatus %}
+            <b>clinicalStatus:</b>
+            {{ cond.clinicalStatus.coding[0].code }} <br/>{% endif %}
+          {% if cond.asserter %}
+            <b>asserter:</b>
+            {{ cond.asserter.display }} <br/>{% endif %}
+          {% if cond.onsetDateTime %}
+            <b>onsetDateTime:</b>
+            {{ cond.onsetDateTime }} <br/>
+          {% endif %}
+        </div>
+
+      {% endfor %}
+    </div>
+
+  {% endif %}
+
+  {% if sec.title == "Medication Summary" %}
+    {% assign medstats = bundle.entry | where: "resource.resourceType", "MedicationStatement" %}
+    <div class="medication-summary block">
+
+      {% for medstatr in medstats %}
+        <div class="medicationStatement indent block">
+
+          {% assign medstat = medstatr.resource %}
+
+
+          {% if medstat.medicationReference %}
+            <b>Medication:</b>
+            {{ medstat.medicationReference.display }} <br/>
+          {% endif %}
+
+          {% if medstat.status %}
+            <b>status:</b>
+            {{ medstat.status }} <br/>{% endif %}
+          {% assign med_id = medstat.medicationReference.reference | replace: 'Medication/', '' %}
+          {% assign medicationr = bundle.entry | where: "resource.id", med_id | first %}
+          {% assign medication = medicationr.resource %}
+          {% if medication %}
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              {% if medication.code %}
+                {% for medcodes in medication.code.coding %}
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      {{ medcodes.system }}
+                      <b>Code:</b>
+                      {{ medcodes.code }} [{{ medcodes.display }}]</li>
+                  </ul>
+
+                {% endfor %}
+              {% endif %}
+
+              {% if medication.form %}
+                <b>Dose Form:</b>
+                {{ medication.form.coding[0].display }} <br/>{% endif %}
+              {% for ingrs in medication.ingredient %}
+                <b>Ingredient:</b>
+                {{ ingrs.itemCodeableConcept.coding[0].display }} ({{ ingrs.itemCodeableConcept.coding[0].system }}#{{ ingrs.itemCodeableConcept.coding[0].code }}) <br/>
+                {% if ingrs.strength %}
+                  <b>strength:</b>
+                  {{ ingrs.strength.numerator.value }} {{ ingrs.strength.numerator.code }}/{{ ingrs.strength.denominator.value }} {{ ingrs.strength.denominator.unit }} <br/>
+                {% endif %}
+
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if medstat.dosage[0].route %}
+            <b>Route:</b>
+            {{ medstat.dosage[0].route.coding[0].display }}<br/>{% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+
+{% endfor %}

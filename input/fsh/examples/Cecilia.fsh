@@ -35,11 +35,11 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 * entry[=].resource = cecilia-med-stat-4
 
 
-* entry[+].fullUrl = "urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe36c" // Medication 1
+* entry[+].fullUrl = "b50ae644-e0b7-4007-809f-26f493cbe36c" // Medication 1
 * entry[=].resource = b50ae644-e0b7-4007-809f-26f493cbe36c
-* entry[+].fullUrl = "urn:uuid:de131e15-ed13-4b31-b38c-3204a84d99c4" // Medication 2
+* entry[+].fullUrl = "de131e15-ed13-4b31-b38c-3204a84d99c4" // Medication 2
 * entry[=].resource = de131e15-ed13-4b31-b38c-3204a84d99c4
-* entry[+].fullUrl = "urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef19" // Medication 3
+* entry[+].fullUrl = "9ac3356c-4ea4-4814-84c3-235484f2ef19" // Medication 3
 * entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2ef19
 
 
@@ -199,7 +199,6 @@ Instance: de131e15-ed13-4b31-b38c-3204a84d99c4
 InstanceOf: Medication
 Usage: #inline
 * code.coding[0] = $spor-man#EMEA/H/C/000142 "Karvea"
-* code.coding[+] = $phpid#0x8DFB446EDB3B8AE508AE493827A704E4 "Irbesartan, 75 mg/ 1 tablet, Tablet"
 * code.coding[+] = $atc#C09DA04 "irbesartan and diuretics"
 * form = $edqm#10219000 "Tablet"
 * ingredient.itemCodeableConcept = $unii#J0E2756Z7N "irbesartan"
