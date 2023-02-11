@@ -9,31 +9,31 @@ Description: "Example of International Patient Summary for Maria Gravitate"
 * identifier.value = "maria-ips-1"
 * type = #document
 * timestamp = "2021-09-03T08:38:00+02:00"
-* entry[0].fullUrl = "2fa5b223-ebce-4f39-9c66-5dc014f73572" // Composition
+* entry[0].fullUrl = "https://myserver.org/Composition/2fa5b223-ebce-4f39-9c66-5dc014f73572" // Composition
 * entry[=].resource = 2fa5b223-ebce-4f39-9c66-5dc014f73572
-* entry[+].fullUrl = "c154158f-6a43-4ab7-8443-e7f4bf915dd5" // Patient
+* entry[+].fullUrl = "https://myserver.org/Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd5" // Patient
 * entry[=].resource = c154158f-6a43-4ab7-8443-e7f4bf915dd5
-* entry[+].fullUrl = "1ece89c5-fda3-4db9-ace6-decbe6c603d8" // Practictioner
+* entry[+].fullUrl = "https://myserver.org/Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d8" // Practitioner
 * entry[=].resource = 1ece89c5-fda3-4db9-ace6-decbe6c603d8
-* entry[+].fullUrl = "1dff4474-fa08-4f45-8260-dbb23094bf07" // Allergy
+* entry[+].fullUrl = "https://myserver.org/AllergyIntolerance/1dff4474-fa08-4f45-8260-dbb23094bf07" // Allergy
 * entry[=].resource = 1dff4474-fa08-4f45-8260-dbb23094bf07
-* entry[+].fullUrl = "bcc79261-142c-48ec-b032-f3f9af49ec58" // Condition 1
+* entry[+].fullUrl = "https://myserver.org/Condition/bcc79261-142c-48ec-b032-f3f9af49ec58" // Condition 1
 * entry[=].resource = bcc79261-142c-48ec-b032-f3f9af49ec58
-* entry[+].fullUrl = "a4a9d90a-d1b0-4d60-82f0-c52343dc6256" // Condition 2
+* entry[+].fullUrl = "https://myserver.org/Condition/a4a9d90a-d1b0-4d60-82f0-c52343dc6256" // Condition 2
 * entry[=].resource = a4a9d90a-d1b0-4d60-82f0-c52343dc6256
-* entry[+].fullUrl = "f06b7cf8-c15c-4288-a0f9-45a1026e5130" // Condition 3
+* entry[+].fullUrl = "https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e5130" // Condition 3
 * entry[=].resource = f06b7cf8-c15c-4288-a0f9-45a1026e5130
-* entry[+].fullUrl = "29074ca4-efcb-4ff4-8446-feed2399a899" // Medication Statement 1
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/29074ca4-efcb-4ff4-8446-feed2399a899" // Medication Statement 1
 * entry[=].resource = 29074ca4-efcb-4ff4-8446-feed2399a899
-* entry[+].fullUrl = "f6cb1218-f81c-4338-80d8-3c10910f78fd" // Medication Statement 2
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/f6cb1218-f81c-4338-80d8-3c10910f78fd" // Medication Statement 2
 * entry[=].resource = f6cb1218-f81c-4338-80d8-3c10910f78fd
-* entry[+].fullUrl = "f26084c9-b1c8-46d9-acb2-1d400ade87ba" // Medication Statement 3
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade87ba" // Medication Statement 3
 * entry[=].resource = f26084c9-b1c8-46d9-acb2-1d400ade87ba
-* entry[+].fullUrl = "b50ae644-e0b7-4007-809f-26f493cbe36b" // Medication 1
+* entry[+].fullUrl = "https://myserver.org/Medication/b50ae644-e0b7-4007-809f-26f493cbe36b" // Medication 1
 * entry[=].resource = b50ae644-e0b7-4007-809f-26f493cbe36b
-* entry[+].fullUrl = "de131e15-ed13-4b31-b38c-3204a84d99c7" // Medication 2
+* entry[+].fullUrl = "https://myserver.org/Medication/de131e15-ed13-4b31-b38c-3204a84d99c7" // Medication 2
 * entry[=].resource = de131e15-ed13-4b31-b38c-3204a84d99c7
-* entry[+].fullUrl = "9ac3356c-4ea4-4814-84c3-235484f2ef10" // Medication 3
+* entry[+].fullUrl = "https://myserver.org/Medication/9ac3356c-4ea4-4814-84c3-235484f2ef10" // Medication 3
 * entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2ef10
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73572

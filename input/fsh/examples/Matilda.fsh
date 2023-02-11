@@ -35,36 +35,33 @@ effects on my physical health
 * identifier.value = "Matilda-ips-1"
 * type = #document
 * timestamp = "2021-04-18T09:22:00+02:00"
-* entry[0].fullUrl = "matilda-comp" // Composition
+* entry[0].fullUrl = "https://myserver.org/Composition/matilda-comp" // Composition
 * entry[=].resource = matilda-comp
-* entry[+].fullUrl = "matilda-patient" // Patient
+* entry[+].fullUrl = "https://myserver.org/Patient/matilda-patient" // Patient
 * entry[=].resource = matilda-patient
-* entry[+].fullUrl = "matilda-pract" // Practictioner
+* entry[+].fullUrl = "https://myserver.org/Practitioner/matilda-pract" // Practictioner
 * entry[=].resource = matilda-pract
 
-
-
-
-* entry[+].fullUrl = "matilda-cond-1" // Condition 1
+* entry[+].fullUrl = "https://myserver.org/Condition/matilda-cond-1" // Condition 1
 * entry[=].resource = matilda-cond-1
 
-* entry[+].fullUrl = "matilda-med-stat-1" // Medication Statement 1 - "Humira 40 mg"
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/matilda-med-stat-1" // Medication Statement 1 - "Humira 40 mg"
 * entry[=].resource = matilda-med-stat-1
-* entry[+].fullUrl = "matilda-med-stat-2" // Medication Statement 2 - "Paracetamol 500 mg"
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/matilda-med-stat-2" // Medication Statement 2 - "Paracetamol 500 mg"
 * entry[=].resource = matilda-med-stat-2
-* entry[+].fullUrl = "matilda-med-stat-3" // Medication Statement 2 - "Pentasa 1 g"
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/matilda-med-stat-3" // Medication Statement 2 - "Pentasa 1 g"
 * entry[=].resource = matilda-med-stat-3
 
 
-* entry[+].fullUrl = "9d7be868-8264-4d94-ad04-ef04ecc92e51" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[+].fullUrl = "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e51" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 * entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92e51
 
 
-* entry[+].fullUrl = "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et" // Medication 2 "Paracetamol 500 mg"
+* entry[+].fullUrl = "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et" // Medication 2 "Paracetamol 500 mg"
 * entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et
 
 
-* entry[+].fullUrl = "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu" // Medication 3 - "Pentasa 1 g"
+* entry[+].fullUrl = "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu" // Medication 3 - "Pentasa 1 g"
 * entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu
 
 // ======== COMPOSITION

@@ -9,33 +9,33 @@ Description: "Example of International Patient Summary for Helen Gravitate"
 * identifier.value = "helen-ips-1"
 * type = #document
 * timestamp = "2021-04-18T09:22:00+02:00"
-* entry[0].fullUrl = "5702fd1d-dd26-402e-a7c0-7629a5d9bba1" // Composition
+* entry[0].fullUrl = "https://myserver.org/Composition/5702fd1d-dd26-402e-a7c0-7629a5d9bba1" // Composition
 * entry[=].resource = 5702fd1d-dd26-402e-a7c0-7629a5d9bba1
-* entry[+].fullUrl = "be61951b-44fc-4853-8822-f9d398193c50" // Patient
+* entry[+].fullUrl = "https://myserver.org/Patient/be61951b-44fc-4853-8822-f9d398193c50" // Patient
 * entry[=].resource = be61951b-44fc-4853-8822-f9d398193c50
-* entry[+].fullUrl = "45cd0bd4-f685-4117-a9f0-5c53fffb7266" // Practictioner
+* entry[+].fullUrl = "https://myserver.org/Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266" // Practictioner
 * entry[=].resource = 45cd0bd4-f685-4117-a9f0-5c53fffb7266
-* entry[+].fullUrl = "cb6e84fa-4302-4569-ac1c-6b1b32507d16" // Allergy - Lactose
+* entry[+].fullUrl = "https://myserver.org/AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16" // Allergy - Lactose
 * entry[=].resource = cb6e84fa-4302-4569-ac1c-6b1b32507d16
 // * entry[+].fullUrl = "914a0d82-accd-4e54-bfa4-07c278522ef5" // Condition 1
 // * entry[=].resource = 914a0d82-accd-4e54-bfa4-07c278522ef5
-* entry[+].fullUrl = "de06df6b-0967-4b01-822b-7cfeea970aa7" // Condition 2
+* entry[+].fullUrl = "https://myserver.org/Condition/de06df6b-0967-4b01-822b-7cfeea970aa7" // Condition 2
 * entry[=].resource = de06df6b-0967-4b01-822b-7cfeea970aa7
 // * entry[+].fullUrl = "e77dd0c2-f0cd-46cd-abfb-7a00149eff68" // Condition 3
 // * entry[=].resource = e77dd0c2-f0cd-46cd-abfb-7a00149eff68
-* entry[+].fullUrl = "18eb9898-dea7-4c5e-b097-e507e011747b" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/18eb9898-dea7-4c5e-b097-e507e011747b" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 * entry[=].resource = 18eb9898-dea7-4c5e-b097-e507e011747b
-* entry[+].fullUrl = "c90b943a-3d8e-4f14-b56d-5c5c208b2065" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/c90b943a-3d8e-4f14-b56d-5c5c208b2065" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
 * entry[=].resource = c90b943a-3d8e-4f14-b56d-5c5c208b2065
 
-* entry[+].fullUrl = "c872135e-f219-4f32-8fd6-7099009abf42" // Medication Request 1
+* entry[+].fullUrl = "https://myserver.org/MedicationRequest/c872135e-f219-4f32-8fd6-7099009abf42" // Medication Request 1
 * entry[=].resource = c872135e-f219-4f32-8fd6-7099009abf42
 
-* entry[+].fullUrl = "9d7be868-8264-4d94-ad04-ef04ecc92e50" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[+].fullUrl = "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 * entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92e50
 
 
-* entry[+].fullUrl = "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3" // Medication 2
+* entry[+].fullUrl = "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3" // Medication 2
 * entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3
 
 
@@ -132,7 +132,7 @@ Instance: be61951b-44fc-4853-8822-f9d398193c50
 InstanceOf: Patient
 Usage: #inline
 * extension.extension.url = "code"
-* extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#GB "United Kingdom"
+* extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#GB "United Kingdom of Great Britain and Northern Ireland"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
 * text.status = #generated
 
