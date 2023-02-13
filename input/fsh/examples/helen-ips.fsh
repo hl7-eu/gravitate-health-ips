@@ -9,33 +9,33 @@ Description: "Example of International Patient Summary for Helen Gravitate"
 * identifier.value = "helen-ips-1"
 * type = #document
 * timestamp = "2021-04-18T09:22:00+02:00"
-* entry[0].fullUrl = "urn:uuid:5702fd1d-dd26-402e-a7c0-7629a5d9bba1" // Composition
+* entry[0].fullUrl = "https://myserver.org/Composition/5702fd1d-dd26-402e-a7c0-7629a5d9bba1" // Composition
 * entry[=].resource = 5702fd1d-dd26-402e-a7c0-7629a5d9bba1
-* entry[+].fullUrl = "urn:uuid:be61951b-44fc-4853-8822-f9d398193c50" // Patient
+* entry[+].fullUrl = "https://myserver.org/Patient/be61951b-44fc-4853-8822-f9d398193c50" // Patient
 * entry[=].resource = be61951b-44fc-4853-8822-f9d398193c50
-* entry[+].fullUrl = "urn:uuid:45cd0bd4-f685-4117-a9f0-5c53fffb7266" // Practictioner
+* entry[+].fullUrl = "https://myserver.org/Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266" // Practictioner
 * entry[=].resource = 45cd0bd4-f685-4117-a9f0-5c53fffb7266
-* entry[+].fullUrl = "urn:uuid:cb6e84fa-4302-4569-ac1c-6b1b32507d16" // Allergy - Lactose
+* entry[+].fullUrl = "https://myserver.org/AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16" // Allergy - Lactose
 * entry[=].resource = cb6e84fa-4302-4569-ac1c-6b1b32507d16
-// * entry[+].fullUrl = "urn:uuid:914a0d82-accd-4e54-bfa4-07c278522ef5" // Condition 1
+// * entry[+].fullUrl = "914a0d82-accd-4e54-bfa4-07c278522ef5" // Condition 1
 // * entry[=].resource = 914a0d82-accd-4e54-bfa4-07c278522ef5
-* entry[+].fullUrl = "urn:uuid:de06df6b-0967-4b01-822b-7cfeea970aa7" // Condition 2
+* entry[+].fullUrl = "https://myserver.org/Condition/de06df6b-0967-4b01-822b-7cfeea970aa7" // Condition 2
 * entry[=].resource = de06df6b-0967-4b01-822b-7cfeea970aa7
-// * entry[+].fullUrl = "urn:uuid:e77dd0c2-f0cd-46cd-abfb-7a00149eff68" // Condition 3
+// * entry[+].fullUrl = "e77dd0c2-f0cd-46cd-abfb-7a00149eff68" // Condition 3
 // * entry[=].resource = e77dd0c2-f0cd-46cd-abfb-7a00149eff68
-* entry[+].fullUrl = "urn:uuid:18eb9898-dea7-4c5e-b097-e507e011747b" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/18eb9898-dea7-4c5e-b097-e507e011747b" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 * entry[=].resource = 18eb9898-dea7-4c5e-b097-e507e011747b
-* entry[+].fullUrl = "urn:uuid:c90b943a-3d8e-4f14-b56d-5c5c208b2065" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/c90b943a-3d8e-4f14-b56d-5c5c208b2065" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
 * entry[=].resource = c90b943a-3d8e-4f14-b56d-5c5c208b2065
 
-* entry[+].fullUrl = "urn:uuid:c872135e-f219-4f32-8fd6-7099009abf42" // Medication Request 1
+* entry[+].fullUrl = "https://myserver.org/MedicationRequest/c872135e-f219-4f32-8fd6-7099009abf42" // Medication Request 1
 * entry[=].resource = c872135e-f219-4f32-8fd6-7099009abf42
 
-* entry[+].fullUrl = "urn:uuid:9d7be868-8264-4d94-ad04-ef04ecc92e50" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[+].fullUrl = "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 * entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92e50
 
 
-* entry[+].fullUrl = "urn:uuid:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3" // Medication 2
+* entry[+].fullUrl = "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3" // Medication 2
 * entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3
 
 
@@ -47,9 +47,9 @@ Title:   "[Composition] Helen Gravitate's IPS"
 * id = "gravitate-helen"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
-* subject = Reference(urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
+* subject = Reference(be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
 * date = "2018-07-10T15:22:00+02:00"
-* author = Reference(urn:uuid:45cd0bd4-f685-4117-a9f0-5c53fffb7266) "Dr. Anna Karlsson" // to be updated ?
+* author = Reference(45cd0bd4-f685-4117-a9f0-5c53fffb7266) "Dr. Anna Karlsson" // to be updated ?
 * title = "Patient Summary (Helen Gravitate)"
 * confidentiality = #N
 
@@ -61,7 +61,7 @@ Title:   "[Composition] Helen Gravitate's IPS"
 		<li>Hay fever (pollen)</li>
 	</ul>
 </div>"
-* section[=].entry = Reference(urn:uuid:cb6e84fa-4302-4569-ac1c-6b1b32507d16) "Lactose Intolerance"
+* section[=].entry = Reference(cb6e84fa-4302-4569-ac1c-6b1b32507d16) "Lactose Intolerance"
 // ======== PROBLEMS
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
@@ -74,9 +74,9 @@ Title:   "[Composition] Helen Gravitate's IPS"
 		<li>Diabetes type 1</li>
 	</ul>
 </div>"
-// * section[=].entry[0] = Reference(urn:uuid:914a0d82-accd-4e54-bfa4-07c278522ef5) "Psoriasis"
-// * section[=].entry[+] = Reference(urn:uuid:e77dd0c2-f0cd-46cd-abfb-7a00149eff68) "Hypertension" // "Essential (primary) hypertension"
-* section[=].entry[+] = Reference(urn:uuid:de06df6b-0967-4b01-822b-7cfeea970aa7) "Diabetes type 1"
+// * section[=].entry[0] = Reference(914a0d82-accd-4e54-bfa4-07c278522ef5) "Psoriasis"
+// * section[=].entry[+] = Reference(e77dd0c2-f0cd-46cd-abfb-7a00149eff68) "Hypertension" // "Essential (primary) hypertension"
+* section[=].entry[+] = Reference(de06df6b-0967-4b01-822b-7cfeea970aa7) "Diabetes type 1"
 
 // ======== MEDICATIONS
 * section[+].title = "Medication Summary"
@@ -121,9 +121,9 @@ Title:   "[Composition] Helen Gravitate's IPS"
 		</tbody>
 	</table>
 </div>"
-* section[=].entry[0] = Reference(urn:uuid:18eb9898-dea7-4c5e-b097-e507e011747b) "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-* section[=].entry[+] = Reference(urn:uuid:c90b943a-3d8e-4f14-b56d-5c5c208b2065) "Monuril 3 g granules for oral solution"
-// * section[=].entry[+] = Reference(urn:uuid:fbc29713-c2bc-4ebd-9422-8a8326d5f908) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* section[=].entry[0] = Reference(18eb9898-dea7-4c5e-b097-e507e011747b) "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* section[=].entry[+] = Reference(c90b943a-3d8e-4f14-b56d-5c5c208b2065) "Monuril 3 g granules for oral solution"
+// * section[=].entry[+] = Reference(fbc29713-c2bc-4ebd-9422-8a8326d5f908) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
 
 
 // == PATIENT ===
@@ -132,7 +132,7 @@ Instance: be61951b-44fc-4853-8822-f9d398193c50
 InstanceOf: Patient
 Usage: #inline
 * extension.extension.url = "code"
-* extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#GB "United Kingdom"
+* extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#GB "United Kingdom of Great Britain and Northern Ireland"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
 * text.status = #generated
 
@@ -173,7 +173,7 @@ Usage: #inline
 * code = $sct#47703008 "Lactose"
 // * reaction.manifestation = $sct#21719001 "Allergic rhinitis caused by pollen"
 // * reaction.manifestation.text = "Hay fever"
-* patient = Reference(urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
+* patient = Reference(be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
 // == CONDITIONS ===
 
 /*  === REMOVED FOR THE TIME BEING
@@ -184,9 +184,9 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#9014002 "Psoriasis"
 * code.text = "Psoriasis"
-* subject = Reference(urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
+* subject = Reference(be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
 // * onsetDateTime = "2015-08-01"
-* asserter = Reference(urn:uuid:45cd0bd4-f685-4117-a9f0-5c53fffb7266) "Dr. Anna Karlsson"
+* asserter = Reference(45cd0bd4-f685-4117-a9f0-5c53fffb7266) "Dr. Anna Karlsson"
 
 ==== */
 
@@ -202,9 +202,9 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#46635009 "Diabetes mellitus type 1"
 * code.text = "Diabetes type 1"
-* subject = Reference(urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
+* subject = Reference(be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
 * onsetDateTime = "2015"
-* asserter = Reference(urn:uuid:45cd0bd4-f685-4117-a9f0-5c53fffb7266) "Dr. Anna Karlsson"
+* asserter = Reference(45cd0bd4-f685-4117-a9f0-5c53fffb7266) "Dr. Anna Karlsson"
 
 /*==== removed for the time being 
 Instance: e77dd0c2-f0cd-46cd-abfb-7a00149eff68
@@ -213,7 +213,7 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#38341003 "HT - Hypertension"
 * code.text = "Hypertension"
-* subject = Reference(urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
+* subject = Reference(be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
 * onsetDateTime = "1993"
 === */
 
@@ -251,8 +251,8 @@ Usage: #inline
 	</table>
 </div>"
 * status = #active
-* medicationReference = Reference(urn:uuid:9d7be868-8264-4d94-ad04-ef04ecc92e50) "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-* subject = Reference(urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
+* medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e50) "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* subject = Reference(be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
 * dosage.route = $edqm#20066000 "Subcutaneous use"
 /*===
 * effectivePeriod.start = "2015-05-01"
@@ -297,8 +297,8 @@ Usage: #inline
 	</table>
 </div>"
 * status = #active
-* medicationReference = Reference(urn:uuid:fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3) "Monuril 3g granules for oral solution"
-* subject = Reference(urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
+* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3) "Monuril 3g granules for oral solution"
+* subject = Reference(be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 * basedOn = Reference(c872135e-f219-4f32-8fd6-7099009abf42)
 /*===
@@ -314,8 +314,8 @@ Instance: fbc29713-c2bc-4ebd-9422-8a8326d5f908
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(urn:uuid:6f4151e9-91f6-4f1e-adc3-fb94dda7785f) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
-* subject = Reference(urn:uuid:be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785f) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* subject = Reference(be61951b-44fc-4853-8822-f9d398193c50) "Helen Gravitate"
 * dosage.route = $edqm#20049000	"Nasal use"
 /*===
 * effectivePeriod.start = "2015-05-01"

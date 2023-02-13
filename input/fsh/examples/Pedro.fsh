@@ -40,63 +40,63 @@ Physical exercise (gym)
 * identifier.value = "Pedro-ips-1"
 * type = #document
 * timestamp = "2021-04-18T09:22:00+02:00"
-* entry[0].fullUrl = "5702fd1d-dd26-402e-a7c0-7629a5d9bba1" // Composition
+* entry[0].fullUrl = "https://myserver.org/Composition/5702fd1d-dd26-402e-a7c0-7629a5d9bba1" // Composition
 * entry[=].resource = pedro-comp
-* entry[+].fullUrl = "pedro-patient" // Patient
+* entry[+].fullUrl = "https://myserver.org/Patient/pedro-patient" // Patient
 * entry[=].resource = pedro-patient
-* entry[+].fullUrl = "pedro-pract" // Practictioner
+* entry[+].fullUrl = "https://myserver.org/Practitioner/pedro-pract" // Practitioner
 * entry[=].resource = pedro-pract
 
 
-* entry[+].fullUrl = "pedro-cond-1" // Condition 2
+* entry[+].fullUrl = "https://myserver.org/Condition/pedro-cond-1" // Condition 2
 * entry[=].resource = pedro-cond-1
 
-* entry[+].fullUrl = "pedro-cond-2" // Condition 2
+* entry[+].fullUrl = "https://myserver.org/Condition/pedro-cond-2" // Condition 2
 * entry[=].resource = pedro-cond-2
 
-* entry[+].fullUrl = "pedro-cond-3" // Condition 3
+* entry[+].fullUrl = "https://myserver.org/Condition/pedro-cond-3" // Condition 3
 * entry[=].resource = pedro-cond-3
 
 
-* entry[+].fullUrl = "pedro-med-stat-1" // Medication Statement 1 - "
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/pedro-med-stat-1" // Medication Statement 1 - "
 * entry[=].resource = pedro-med-stat-1
-* entry[+].fullUrl = "pedro-med-stat-2" // Medication Statement 2 -
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/pedro-med-stat-2" // Medication Statement 2 -
 * entry[=].resource = pedro-med-stat-2
 
-* entry[+].fullUrl = "pedro-med-stat-3" // Medication Statement 2 -
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/pedro-med-stat-3" // Medication Statement 2 -
 * entry[=].resource = pedro-med-stat-3
 
-* entry[+].fullUrl = "pedro-med-stat-4" // Medication Statement 2 -
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/pedro-med-stat-4" // Medication Statement 2 -
 * entry[=].resource = pedro-med-stat-4
 
-* entry[+].fullUrl = "pedro-med-stat-5" // Medication Statement 2 -
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/pedro-med-stat-5" // Medication Statement 2 -
 * entry[=].resource = pedro-med-stat-5
 
-* entry[+].fullUrl = "pedro-med-stat-6" // Medication Statement 2 -
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/pedro-med-stat-6" // Medication Statement 2 -
 * entry[=].resource = pedro-med-stat-6
 
-* entry[+].fullUrl = "pedro-med-stat-7" // Medication Statement 2 -
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/pedro-med-stat-7" // Medication Statement 2 -
 * entry[=].resource = pedro-med-stat-7
 
-* entry[+].fullUrl = "9d7be868-8264-4d94-ad04-ef04ecc92e52" // Medication 1 - 
+* entry[+].fullUrl = "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52" // Medication 1 - 
 * entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92e52
 
-* entry[+].fullUrl = "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4" // Medication 2
+* entry[+].fullUrl = "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4" // Medication 2
 * entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4
 
-* entry[+].fullUrl = "6f4151e9-91f6-4f1e-adc3-fb94dda7785g" // Medication 3
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g" // Medication 3
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda7785g
 
-* entry[+].fullUrl = "6f4151e9-91f6-4f1e-adc3-fb94dda77854" // Medication 4
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854" // Medication 4
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda77854
 
-* entry[+].fullUrl = "6f4151e9-91f6-4f1e-adc3-fb94dda77855" // Medication 5
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855" // Medication 5
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda77855
 
-* entry[+].fullUrl = "6f4151e9-91f6-4f1e-adc3-fb94dda77856" // Medication 6
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856" // Medication 6
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda77856
 
-* entry[+].fullUrl = "6f4151e9-91f6-4f1e-adc3-fb94dda77857" // Medication 7
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857" // Medication 7
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda77857
 
 // ====================================================== COMPOSITION ======================================================
@@ -345,7 +345,7 @@ Usage: #inline
 
 * ingredient[+].itemCodeableConcept = $unii#1C6V77QF41 "cholecalciferol"
 * ingredient[=].itemCodeableConcept.text = "cholecalciferol"
-* ingredient[=].strength.numerator = 880 'UI'
+* ingredient[=].strength.numerator = 880 '{UI}'
 * ingredient[=].strength.denominator.value = 1
 * ingredient[=].strength.denominator.code = #15054000
 * ingredient[=].strength.denominator.system = $edqm

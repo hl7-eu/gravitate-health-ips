@@ -12,39 +12,39 @@ Description: "Example of International Patient Summary for Gravitate"
 * identifier.value = "ips-3"
 * type = #document
 * timestamp = "2021-09-03T08:38:00+02:00"
-* entry[0].fullUrl = "urn:uuid:2fa5b223-ebce-4f39-9c66-5dc014f73571" // Composition
+* entry[0].fullUrl = "https://myserver.org/Composition/2fa5b223-ebce-4f39-9c66-5dc014f73571" // Composition
 * entry[=].resource = 2fa5b223-ebce-4f39-9c66-5dc014f73571
-* entry[+].fullUrl = "urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd1" // Patient
+* entry[+].fullUrl = "https://myserver.org/Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1" // Patient
 * entry[=].resource = c154158f-6a43-4ab7-8443-e7f4bf915dd1
-* entry[+].fullUrl = "urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d1" // Practictioner
+* entry[+].fullUrl = "https://myserver.org/Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d1" // Practictioner
 * entry[=].resource = 1ece89c5-fda3-4db9-ace6-decbe6c603d1
-* entry[+].fullUrl = "urn:uuid:1dff4474-fa08-4f45-8260-dbb23094bf01" // Allergy
+* entry[+].fullUrl = "https://myserver.org/AllergyIntolerance/1dff4474-fa08-4f45-8260-dbb23094bf01" // Allergy
 * entry[=].resource = 1dff4474-fa08-4f45-8260-dbb23094bf01
 
-* entry[+].fullUrl = "urn:uuid:bcc79261-142c-48ec-b032-f3f9af49ec51" // Condition 1
+* entry[+].fullUrl = "https://myserver.org/Condition/bcc79261-142c-48ec-b032-f3f9af49ec51" // Condition 1
 * entry[=].resource = bcc79261-142c-48ec-b032-f3f9af49ec51
-* entry[+].fullUrl = "urn:uuid:a4a9d90a-d1b0-4d60-82f0-c52343dc6251" // Condition 2
+* entry[+].fullUrl = "https://myserver.org/Condition/a4a9d90a-d1b0-4d60-82f0-c52343dc6251" // Condition 2
 * entry[=].resource = a4a9d90a-d1b0-4d60-82f0-c52343dc6251
-* entry[+].fullUrl = "urn:uuid:f06b7cf8-c15c-4288-a0f9-45a1026e5131" // Condition 3
+* entry[+].fullUrl = "https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e5131" // Condition 3
 * entry[=].resource = f06b7cf8-c15c-4288-a0f9-45a1026e5131
 
-* entry[+].fullUrl = "urn:uuid:29074ca4-efcb-4ff4-8446-feed2399a891" // Medication Statement 1
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/29074ca4-efcb-4ff4-8446-feed2399a891" // Medication Statement 1
 * entry[=].resource = 29074ca4-efcb-4ff4-8446-feed2399a891
-* entry[+].fullUrl = "urn:uuid:f6cb1218-f81c-4338-80d8-3c10910f78f1" // Medication Statement 2
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/f6cb1218-f81c-4338-80d8-3c10910f78f1" // Medication Statement 2
 * entry[=].resource = f6cb1218-f81c-4338-80d8-3c10910f78f1
-* entry[+].fullUrl = "urn:uuid:f26084c9-b1c8-46d9-acb2-1d400ade87b1" // Medication Statement 3
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade87b1" // Medication Statement 3
 * entry[=].resource = f26084c9-b1c8-46d9-acb2-1d400ade87b1
 
-* entry[+].fullUrl = "urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe361" // Medication 1
+* entry[+].fullUrl = "https://myserver.org/Medication/b50ae644-e0b7-4007-809f-26f493cbe361" // Medication 1
 * entry[=].resource = b50ae644-e0b7-4007-809f-26f493cbe361
-* entry[+].fullUrl = "urn:uuid:de131e15-ed13-4b31-b38c-3204a84d99c1" // Medication 2
+* entry[+].fullUrl = "https://myserver.org/Medication/de131e15-ed13-4b31-b38c-3204a84d99c1" // Medication 2
 * entry[=].resource = de131e15-ed13-4b31-b38c-3204a84d99c1
-* entry[+].fullUrl = "urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef11" // Medication 3
+* entry[+].fullUrl = "https://myserver.org/Medication/9ac3356c-4ea4-4814-84c3-235484f2ef11" // Medication 3
 * entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2ef11
-* entry[+].fullUrl = "urn:uuid:5d129355-4b20-40d8-841f-7f93acbc3e61" // Medication 4
+* entry[+].fullUrl = "https://myserver.org/Medication/5d129355-4b20-40d8-841f-7f93acbc3e61" // Medication 4
 * entry[=].resource = 5d129355-4b20-40d8-841f-7f93acbc3e61
 
-* entry[+].fullUrl = "urn:uuid:e06e43a1-38d4-468f-8c35-f7f12da91061" // Pregnancy 
+* entry[+].fullUrl = "https://myserver.org/Observation/e06e43a1-38d4-468f-8c35-f7f12da91061" // Pregnancy 
 * entry[=].resource = e06e43a1-38d4-468f-8c35-f7f12da91061
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73571
@@ -55,33 +55,33 @@ Usage: #inline
 * id = "ips-example-3"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Example 1 Gravitate"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Example 1 Gravitate"
 * date = "2018-07-10T15:22:00+02:00"
-* author = Reference(urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d1) "Dr. Anna Karlsson"
+* author = Reference(1ece89c5-fda3-4db9-ace6-decbe6c603d1) "Dr. Anna Karlsson"
 * title = "Patient Summary (Maria Gravitate)"
 * confidentiality = #N
 * section[0].title = "Allergies and Intolerances"
 * section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[=].entry = Reference(urn:uuid:1dff4474-fa08-4f45-8260-dbb23094bf01) "Hay fever (pollen)"
+* section[=].entry = Reference(1dff4474-fa08-4f45-8260-dbb23094bf01) "Hay fever (pollen)"
 // ======== PROBLEMS
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
-* section[=].entry[0] = Reference(urn:uuid:bcc79261-142c-48ec-b032-f3f9af49ec51) "Psoriasis"
-* section[=].entry[+] = Reference(urn:uuid:f06b7cf8-c15c-4288-a0f9-45a1026e5131) "Hypertension" // "Essential (primary) hypertension"
-* section[=].entry[+] = Reference(urn:uuid:a4a9d90a-d1b0-4d60-82f0-c52343dc6251) "Congestive heart failure"
+* section[=].entry[0] = Reference(bcc79261-142c-48ec-b032-f3f9af49ec51) "Psoriasis"
+* section[=].entry[+] = Reference(f06b7cf8-c15c-4288-a0f9-45a1026e5131) "Hypertension" // "Essential (primary) hypertension"
+* section[=].entry[+] = Reference(a4a9d90a-d1b0-4d60-82f0-c52343dc6251) "Congestive heart failure"
 // ======== MEDICATIONS
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
-* section[=].entry[0] = Reference(urn:uuid:29074ca4-efcb-4ff4-8446-feed2399a891) "Dimethyl fumarate 30 mg Gastro-resistant tablet"
-* section[=].entry[+] = Reference(urn:uuid:f6cb1218-f81c-4338-80d8-3c10910f78f1) "Irbesartan 75 mg Tablet"
-* section[=].entry[+] = Reference(urn:uuid:f26084c9-b1c8-46d9-acb2-1d400ade87b1) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
-* section[=].entry[+] = Reference(urn:uuid:5d129355-4b20-40d8-841f-7f93acbc3e61) "valproic acid"
+* section[=].entry[0] = Reference(29074ca4-efcb-4ff4-8446-feed2399a891) "Dimethyl fumarate 30 mg Gastro-resistant tablet"
+* section[=].entry[+] = Reference(f6cb1218-f81c-4338-80d8-3c10910f78f1) "Irbesartan 75 mg Tablet"
+* section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade87b1) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* section[=].entry[+] = Reference(5d129355-4b20-40d8-841f-7f93acbc3e61) "valproic acid"
 
 
 // ======== pregnancy
 * section[+].title = "Pregnancy History"
 * section[=].code = $loinc#10162-6 "Pregnancies Hx"
-* section[=].entry[0] = Reference(urn:uuid:e06e43a1-38d4-468f-8c35-f7f12da91061) "Pregrancy Status"
+* section[=].entry[0] = Reference(e06e43a1-38d4-468f-8c35-f7f12da91061) "Pregrancy Status"
 
 // == PATIENT ===
 Instance: c154158f-6a43-4ab7-8443-e7f4bf915dd1
@@ -97,6 +97,9 @@ Usage: #inline
 * name.given = "IPS 3 example"
 * gender = #female
 * birthDate = "1978-05-05"
+
+
+
 // == Practitioner ===
 Instance: 1ece89c5-fda3-4db9-ace6-decbe6c603d1
 InstanceOf: Practitioner
@@ -126,7 +129,7 @@ Usage: #inline
 * code = $sct#256259004 "Pollen"
 * reaction.manifestation = $sct#21719001 "Allergic rhinitis caused by pollen"
 * reaction.manifestation.text = "Hay fever"
-* patient = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
+* patient = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
 
 
 Instance: 9d18cddb-8e58-4fbb-82ec-09cc561ac801
@@ -141,7 +144,7 @@ Usage: #inline
 * type = #intolerance
 * category = #food
 * code = http://snomed.info/sct#782415009 "Intolerance to lactose"
-* patient = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
+* patient = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
 * onsetAge = 1 'a' "year"
 * recordedDate = "2009-10-09"
 * reaction.substance = http://snomed.info/sct#47703008 "lactose"
@@ -159,9 +162,9 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#9014002 "Psoriasis"
 * code.text = "Psoriasis"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
 // * onsetDateTime = "2015-08-01"
-* asserter = Reference(urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d1) "Dr. Anna Karlsson"
+* asserter = Reference(1ece89c5-fda3-4db9-ace6-decbe6c603d1) "Dr. Anna Karlsson"
 
 
 
@@ -177,9 +180,9 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#42343007 "Congestive heart failure"
 * code.text = "Congestive heart failure"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
 * onsetDateTime = "2015"
-* asserter = Reference(urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d1) "Dr. Anna Karlsson"
+* asserter = Reference(1ece89c5-fda3-4db9-ace6-decbe6c603d1) "Dr. Anna Karlsson"
 // ------- "Hypertension"
 Instance: f06b7cf8-c15c-4288-a0f9-45a1026e5131
 InstanceOf: Condition
@@ -187,7 +190,7 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#38341003 "HT - Hypertension"
 * code.text = "Hypertension"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
 * onsetDateTime = "1993"
 // ====== MEDICATION STATEMENTS
 Instance: 29074ca4-efcb-4ff4-8446-feed2399a891
@@ -223,8 +226,8 @@ Usage: #inline
 	</table>
 </div>"
 * status = #active
-* medicationReference = Reference(urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe361) "Dimethyl fumarate 30 mg Tablet"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
+* medicationReference = Reference(b50ae644-e0b7-4007-809f-26f493cbe361) "Dimethyl fumarate 30 mg Tablet"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 /*===
 * effectivePeriod.start = "2015-05-01"
@@ -237,8 +240,8 @@ Instance: f6cb1218-f81c-4338-80d8-3c10910f78f1
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(urn:uuid:de131e15-ed13-4b31-b38c-3204a84d99c1) "Irbesartan 75 mg Tablet"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
+* medicationReference = Reference(de131e15-ed13-4b31-b38c-3204a84d99c1) "Irbesartan 75 mg Tablet"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 /*===
 * effectivePeriod.start = "2015-05-01"
@@ -251,8 +254,8 @@ Instance: f26084c9-b1c8-46d9-acb2-1d400ade87b1
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef11) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
-* subject = Reference(urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
+* medicationReference = Reference(9ac3356c-4ea4-4814-84c3-235484f2ef11) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd1) "Maria Gravitate"
 * dosage.route = $edqm#20049000	"Nasal use"
 /*===
 * effectivePeriod.start = "2015-05-01"

@@ -9,37 +9,37 @@ Description: "Example of International Patient Summary for Cecilia Gravitate"
 * identifier.value = "Cecilia-ips-1"
 * type = #document
 * timestamp = "2021-09-03T08:38:00+02:00"
-* entry[0].fullUrl = "cecilia-comp" // Composition
+* entry[0].fullUrl = "https://myserver.org/Composition/cecilia-comp" // Composition
 * entry[=].resource = cecilia-comp
-* entry[+].fullUrl = "cecilia-patient" // Patient
+* entry[+].fullUrl = "https://myserver.org/Patient/cecilia-patient" // Patient
 * entry[=].resource = cecilia-patient
-* entry[+].fullUrl = "cecilia-pract" // Practictioner
+* entry[+].fullUrl = "https://myserver.org/Practitioner/cecilia-pract" // Practictioner
 * entry[=].resource = cecilia-pract
 
-* entry[+].fullUrl = "cecilia-cond-1" // Condition 1
+* entry[+].fullUrl = "https://myserver.org/Condition/cecilia-cond-1" // Condition 1
 * entry[=].resource = cecilia-cond-1
-* entry[+].fullUrl = "cecilia-cond-2" // Condition 2
+* entry[+].fullUrl = "https://myserver.org/Condition/cecilia-cond-2" // Condition 2
 * entry[=].resource = cecilia-cond-2
-* entry[+].fullUrl = "cecilia-cond-3" // Condition 3
+* entry[+].fullUrl = "https://myserver.org/Condition/cecilia-cond-3" // Condition 3
 * entry[=].resource = cecilia-cond-3
-* entry[+].fullUrl = "cecilia-cond-4" // Condition 3
+* entry[+].fullUrl = "https://myserver.org/Condition/cecilia-cond-4" // Condition 3
 * entry[=].resource = cecilia-cond-4
 
-* entry[+].fullUrl = "cecilia-med-stat-1" // Medication Statement 1
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/cecilia-med-stat-1" // Medication Statement 1
 * entry[=].resource = cecilia-med-stat-1
-* entry[+].fullUrl = "cecilia-med-stat-2" // Medication Statement 2
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/cecilia-med-stat-2" // Medication Statement 2
 * entry[=].resource = cecilia-med-stat-2
-* entry[+].fullUrl = "cecilia-med-stat-3" // Medication Statement 3
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/cecilia-med-stat-3" // Medication Statement 3
 * entry[=].resource = cecilia-med-stat-3
-* entry[+].fullUrl = "cecilia-med-stat-4" // Medication Statement 4
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/cecilia-med-stat-4" // Medication Statement 4
 * entry[=].resource = cecilia-med-stat-4
 
 
-* entry[+].fullUrl = "urn:uuid:b50ae644-e0b7-4007-809f-26f493cbe36c" // Medication 1
+* entry[+].fullUrl = "https://myserver.org/Medication/b50ae644-e0b7-4007-809f-26f493cbe36c" // Medication 1
 * entry[=].resource = b50ae644-e0b7-4007-809f-26f493cbe36c
-* entry[+].fullUrl = "urn:uuid:de131e15-ed13-4b31-b38c-3204a84d99c4" // Medication 2
+* entry[+].fullUrl = "https://myserver.org/Medication/de131e15-ed13-4b31-b38c-3204a84d99c4" // Medication 2
 * entry[=].resource = de131e15-ed13-4b31-b38c-3204a84d99c4
-* entry[+].fullUrl = "urn:uuid:9ac3356c-4ea4-4814-84c3-235484f2ef19" // Medication 3
+* entry[+].fullUrl = "https://myserver.org/Medication/9ac3356c-4ea4-4814-84c3-235484f2ef19" // Medication 3
 * entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2ef19
 
 
@@ -110,7 +110,7 @@ InstanceOf: Condition
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
-* code = $sct#42343007 "Chronic obstructive lung disease"
+* code = $sct#13645005 "Chronic obstructive lung disease"
 * code.text = "COPD - Chronic obstructive pulmonary disease"
 * subject = Reference(cecilia-patient) "Cecilia Gravitate"
 // * onsetDateTime = "2015-08-01"
@@ -199,7 +199,6 @@ Instance: de131e15-ed13-4b31-b38c-3204a84d99c4
 InstanceOf: Medication
 Usage: #inline
 * code.coding[0] = $spor-man#EMEA/H/C/000142 "Karvea"
-* code.coding[+] = $phpid#0x8DFB446EDB3B8AE508AE493827A704E4 "Irbesartan, 75 mg/ 1 tablet, Tablet"
 * code.coding[+] = $atc#C09DA04 "irbesartan and diuretics"
 * form = $edqm#10219000 "Tablet"
 * ingredient.itemCodeableConcept = $unii#J0E2756Z7N "irbesartan"
