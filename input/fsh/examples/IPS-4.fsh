@@ -12,8 +12,8 @@ Description: "Example of International Patient Summary for Gravitate"
 * identifier.value = "ips-4"
 * type = #document
 * timestamp = "2021-09-03T08:38:00+02:00"
-* entry[0].fullUrl = "urn:uuid:2fa5b223-ebce-4f39-9c66-5dc014f73572" // Composition
-* entry[=].resource = 2fa5b223-ebce-4f39-9c66-5dc014f73572
+* entry[0].fullUrl = "urn:uuid:2fa5b223-ebce-4f39-9c66-5dc014f73579" // Composition
+* entry[=].resource = 2fa5b223-ebce-4f39-9c66-5dc014f73579
 * entry[+].fullUrl = "urn:uuid:c154158f-6a43-4ab7-8443-e7f4bf915dd2" // Patient
 * entry[=].resource = c154158f-6a43-4ab7-8443-e7f4bf915dd2
 * entry[+].fullUrl = "urn:uuid:1ece89c5-fda3-4db9-ace6-decbe6c603d2" // Practictioner
@@ -47,7 +47,7 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[+].fullUrl = "urn:uuid:e06e43a1-38d4-468f-8c35-f7f12da91062" // Pregnancy 
 * entry[=].resource = e06e43a1-38d4-468f-8c35-f7f12da91062
 // ======== COMPOSITION
-Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73571
+Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73579
 InstanceOf: Composition
 Title:   "IPS Example 4 Composition"
 Usage: #inline
