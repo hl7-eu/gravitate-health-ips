@@ -48,6 +48,22 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[+].fullUrl = "https://myserver.org/Observation/e06e43a1-38d4-468f-8c35-f7f12da91062" // Pregnancy (Observation)
 * entry[=].resource = e06e43a1-38d4-468f-8c35-f7f12da91062
 
+* entry[+].fullUrl = "https://myserver.org/Observation/bw" // BW (Observation)
+* entry[=].resource = bw
+
+
+* entry[+].fullUrl = "https://myserver.org/Observation/bh" // PregBHnancy (Observation)
+* entry[=].resource = bh
+
+
+* entry[+].fullUrl = "https://myserver.org/Observation/bp" // BP (Observation)
+* entry[=].resource = bp
+
+* entry[+].fullUrl = "https://myserver.org/Observation/glucose" // Glucose (Observation)
+* entry[=].resource = glucose
+
+
+
 
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73579
@@ -83,11 +99,25 @@ Usage: #inline
 * section[=].entry[+] = Reference(f6cb1218-f81c-4338-80d8-3c10910f78f2) "Irbesartan 75 mg Tablet"
 * section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade87b2) "Pentasa Slow Release Tablets 1g"
 
+// ======== Vital Signs
+* section[+].title = "Vital Signs"
+* section[=].code = $loinc#8716-3 "Vital Signs"
+* section[=].entry[+] = Reference(bw) "Body weight"
+* section[=].entry[+] = Reference(bh) "Body height"
+* section[=].entry[+] = Reference(bp) "Blood pressure"
+
+
+// ======== Results
+* section[+].title = "Results"
+* section[=].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
+* section[=].entry[+] = Reference(glucose) "glucose"
+
 
 // ======== pregnancy
 * section[+].title = "Pregnancy History"
 * section[=].code = $loinc#10162-6 "Pregnancies Hx"
 * section[=].entry[0] = Reference(e06e43a1-38d4-468f-8c35-f7f12da91062) "Pregrancy Status"
+
 
 // == PATIENT ===
 Instance: c154158f-6a43-4ab7-8443-e7f4bf915dd2
@@ -144,7 +174,7 @@ Usage: #inline
 * reaction.substance = http://snomed.info/sct#47703008 "lactose"
 * reaction.manifestation[0] = http://snomed.info/sct#21522001 "Abdominal pain"
 * reaction.manifestation[+] = http://snomed.info/sct#116289008 "Abdominal bloating"
-* reaction.manifestation[+] = http://snomed.info/sct#62315008 "Diarrhoea"
+* reaction.manifestation[+] = http://snomed.info/sct#62315008 "Diarrhea"
 
 
 
@@ -283,3 +313,74 @@ Usage: #inline
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
 * effectiveDateTime = "2020-01-10"
 * valueCodeableConcept = http://loinc.org#LA15173-0 "Pregnant"
+
+
+// ======== Vital Signs =====
+Instance: bw
+InstanceOf: Observation
+Usage: #inline
+
+* status = #final
+
+* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+
+* code =  http://loinc.org#29463-7 "Body weight"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
+
+* effectiveDateTime = "2009-10-09"
+
+* valueQuantity = 70 'kg'
+
+Instance: bh
+InstanceOf: Observation
+Usage: #inline
+
+* status = #final
+
+* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+
+* code =  http://loinc.org#8302-2 "Body height"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
+
+* effectiveDateTime = "2009-10-09"
+
+* valueQuantity = 170 'cm'
+
+Instance: bp
+InstanceOf: Observation
+Usage: #inline
+
+* status = #final
+
+* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+
+* code =  http://loinc.org#85354-9 "Blood pressure panel with all children optional"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
+
+* effectiveDateTime = "2009-10-09"
+
+* component.code = http://loinc.org#8462-4 "Diastolic blood pressure"
+* component.valueQuantity = 80 'mm[Hg]'
+
+* component.code = http://loinc.org#8480-6 "Systolic blood pressure"
+* component.valueQuantity = 120 'mm[Hg]'
+
+
+// ======== Laboratory =====
+Instance: glucose
+InstanceOf: Observation
+Usage: #inline
+
+* status = #final
+
+* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+
+* code =  http://loinc.org#15074-8 "Glucose [Moles/volume] in Blood"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
+
+* effectiveDateTime = "2013-04-02T09:30:10+01:00"
+
+* valueQuantity = 6.3 'mmol/L' "mmol/l"
+* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "High"
+* referenceRange.low = 3.1 'mmol/L' "mmol/l"
+* referenceRange.high = 6.2 'mmol/L' "mmol/l"
