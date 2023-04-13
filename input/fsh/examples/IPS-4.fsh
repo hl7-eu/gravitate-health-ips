@@ -1,6 +1,3 @@
-//Person C has a pregnancy and has been prescribed Diplexil (Valproate) which is contraindicated due to harm to fetus
-
-
 Instance: gravitate-ips-4
 InstanceOf: Bundle
 Title:   "IPS Example 4"
@@ -16,7 +13,7 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[=].resource = 2fa5b223-ebce-4f39-9c66-5dc014f73579
 * entry[+].fullUrl = "https://myserver.org/Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2" // Patient
 * entry[=].resource = c154158f-6a43-4ab7-8443-e7f4bf915dd2
-* entry[+].fullUrl = "https://myserver.org/Practictioner/1ece89c5-fda3-4db9-ace6-decbe6c603d2" // Practictioner
+* entry[+].fullUrl = "https://myserver.org/Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d2" // Practictioner
 * entry[=].resource = 1ece89c5-fda3-4db9-ace6-decbe6c603d2
 * entry[+].fullUrl = "https://myserver.org/AllergyIntolerance/1dff4474-fa08-4f45-8260-dbb23094bf02" // Allergy
 * entry[=].resource = 1dff4474-fa08-4f45-8260-dbb23094bf02
