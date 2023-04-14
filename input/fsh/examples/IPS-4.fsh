@@ -356,11 +356,11 @@ Usage: #inline
 
 * effectiveDateTime = "2009-10-09"
 
-* component.code = http://loinc.org#8462-4 "Diastolic blood pressure"
-* component.valueQuantity = 80 'mm[Hg]'
+* component[+].code = http://loinc.org#8462-4 "Diastolic blood pressure"
+* component[=].valueQuantity = 80 'mm[Hg]'
 
-* component.code = http://loinc.org#8480-6 "Systolic blood pressure"
-* component.valueQuantity = 120 'mm[Hg]'
+* component[+].code = http://loinc.org#8480-6 "Systolic blood pressure"
+* component[=].valueQuantity = 120 'mm[Hg]'
 
 
 // ======== Laboratory =====
