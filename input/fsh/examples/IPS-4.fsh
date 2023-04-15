@@ -245,7 +245,7 @@ Usage: #inline
 Instance: b50ae644-e0b7-4007-809f-26f493cbe362
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#59.032 "Medicinal Product BLASTON 1 mg tablets"
+* code.coding[0] = $spor-man#59.032 "BLASTON 1 mg tablets"
 * code.coding[+] = $phpid#0x9982CA8A825D4561506CE808982E3B9E "Cinitapride 1 mg/ 1 tablet, Gastro-resistant tablet"
 * form = $edqm#10225000 "Gastro-resistant tablet"
 * ingredient.itemCodeableConcept = $unii#R8I97I2L24 "dimethyl fumarate"
@@ -263,7 +263,7 @@ Usage: #inline
 Instance: de131e15-ed13-4b31-b38c-3204a84d99c2
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#EMEA/H/C/000142 "Karvea"
+* code.coding[0] = $spor-man#EMEA/H/C/000142 "Karvea 75 mg/ 1 tablet, Tablet"
 * code.coding[+] = $phpid#0x8DFB446EDB3B8AE508AE493827A704E4 "Irbesartan, 75 mg/ 1 tablet, Tablet"
 * code.coding[+] = $atc#C09DA04 "irbesartan and diuretics"
 * form = $edqm#10219000 "Tablet"
