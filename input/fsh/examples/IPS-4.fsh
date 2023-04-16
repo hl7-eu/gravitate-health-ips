@@ -71,7 +71,7 @@ Usage: #inline
 * id = "ips-example-4"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
-* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "Example 1 Gravitate"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "Example 4 Gravitate"
 * date = "2018-07-10T15:22:00+02:00"
 * author = Reference(1ece89c5-fda3-4db9-ace6-decbe6c603d2) "Dr. Anna Karlsson"
 * title = "Patient Summary (IPS Example 4 Gravitate)"
@@ -92,7 +92,7 @@ Usage: #inline
 // ======== MEDICATIONS
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
-* section[=].entry[0] = Reference(29074ca4-efcb-4ff4-8446-feed2399a892) "BLASTON 1 mg tablets"
+* section[=].entry[0] = Reference(29074ca4-efcb-4ff4-8446-feed2399a892) "Remsima 100 mg powder for concentrate for solution for infusion"
 * section[=].entry[+] = Reference(f6cb1218-f81c-4338-80d8-3c10910f78f2) "Irbesartan 75 mg Tablet"
 * section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade87b2) "Pentasa Slow Release Tablets 1g"
 
@@ -217,16 +217,16 @@ Instance: 29074ca4-efcb-4ff4-8446-feed2399a892
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(b50ae644-e0b7-4007-809f-26f493cbe362) "BLASTON 1 mg tablets"
+* medicationReference = Reference(b50ae644-e0b7-4007-809f-26f493cbe362) "Remsima 100 mg powder for concentrate for solution for infusion"
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
-* dosage.route = $edqm#20053000 "Oral use"
+* dosage.route = $edqm#20045000 "Intravenous use"
 
 
 Instance: f6cb1218-f81c-4338-80d8-3c10910f78f2
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(de131e15-ed13-4b31-b38c-3204a84d99c2) "Irbesartan 75 mg Tablet"
+* medicationReference = Reference(de131e15-ed13-4b31-b38c-3204a84d99c2) "Karvea 75 mg Tablet"
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -235,9 +235,9 @@ Instance: f26084c9-b1c8-46d9-acb2-1d400ade87b2
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(9ac3356c-4ea4-4814-84c3-235484f2ef12) "Pentasa Slow Release Tablets 1g"
+* medicationReference = Reference(9ac3356c-4ea4-4814-84c3-235484f2ef12) "Humalog 100 U/ml 5 pre-filled pen"
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
-* dosage.route = $edqm#20053000 "Oral use"
+* dosage.route = $edqm#20066000 "Subcutaneous use"
 
 
 
@@ -245,19 +245,19 @@ Usage: #inline
 Instance: b50ae644-e0b7-4007-809f-26f493cbe362
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#59.032 "BLASTON 1 mg tablets"
-* code.coding[+] = $phpid#0x9982CA8A825D4561506CE808982E3B9E "Cinitapride 1 mg/ 1 tablet, Gastro-resistant tablet"
-* form = $edqm#10225000 "Gastro-resistant tablet"
-* ingredient.itemCodeableConcept = $unii#R8I97I2L24 "dimethyl fumarate"
-* ingredient.itemCodeableConcept.text = "dimethyl fumarate"
-* ingredient.strength.numerator.value = 1
+* code.coding[0] = $spor-man#EU/1/13/853/001 "Remsima 100 mg powder for concentrate for solution for infusion"
+* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82718 "Infliximab 100 mg powder for concentrate for solution for infusion"
+* form = $edqm#50049250 "Powder for concentrate for solution for injection/infusion"
+* ingredient.itemCodeableConcept = $unii#B72HH48FLU "INFLIXIMAB"
+* ingredient.itemCodeableConcept.text = "INFLIXIMAB"
+* ingredient.strength.numerator.value = 100
 * ingredient.strength.numerator.unit = "mg"
 * ingredient.strength.numerator.system = $ucum
 * ingredient.strength.numerator.code = #mg
 * ingredient.strength.denominator.value = 1
-* ingredient.strength.denominator.unit = "Tablet"
+* ingredient.strength.denominator.unit = "Vial"
 * ingredient.strength.denominator.system = $ucum
-* ingredient.strength.denominator.code = #{tablet}
+* ingredient.strength.denominator.code = #{vial}
 
 
 Instance: de131e15-ed13-4b31-b38c-3204a84d99c2
@@ -282,16 +282,16 @@ Usage: #inline
 Instance: 9ac3356c-4ea4-4814-84c3-235484f2ef12
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $fake-man-sys#EU/1/97/049/001 "Pentasa Slow Release Tablets 1g"
-* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82717 "mesalazine Slow Release Tablets 1g"
-* form = $edqm#10808000 "Nasal spray, solution"
-* form.text = "Nasal spray, solution"
-* ingredient.itemCodeableConcept = $unii#4Q81I59GXC "mesalazine"
-* ingredient.itemCodeableConcept.text = "mesalazine"
-* ingredient.strength.numerator.value = 1
-* ingredient.strength.numerator.unit = "g"
+* code.coding[0] = $spor-man#EU/1/97/049/001 "Humalog 100 U/ml 5 pre-filled pen"
+* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82717 "Insulin Lispro 100 U/ml 5 pre-filled pen"
+* form = $edqm#11202000 "Suspension for injection"
+* form.text = "Suspension for injection"
+* ingredient.itemCodeableConcept = $unii#GFX7QIS1II "Insulin Lispro"
+* ingredient.itemCodeableConcept.text = "Insulin Lispro"
+* ingredient.strength.numerator.value = 100
+* ingredient.strength.numerator.unit = "U"
 * ingredient.strength.numerator.system = $ucum
-* ingredient.strength.numerator.code = #g
+* ingredient.strength.numerator.code = #U
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.unit = "ml"
 * ingredient.strength.denominator.system = $ucum
