@@ -282,7 +282,7 @@ Usage: #inline
 Instance: 9ac3356c-4ea4-4814-84c3-235484f2ef12
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#EU/1/96/007/035 "Humalog 100 U/ml 5 pre-filled pen"
+* code.coding[0] = $spor-man#EU/1/96/007/035 "Humalog Mix50 KwikPen 100 U/ml 5 pre-filled pen"
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82717 "Insulin Lispro 100 U/ml 5 pre-filled pen"
 * form = $edqm#11202000 "Suspension for injection"
 * form.text = "Suspension for injection"
