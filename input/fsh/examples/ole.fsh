@@ -220,6 +220,7 @@ InstanceOf: Composition
 Usage: #inline
 * id = "8bfd271e-0f35-4650-8a1c-9f1391caafb2"
 * status = #final
+* type = #final
 * subject = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
 * date = "2023-04-24T10:16:22+00:00"
 * author[0] = Reference(b469dcd5-3746-35d5-868f-09c7ebf1f460)
