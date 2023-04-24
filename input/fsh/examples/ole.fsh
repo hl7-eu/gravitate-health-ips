@@ -18,7 +18,7 @@ Usage: #example
 * meta.lastUpdated = "2023-04-24T10:16:22.325+00:00"
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "5ab49a42-aa43-48f7-bef3-9696dff3a57e"
-* type = #document
+* type = $loinc#60591-5 "Patient summary Document"
 * timestamp = "2023-04-24T10:16:22.325+00:00"
 * entry[0].fullUrl = "8bfd271e-0f35-4650-8a1c-9f1391caafb2"
 * entry[=].resource = Inline-Instance-for-undefined-1
