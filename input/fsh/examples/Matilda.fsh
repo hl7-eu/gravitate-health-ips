@@ -146,7 +146,7 @@ InstanceOf: MedicationStatement
 Usage: #inline
 
 * status = #active
-* medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e51) "Humira 40 mg"
+* medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e51) "Humira 20 mg"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
 * dosage.route = $edqm#20066000 "Subcutaneous use"
 
@@ -154,7 +154,7 @@ Instance: matilda-med-stat-2
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et) "PARACETAMOL 500 MG"
+* medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et) "PARACETAMOL 1000 MG"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -173,15 +173,15 @@ Instance: 9d7be868-8264-4d94-ad04-ef04ecc92e51
 InstanceOf: Medication
 Usage: #inline
 
-* code.coding[0] = $spor-man#EU/1/96/007/035 "Humira 40 mg"
-//* code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "Humira 40 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
+* code.coding[0] = $spor-man#EU/1/96/007/035 "Humira 20 mg"
+* code.coding[+] = $phpid#0xe72f98caa2b13cb3ccb489a1a7945c91 "Humira 20 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
 // UK dm+d "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens"
 //* code.coding[+] = http://snomed.info/sct#388454007 "Product containing insulin lispro (medicinal product)"
 * code.coding[+] = $atc#L04AB04 "adalimumab"
 * form = $edqm#11201000 "Solution for injection"
 * ingredient.itemCodeableConcept = $unii#FYS6T7F842 "adalimumab"
 * ingredient.itemCodeableConcept.text = "adalimumab"
-* ingredient.strength.numerator = 40 'mg'
+* ingredient.strength.numerator = 20 'mg'
 * ingredient.strength.denominator = 1 'ml'
 
 
@@ -191,7 +191,7 @@ Usage: #inline
 
 
 * code.coding[0] = $spor-man#PL31654/0006 "DOLOCATIL 1 g tablets"
-//* code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "Fosfomycin, 3g, Granules for oral solution"
+* code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "Paracetamol 1g tablets"
 * code.coding[+] = $atc#N02BE01 "paracetamol"
 * form = $edqm#10220000 "Coated tablet"
 * ingredient.itemCodeableConcept = $unii#362O9ITL9D "ACETAMINOPHEN"
@@ -207,8 +207,8 @@ Usage: #inline
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $fake-man-sys#16028/0049 "Pentasa Slow Release Tablets 1g"
-//* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
+* code.coding[0] = $fake-man-sys#77022 "Pentasa Slow Release Tablets 1g"
+* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E827xx "Mesalazine, 1g, Tablets"
 * code.coding[+] = $atc#A07EC02 "mesalazine"
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
