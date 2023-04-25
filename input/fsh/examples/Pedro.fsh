@@ -313,13 +313,13 @@ Usage: #inline
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#PL31654/0006 "MIRTAZAPINA CINFA 15 mg Coated Tablet" //TODO
-//* code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "" //TODO
+* code.coding[0] = $spor-man#PL31654/0006 "MIRTAZAPINA CINFA 30 mg Coated Tablet" //TODO
+* code.coding[+] = $phpid#0x6c47381b040e5b588db23b2272f28eec "mirtazapine 30 mg, tablets" 
 * code.coding[+] = $atc#N06AX11 "mirtazapine"
 * form = $edqm#10220000 "Coated tablet"
 * ingredient.itemCodeableConcept = $unii#A051Q2099Q "Mirtazapine"
 * ingredient.itemCodeableConcept.text = "Mirtazapine"
-* ingredient.strength.numerator = 15 'g'
+* ingredient.strength.numerator = 30 'g'
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
@@ -331,7 +331,7 @@ Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785g
 InstanceOf: Medication
 Usage: #inline
 * code.coding[0] = $fake-man-sys#16028/0049 "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" //TODO
-//* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium carbonate 500 mg" //TODO
+* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium carbonate 500 mg" //TODO
 //* code.coding[+] = $atc#A12AA04 "calcium carbonate"
 * form = $edqm#10222000 "Effervescent tablet"
 * form.text = "Effervescent tablet"
@@ -356,7 +356,7 @@ Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77854
 InstanceOf: Medication
 Usage: #inline
 * code.coding[0] = $fake-man-sys#xxxxxx "BLASTON 1 mg tablets" //TODO
-//* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution" //TODO
+* code.coding[+] = $phpid#0xbb82cd10ab2add752b2b9224931077b2 "cinitrapide 1 mg tablet" //TODO
 * code.coding[+] = $atc#A03FA08 "Cinitapride"
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
