@@ -18,8 +18,8 @@ Usage: #example
 * meta.lastUpdated = "2023-04-24T10:16:22.325+00:00"
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "5ab49a42-aa43-48f7-bef3-9696dff3a57e"
-* type = $loinc#60591-5 "Patient summary Document"
 * timestamp = "2023-04-24T10:16:22.325+00:00"
+* type = #document
 * entry[0].fullUrl = "8bfd271e-0f35-4650-8a1c-9f1391caafb2"
 * entry[=].resource = Inline-Instance-for-undefined-1
 * entry[+].fullUrl = "06520e16-88df-3e2c-8a39-2d57f59375aa"
@@ -220,7 +220,7 @@ InstanceOf: Composition
 Usage: #inline
 * id = "8bfd271e-0f35-4650-8a1c-9f1391caafb2"
 * status = #final
-* type = #final
+* type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
 * date = "2023-04-24T10:16:22+00:00"
 * author[0] = Reference(b469dcd5-3746-35d5-868f-09c7ebf1f460)
