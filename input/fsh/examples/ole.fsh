@@ -12,9 +12,12 @@ Alias: $drugid = https://www.ssi.dk/drugid
 Alias: $VaccineIdentifierType = http://vaccinationsregister.dk/schemas/2013/12/01/VaccineIdentifierType
 Alias: $DkCoreProfessionGroupCodes = http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes
 
-Instance: undefined
+Instance: gravitate-ole
 InstanceOf: Bundle
+Title:   "Ole Gravitate's IPS"
 Usage: #example
+Description: "Example of International Patient Summary for Ole Gravitate"
+
 * meta.lastUpdated = "2023-04-24T10:16:22.325+00:00"
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "5ab49a42-aa43-48f7-bef3-9696dff3a57e"
