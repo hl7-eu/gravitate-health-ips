@@ -316,7 +316,7 @@ Usage: #inline
 
 * ingredient[+].itemCodeableConcept = $unii#G70B4ETF4S "emtricitabine"
 * ingredient[=].itemCodeableConcept.text = "emtricitabine"
-* ingredient[=].strength.numerator = 30 'mg'
+* ingredient[=].strength.numerator = 120 'mg'
 
 * ingredient[=].strength.denominator.value = 1
 * ingredient[=].strength.denominator.code = #15054000
@@ -325,7 +325,7 @@ Usage: #inline
 
 * ingredient[+].itemCodeableConcept = $unii#EL9943AG5J "tenofovir alafenamida"
 * ingredient[=].itemCodeableConcept.text = "tenofovir alafenamida"
-* ingredient[=].strength.numerator = 30 'mg'
+* ingredient[=].strength.numerator = 15 'mg'
 
 * ingredient[=].strength.denominator.value = 1
 * ingredient[=].strength.denominator.code = #15054000
