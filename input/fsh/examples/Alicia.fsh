@@ -1,6 +1,6 @@
 Instance: gravitate-Alicia
 InstanceOf: Bundle
-Title:   "alicia Gravitate's IPS"
+Title:   "Alicia Gravitate's IPS"
 Usage: #example
 Description: "Example of International Patient Summary for Alicia Gravitate"
 /*
@@ -118,7 +118,7 @@ Description: "Example of International Patient Summary for Alicia Gravitate"
 * type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(alicia-patient) "Alicia Gravitate"
 * date = "2018-07-10T15:22:00+02:00"
-* author = Reference(alicia-pract) "Dr. John Smith"
+* author = Reference(alicia-pract) "Dr. Walter Waltz"
 * title = "Patient Summary (Alicia Gravitate)"
 * confidentiality = #N
 
@@ -169,7 +169,7 @@ Overweight
 * identifier[=].value = "alicia-1"
 * active = true
 * name.family = "Gravitate"
-* name.given = "alicia"
+* name.given = "Alicia"
 * gender = #female
 * birthDate = "1998-10-05" 
 
@@ -225,9 +225,9 @@ InstanceOf: Condition
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
-* code = $sct#238131007 " Overweight (finding)"
-* code.text = " Overweight (finding)"
-* subject = Reference(alicia-patient) "alicia Gravitate"
+* code = $sct#238131007 "Overweight (finding)"
+* code.text = "Overweight (finding)"
+* subject = Reference(alicia-patient) "Alicia Gravitate"
 * onsetDateTime = "2018"
 * asserter = Reference(alicia-pract) "Dr. Walter Waltz"
 
@@ -237,7 +237,7 @@ InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
 * medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92i99) "BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD"
-* subject = Reference(alicia-patient) "alicia Gravitate"
+* subject = Reference(alicia-patient) "Alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
 
@@ -246,7 +246,7 @@ InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
 * medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1) "Folic Acid + Cyanocobalamin + Iodur 1 t QD"
-* subject = Reference(alicia-patient) "alicia Gravitate"
+* subject = Reference(alicia-patient) "Alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
 
@@ -255,7 +255,7 @@ InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda7785h) "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
-* subject = Reference(alicia-patient) "alicia Gravitate"
+* subject = Reference(alicia-patient) "Alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
 Instance: alicia-med-stat-4
@@ -272,7 +272,7 @@ InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77335) "Orlistat 1 cp TID"
-* subject = Reference(alicia-patient) "alicia Gravitate"
+* subject = Reference(alicia-patient) "Alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
 
@@ -281,7 +281,7 @@ InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda79261) "St. John’s Wort 2 cp BID"
-* subject = Reference(alicia-patient) "alicia Gravitate"
+* subject = Reference(alicia-patient) "Alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
 
@@ -289,7 +289,7 @@ Instance: alicia-med-stat-7
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77853) "Collagen and magnesium supplements"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77855) "Collagen and magnesium supplements"
 * subject = Reference(alicia-patient) "alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -422,7 +422,8 @@ Usage: #inline
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
-* ingredient.strength.denominator.unit = " suspension for injection in pre-filled syringe"
+* ingredient.strength.denominator.unit = "suspension for injection in pre-filled syringe"
+
 
 
 
