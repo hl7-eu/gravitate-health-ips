@@ -103,7 +103,14 @@ Once a year: Internal Medicine specialist + analytic and Neurologist.
 * entry[+].fullUrl = "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 * entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92i99
 
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[=].resource =  6f4151e9-91f6-4f1e-adc3-fb94dda78356
 
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[=].resource =   6f4151e9-91f6-4f1e-adc3-fb94dda78333
+
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77853" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[=].resource =  6f4151e9-91f6-4f1e-adc3-fb94dda77853
 
 // ====================================================== COMPOSITION ======================================================
 Instance: alicia-comp
@@ -262,7 +269,7 @@ Instance: alicia-med-stat-4
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77222) "Carbamazepine  1 t TID"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda78356) "Carbamazepine  1 t TID"
 * subject = Reference(alicia-patient) "alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -271,7 +278,7 @@ Instance: alicia-med-stat-5
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77335) "Orlistat 1 cp TID"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda78333) "Orlistat 1 cp TID"
 * subject = Reference(alicia-patient) "Alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -289,7 +296,7 @@ Instance: alicia-med-stat-7
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77855) "Collagen and magnesium supplements"
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77853) "Collagen and magnesium supplements"
 * subject = Reference(alicia-patient) "alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -415,7 +422,7 @@ Usage: #inline
 * code.coding[+] = $phpid#0xbb82cd10ab2add752b2b9224931000k2 "Flucelvax" //not real PhPID
 * code.coding[+] = $atc#A03ku92 "Flucelvax" // ATC NOT FOUND
 * form = $edqm#10219999 "suspension for injection in pre-filled syringe" //not real EDQM code
-* form.text = " suspension for injection in pre-filled syringe"
+* form.text = "suspension for injection in pre-filled syringe"
 * ingredient.itemCodeableConcept = $unii#TU2UN5CG9C "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"
 * ingredient.itemCodeableConcept.text = "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"
 * ingredient.strength.numerator = 15 'mcg'
@@ -423,6 +430,39 @@ Usage: #inline
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
 * ingredient.strength.denominator.unit = "suspension for injection in pre-filled syringe"
+
+//"CarbamaZepine 200 mg tablets"
+Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda78356
+InstanceOf: Medication
+Usage: #inline
+* code.coding[0] = $spor-man#xxxx "Carbamazepine 200 mg tablets" 
+* code.coding[+] = $phpid#xxx "Carbamazepine 2oo mg tablets" //not real PhPID
+* form = $edqm#10219000 "Tablet"
+* form.text = "Tablet"
+* ingredient.itemCodeableConcept = $unii#33CM23913M "CARBAMAZEPINE"
+* ingredient.itemCodeableConcept.text = "CARBAMAZEPINE"
+* ingredient.strength.numerator = 200 'mg'
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.code = #15054000
+* ingredient.strength.denominator.system = $edqm
+* ingredient.strength.denominator.unit = "Tablet"
+
+
+//"Orlistat"
+Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda78333
+InstanceOf: Medication
+Usage: #inline
+* code.coding[0] = $spor-man#xx "Orlistat 60 mg capsule" 
+* code.coding[+] = $phpid#xx "Orlistat 60 mg capsule" //not real PhPID
+* form = $edqm#10210000 "Capsule, hard" 
+* form.text = "Capsule, hard"
+* ingredient.itemCodeableConcept = $unii#95M8R751W8 "ORLISTAT"
+* ingredient.itemCodeableConcept.text = "ORLISTAT"
+* ingredient.strength.numerator = 60 'mg'
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.code = #15054000
+* ingredient.strength.denominator.system = $edqm
+* ingredient.strength.denominator.unit = "Tablet"
 
 
 
