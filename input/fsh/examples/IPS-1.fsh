@@ -1,7 +1,7 @@
 //with Karvea and lactose intollerance
 
 Instance: gravitate-ips-1
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title:   "IPS Example 1"
 Usage: #example
 Description: "Example of International Patient Summary for Gravitate"

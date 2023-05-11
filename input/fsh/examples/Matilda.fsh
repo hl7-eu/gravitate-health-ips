@@ -1,5 +1,5 @@
 Instance: gravitate-Matilda
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title:   "Matilda Gravitate's IPS"
 Usage: #example
 Description: "Example of International Patient Summary for Matilda Gravitate"

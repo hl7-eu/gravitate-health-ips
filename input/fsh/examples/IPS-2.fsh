@@ -1,7 +1,7 @@
 //Person B has been prescribed Humalog and Furosemide which are contraindicated since sulfonamides can cause hypoglycaemia
 
 Instance: gravitate-ips-2
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title:   "IPS Example 2"
 Usage: #example
 Description: "Example of International Patient Summary for Gravitate"

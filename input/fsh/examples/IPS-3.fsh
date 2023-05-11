@@ -2,7 +2,7 @@
 
 
 Instance: gravitate-ips-3
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title:   "IPS Example 3"
 Usage: #example
 Description: "Example of International Patient Summary for Gravitate"

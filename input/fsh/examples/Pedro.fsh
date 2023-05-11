@@ -1,5 +1,5 @@
 Instance: gravitate-Pedro
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title:   "Pedro Gravitate's IPS"
 Usage: #example
 Description: "Example of International Patient Summary for Pedro Gravitate"
@@ -184,17 +184,18 @@ Usage: #inline
 
 // --- Depression
 Instance: pedro-cond-1
-InstanceOf: Condition
+InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
 * code = $sct#35489007 "Depressive disorder (disorder)"
 * code.text = "Depressive disorder (disorder)"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
+* verificationStatus = #confirmed
 
 // --- HIV
 Instance: pedro-cond-2
-InstanceOf: Condition
+InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
@@ -203,17 +204,18 @@ Usage: #inline
 * subject = Reference(pedro-patient) "Pedro Gravitate"
 * onsetDateTime = "2018"
 * asserter = Reference(pedro-pract) "Dr. Xavier García"
+* verificationStatus = #confirmed
 
 // --- IBS
 Instance: pedro-cond-3
-InstanceOf: Condition
+InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
 * code = $sct#10743008 "Irritable bowel syndrome"
 * code.text = "Irritable bowel syndrome"
 * subject = Reference(pedro-patient) "Pedro Gravitate"
-
+* verificationStatus = #confirmed
 
 // ====================================================== MEDICATION STATEMENTS ======================================================
 Instance: pedro-med-stat-1

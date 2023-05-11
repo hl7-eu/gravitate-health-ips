@@ -1,5 +1,5 @@
 Instance: gravitate-Alicia
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title:   "Alicia Gravitate's IPS"
 Usage: #example
 Description: "Example of International Patient Summary for Alicia Gravitate"
@@ -114,7 +114,7 @@ Once a year: Internal Medicine specialist + analytic and Neurologist.
 
 // ====================================================== COMPOSITION ======================================================
 Instance: alicia-comp
-InstanceOf: Composition
+InstanceOf: Composition-uv-ips
 Title:   "Alicia Gravitate's IPS Composition"
 Usage: #inline
 Description: "Example of International Patient Summary for Alicia Gravitate"
@@ -131,6 +131,9 @@ Description: "Example of International Patient Summary for Alicia Gravitate"
 
 // ====================================================== PROBLEMS
 * section[+].title = "Problem List"
+* section[=].text.status = #additional
+
+* section[=].text.div = "<div>Problem list Reported</div>"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
 * section[=].entry[0] = Reference(alicia-cond-1) "Depression"
 * section[=].entry[+] = Reference(alicia-cond-2) "HIV" 
@@ -140,6 +143,10 @@ Description: "Example of International Patient Summary for Alicia Gravitate"
 // ====================================================== MEDICATIONS
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
+
+* section[=].text.div = "<div>Medication list Reported</div>"
+* section[=].text.status = #additional
+
 * section[=].entry[0] = Reference(alicia-med-stat-1) "BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD"
 * section[=].entry[+] = Reference(alicia-med-stat-2) "Folic Acid + Cyanocobalamin + Iodur 1 t QD"
 * section[=].entry[+] = Reference(alicia-med-stat-3) "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
@@ -194,7 +201,7 @@ Usage: #inline
 
 // --- Depression
 Instance: alicia-cond-1
-InstanceOf: Condition
+InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
@@ -204,7 +211,7 @@ Usage: #inline
 
 // --- HIV
 Instance: alicia-cond-2
-InstanceOf: Condition
+InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
@@ -216,7 +223,7 @@ Usage: #inline
 
 // --- Trigeminal neuralgia
 Instance: alicia-cond-3
-InstanceOf: Condition
+InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
@@ -228,7 +235,7 @@ Usage: #inline
 
 // --- Overweight
 Instance: alicia-cond-4
-InstanceOf: Condition
+InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active

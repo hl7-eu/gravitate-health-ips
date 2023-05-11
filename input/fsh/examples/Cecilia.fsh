@@ -1,5 +1,5 @@
 Instance: gravitate-Cecilia
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title:   "Cecilia Gravitate's IPS"
 Usage: #example
 Description: "Example of International Patient Summary for Cecilia Gravitate"

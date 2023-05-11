@@ -13,7 +13,7 @@ Alias: $VaccineIdentifierType = http://vaccinationsregister.dk/schemas/2013/12/0
 Alias: $DkCoreProfessionGroupCodes = http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes
 
 Instance: gravitate-ole
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title:   "Ole Gravitate's IPS"
 Usage: #example
 Description: "Example of International Patient Summary for Ole Gravitate"
