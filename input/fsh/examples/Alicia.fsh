@@ -85,32 +85,30 @@ Once a year: Internal Medicine specialist + analytic and Neurologist.
 
 
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367" 
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda78367
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-* entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda79261
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261"
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h" 
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda7785h
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-* entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda78367
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367" 
 
-* entry[+].fullUrl = "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-* entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1
+//* entry[+].fullUrl = "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1" 
+//* entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1
 
-* entry[+].fullUrl = "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[+].fullUrl = "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99" 
 * entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92i99
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356" 
 * entry[=].resource =  6f4151e9-91f6-4f1e-adc3-fb94dda78356
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333" 
 * entry[=].resource =   6f4151e9-91f6-4f1e-adc3-fb94dda78333
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77853" // Medication 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-* entry[=].resource =  6f4151e9-91f6-4f1e-adc3-fb94dda77853
+//* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77853" 
+//* entry[=].resource =  6f4151e9-91f6-4f1e-adc3-fb94dda77853
 
 // ====================================================== COMPOSITION ======================================================
 Instance: alicia-comp
@@ -347,7 +345,7 @@ Usage: #inline
 * ingredient[=].strength.denominator.unit = "Tablet"
 
 // "Folic Acid + Cyanocobalamin + Iodur 1 t QD"
-Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1
+/*Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1
 InstanceOf: Medication
 Usage: #inline
 * code.coding[0] = $spor-man#PL31654/0092 "Folic Acid + Cyanocobalamin + Iodur 1 t QD"
@@ -361,7 +359,7 @@ Usage: #inline
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
 * ingredient.strength.denominator.unit = "Tablet"
-
+*/ //missing epI
 
 // "Calcium carbonate 1000 mg + Vitamin D3 880 UI"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785h
@@ -407,6 +405,7 @@ Usage: #inline
 
 
 //"Collagen and magnesium supplements"
+/*
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77853
 InstanceOf: Medication
 Usage: #inline
@@ -420,6 +419,7 @@ Usage: #inline
 * ingredient[=].itemCodeableConcept.text = "HYALURONIC ACID"
 * ingredient[+].itemCodeableConcept = $unii#PT3TGI7OIP "HUMAN TYPE I COLLAGEN"
 * ingredient[=].itemCodeableConcept.text = "HUMAN TYPE I COLLAGEN"
+*/ //missing epI
 
 //"Flucelvax"
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda78367
@@ -442,7 +442,7 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda78356
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#xxxx "Carbamazepine 200 mg tablets" 
+* code.coding[0] = $spor-man#39.955 "Carbamazepine 200 mg tablets" 
 * code.coding[+] = $phpid#xxx "Carbamazepine 200 mg tablets" //not real PhPID
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
