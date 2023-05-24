@@ -70,8 +70,8 @@ Once a year: Internal Medicine specialist + analytic and Neurologist.
 
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-1" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
 * entry[=].resource = alicia-med-stat-1
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-2" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = alicia-med-stat-2
+//* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-2" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+//* entry[=].resource = alicia-med-stat-2
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-3" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
 * entry[=].resource = alicia-med-stat-3
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-4" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
@@ -80,8 +80,8 @@ Once a year: Internal Medicine specialist + analytic and Neurologist.
 * entry[=].resource = alicia-med-stat-5
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-6" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
 * entry[=].resource = alicia-med-stat-6
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-7" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = alicia-med-stat-7
+//* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-7" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+//* entry[=].resource = alicia-med-stat-7
 
 
 
@@ -94,6 +94,7 @@ Once a year: Internal Medicine specialist + analytic and Neurologist.
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda7785h
 
 * entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367" 
+* entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda78367
 
 //* entry[+].fullUrl = "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1" 
 //* entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1
@@ -146,12 +147,12 @@ Description: "Example of International Patient Summary for Alicia Gravitate"
 * section[=].text.status = #additional
 
 * section[=].entry[0] = Reference(alicia-med-stat-1) "BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD"
-* section[=].entry[+] = Reference(alicia-med-stat-2) "Folic Acid + Cyanocobalamin + Iodur 1 t QD"
+//* section[=].entry[+] = Reference(alicia-med-stat-2) "Folic Acid + Cyanocobalamin + Iodur 1 t QD"
 * section[=].entry[+] = Reference(alicia-med-stat-3) "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
 * section[=].entry[+] = Reference(alicia-med-stat-4) "Carbamazepine  1 t TID"
 * section[=].entry[+] = Reference(alicia-med-stat-5) "Orlistat 1 cp TID"
 * section[=].entry[+] = Reference(alicia-med-stat-6) "St. John’s Wort 2 cp BID"
-* section[=].entry[+] = Reference(alicia-med-stat-7) "Collagen and magnesium supplements"
+//* section[=].entry[+] = Reference(alicia-med-stat-7) "Collagen and magnesium supplements"
 
 // ====================================================== PATIENT ======================================================
 Instance: alicia-patient
