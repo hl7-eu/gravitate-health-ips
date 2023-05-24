@@ -367,7 +367,7 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785h
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $fake-man-sys#16028/0049 "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" 
+* code.coding[0] = $spor-man#68290 "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" 
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium carbonate 500 mg" //not real PhPID
 //* code.coding[+] = $atc#A12AA04 "calcium carbonate"
 * form = $edqm#10222000 "Effervescent tablet"
@@ -392,7 +392,7 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda79261
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $fake-man-sys#xxxxxx "St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras 200 mg tablet" 
+* code.coding[0] = $spor-man#123456 "St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras 200 mg tablet" 
 * code.coding[+] = $phpid#0xbb82cd10ab2add752b2b9224931099j1 "St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras 200 mg tablet" //not real PhPID
 * code.coding[+] = $atc#A03FA02 "HYPERICUM PERFORATUM WHOLE" // ATC NOT FOUND
 * form = $edqm#10219000 "Tablet"
@@ -410,7 +410,7 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77853
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $fake-man-sys#yyy "AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR" 
+* code.coding[0] = $spor-man#yyy "AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR" 
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * form = $edqm#10201000 "Oral powder"
 * form.text = "Oral powder"
@@ -443,7 +443,7 @@ Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda78356
 InstanceOf: Medication
 Usage: #inline
 * code.coding[0] = $spor-man#xxxx "Carbamazepine 200 mg tablets" 
-* code.coding[+] = $phpid#xxx "Carbamazepine 2oo mg tablets" //not real PhPID
+* code.coding[+] = $phpid#xxx "Carbamazepine 200 mg tablets" //not real PhPID
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
 * ingredient.itemCodeableConcept = $unii#33CM23913M "CARBAMAZEPINE"
@@ -459,8 +459,8 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda78333
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#xx "Orlistat 60 mg capsule" 
-* code.coding[+] = $phpid#xx "Orlistat 60 mg capsule" //not real PhPID
+* code.coding[0] = $spor-man#EU/1/13/853/001 "Orlistat 60 mg capsule" 
+* code.coding[+] = $phpid#xxx "Orlistat 60 mg capsule" //not real PhPID
 * form = $edqm#10210000 "Capsule, hard" 
 * form.text = "Capsule, hard"
 * ingredient.itemCodeableConcept = $unii#95M8R751W8 "ORLISTAT"
