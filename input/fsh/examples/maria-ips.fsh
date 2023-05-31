@@ -280,7 +280,7 @@ Usage: #inline
 Instance: b50ae644-e0b7-4007-809f-26f493cbe36b
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#EU/1/17/1201/001 "Skilarence"
+* code.coding[0] = $spor-man#EU/1/17/1201/002 "Skilarence 120 mg gastro-resistant tablets"
 * code.coding[+] = $phpid#0x9982CA8A825D4561506CE808982E3B9D "dimethyl fumarate, 30 mg/ 1 tablet, Gastro-resistant tablet"
 * code.coding[+] = $atc#L04AX07 "dimethyl fumarate"
 * form = $edqm#10225000 "Gastro-resistant tablet"
