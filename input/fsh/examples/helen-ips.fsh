@@ -332,9 +332,8 @@ InstanceOf: Medication
 Usage: #inline
 
 
-* code.coding[0] = $spor-man#EU/1/96/007/035 "Humalog Mix50"
-* code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "insulin lispro, 100 units/ml, suspension for injection"
-// UK dm+d "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens"
+* code.coding[0] = $spor-man#EU/1/96/007/035 "Humalog Mix50 KwikPen 100 U/ml 5 pre-filled pen"
+* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82717 "Insulin Lispro 100 U/ml 5 pre-filled pen"
 * code.coding[+] = http://snomed.info/sct#388454007 "Product containing insulin lispro (medicinal product)"
 * code.coding[+] = $atc#A10AD04 "insulin lispro"
 * form = $edqm#11202000 "Suspension for injection"
@@ -360,8 +359,8 @@ Usage: #inline
 
 
 // code system to be changed ...
-* code.coding[0] = $spor-man#PL31654/0006 "Monuril"
-* code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "Fosfomycin, 3g, Granules for oral solution"
+* code.coding[0] = $spor-man#PL31654/0087 "Monuril"
+* code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1RF "Fosfomycin, 3g, Granules for oral solution"
 * code.coding[+] = $atc#J01XX01 "fosfomycin"
 * form = $edqm#10112000 "Granules for oral solution"
 
@@ -381,8 +380,8 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785f
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $fake-man-sys#16028/0049 "Boots Decongestant 0.05% w/v Nasal spray"
-* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
+* code.coding[0] = $spor-man#16028/0046 "Boots Decongestant 0.05% w/v Nasal spray"
+* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82717 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#R01AA05 "oxymetazoline"
 // * form = $edqm#10808000 "Nasal spray, solution"
 * form.text = "Nasal spray, solution"

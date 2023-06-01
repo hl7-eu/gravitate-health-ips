@@ -366,8 +366,8 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785h
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#68290 "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" 
-* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium carbonate 500 mg" //not real PhPID
+* code.coding[0] = https://cima.aemps.es/ids#68290 "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" 
+* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium Vitamin D" //not real PhPID
 //* code.coding[+] = $atc#A12AA04 "calcium carbonate"
 * form = $edqm#10222000 "Effervescent tablet"
 * form.text = "Effervescent tablet"
@@ -460,7 +460,7 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda78333
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#EU/1/13/853/001 "Orlistat 60 mg capsule" 
+* code.coding[0] = $spor-man#EU/1/98/071/004 "Orlistat 60 mg capsule" 
 * code.coding[+] = $phpid#xxx "Orlistat 60 mg capsule" //not real PhPID
 * form = $edqm#10210000 "Capsule, hard" 
 * form.text = "Capsule, hard"

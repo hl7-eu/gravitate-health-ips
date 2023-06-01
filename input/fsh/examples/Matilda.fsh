@@ -146,7 +146,7 @@ InstanceOf: MedicationStatement
 Usage: #inline
 
 * status = #active
-* medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e51) "Humira 20 mg"
+* medicationReference = Reference(9d7be868-8264-4d94-ad04-ef04ecc92e51) "Humira 40 mg"
 * subject = Reference(matilda-patient) "Matilda Gravitate"
 * dosage.route = $edqm#20066000 "Subcutaneous use"
 
@@ -172,16 +172,15 @@ Usage: #inline
 Instance: 9d7be868-8264-4d94-ad04-ef04ecc92e51
 InstanceOf: Medication
 Usage: #inline
-
-* code.coding[0] = $spor-man#EU/1/96/007/035 "Humira 20 mg"
-* code.coding[+] = $phpid#0xe72f98caa2b13cb3ccb489a1a7945c91 "Humira 20 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
+* code.coding[0] = $spor-man#EU/1/03/256/022 "Humira 40 mg"
+* code.coding[+] = $phpid#0xe72f98caa2b13cb3ccb489a1a7945c91 "Humira 40 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
 // UK dm+d "Humalog Mix50 KwikPen 100units/ml suspension for injection 3ml pre-filled pens"
 //* code.coding[+] = http://snomed.info/sct#388454007 "Product containing insulin lispro (medicinal product)"
 * code.coding[+] = $atc#L04AB04 "adalimumab"
 * form = $edqm#11201000 "Solution for injection"
 * ingredient.itemCodeableConcept = $unii#FYS6T7F842 "adalimumab"
 * ingredient.itemCodeableConcept.text = "adalimumab"
-* ingredient.strength.numerator = 20 'mg'
+* ingredient.strength.numerator = 40 'mg'
 * ingredient.strength.denominator = 1 'ml'
 
 
@@ -207,7 +206,7 @@ Usage: #inline
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $fake-man-sys#77022 "Pentasa Slow Release Tablets 1g"
+* code.coding[0] = $spor-man#77022 "Pentasa Slow Release Tablets 1g"
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E827xx "Mesalazine, 1g, Tablets"
 * code.coding[+] = $atc#A07EC02 "mesalazine"
 * form = $edqm#10219000 "Tablet"
