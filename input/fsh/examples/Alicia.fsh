@@ -89,6 +89,7 @@ Once a year: Internal Medicine specialist + analytic and Neurologist.
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda78367
 
 * entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261"
+* entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda79261
 
 * entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h" 
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda7785h
@@ -388,11 +389,12 @@ Usage: #inline
 * ingredient[=].strength.denominator.unit = "Tablet"
 
 //"St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras, Hypericum perforatum L.)"
+
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda79261
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#123456 "St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras 200 mg tablet" 
-* code.coding[+] = $phpid#0xbb82cd10ab2add752b2b9224931099j1 "St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras 200 mg tablet" //not real PhPID
+* code.coding[0] = https://cima.aemps.es/ids#79963 "HIPÉRICO ARKOPHARMA cápsulas duras" 
+* code.coding[+] = $phpid#0xbb82cd10ab2add752b2b9224931099j1 "St. John's Wort (HIPÉRICO ARKOPHARMA) hard tablet" //not real PhPID
 * code.coding[+] = $atc#A03FA02 "HYPERICUM PERFORATUM WHOLE" // ATC NOT FOUND
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
