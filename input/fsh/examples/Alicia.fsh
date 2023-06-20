@@ -114,7 +114,7 @@ Once a year: Internal Medicine specialist + analytic and Neurologist.
 
 // ====================================================== COMPOSITION ======================================================
 Instance: alicia-comp
-InstanceOf: Composition-uv-ips
+InstanceOf: Composition
 Title:   "Alicia Gravitate's IPS Composition"
 Usage: #inline
 Description: "Example of International Patient Summary for Alicia Gravitate"
@@ -131,10 +131,8 @@ Description: "Example of International Patient Summary for Alicia Gravitate"
 
 // ====================================================== PROBLEMS
 * section[+].title = "Problem List"
-* section[=].text.status = #additional
-
-* section[=].text.div = "<div>Problem list Reported</div>"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
+
 * section[=].entry[0] = Reference(alicia-cond-1) "Depression"
 * section[=].entry[+] = Reference(alicia-cond-2) "HIV" 
 * section[=].entry[+] = Reference(alicia-cond-3) "Trigeminal neuralgia" 
@@ -143,7 +141,6 @@ Description: "Example of International Patient Summary for Alicia Gravitate"
 // ====================================================== MEDICATIONS
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
-
 * section[=].text.div = "<div>Medication list Reported</div>"
 * section[=].text.status = #additional
 
