@@ -189,7 +189,7 @@ InstanceOf: Medication
 Usage: #inline
 
 
-* code.coding[0] = $spor-man#PL31654/0006 "DOLOCATIL 1 g tablets"
+* code.coding[0] = $spor-man#72.741 "DOLOCATIL 1 g tablets"
 * code.coding[+] = $phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED "Paracetamol 1g tablets"
 * code.coding[+] = $atc#N02BE01 "paracetamol"
 * form = $edqm#10220000 "Coated tablet"

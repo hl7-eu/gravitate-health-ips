@@ -315,7 +315,7 @@ Usage: #inline
 Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#PL31654/0006 "MIRTAZAPINA CINFA 30 mg Coated Tablet" //TODO
+* code.coding[0] = $spor-man#67.068 "MIRTAZAPINA CINFA 30 mg Coated Tablet" //TODO
 * code.coding[+] = $phpid#0x6c47381b040e5b588db23b2272f28eec "mirtazapine 30 mg, tablets" 
 * code.coding[+] = $atc#N06AX11 "mirtazapine"
 * form = $edqm#10220000 "Coated tablet"
@@ -332,7 +332,7 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785g
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = https://cima.aemps.es/ids#68290 "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" 
+* code.coding[0] = $spor-man#68290 "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" 
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium Vitamin D" //not real PhPID
 //* code.coding[+] = $atc#A12AA04 "calcium carbonate"
 * form = $edqm#10222000 "Effervescent tablet"

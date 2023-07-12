@@ -364,7 +364,7 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda7785h
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = https://cima.aemps.es/ids#68290 "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" 
+* code.coding[0] = https://spor.ema.europa.eu/pmswi#68290 "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" 
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium Vitamin D" //not real PhPID
 //* code.coding[+] = $atc#A12AA04 "calcium carbonate"
 * form = $edqm#10222000 "Effervescent tablet"
@@ -390,7 +390,7 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda79261
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = https://cima.aemps.es/ids#79963 "HIPÉRICO ARKOPHARMA cápsulas duras" 
+* code.coding[0] = https://spor.ema.europa.eu/pmswi#79963 "HIPÉRICO ARKOPHARMA cápsulas duras" 
 * code.coding[+] = $phpid#0xbb82cd10ab2add752b2b9224931099j1 "St. John's Wort (HIPÉRICO ARKOPHARMA) hard tablet" //not real PhPID
 * code.coding[+] = $atc#A03FA02 "HYPERICUM PERFORATUM WHOLE" // ATC NOT FOUND
 * form = $edqm#10219000 "Tablet"
