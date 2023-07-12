@@ -357,7 +357,7 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77854
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#xxxxxx "BLASTON 1 mg tablets" //TODO
+* code.coding[0] = $spor-man#59.032 "BLASTON 1 mg tablets" //TODO
 * code.coding[+] = $phpid#0xbb82cd10ab2add752b2b9224931077b2 "cinitrapide 1 mg tablet" //TODO
 * code.coding[+] = $atc#A03FA08 "Cinitapride"
 * form = $edqm#10219000 "Tablet"
@@ -375,7 +375,7 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77855
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#yyy "AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR" 
+* code.coding[0] = $spor-man#0xb9846396e9e1eedc4a344e7b64d57107 "AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR" 
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * form = $edqm#10201000 "Oral powder"
 * form.text = "Oral powder"
@@ -391,7 +391,7 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77856
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#kkk "SORIA NATURAL VITAMINA C 36 COMPRIMIDOS" 
+* code.coding[0] = $spor-man#0x173fdc0ef097ed4dbe3915fba2e90586 "SORIA NATURAL VITAMINA C 36 COMPRIMIDOS" 
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * code.coding[+] = $atc#A11GA01 "ascorbic acid (vit C)"
 * form = $edqm#10227000 "Modified-release tablet"
@@ -404,7 +404,7 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda77857
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#zzzz "NATURES PLUS SPIRU-TEIN BATIDO PROTEINA SABOR COOKIES 525GR" 
+* code.coding[0] = $spor-man#0x81bb4f17d1ea7aabcd39383d33a4f2d6 "NATURES PLUS SPIRU-TEIN BATIDO PROTEINA SABOR COOKIES 525GR" 
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * form = $edqm#10201000 "Oral powder"
 * form.text = "Oral powder"

@@ -442,8 +442,8 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda78356
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#39.955 "Carbamazepine 200 mg tablets" 
-* code.coding[+] = $phpid#xxx "Carbamazepine 200 mg tablets" //not real PhPID
+* code.coding[0] = $spor-man#39.955 "Tegretol (Carbamazepine) 200 mg tablets" 
+* code.coding[+] = $phpid#0x6e5dd079852edc5c3b8efce075c80a2e "Carbamazepine 200 mg tablets" //not real PhPID
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
 * ingredient.itemCodeableConcept = $unii#33CM23913M "CARBAMAZEPINE"
@@ -459,8 +459,8 @@ Usage: #inline
 Instance: 6f4151e9-91f6-4f1e-adc3-fb94dda78333
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#EU/1/98/071/004 "Orlistat 60 mg capsule" 
-* code.coding[+] = $phpid#xxx "Orlistat 60 mg capsule" //not real PhPID
+* code.coding[0] = $spor-man#EU/1/98/071/004 "Xenical (Orlistat) 60 mg capsule" 
+* code.coding[+] = $phpid#0xc805ef896d1c2f5f17f84f34c909a9db "Xenical (Orlistat) 60 mg capsule" //not real PhPID
 * form = $edqm#10210000 "Capsule, hard" 
 * form.text = "Capsule, hard"
 * ingredient.itemCodeableConcept = $unii#95M8R751W8 "ORLISTAT"

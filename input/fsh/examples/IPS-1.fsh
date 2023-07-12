@@ -275,7 +275,7 @@ Usage: #inline
 Instance: de131e15-ed13-4b31-b38c-3204a84d99c5
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#EMEA/H/C/000142 "Karvea"
+* code.coding[0] = $spor-man#EMEA/H/C/000142 "Karvea 75 mg Tablet"
 * code.coding[+] = $phpid#0x8DFB446EDB3B8AE508AE493827A704E4 "Irbesartan, 75 mg/ 1 tablet, Tablet"
 * code.coding[+] = $atc#C09DA04 "irbesartan and diuretics"
 * form = $edqm#10219000 "Tablet"
