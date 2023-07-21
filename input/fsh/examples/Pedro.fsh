@@ -163,6 +163,8 @@ Depression
 </div>"
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier[=].value = "Pedro-1"
+* identifier[+].system = "keycloak-id"
+* identifier[=].value = "5ecb793d-e4e1-4aab-b734-36f6bad06b1e"
 * active = true
 * name.family = "Gravitate"
 * name.given = "Pedro"

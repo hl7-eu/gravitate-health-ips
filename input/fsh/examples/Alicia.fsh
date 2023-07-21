@@ -178,6 +178,8 @@ Overweight
 </div>"
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier[=].value = "alicia-1"
+* identifier[+].system = "keycloak-id"
+* identifier[=].value = "f2514826-3af3-424a-bbea-01dee017ffc3"
 * active = true
 * name.family = "Gravitate"
 * name.given = "Alicia"
