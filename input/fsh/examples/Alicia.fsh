@@ -82,7 +82,8 @@ Once a year: Internal Medicine specialist + analytic and Neurologist.
 * entry[=].resource = alicia-med-stat-6
 //* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-7" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
 //* entry[=].resource = alicia-med-stat-7
-
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-8" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[=].resource = alicia-med-stat-8
 
 
 * entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367" 
