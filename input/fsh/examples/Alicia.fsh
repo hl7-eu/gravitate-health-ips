@@ -94,8 +94,8 @@ Once a year: Internal Medicine specialist + analytic and Neurologist.
 * entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h" 
 * entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda7785h
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367" 
-* entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda78367
+//* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367" 
+//* entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda78367
 
 //* entry[+].fullUrl = "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1" 
 //* entry[=].resource = fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1
@@ -151,6 +151,7 @@ Description: "Example of International Patient Summary for Alicia Gravitate"
 * section[=].entry[+] = Reference(alicia-med-stat-5) "Orlistat 1 cp TID"
 * section[=].entry[+] = Reference(alicia-med-stat-6) "St. John’s Wort 2 cp BID"
 //* section[=].entry[+] = Reference(alicia-med-stat-7) "Collagen and magnesium supplements"
+* section[=].entry[+] = Reference(alicia-med-stat-8) "Flucelvax"
 
 // ====================================================== PATIENT ======================================================
 Instance: alicia-patient
@@ -253,7 +254,7 @@ Usage: #inline
 * subject = Reference(alicia-patient) "Alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
-
+/*
 Instance: alicia-med-stat-2
 InstanceOf: MedicationStatement
 Usage: #inline
@@ -261,7 +262,7 @@ Usage: #inline
 * medicationReference = Reference(fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1) "Folic Acid + Cyanocobalamin + Iodur 1 t QD"
 * subject = Reference(alicia-patient) "Alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
-
+*/
 
 Instance: alicia-med-stat-3
 InstanceOf: MedicationStatement
@@ -297,7 +298,7 @@ Usage: #inline
 * subject = Reference(alicia-patient) "Alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
-
+/*
 Instance: alicia-med-stat-7
 InstanceOf: MedicationStatement
 Usage: #inline
@@ -305,6 +306,15 @@ Usage: #inline
 * medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda77853) "Collagen and magnesium supplements"
 * subject = Reference(alicia-patient) "alicia Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
+*/
+
+Instance: alicia-med-stat-8
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationReference = Reference(6f4151e9-91f6-4f1e-adc3-fb94dda78367) "Flucelvax"
+* subject = Reference(alicia-patient) "Alicia Gravitate"
+* dosage.route = $edqm#20035000 "Intramuscular use"
 
 // ====================================================== MEDICATIONS ======================================================
 // "bictegravir/emtricitabine/tenofovir alafenamide"
