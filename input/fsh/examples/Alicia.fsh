@@ -224,13 +224,16 @@ Usage: #inline
 
 // --- Trigeminal neuralgia
 Instance: alicia-cond-3
-InstanceOf: Condition-uv-ips
+InstanceOf: Condition
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
 * code = $sct#31681005 "Trigeminal neuralgia (disorder)"
 * code.text = "Trigeminal neuralgia (disorder)"
-* subject = Reference(alicia-patient) "alicia Gravitate"
+//* subject = Reference(alicia-patient) "alicia Gravitate"
+* subject.identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
+* subject.identifier[=].value = "alicia-1"
+
 * onsetDateTime = "2018"
 * asserter = Reference(alicia-pract) "Dr. Walter Waltz"
 
