@@ -18,15 +18,20 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[+].fullUrl = "https://myserver.org/Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d3" // Practitioner
 * entry[=].resource = 1ece89c5-fda3-4db9-ace6-decbe6c603d3
 
+// added GC
+* entry[+].fullUrl = "https://myserver.org/AllergyIntolerance/0dff4474-fa08-4f45-8260-dbb23094bf07" // Allergy
+* entry[=].resource = 0dff4474-fa08-4f45-8260-dbb23094bf07
+//=======
+
+
 * entry[+].fullUrl = "https://myserver.org/Condition/bcc79261-142c-48ec-b032-f3f9af49ec53" // Condition 1
 * entry[=].resource = bcc79261-142c-48ec-b032-f3f9af49ec53
 * entry[+].fullUrl = "https://myserver.org/Condition/a4a9d90a-d1b0-4d60-82f0-c52343dc6253" // Condition 2
 * entry[=].resource = a4a9d90a-d1b0-4d60-82f0-c52343dc6253
 * entry[+].fullUrl = "https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e5133" // Condition 3
 * entry[=].resource = f06b7cf8-c15c-4288-a0f9-45a1026e5133
-
-* entry[+].fullUrl = "https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e5133" // Condition 3
-* entry[=].resource = f06b7cf8-c15c-4288-a0f9-45a1026e5133
+* entry[+].fullUrl = "https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e6788" // Condition 4
+* entry[=].resource = f06b7cf8-c15c-4288-a0f9-45a1026e6788
 
 
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/29074ca4-efcb-4ff4-8446-feed2399a893" // Medication Statement 1
@@ -47,9 +52,10 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2ef13
 * entry[+].fullUrl = "https://myserver.org/Medication/9ac3356c-4ea4-4814-84c3-235484f2jk90" // Medication 4
 * entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2jk90
+
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73573
-InstanceOf: Composition
+InstanceOf: Composition-uv-ips
 Title:   "[Composition] IPS Example 2 IPS"
 Usage: #inline
 
@@ -61,22 +67,64 @@ Usage: #inline
 * author = Reference(1ece89c5-fda3-4db9-ace6-decbe6c603d3) "Dr. Number2"
 * title = "Patient Summary (IPS2)"
 * confidentiality = #N
+
+
+* section[+].title = "Allergies and Intolerances"
+* section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+	<ul>
+		<li>No infos about Allergies</li>
+	</ul>
+</div>"
+* section[=].entry = Reference(0dff4474-fa08-4f45-8260-dbb23094bf07) "No infos about Allergies"
+
+
 // ======== PROBLEMS
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
-* section[=].entry[0] = Reference(bcc79261-142c-48ec-b032-f3f9af49ec53) "Psoriasis"
-* section[=].entry[+] = Reference(f06b7cf8-c15c-4288-a0f9-45a1026e5133) "Hypertension" // "Essential (primary) hypertension"
-* section[=].entry[+] = Reference(a4a9d90a-d1b0-4d60-82f0-c52343dc6253) "Congestive heart failure"
-* section[=].entry[+] = Reference(a4a9d90a-d1b0-4d60-82f0-45a1026e6788) "Congestive heart failure"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+	<ul>
+		<li>Malignant neoplasm of breast (disorder)</li>
+	</ul>
+    	<ul>
+		<li>Hypercholesterolemia</li>
+	</ul>
+    	<ul>
+		<li>Rheumatoid arthritis</li>
+	</ul>
+    	<ul>
+		<li>Epilepsy</li>
+	</ul>
+</div>"
+* section[=].entry[0] = Reference(bcc79261-142c-48ec-b032-f3f9af49ec53) "Malignant neoplasm of breast (disorder)"
+* section[=].entry[+] = Reference(f06b7cf8-c15c-4288-a0f9-45a1026e5133) "Hypercholesterolemia" // "Essential (primary) hypertension"
+* section[=].entry[+] = Reference(a4a9d90a-d1b0-4d60-82f0-c52343dc6253) "Rheumatoid arthritis"
+* section[=].entry[+] = Reference(f06b7cf8-c15c-4288-a0f9-45a1026e6788) "Epilepsy (disorder)"
 
 // ======== MEDICATIONS
 * section[+].title = "Medication Summary"
 * section[=].code = $loinc#10160-0 "Hx of Medication use"
-* section[=].entry[0] = Reference(29074ca4-efcb-4ff4-8446-feed2399a893) "Dimethyl fumarate 30 mg Gastro-resistant tablet"
-* section[=].entry[+] = Reference(f6cb1218-f81c-4338-80d8-3c10910f78f3) "Irbesartan 75 mg Tablet"
-* section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade87b3) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
-* section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade94gy) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
-
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+	<ul>
+		<li>Ogivri	trastuzumab 150 mg	powder for concentrate for solution for infusion</li>
+	</ul>
+    	<ul>
+		<li>Lipcut	Simvastatin	5 mg	tablet</li>
+	</ul>
+    	<ul>
+		<li>Enbrel Etanercept 25 mg powder for solution for injection</li>
+	</ul>
+    	<ul>
+		<li>Tegretol Carbamazepine	200 mg	tablets</li>
+	</ul>
+</div>"
+* section[=].entry[0] = Reference(29074ca4-efcb-4ff4-8446-feed2399a893) "Ogivri	trastuzumab 150 mg	powder for concentrate for solution for infusion"
+* section[=].entry[+] = Reference(f6cb1218-f81c-4338-80d8-3c10910f78f3) "Lipcut	Simvastatin	5 mg tablet"
+* section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade87b3) "Enbrel Etanercept 25 mg powder for solution for injection"
+* section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade94gy) "Tegretol Carbamazepine	200 mg	tablets"
 
 // == PATIENT ===
 Instance: c154158f-6a43-4ab7-8443-e7f4bf915dd3
@@ -101,6 +149,20 @@ Usage: #inline
 * name.given = "IPS"
 * name.prefix = "Dr."
 
+
+// == ALLERGIES ===
+
+Instance: 0dff4474-fa08-4f45-8260-dbb23094bf07
+InstanceOf: AllergyIntolerance
+Title:   "[AllergyIntolerance] IPS Example 2 IPS"
+Usage: #inline
+* clinicalStatus = $allergyintolerance-clinical#active
+* verificationStatus = $allergyintolerance-verification#confirmed
+* code = $absent-unknown-uv-ips#no-allergy-info
+/* * code = $sct#256259004 "Pollen"
+* reaction.manifestation = $sct#21719001 "Allergic rhinitis caused by pollen"
+* reaction.manifestation.text = "Hay fever" */
+* patient = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd3) "IPS-2"
 
 
 // == CONDITIONS ===
@@ -190,7 +252,7 @@ Instance: b50ae644-e0b7-4007-809f-26f493cbe363
 InstanceOf: Medication
 Usage: #inline
 //* code.coding[0] = $spor-man#EU/1/17/1201/001 "Skilarence"
-* code.coding[+] = $phpid#7532F47F36A3585D1F348BBDDA057862 "Ogivri	trastuzumab 	150 mg	powder for concentrate for solution for infusion"
+* code.coding[+] = $phpid#7532F47F36A3585D1F348BBDDA057862 "Ogivri	trastuzumab 150 mg	powder for concentrate for solution for infusion"
 //* code.coding[+] = $atc#L04AX07 "dimethyl fumarate"
 * form = $edqm#50042000 "Powder and solvent for concentrate for solution for infusion"
 * ingredient.itemCodeableConcept = $unii#P188ANX8CK "trastuzumab"
@@ -213,11 +275,12 @@ Usage: #inline
 Instance: 9ac3356c-4ea4-4814-84c3-235484f2ef13
 InstanceOf: Medication
 Usage: #inline
-* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Enbrel	Etanercept	25 mg	powder for solution for injection"
+* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Enbrel Etanercept	25 mg powder for solution for injection"
 * form = $edqm#50041500 "Powder and solution for solution for injection"
 * form.text = "Powder and solution for solution for injection"
-* ingredient.itemCodeableConcept = $unii#OP401G7OJC "OP401G7OJC"
-* ingredient.itemCodeableConcept.text = "OP401G7OJC"
+* ingredient.itemCodeableConcept = $unii#OP401G7OJC "ETANERCEPT (ENBREL)"
+* ingredient.itemCodeableConcept.text = "Enbrel Etanercept	25 mg"
+
 
 Instance: 9ac3356c-4ea4-4814-84c3-235484f2jk90
 InstanceOf: Medication

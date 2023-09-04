@@ -21,6 +21,7 @@ Alias: $ucum = http://unitsofmeasure.org
 Alias: $fake-man-sys = https://www.gravitatehealth.eu/sid/man
 Alias: $phpid = https://www.who-umc.org/phpid
 Alias: $gs1 = https://www.gs1.org/gtin
+Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 
 
 
