@@ -68,46 +68,13 @@ Usage: #inline
 * title = "Patient Summary (IPS2)"
 * confidentiality = #N
 
-
-* section[+].title = "Allergies and Intolerances"
-* section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<ul>
-		<li>No infos about Allergies</li>
-	</ul>
-</div>"
-* section[=].entry = Reference(0dff4474-fa08-4f45-8260-dbb23094bf07) "No infos about Allergies"
-
-
-// ======== PROBLEMS
-* section[+].title = "Problem List"
-* section[=].code = $loinc#11450-4 "Problem list Reported"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-	<ul>
-		<li>Malignant neoplasm of breast (disorder)</li>
-	</ul>
-    	<ul>
-		<li>Hypercholesterolemia</li>
-	</ul>
-    	<ul>
-		<li>Rheumatoid arthritis</li>
-	</ul>
-    	<ul>
-		<li>Epilepsy</li>
-	</ul>
-</div>"
-* section[=].entry[0] = Reference(bcc79261-142c-48ec-b032-f3f9af49ec53) "Malignant neoplasm of breast (disorder)"
-* section[=].entry[+] = Reference(f06b7cf8-c15c-4288-a0f9-45a1026e5133) "Hypercholesterolemia" // "Essential (primary) hypertension"
-* section[=].entry[+] = Reference(a4a9d90a-d1b0-4d60-82f0-c52343dc6253) "Rheumatoid arthritis"
-* section[=].entry[+] = Reference(f06b7cf8-c15c-4288-a0f9-45a1026e6788) "Epilepsy (disorder)"
+// Sections
 
 // ======== MEDICATIONS
-* section[+].title = "Medication Summary"
-* section[=].code = $loinc#10160-0 "Hx of Medication use"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[sectionMedications].title = "Medication Summary"
+* section[sectionMedications].code = $loinc#10160-0 "Hx of Medication use"
+* section[sectionMedications].text.status = #generated
+* section[sectionMedications].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
 	<ul>
 		<li>Ogivri	trastuzumab 150 mg	powder for concentrate for solution for infusion</li>
 	</ul>
@@ -121,10 +88,47 @@ Usage: #inline
 		<li>Tegretol Carbamazepine	200 mg	tablets</li>
 	</ul>
 </div>"
-* section[=].entry[0] = Reference(29074ca4-efcb-4ff4-8446-feed2399a893) "Ogivri	trastuzumab 150 mg	powder for concentrate for solution for infusion"
-* section[=].entry[+] = Reference(f6cb1218-f81c-4338-80d8-3c10910f78f3) "Lipcut	Simvastatin	5 mg tablet"
-* section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade87b3) "Enbrel Etanercept 25 mg powder for solution for injection"
-* section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade94gy) "Tegretol Carbamazepine	200 mg	tablets"
+* section[sectionMedications].entry[0] = Reference(29074ca4-efcb-4ff4-8446-feed2399a893) "Ogivri	trastuzumab 150 mg	powder for concentrate for solution for infusion"
+* section[sectionMedications].entry[+] = Reference(f6cb1218-f81c-4338-80d8-3c10910f78f3) "Lipcut	Simvastatin	5 mg tablet"
+* section[sectionMedications].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade87b3) "Enbrel Etanercept 25 mg powder for solution for injection"
+* section[sectionMedications].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade94gy) "Tegretol Carbamazepine	200 mg	tablets"
+
+
+// ======== Allergy
+* section[sectionAllergies].title = "Allergies and Intolerances"
+* section[sectionAllergies].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+* section[sectionAllergies].text.status = #generated
+* section[sectionAllergies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+	<ul>
+		<li>No infos about Allergies</li>
+	</ul>
+</div>"
+* section[sectionAllergies].entry = Reference(0dff4474-fa08-4f45-8260-dbb23094bf07) "No infos about Allergies"
+
+
+// ======== PROBLEMS
+* section[sectionProblems].title = "Problem List"
+* section[sectionProblems].code = $loinc#11450-4 "Problem list Reported"
+* section[sectionProblems].text.status = #generated
+* section[sectionProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+	<ul>
+		<li>Malignant neoplasm of breast (disorder)</li>
+	</ul>
+    	<ul>
+		<li>Hypercholesterolemia</li>
+	</ul>
+    	<ul>
+		<li>Rheumatoid arthritis</li>
+	</ul>
+    	<ul>
+		<li>Epilepsy</li>
+	</ul>
+</div>"
+* section[sectionProblems].entry[0] = Reference(bcc79261-142c-48ec-b032-f3f9af49ec53) "Malignant neoplasm of breast (disorder)"
+* section[sectionProblems].entry[+] = Reference(f06b7cf8-c15c-4288-a0f9-45a1026e5133) "Hypercholesterolemia" // "Essential (primary) hypertension"
+* section[sectionProblems].entry[+] = Reference(a4a9d90a-d1b0-4d60-82f0-c52343dc6253) "Rheumatoid arthritis"
+* section[sectionProblems].entry[+] = Reference(f06b7cf8-c15c-4288-a0f9-45a1026e6788) "Epilepsy (disorder)"
+
 
 // == PATIENT ===
 Instance: c154158f-6a43-4ab7-8443-e7f4bf915dd3
