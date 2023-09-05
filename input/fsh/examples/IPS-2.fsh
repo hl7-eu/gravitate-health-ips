@@ -11,36 +11,36 @@ Description: "Example of International Patient Summary for Gravitate"
 * identifier.value = "ips-2"
 * type = #document
 * timestamp = "2021-09-03T08:38:00+02:00"
-* entry[0].fullUrl = "https://myserver.org/Composition/2fa5b223-ebce-4f39-9c66-5dc014f73573" // Composition
+* entry[0].fullUrl = "https://myserver.org/Composition/2fa5b223-ebce-4f39-9c66-5dc014f73573" // 0 - Composition
 * entry[=].resource = 2fa5b223-ebce-4f39-9c66-5dc014f73573
-* entry[+].fullUrl = "https://myserver.org/Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3" // Patient
+* entry[+].fullUrl = "https://myserver.org/Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3" // 1- Patient
 * entry[=].resource = c154158f-6a43-4ab7-8443-e7f4bf915dd3
-* entry[+].fullUrl = "https://myserver.org/Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d3" // Practitioner
+* entry[+].fullUrl = "https://myserver.org/Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d3" // 2- Practitioner
 * entry[=].resource = 1ece89c5-fda3-4db9-ace6-decbe6c603d3
 
 // added GC
-* entry[+].fullUrl = "https://myserver.org/AllergyIntolerance/0dff4474-fa08-4f45-8260-dbb23094bf07" // Allergy
+* entry[+].fullUrl = "https://myserver.org/AllergyIntolerance/0dff4474-fa08-4f45-8260-dbb23094bf07" // 3- Allergy
 * entry[=].resource = 0dff4474-fa08-4f45-8260-dbb23094bf07
 //=======
 
 
-* entry[+].fullUrl = "https://myserver.org/Condition/bcc79261-142c-48ec-b032-f3f9af49ec53" // Condition 1
+* entry[+].fullUrl = "https://myserver.org/Condition/bcc79261-142c-48ec-b032-f3f9af49ec53" // 4- Condition 1
 * entry[=].resource = bcc79261-142c-48ec-b032-f3f9af49ec53
-* entry[+].fullUrl = "https://myserver.org/Condition/a4a9d90a-d1b0-4d60-82f0-c52343dc6253" // Condition 2
+* entry[+].fullUrl = "https://myserver.org/Condition/a4a9d90a-d1b0-4d60-82f0-c52343dc6253" // 5- Condition 2
 * entry[=].resource = a4a9d90a-d1b0-4d60-82f0-c52343dc6253
-* entry[+].fullUrl = "https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e5133" // Condition 3
+* entry[+].fullUrl = "https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e5133" // 6- Condition 3
 * entry[=].resource = f06b7cf8-c15c-4288-a0f9-45a1026e5133
-* entry[+].fullUrl = "https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e6788" // Condition 4
+* entry[+].fullUrl = "https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e6788" // 7- Condition 4
 * entry[=].resource = f06b7cf8-c15c-4288-a0f9-45a1026e6788
 
 
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/29074ca4-efcb-4ff4-8446-feed2399a893" // Medication Statement 1
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/29074ca4-efcb-4ff4-8446-feed2399a893" // 8- Medication Statement 1
 * entry[=].resource = 29074ca4-efcb-4ff4-8446-feed2399a893
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/f6cb1218-f81c-4338-80d8-3c10910f78f3" // Medication Statement 2
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/f6cb1218-f81c-4338-80d8-3c10910f78f3" // 9- Medication Statement 2
 * entry[=].resource = f6cb1218-f81c-4338-80d8-3c10910f78f3
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade87b3" // Medication Statement 3
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade87b3" // 10 -Medication Statement 3
 * entry[=].resource = f26084c9-b1c8-46d9-acb2-1d400ade87b3
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade94gy" // Medication Statement 4
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade94gy" // 11 - Medication Statement 4
 * entry[=].resource = f26084c9-b1c8-46d9-acb2-1d400ade94gy
 
 
@@ -157,7 +157,7 @@ Usage: #inline
 // == ALLERGIES ===
 
 Instance: 0dff4474-fa08-4f45-8260-dbb23094bf07
-InstanceOf: AllergyIntolerance
+InstanceOf: AllergyIntolerance-uv-ips
 Title:   "[AllergyIntolerance] IPS Example 2 IPS"
 Usage: #inline
 * clinicalStatus = $allergyintolerance-clinical#active
@@ -172,7 +172,7 @@ Usage: #inline
 // == CONDITIONS ===
 // Malignant neoplasm of breast /trastuzumab
 Instance: bcc79261-142c-48ec-b032-f3f9af49ec53
-InstanceOf: Condition
+InstanceOf: Condition-uv-ips
 Usage: #inline
 * code.text = "Psoriasis"
 * clinicalStatus = $condition-clinical#active
@@ -185,7 +185,7 @@ Usage: #inline
 // ---   Rheumatoid arthritis (disorder) //enbrel
 
 Instance: a4a9d90a-d1b0-4d60-82f0-c52343dc6253
-InstanceOf: Condition
+InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
@@ -198,7 +198,7 @@ Usage: #inline
 
 
 Instance: f06b7cf8-c15c-4288-a0f9-45a1026e5133
-InstanceOf: Condition
+InstanceOf: Condition-uv-ips
 Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#13644009 "Hypercholesterolemia (disorder)"
@@ -207,7 +207,7 @@ Usage: #inline
 * onsetDateTime = "1993"
 
 Instance: f06b7cf8-c15c-4288-a0f9-45a1026e6788
-InstanceOf: Condition
+InstanceOf: Condition-uv-ips
 Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * code = $sct#84757009 "Epilepsy (disorder)"
@@ -218,34 +218,43 @@ Usage: #inline
 
 // ====== MEDICATION STATEMENTS
 Instance: 29074ca4-efcb-4ff4-8446-feed2399a893
-InstanceOf: MedicationStatement
+InstanceOf: MedicationStatement-uv-ips
 Usage: #inline
 * status = #active
+// to be converted in period.start
+* effectiveDateTime = "2015"
+// * effectivePeriod.start = "2015"
 * medicationReference = Reference(b50ae644-e0b7-4007-809f-26f493cbe363) "trastuzumab"
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd3) "IPS-2"
 * dosage.route = $edqm#20045000 "Intravenous use"
 
 Instance: f6cb1218-f81c-4338-80d8-3c10910f78f3
-InstanceOf: MedicationStatement
+InstanceOf: MedicationStatement-uv-ips
 Usage: #inline
 * status = #active
+// to be converted in period.start
+* effectiveDateTime = "2020"
 * medicationReference = Reference(de131e15-ed13-4b31-b38c-3204a84d99c3) "simvastatin"
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd3) "IPS-2"
 * dosage.route = $edqm#20053000 "Oral use"
 
 
 Instance: f26084c9-b1c8-46d9-acb2-1d400ade87b3
-InstanceOf: MedicationStatement
+InstanceOf: MedicationStatement-uv-ips
 Usage: #inline
 * status = #active
+// to be converted in period.start
+* effectiveDateTime = "2023"
 * medicationReference = Reference(9ac3356c-4ea4-4814-84c3-235484f2ef13) "enbrel"
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd3) "IPS-2"
 * dosage.route = $edqm#20066000	"Subcutaneous use"
 
 Instance: f26084c9-b1c8-46d9-acb2-1d400ade94gy
-InstanceOf: MedicationStatement
+InstanceOf: MedicationStatement-uv-ips
 Usage: #inline
 * status = #active
+// to be converted in period.start
+* effectiveDateTime = "2020"
 * medicationReference = Reference(9ac3356c-4ea4-4814-84c3-235484f2jk90) "carbamazepine"
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd3) "IPS-2"
 * dosage.route = $edqm#20053000 "Oral use"
@@ -253,7 +262,7 @@ Usage: #inline
 
 // ====== MEDICATIONS ===================================
 Instance: b50ae644-e0b7-4007-809f-26f493cbe363
-InstanceOf: Medication
+InstanceOf: Medication-uv-ips
 Usage: #inline
 //* code.coding[0] = $spor-man#EU/1/17/1201/001 "Skilarence"
 * code.coding[+] = $phpid#7532F47F36A3585D1F348BBDDA057862 "Ogivri	trastuzumab 150 mg	powder for concentrate for solution for infusion"
@@ -265,7 +274,7 @@ Usage: #inline
 
 
 Instance: de131e15-ed13-4b31-b38c-3204a84d99c3
-InstanceOf: Medication
+InstanceOf: Medication-uv-ips
 Usage: #inline
 //* code.coding[0] = $spor-man#EMEA/H/C/000142 "Karvea"
 * code.coding[+] = $phpid#F92168108C432D63DACDD70444176BB3 "Lipcut	Simvastatin	5 mg	tablet"
@@ -277,7 +286,7 @@ Usage: #inline
 
 
 Instance: 9ac3356c-4ea4-4814-84c3-235484f2ef13
-InstanceOf: Medication
+InstanceOf: Medication-uv-ips
 Usage: #inline
 * code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Enbrel Etanercept	25 mg powder for solution for injection"
 * form = $edqm#50041500 "Powder and solution for solution for injection"
@@ -287,7 +296,7 @@ Usage: #inline
 
 
 Instance: 9ac3356c-4ea4-4814-84c3-235484f2jk90
-InstanceOf: Medication
+InstanceOf: Medication-uv-ips
 Usage: #inline
 * code.coding[+] = $phpid#5C62673C79E096D37914D32A45AA8F4D "Tegretol	Carbamazepine	200 mg	tablets" //level 3
 * code.coding[+] = $phpid#FB9808F4FED210183F412F9998622287 "Tegretol	Carbamazepine	200 mg	tablets" //level 4
