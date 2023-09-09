@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="gravitate-Cecilia"/>
+  <identifier>
+    <system value="https://www.gravitatehealth.eu/sid/doc"/>
+    <value value="Cecilia-ips-1"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2021-09-03T08:38:00+02:00"/>
+  <entry>
+    <fullUrl value="https://myserver.org/Composition/cecilia-comp"/>
+    <resource>
+      <Composition>
+        <id value="gravitate-Cecilia"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><b>Id:</b> gravitate-Cecilia<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Cecilia Gravitate<br/><b>Sections:</b><br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4)</li><br/><ul><li><b>Entry:</b> <a href="Condition-cecilia-cond-1.html">COPD</a></li><br/><li><b>Entry:</b> <a href="Condition-cecilia-cond-2.html">Diabetese Type 2</a></li><br/><li><b>Entry:</b> <a href="Condition-cecilia-cond-3.html">Osteoporosis</a></li><br/><li><b>Entry:</b> <a href="Condition-cecilia-cond-4.html">Congestive Heart Failure</a></li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0)</li><br/><ul><li><b>Entry:</b> <a href="MedicationStatement-cecilia-med-stat-1.html">Fosamax 70 mg tablets</a></li><br/><li><b>Entry:</b> <a href="MedicationStatement-cecilia-med-stat-2.html">Metformine + sitagliptine</a></li><br/><li><b>Entry:</b> <a href="MedicationStatement-cecilia-med-stat-3.html">Fluticasone 92mcg + vilanterol 22mcg</a></li><br/><li><b>Entry:</b> <a href="MedicationStatement-cecilia-med-stat-4.html">Digoxin</a></li><br/></ul></ul></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient summary Document"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/cecilia-patient"/>
+          <display value="Cecilia Gravitate"/>
+        </subject>
+        <date value="2018-07-10T15:22:00+02:00"/>
+        <author>
+          <reference value="Practitioner/cecilia-pract"/>
+          <display value="Dr. Anna Karlsson"/>
+        </author>
+        <title value="Patient Summary (Cecilia Gravitate)"/>
+        <confidentiality value="N"/>
+        <section>
+          <title value="Problem List"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="11450-4"/>
+              <display value="Problem list Reported"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Condition/cecilia-cond-1"/>
+            <display value="COPD"/>
+          </entry>
+          <entry>
+            <reference value="Condition/cecilia-cond-2"/>
+            <display value="Congestive Heart Failure"/>
+          </entry>
+          <entry>
+            <reference value="Condition/cecilia-cond-3"/>
+            <display value="Osteoporosis"/>
+          </entry>
+          <entry>
+            <reference value="Condition/cecilia-cond-4"/>
+            <display value="Diabetese Type 2"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Medication Summary"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="10160-0"/>
+              <display value="Hx of Medication use"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="MedicationStatement/cecilia-med-stat-1"/>
+            <display value="Fosamax 70 mg tablets"/>
+          </entry>
+          <entry>
+            <reference value="MedicationStatement/cecilia-med-stat-2"/>
+            <display value="Metformine + sitagliptine"/>
+          </entry>
+          <entry>
+            <reference value="MedicationStatement/cecilia-med-stat-3"/>
+            <display value="Fluticasone 92mcg + vilanterol 22mcg"/>
+          </entry>
+          <entry>
+            <reference value="MedicationStatement/cecilia-med-stat-4"/>
+            <display value="Digoxin"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Patient/cecilia-patient"/>
+    <resource>
+      <Patient>
+        <id value="cecilia-patient"/>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="cecilia-patient"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;cecilia-patient&quot; </p></div><blockquote><p><b>citizenship</b></p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></blockquote><p><b>value</b>: Sweden <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#SWE)</span></p></blockquote><p><b>identifier</b>: id: Cecilia-1</p><p><b>active</b>: true</p><p><b>name</b>: Cecilia Gravitate </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1946-05-05</p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+          <extension url="code">
+            <valueCodeableConcept>
+              <coding>
+                <system value="urn:iso:std:iso:3166"/>
+                <code value="SWE"/>
+                <display value="Sweden"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+        </extension>
+        <identifier>
+          <system value="https://www.gravitatehealth.eu/sid/doc"/>
+          <value value="Cecilia-1"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <family value="Gravitate"/>
+          <given value="Cecilia"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1946-05-05"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Practitioner/cecilia-pract"/>
+    <resource>
+      <Practitioner>
+        <id value="cecilia-pract"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="cecilia-pract"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;cecilia-pract&quot; </p></div><p><b>name</b>: Anne Karlsson </p></div>
+        </text>
+        <name>
+          <family value="Karlsson"/>
+          <given value="Anne"/>
+          <prefix value="Dr."/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Condition/cecilia-cond-1"/>
+    <resource>
+      <Condition>
+        <id value="cecilia-cond-1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="cecilia-cond-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;cecilia-cond-1&quot; </p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: COPD - Chronic obstructive pulmonary disease <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#13645005 &quot;Chronic obstructive lung disease&quot;)</span></p><p><b>subject</b>: <a href="#Patient_cecilia-patient">See above (Patient/cecilia-patient: Cecilia Gravitate)</a></p><p><b>asserter</b>: <a href="#Practitioner_cecilia-pract">See above (Practitioner/cecilia-pract: Dr. Anna Karlsson)</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="13645005"/>
+            <display value="Chronic obstructive lung disease"/>
+          </coding>
+          <text value="COPD - Chronic obstructive pulmonary disease"/>
+        </code>
+        <subject>
+          <reference value="Patient/cecilia-patient"/>
+          <display value="Cecilia Gravitate"/>
+        </subject>
+        <asserter>
+          <reference value="Practitioner/cecilia-pract"/>
+          <display value="Dr. Anna Karlsson"/>
+        </asserter>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Condition/cecilia-cond-2"/>
+    <resource>
+      <Condition>
+        <id value="cecilia-cond-2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="cecilia-cond-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;cecilia-cond-2&quot; </p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Congestive heart failure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#42343007)</span></p><p><b>subject</b>: <a href="#Patient_cecilia-patient">See above (Patient/cecilia-patient: Cecilia Gravitate)</a></p><p><b>onset</b>: 2015</p><p><b>asserter</b>: <a href="#Practitioner_cecilia-pract">See above (Practitioner/cecilia-pract: Dr. Anna Karlsson)</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="42343007"/>
+            <display value="Congestive heart failure"/>
+          </coding>
+          <text value="Congestive heart failure"/>
+        </code>
+        <subject>
+          <reference value="Patient/cecilia-patient"/>
+          <display value="Cecilia Gravitate"/>
+        </subject>
+        <onsetDateTime value="2015"/>
+        <asserter>
+          <reference value="Practitioner/cecilia-pract"/>
+          <display value="Dr. Anna Karlsson"/>
+        </asserter>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Condition/cecilia-cond-3"/>
+    <resource>
+      <Condition>
+        <id value="cecilia-cond-3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="cecilia-cond-3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;cecilia-cond-3&quot; </p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Osteoporosis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#64859006)</span></p><p><b>subject</b>: <a href="#Patient_cecilia-patient">See above (Patient/cecilia-patient: Cecilia Gravitate)</a></p><p><b>onset</b>: 1993</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="64859006"/>
+            <display value="Osteoporosis"/>
+          </coding>
+          <text value="Osteoporosis"/>
+        </code>
+        <subject>
+          <reference value="Patient/cecilia-patient"/>
+          <display value="Cecilia Gravitate"/>
+        </subject>
+        <onsetDateTime value="1993"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Condition/cecilia-cond-4"/>
+    <resource>
+      <Condition>
+        <id value="cecilia-cond-4"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="cecilia-cond-4"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;cecilia-cond-4&quot; </p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Diabetes mellitus type 2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#44054006)</span></p><p><b>subject</b>: <a href="#Patient_cecilia-patient">See above (Patient/cecilia-patient: Cecilia Gravitate)</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="44054006"/>
+            <display value="Diabetes mellitus type 2"/>
+          </coding>
+          <text value="Diabetes mellitus type 2"/>
+        </code>
+        <subject>
+          <reference value="Patient/cecilia-patient"/>
+          <display value="Cecilia Gravitate"/>
+        </subject>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/cecilia-med-stat-1"/>
+    <resource>
+      <MedicationStatement>
+        <id value="cecilia-med-stat-1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="cecilia-med-stat-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;cecilia-med-stat-1&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_b50ae644-e0b7-4007-809f-26f493cbe36c">See above (Medication/b50ae644-e0b7-4007-809f-26f493cbe36c: Dimethyl fumarate 30 mg Tablet)</a></p><p><b>subject</b>: <a href="#Patient_cecilia-patient">See above (Patient/cecilia-patient: Cecilia Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/b50ae644-e0b7-4007-809f-26f493cbe36c"/>
+          <display value="Dimethyl fumarate 30 mg Tablet"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/cecilia-patient"/>
+          <display value="Cecilia Gravitate"/>
+        </subject>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20053000"/>
+              <display value="Oral use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/cecilia-med-stat-2"/>
+    <resource>
+      <MedicationStatement>
+        <id value="cecilia-med-stat-2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="cecilia-med-stat-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;cecilia-med-stat-2&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_de131e15-ed13-4b31-b38c-3204a84d99c4">See above (Medication/de131e15-ed13-4b31-b38c-3204a84d99c4: Irbesartan 75 mg Tablet)</a></p><p><b>subject</b>: <a href="#Patient_cecilia-patient">See above (Patient/cecilia-patient: Cecilia Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/de131e15-ed13-4b31-b38c-3204a84d99c4"/>
+          <display value="Irbesartan 75 mg Tablet"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/cecilia-patient"/>
+          <display value="Cecilia Gravitate"/>
+        </subject>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20053000"/>
+              <display value="Oral use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/cecilia-med-stat-3"/>
+    <resource>
+      <MedicationStatement>
+        <id value="cecilia-med-stat-3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="cecilia-med-stat-3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;cecilia-med-stat-3&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_9ac3356c-4ea4-4814-84c3-235484f2ef19">See above (Medication/9ac3356c-4ea4-4814-84c3-235484f2ef19: Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray)</a></p><p><b>subject</b>: <a href="#Patient_cecilia-patient">See above (Patient/cecilia-patient: Cecilia Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Nasal use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20049000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/9ac3356c-4ea4-4814-84c3-235484f2ef19"/>
+          <display value="Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/cecilia-patient"/>
+          <display value="Cecilia Gravitate"/>
+        </subject>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20049000"/>
+              <display value="Nasal use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/cecilia-med-stat-4"/>
+    <resource>
+      <MedicationStatement>
+        <id value="cecilia-med-stat-4"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="cecilia-med-stat-4"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;cecilia-med-stat-4&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_9ac3356c-4ea4-4814-84c3-235484f2ef19">See above (Medication/9ac3356c-4ea4-4814-84c3-235484f2ef19: Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray)</a></p><p><b>subject</b>: <a href="#Patient_cecilia-patient">See above (Patient/cecilia-patient: Cecilia Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Nasal use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20049000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/9ac3356c-4ea4-4814-84c3-235484f2ef19"/>
+          <display value="Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/cecilia-patient"/>
+          <display value="Cecilia Gravitate"/>
+        </subject>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20049000"/>
+              <display value="Nasal use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/b50ae644-e0b7-4007-809f-26f493cbe36c"/>
+    <resource>
+      <Medication>
+        <id value="b50ae644-e0b7-4007-809f-26f493cbe36c"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="b50ae644-e0b7-4007-809f-26f493cbe36c"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;b50ae644-e0b7-4007-809f-26f493cbe36c&quot; </p></div><p><b>code</b>: Skilarence <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (marketingAuthorizationNumber#EU/1/17/1201/001; phpid#0x9982CA8A825D4561506CE808982E3B9D &quot;dimethyl fumarate, 30 mg/ 1 tablet, Gastro-resistant tablet&quot;; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#L04AX07 &quot;dimethyl fumarate&quot;)</span></p><p><b>form</b>: Gastro-resistant tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10225000)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>dimethyl fumarate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#FO2303MNI2)</span></td><td>30 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://ema.europa.eu/fhir/marketingAuthorizationNumber"/>
+            <code value="EU/1/17/1201/001"/>
+            <display value="Skilarence"/>
+          </coding>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="0x9982CA8A825D4561506CE808982E3B9D"/>
+            <display value="dimethyl fumarate, 30 mg/ 1 tablet, Gastro-resistant tablet"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="L04AX07"/>
+            <display value="dimethyl fumarate"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10225000"/>
+            <display value="Gastro-resistant tablet"/>
+          </coding>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="FO2303MNI2"/>
+              <display value="dimethyl fumarate"/>
+            </coding>
+            <text value="dimethyl fumarate"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="30"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/de131e15-ed13-4b31-b38c-3204a84d99c4"/>
+    <resource>
+      <Medication>
+        <id value="de131e15-ed13-4b31-b38c-3204a84d99c4"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="de131e15-ed13-4b31-b38c-3204a84d99c4"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;de131e15-ed13-4b31-b38c-3204a84d99c4&quot; </p></div><p><b>code</b>: Karvea <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (marketingAuthorizationNumber#EMEA/H/C/000142; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#C09DA04 &quot;irbesartan and diuretics&quot;)</span></p><p><b>form</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>irbesartan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#J0E2756Z7N)</span></td><td>75 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://ema.europa.eu/fhir/marketingAuthorizationNumber"/>
+            <code value="EMEA/H/C/000142"/>
+            <display value="Karvea"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="C09DA04"/>
+            <display value="irbesartan and diuretics"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10219000"/>
+            <display value="Tablet"/>
+          </coding>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="J0E2756Z7N"/>
+              <display value="irbesartan"/>
+            </coding>
+            <text value="irbesartan"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="75"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/9ac3356c-4ea4-4814-84c3-235484f2ef19"/>
+    <resource>
+      <Medication>
+        <id value="9ac3356c-4ea4-4814-84c3-235484f2ef19"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="9ac3356c-4ea4-4814-84c3-235484f2ef19"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;9ac3356c-4ea4-4814-84c3-235484f2ef19&quot; </p></div><p><b>code</b>: Boots Decongestant 0.05% w/v Nasal spray <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (man#16028/0049; phpid#0xF79CABF272B6A7EEF104DDDA44E82716 &quot;Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution&quot;; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#R01AA05 &quot;oxymetazoline&quot;)</span></p><p><b>form</b>: Nasal spray, solution <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10808000)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>oxymetazoline hydrochloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#K89MJ0S5VY)</span></td><td>0.05 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 ml<span style="background: LightGoldenRodYellow"> (Details: UCUM code ml = 'ml')</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="https://www.gravitatehealth.eu/sid/man"/>
+            <code value="16028/0049"/>
+            <display value="Boots Decongestant 0.05% w/v Nasal spray"/>
+          </coding>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="0xF79CABF272B6A7EEF104DDDA44E82716"/>
+            <display value="Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="R01AA05"/>
+            <display value="oxymetazoline"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10808000"/>
+            <display value="Nasal spray, solution"/>
+          </coding>
+          <text value="Nasal spray, solution"/>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="K89MJ0S5VY"/>
+              <display value="oxymetazoline hydrochloride"/>
+            </coding>
+            <text value="oxymetazoline hydrochloride"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="0.05"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="ml"/>
+            </denominator>
+          </strength>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+</Bundle>

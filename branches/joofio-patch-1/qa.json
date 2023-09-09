@@ -1,0 +1,12 @@
+{
+  "url" : "http://hl7.eu/fhir/ig/gravitate-health-ips/ImplementationGuide/hl7.eu.fhir.gh-ips",
+  "name" : "GhR4ImplementationGuide",
+  "package-id" : "hl7.eu.fhir.gh-ips",
+  "ig-ver" : "0.1.0",
+  "date" : "Mon, 24 Apr, 2023 13:54:56 +0000",
+  "errs" : 120,
+  "warnings" : 334,
+  "hints" : 438,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)"
+}

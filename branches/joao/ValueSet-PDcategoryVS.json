@@ -1,0 +1,20 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PDcategoryVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+  },
+  "url" : "http://hl7.eu/fhir/ig/gravitate-health-ips/ValueSet/PDcategoryVS",
+  "version" : "0.1.0",
+  "name" : "PDcategoryVS",
+  "status" : "active",
+  "date" : "2023-04-18T08:40:20+00:00",
+  "contact" : [{
+    "name" : "Gravitate Health Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.gravitatehealth.eu/"
+    }]
+  }]
+}

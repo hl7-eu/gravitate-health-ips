@@ -1,0 +1,450 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health-ips/Bundle/gravitate-helen> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "gravitate-helen"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/doc"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "helen-ips-1" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2021-04-18T09:22:00+02:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Composition/5702fd1d-dd26-402e-a7c0-7629a5d9bba1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Composition/5702fd1d-dd26-402e-a7c0-7629a5d9bba1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Patient/be61951b-44fc-4853-8822-f9d398193c50"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Patient/be61951b-44fc-4853-8822-f9d398193c50> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Condition/de06df6b-0967-4b01-822b-7cfeea970aa7"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Condition/de06df6b-0967-4b01-822b-7cfeea970aa7> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/18eb9898-dea7-4c5e-b097-e507e011747b"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/18eb9898-dea7-4c5e-b097-e507e011747b> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/c90b943a-3d8e-4f14-b56d-5c5c208b2065"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/c90b943a-3d8e-4f14-b56d-5c5c208b2065> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationRequest/c872135e-f219-4f32-8fd6-7099009abf42"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationRequest/c872135e-f219-4f32-8fd6-7099009abf42> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3> )
+  ] ) . # 
+
+<https://myserver.org/Composition/5702fd1d-dd26-402e-a7c0-7629a5d9bba1> a fhir:Composition ;
+  fhir:id [ fhir:v "gravitate-helen"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"gravitate-helen\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;gravitate-helen&quot; </p></div><p><b>status</b>: final</p><p><b>type</b>: Patient summary Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#60591-5)</span></p><p><b>date</b>: 2018-07-10 15:22:00+0200</p><p><b>author</b>: <a href=\"#Practitioner_45cd0bd4-f685-4117-a9f0-5c53fffb7266\">See above (Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266: Dr. Anna Karlsson)</a></p><p><b>title</b>: Patient Summary (Helen Gravitate)</p><p><b>confidentiality</b>: N</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ] ;
+       fhir:display [ fhir:v "Patient summary Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/be61951b-44fc-4853-8822-f9d398193c50> ;
+     fhir:reference [ fhir:v "Patient/be61951b-44fc-4853-8822-f9d398193c50" ] ;
+     fhir:display [ fhir:v "Helen Gravitate" ]
+  ] ; # 
+  fhir:date [ fhir:v "2018-07-10T15:22:00+02:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266> ;
+     fhir:reference [ fhir:v "Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266" ] ;
+     fhir:display [ fhir:v "Dr. Anna Karlsson" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Patient Summary (Helen Gravitate)"] ; # 
+  fhir:confidentiality [ fhir:v "N"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Allergies and Intolerances" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48765-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48765-2" ] ;
+         fhir:display [ fhir:v "Allergies and adverse reactions Document" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Hay fever (pollen)</li></ul></div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16> ;
+       fhir:reference [ fhir:v "AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16" ] ;
+       fhir:display [ fhir:v "Lactose Intolerance" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Problem List" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ] ;
+         fhir:display [ fhir:v "Problem list Reported" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Diabetes type 1</li></ul></div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Condition/de06df6b-0967-4b01-822b-7cfeea970aa7> ;
+       fhir:reference [ fhir:v "Condition/de06df6b-0967-4b01-822b-7cfeea970aa7" ] ;
+       fhir:display [ fhir:v "Diabetes type 1" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Medication Summary" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:10160-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10160-0" ] ;
+         fhir:display [ fhir:v "Hx of Medication use" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Brand Name</th><th>MAN</th><th>Active Substance</th><th>Common Name</th><th>ATC</th><th>Strength</th><th>Dose Form</th><th>RoA</th></tr></thead><tbody><tr><td>Humalog Mix50 Insulin KwikPen, 3ml pre-fill</td><td>EU/1/96/007/035</td><td>insulin lispro (GFX7QIS1II)</td><td>insulin lispro</td><td>A10AD04</td><td>100 U/ml</td><td>Suspension for injection</td><td>Subcutaneous use</td></tr><tr><td>Monuril 3 g granules for oral solution</td><td>PL31654/0006</td><td>FOSFOMYCIN (2N81MY12TE)</td><td>fosfomycin</td><td>J01XX01</td><td>3 g (as trometamol: 5.631g/sachet)</td><td>Granules for oral solution</td><td>Oral use</td></tr></tbody></table></div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/18eb9898-dea7-4c5e-b097-e507e011747b> ;
+       fhir:reference [ fhir:v "MedicationStatement/18eb9898-dea7-4c5e-b097-e507e011747b" ] ;
+       fhir:display [ fhir:v "Humalog Mix50 Insulin KwikPen, 3ml pre-fill" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/c90b943a-3d8e-4f14-b56d-5c5c208b2065> ;
+       fhir:reference [ fhir:v "MedicationStatement/c90b943a-3d8e-4f14-b56d-5c5c208b2065" ] ;
+       fhir:display [ fhir:v "Monuril 3 g granules for oral solution" ]
+     ] )
+  ] ) . # 
+
+<https://myserver.org/Patient/be61951b-44fc-4853-8822-f9d398193c50> a fhir:Patient ;
+  fhir:id [ fhir:v "be61951b-44fc-4853-8822-f9d398193c50"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Helen Gravitate, Female, 75 years old (1946-05-05)</div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "GB" ] ;
+           fhir:display [ fhir:v "United Kingdom of Great Britain and Northern Ireland" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-citizenship"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/doc"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "helen-1" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Gravitate" ] ;
+     fhir:given ( [ fhir:v "Helen" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1946-05-05"^^xsd:date] . # 
+
+<https://myserver.org/Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266> a fhir:Practitioner ;
+  fhir:id [ fhir:v "45cd0bd4-f685-4117-a9f0-5c53fffb7266"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dr. Anne Karlsson</div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Karlsson" ] ;
+     fhir:given ( [ fhir:v "Anne" ] ) ;
+     fhir:prefix ( [ fhir:v "Dr." ] )
+  ] ) . # 
+
+<https://myserver.org/AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16> a fhir:AllergyIntolerance ;
+  fhir:id [ fhir:v "cb6e84fa-4302-4569-ac1c-6b1b32507d16"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lactose Intolerance</div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:47703008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "47703008" ] ;
+       fhir:display [ fhir:v "Lactose" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/be61951b-44fc-4853-8822-f9d398193c50> ;
+     fhir:reference [ fhir:v "Patient/be61951b-44fc-4853-8822-f9d398193c50" ] ;
+     fhir:display [ fhir:v "Helen Gravitate" ]
+  ] . # 
+
+<https://myserver.org/Condition/de06df6b-0967-4b01-822b-7cfeea970aa7> a fhir:Condition ;
+  fhir:id [ fhir:v "de06df6b-0967-4b01-822b-7cfeea970aa7"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diabetes mellitus type 1 (2015)</div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:46635009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "46635009" ] ;
+       fhir:display [ fhir:v "Diabetes mellitus type 1" ]
+     ] ) ;
+     fhir:text [ fhir:v "Diabetes type 1" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/be61951b-44fc-4853-8822-f9d398193c50> ;
+     fhir:reference [ fhir:v "Patient/be61951b-44fc-4853-8822-f9d398193c50" ] ;
+     fhir:display [ fhir:v "Helen Gravitate" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2015"^^xsd:gYear] ; # 
+  fhir:asserter [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266> ;
+     fhir:reference [ fhir:v "Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266" ] ;
+     fhir:display [ fhir:v "Dr. Anna Karlsson" ]
+  ] . # 
+
+<https://myserver.org/MedicationStatement/18eb9898-dea7-4c5e-b097-e507e011747b> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "18eb9898-dea7-4c5e-b097-e507e011747b"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Brand Name</th><th>MAN</th><th>Active Substance</th><th>Common Name</th><th>ATC</th><th>Strength</th><th>Dose Form</th><th>RoA</th></tr></thead><tbody><tr><td>Humalog Mix50 Insulin KwikPen, 3ml pre-fill</td><td>EU/1/96/007/035</td><td>insulin lispro (GFX7QIS1II)</td><td>insulin lispro</td><td>A10AD04</td><td>100 U/ml</td><td>Suspension for injection</td><td>Subcutaneous use</td></tr></tbody></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50> ;
+     fhir:reference [ fhir:v "Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50" ] ;
+     fhir:display [ fhir:v "Humalog Mix50 Insulin KwikPen, 3ml pre-fill" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/be61951b-44fc-4853-8822-f9d398193c50> ;
+     fhir:reference [ fhir:v "Patient/be61951b-44fc-4853-8822-f9d398193c50" ] ;
+     fhir:display [ fhir:v "Helen Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20066000" ] ;
+         fhir:display [ fhir:v "Subcutaneous use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/c90b943a-3d8e-4f14-b56d-5c5c208b2065> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "c90b943a-3d8e-4f14-b56d-5c5c208b2065"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Brand Name</th><th>MAN</th><th>Active Substance</th><th>Common Name</th><th>ATC</th><th>Strength</th><th>Dose Form</th><th>RoA</th></tr></thead><tbody><tr><td>Monuril 3 g granules for oral solution</td><td>PL31654/0006</td><td>FOSFOMYCIN (2N81MY12TE)</td><td>fosfomycin</td><td>J01XX01</td><td>3 g (as trometamol: 5.631g/sachet)</td><td>Granules for oral solution</td><td>Oral use</td></tr></tbody></table></div>"
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationRequest/c872135e-f219-4f32-8fd6-7099009abf42> ;
+     fhir:reference [ fhir:v "MedicationRequest/c872135e-f219-4f32-8fd6-7099009abf42" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3> ;
+     fhir:reference [ fhir:v "Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3" ] ;
+     fhir:display [ fhir:v "Monuril 3g granules for oral solution" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/be61951b-44fc-4853-8822-f9d398193c50> ;
+     fhir:reference [ fhir:v "Patient/be61951b-44fc-4853-8822-f9d398193c50" ] ;
+     fhir:display [ fhir:v "Helen Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationRequest/c872135e-f219-4f32-8fd6-7099009abf42> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "c872135e-f219-4f32-8fd6-7099009abf42"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"c872135e-f219-4f32-8fd6-7099009abf42\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;c872135e-f219-4f32-8fd6-7099009abf42&quot; </p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href=\"#Medication_fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3\">See above (Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3: Monuril)</a></p><p><b>subject</b>: <a href=\"#Patient_be61951b-44fc-4853-8822-f9d398193c50\">See above (Patient/be61951b-44fc-4853-8822-f9d398193c50)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3> ;
+     fhir:reference [ fhir:v "Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3" ] ;
+     fhir:display [ fhir:v "Monuril" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/be61951b-44fc-4853-8822-f9d398193c50> ;
+     fhir:reference [ fhir:v "Patient/be61951b-44fc-4853-8822-f9d398193c50" ]
+  ] . # 
+
+<https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50> a fhir:Medication ;
+  fhir:id [ fhir:v "9d7be868-8264-4d94-ad04-ef04ecc92e50"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"9d7be868-8264-4d94-ad04-ef04ecc92e50\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;9d7be868-8264-4d94-ad04-ef04ecc92e50&quot; </p></div><p><b>code</b>: Humalog Mix50 KwikPen 100 U/ml 5 pre-filled pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (pmswi#EU/1/96/007/035; phpid#0xF79CABF272B6A7EEF104DDDA44E82717 &quot;Insulin Lispro 100 U/ml 5 pre-filled pen&quot;; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#388454007 &quot;Product containing insulin lispro (medicinal product)&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#A10AD04 &quot;insulin lispro&quot;)</span></p><p><b>form</b>: Suspension for injection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#11202000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td>insulin lispro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#GFX7QIS1II)</span></td><td>100 units<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code U = 'U')</span>/1 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code ml = 'ml')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/pmswi"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EU/1/96/007/035" ] ;
+       fhir:display [ fhir:v "Humalog Mix50 KwikPen 100 U/ml 5 pre-filled pen" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0xF79CABF272B6A7EEF104DDDA44E82717" ] ;
+       fhir:display [ fhir:v "Insulin Lispro 100 U/ml 5 pre-filled pen" ]
+     ] [
+       a sct:388454007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "388454007" ] ;
+       fhir:display [ fhir:v "Product containing insulin lispro (medicinal product)" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "A10AD04" ] ;
+       fhir:display [ fhir:v "insulin lispro" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11202000" ] ;
+       fhir:display [ fhir:v "Suspension for injection" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "GFX7QIS1II" ] ;
+         fhir:display [ fhir:v "insulin lispro" ]
+       ] ) ;
+       fhir:text [ fhir:v "insulin lispro" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "units" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "U" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "ml" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ml" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3> a fhir:Medication ;
+  fhir:id [ fhir:v "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3&quot; </p></div><p><b>code</b>: Monuril <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (pmswi#PL31654/0087; phpid#0xE857DA811B4A6F3BD57810C45D2EA1RF &quot;Fosfomycin, 3g, Granules for oral solution&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#J01XX01 &quot;fosfomycin&quot;)</span></p><p><b>form</b>: Granules for oral solution <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10112000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td>FOSFOMYCIN TROMETAMOL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#7FXW6U30GY &quot;FOSFOMYCIN TROMETHAMINE&quot;)</span></td><td>5.631 g<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span>/1 Sachet<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {sachet} = '{sachet}')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/pmswi"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PL31654/0087" ] ;
+       fhir:display [ fhir:v "Monuril" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0xE857DA811B4A6F3BD57810C45D2EA1RF" ] ;
+       fhir:display [ fhir:v "Fosfomycin, 3g, Granules for oral solution" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J01XX01" ] ;
+       fhir:display [ fhir:v "fosfomycin" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10112000" ] ;
+       fhir:display [ fhir:v "Granules for oral solution" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "7FXW6U30GY" ] ;
+         fhir:display [ fhir:v "FOSFOMYCIN TROMETHAMINE" ]
+       ] ) ;
+       fhir:text [ fhir:v "FOSFOMYCIN TROMETAMOL" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "5.631"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "g" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Sachet" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "{sachet}" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

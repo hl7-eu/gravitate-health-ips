@@ -1,0 +1,68 @@
+ul {
+  padding-left: 4; /* remove left padding */
+  margin-left: 0; /* remove left margin */
+  margin-bottom: 0; /* remove bottom margin */
+  margin-top: 0; /* remove bottom margin */
+
+}
+.block {
+  margin-bottom: 6px;
+  margin-top: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+.indent {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+}
+.problem-list{
+  background: #D7E3D1;
+}
+.condition {
+  background: #DCE2E3;
+  border: 1px solid #D9FAE8;
+}
+
+.medication-summary{
+    background: #B08778;
+}
+
+.medicationStatement {
+    background: #E3AE9A;
+  }
+  
+  
+.medication {
+    
+    background: #ffc4ae;
+  
+  }
+
+
+
+  .patient {
+
+    background: #f1e2f5;
+
+
+  }
+  
+
+
+  .allergy-container{
+    background: #DEE3DC;
+
+  }
+
+  .allergy {
+    background: #e8f5e2;
+    border: 1px solid #F0E667;
+
+
+  }

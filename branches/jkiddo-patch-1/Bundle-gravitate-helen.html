@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.GH-IPS\Helen Gravitate&#39;s IPS - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/pcsp.css" rel="stylesheet"/>
+    <link href="assets/css/ips-viewer.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"11.10"}
+    h3,h4,h5,h6{--heading-prefix:"11.10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
+            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
+          </a>
+        </div>
+ <!--        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
+        </div> -->
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide (FHIR R4)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contextual information
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="connections.html">Connections</a>
+      </li>
+      <li>
+        <a href="use-case-example.html">Use Case</a>
+      </li>
+      <li>
+        <a href="Connecting-data.html">How Data connects</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Capability Statements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CapabilityStatement-capability-statement-ema.html">SmPC / PL</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="copyright.html">Copyright</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Helen Gravitate's IPS</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide (FHIR R4), published by . This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/hl7-eu/gravitate-health-ips">https://github.com/hl7-eu/gravitate-health-ips</a> and changes regularly. See the <a href="http://hl7.eu/fhir/ig/gravitate-health-ips/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-gravitate-helen.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-gravitate-helen.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-gravitate-helen.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Bundle: Helen Gravitate&#39;s IPS</h2>
+
+  <table class="">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+
+
+   
+   
+  
+  <b>id:</b>
+  gravitate-helen
+<br/>
+
+
+
+
+
+  <b>Composition status:</b>
+  final
+<br/>
+
+  <b>Composition Type:</b>
+  Patient summary Document
+<br/>
+<b>Subject:</b>
+<div class="patient block indent">
+
+  
+  
+  
+    <b>identifier:</b>
+    helen-1<br/>
+  
+    <b>Name:</b>
+    Helen Gravitate<br/>
+  
+    <b>active:</b>
+    true<br/>
+  
+    <b>gender:</b>
+    female<br/>
+  
+    <b>Birth Date:</b>
+    1946-05-05<br/>
+
+</div>
+<br/>
+<h3>Sections:</h3>
+<br/>
+
+
+
+  <h4>Allergies and Intolerances</h4>
+
+  
+    
+    <div class="allergy-container block">
+
+      
+
+        
+
+        <div class="allergy indent block">
+
+          
+            <b>Allergy:</b>
+            Lactose (47703008)<br/>
+          
+            <b>clinicalStatus:</b>
+            active <br/>
+          
+            <b>verificationStatus:</b>
+            confirmed <br/>
+          
+
+        </div>
+
+      
+
+    </div>
+
+  
+
+
+  
+
+  
+
+
+
+  <h4>Problem List</h4>
+
+  
+
+
+  
+    
+    <div class="problem-list block">
+
+      
+
+        
+
+        <div class="condition indent block">
+
+          
+            <b>Condition:</b>
+            Diabetes type 1 (46635009)<br/>
+          
+            <b>clinicalStatus:</b>
+            active <br/>
+          
+            <b>asserter:</b>
+            Dr. Anna Karlsson <br/>
+          
+            <b>onsetDateTime:</b>
+            2015 <br/>
+          
+        </div>
+
+      
+    </div>
+
+  
+
+  
+
+
+
+  <h4>Medication Summary</h4>
+
+  
+
+
+  
+
+  
+    
+    <div class="medication-summary block">
+
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+            Humalog Mix50 Insulin KwikPen, 3ml pre-fill <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://ema.europa.eu/fhir/marketingAuthorizationNumber
+                      <b>Code:</b>
+                      EU/1/96/007/035 [Humalog Mix50]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://www.who-umc.org/phpid
+                      <b>Code:</b>
+                      0x073AF2E5B92AE19E8B67635AFFB3D6CA [insulin lispro, 100 units/ml, suspension for injection]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://snomed.info/sct
+                      <b>Code:</b>
+                      388454007 [Product containing insulin lispro (medicinal product)]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      A10AD04 [insulin lispro]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                Suspension for injection <br/>
+              
+                <b>Ingredient:</b>
+                insulin lispro (http://fdasis.nlm.nih.gov#GFX7QIS1II) <br/>
+                
+                  <b>strength:</b>
+                  100 U/1 ml <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Subcutaneous use<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+            Monuril 3g granules for oral solution <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://ema.europa.eu/fhir/marketingAuthorizationNumber
+                      <b>Code:</b>
+                      PL31654/0006 [Monuril]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://www.who-umc.org/phpid
+                      <b>Code:</b>
+                      0xE857DA811B4A6F3BD57810C45D2EA1ED [Fosfomycin, 3g, Granules for oral solution]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      J01XX01 [fosfomycin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                Granules for oral solution <br/>
+              
+                <b>Ingredient:</b>
+                FOSFOMYCIN TROMETHAMINE (http://fdasis.nlm.nih.gov#7FXW6U30GY) <br/>
+                
+                  <b>strength:</b>
+                  5.631 g/1 Sachet <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral use<br/>
+        </div>
+      
+    </div>
+  
+
+
+
+
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div><hr/>
+  
+
+    
+      <b>Id:</b>
+      gravitate-helen
+    <br/>
+    
+      <b>status:</b>
+      final
+    <br/>
+    
+      <b>Type:</b>
+      Patient summary Document
+    <br/>
+    
+      <b>Subject:</b>
+      <a>Helen Gravitate</a>
+    
+
+    <br/>
+    <b>Sections:</b>
+    <br/>
+
+    <ul>
+      
+        <li>
+
+          Allergies and Intolerances
+
+        </li>
+        <ul>
+
+          
+
+            <li>
+
+              Lactose Intolerance
+
+            </li>
+          
+        </ul>
+
+      
+        <li>
+
+          Problem List
+
+        </li>
+        <ul>
+
+          
+
+            <li>
+
+              Diabetes type 1
+
+            </li>
+          
+        </ul>
+
+      
+        <li>
+
+          Medication Summary
+
+        </li>
+        <ul>
+
+          
+
+            <li>
+
+              Humalog Mix50 Insulin KwikPen, 3ml pre-fill
+
+            </li>
+          
+
+            <li>
+
+              Monuril 3 g granules for oral solution
+
+            </li>
+          
+        </ul>
+
+      
+
+    </ul>
+
+  
+
+<hr/><div><h2>Allergies and Intolerances</h2></div><ul><li>Hay fever (pollen)</li></ul><ul><li><a href="#AllergyIntolerance_cb6e84fa-4302-4569-ac1c-6b1b32507d16">See above (AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16: Lactose Intolerance)</a></li></ul><div><h2>Problem List</h2></div><ul><li>Diabetes type 1</li></ul><ul><li><a href="#Condition_de06df6b-0967-4b01-822b-7cfeea970aa7">See above (Condition/de06df6b-0967-4b01-822b-7cfeea970aa7: Diabetes type 1)</a></li></ul><div><h2>Medication Summary</h2></div><table><thead><tr><th>Brand Name</th><th>MAN</th><th>Active Substance</th><th>Common Name</th><th>ATC</th><th>Strength</th><th>Dose Form</th><th>RoA</th></tr></thead><tbody><tr><td>Humalog Mix50 Insulin KwikPen, 3ml pre-fill</td><td>EU/1/96/007/035</td><td>insulin lispro (GFX7QIS1II)</td><td>insulin lispro</td><td>A10AD04</td><td>100 U/ml</td><td>Suspension for injection</td><td>Subcutaneous use</td></tr><tr><td>Monuril 3 g granules for oral solution</td><td>PL31654/0006</td><td>FOSFOMYCIN (2N81MY12TE)</td><td>fosfomycin</td><td>J01XX01</td><td>3 g (as trometamol: 5.631g/sachet)</td><td>Granules for oral solution</td><td>Oral use</td></tr></tbody></table><ul><li><a href="#MedicationStatement_18eb9898-dea7-4c5e-b097-e507e011747b">See above (MedicationStatement/18eb9898-dea7-4c5e-b097-e507e011747b: Humalog Mix50 Insulin KwikPen, 3ml pre-fill)</a></li><li><a href="#MedicationStatement_c90b943a-3d8e-4f14-b56d-5c5c208b2065">See above (MedicationStatement/c90b943a-3d8e-4f14-b56d-5c5c208b2065: Monuril 3 g granules for oral solution)</a></li></ul><hr/><h2>Additional Document Content</h2><a name="https-//myserver.org/Patient/be61951b-44fc-4853-8822-f9d398193c50"> </a><a name="Patient_be61951b-44fc-4853-8822-f9d398193c50"> </a><hr/><p>2. https://myserver.org/Patient/be61951b-44fc-4853-8822-f9d398193c50 (Patient/be61951b-44fc-4853-8822-f9d398193c50)</p><blockquote><p>Helen Gravitate, Female, 75 years old (1946-05-05)</p></blockquote><a name="https-//myserver.org/Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266"> </a><a name="Practitioner_45cd0bd4-f685-4117-a9f0-5c53fffb7266"> </a><hr/><p>3. https://myserver.org/Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266 (Practitioner/45cd0bd4-f685-4117-a9f0-5c53fffb7266)</p><blockquote><p>Dr. Anne Karlsson</p></blockquote><a name="https-//myserver.org/AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16"> </a><a name="AllergyIntolerance_cb6e84fa-4302-4569-ac1c-6b1b32507d16"> </a><hr/><p>4. https://myserver.org/AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16 (AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16)</p><blockquote><p>Lactose Intolerance</p></blockquote><a name="https-//myserver.org/Condition/de06df6b-0967-4b01-822b-7cfeea970aa7"> </a><a name="Condition_de06df6b-0967-4b01-822b-7cfeea970aa7"> </a><hr/><p>5. https://myserver.org/Condition/de06df6b-0967-4b01-822b-7cfeea970aa7 (Condition/de06df6b-0967-4b01-822b-7cfeea970aa7)</p><blockquote><p>Diabetes mellitus type 1 (2015)</p></blockquote><a name="https-//myserver.org/MedicationStatement/18eb9898-dea7-4c5e-b097-e507e011747b"> </a><a name="MedicationStatement_18eb9898-dea7-4c5e-b097-e507e011747b"> </a><hr/><p>6. https://myserver.org/MedicationStatement/18eb9898-dea7-4c5e-b097-e507e011747b (MedicationStatement/18eb9898-dea7-4c5e-b097-e507e011747b)</p><blockquote><p><table><thead><tr><th>Brand Name</th><th>MAN</th><th>Active Substance</th><th>Common Name</th><th>ATC</th><th>Strength</th><th>Dose Form</th><th>RoA</th></tr></thead><tbody><tr><td>Humalog Mix50 Insulin KwikPen, 3ml pre-fill</td><td>EU/1/96/007/035</td><td>insulin lispro (GFX7QIS1II)</td><td>insulin lispro</td><td>A10AD04</td><td>100 U/ml</td><td>Suspension for injection</td><td>Subcutaneous use</td></tr></tbody></table></p></blockquote><a name="https-//myserver.org/MedicationStatement/c90b943a-3d8e-4f14-b56d-5c5c208b2065"> </a><a name="MedicationStatement_c90b943a-3d8e-4f14-b56d-5c5c208b2065"> </a><hr/><p>7. https://myserver.org/MedicationStatement/c90b943a-3d8e-4f14-b56d-5c5c208b2065 (MedicationStatement/c90b943a-3d8e-4f14-b56d-5c5c208b2065)</p><blockquote><p><table><thead><tr><th>Brand Name</th><th>MAN</th><th>Active Substance</th><th>Common Name</th><th>ATC</th><th>Strength</th><th>Dose Form</th><th>RoA</th></tr></thead><tbody><tr><td>Monuril 3 g granules for oral solution</td><td>PL31654/0006</td><td>FOSFOMYCIN (2N81MY12TE)</td><td>fosfomycin</td><td>J01XX01</td><td>3 g (as trometamol: 5.631g/sachet)</td><td>Granules for oral solution</td><td>Oral use</td></tr></tbody></table></p></blockquote><a name="https-//myserver.org/MedicationRequest/c872135e-f219-4f32-8fd6-7099009abf42"> </a><a name="MedicationRequest_c872135e-f219-4f32-8fd6-7099009abf42"> </a><hr/><p>8. https://myserver.org/MedicationRequest/c872135e-f219-4f32-8fd6-7099009abf42 (MedicationRequest/c872135e-f219-4f32-8fd6-7099009abf42)</p><blockquote><p><p><b>Generated Narrative: MedicationRequest</b><a name="c872135e-f219-4f32-8fd6-7099009abf42"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationRequest &quot;c872135e-f219-4f32-8fd6-7099009abf42&quot; </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>status</b>: ACTIVE</p><p><b>intent</b>: ORDER</p><p><b>subject</b>: <a href="#Patient_be61951b-44fc-4853-8822-f9d398193c50">See above (Patient/be61951b-44fc-4853-8822-f9d398193c50)</a></p></p></blockquote><a name="https-//myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50"> </a><a name="Medication_9d7be868-8264-4d94-ad04-ef04ecc92e50"> </a><hr/><p>9. https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50 (Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50)</p><blockquote><p><p><b>Generated Narrative: Medication</b><a name="9d7be868-8264-4d94-ad04-ef04ecc92e50"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;9d7be868-8264-4d94-ad04-ef04ecc92e50&quot; </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>code</b>: Humalog Mix50 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (marketingAuthorizationNumber#EU/1/96/007/035; phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA &quot;insulin lispro, 100 units/ml, suspension for injection&quot;; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#388454007 &quot;Product containing insulin lispro (medicinal product)&quot;; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#A10AD04 &quot;insulin lispro&quot;)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Strength</b></td></tr><tr><td>*</td><td>100 units<span style="background: LightGoldenRodYellow"> (Details: UCUM code U = 'U')</span>/1 ml<span style="background: LightGoldenRodYellow"> (Details: UCUM code ml = 'ml')</span></td></tr></table></p></blockquote><a name="https-//myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3"> </a><a name="Medication_fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3"> </a><hr/><p>10. https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3 (Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3)</p><blockquote><p><p><b>Generated Narrative: Medication</b><a name="fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3&quot; </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>code</b>: Monuril <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (marketingAuthorizationNumber#PL31654/0006; phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED &quot;Fosfomycin, 3g, Granules for oral solution&quot;; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#J01XX01 &quot;fosfomycin&quot;)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Strength</b></td></tr><tr><td>*</td><td>5.631 g<span style="background: LightGoldenRodYellow"> (Details: UCUM code g = 'g')</span>/1 Sachet<span style="background: LightGoldenRodYellow"> (Details: UCUM code {sachet} = '{sachet}')</span></td></tr></table></p></blockquote></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh-ips#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 24, 2023 10:19+0000">2023-04-24</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+	Links: <a style="color: #81BEF7"
+ 		href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7"
+ 		href="qa.html">QA Report</a>
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health-ips/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+	<a style="color: #81BEF7"
+ 		rel="license"
+ 		href="http://hl7.org/fhir/R4/license.html">
+		<img style="border-style: none;"
+   			alt="CC0"
+   			src="cc0.png"/>
+	</a>
+	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+	<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->
+	<div id=container width=100% style="display:block;" >
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
+		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
+			<img height="41"
+   				alt="a EU funded project"
+   				src="assets/images/eu.png"/>
+		</div>
+	</div>
+	<div>
+	</div>
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

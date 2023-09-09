@@ -1,0 +1,440 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health-ips/Bundle/gravitate-Matilda> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "gravitate-Matilda"] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/doc"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Matilda-ips-1" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2021-04-18T09:22:00+02:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Composition/matilda-comp"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Composition/matilda-comp> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Patient/matilda-patient"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Patient/matilda-patient> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Practitioner/matilda-pract"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Practitioner/matilda-pract> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Condition/matilda-cond-1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Condition/matilda-cond-1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/matilda-med-stat-1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/matilda-med-stat-1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/matilda-med-stat-2"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/matilda-med-stat-2> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/matilda-med-stat-3"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/matilda-med-stat-3> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e51"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e51> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu> )
+  ] ) . # 
+
+<https://myserver.org/Composition/matilda-comp> a fhir:Composition ;
+  fhir:id [ fhir:v "gravitate-Matilda"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Id:</b> gravitate-Matilda<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Matilda Gravitate<br/><b>Sections:</b><br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4)</li><br/><ul><li><b>Entry:</b> <a href=\"Condition-matilda-cond-1.html\">Crohn's disease</a></li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0)</li><br/><ul><li><b>Entry:</b> <a href=\"MedicationStatement-matilda-med-stat-1.html\">Humira 40 mg</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-matilda-med-stat-2.html\">Paracetamol 500 mg</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-matilda-med-stat-3.html\">Pentasa 1g mesalazine</a></li><br/></ul></ul></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ] ;
+       fhir:display [ fhir:v "Patient summary Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/matilda-patient> ;
+     fhir:reference [ fhir:v "Patient/matilda-patient" ] ;
+     fhir:display [ fhir:v "Matilda Gravitate" ]
+  ] ; # 
+  fhir:date [ fhir:v "2018-07-10T15:22:00+02:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Practitioner/matilda-pract> ;
+     fhir:reference [ fhir:v "Practitioner/matilda-pract" ] ;
+     fhir:display [ fhir:v "Dr. Ana Lopez" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Patient Summary (Matilda Gravitate)"] ; # 
+  fhir:confidentiality [ fhir:v "N"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Problem List" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ] ;
+         fhir:display [ fhir:v "Problem list Reported" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Condition/matilda-cond-1> ;
+       fhir:reference [ fhir:v "Condition/matilda-cond-1" ] ;
+       fhir:display [ fhir:v "Crohn's disease" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Medication Summary" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:10160-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10160-0" ] ;
+         fhir:display [ fhir:v "Hx of Medication use" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/matilda-med-stat-1> ;
+       fhir:reference [ fhir:v "MedicationStatement/matilda-med-stat-1" ] ;
+       fhir:display [ fhir:v "Humira 40 mg" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/matilda-med-stat-2> ;
+       fhir:reference [ fhir:v "MedicationStatement/matilda-med-stat-2" ] ;
+       fhir:display [ fhir:v "Paracetamol 500 mg" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/matilda-med-stat-3> ;
+       fhir:reference [ fhir:v "MedicationStatement/matilda-med-stat-3" ] ;
+       fhir:display [ fhir:v "Pentasa 1g mesalazine" ]
+     ] )
+  ] ) . # 
+
+<https://myserver.org/Patient/matilda-patient> a fhir:Patient ;
+  fhir:id [ fhir:v "matilda-patient"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"matilda-patient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;matilda-patient&quot; </p></div><blockquote><p><b>citizenship</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></blockquote><p><b>value</b>: Spain <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#ES)</span></p></blockquote><p><b>identifier</b>: id: Matilda-1</p><p><b>active</b>: true</p><p><b>name</b>: Matilda Gravitate </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1950-09-01</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ES" ] ;
+           fhir:display [ fhir:v "Spain" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-citizenship"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/doc"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Matilda-1" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Gravitate" ] ;
+     fhir:given ( [ fhir:v "Matilda" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1950-09-01"^^xsd:date] . # 
+
+<https://myserver.org/Practitioner/matilda-pract> a fhir:Practitioner ;
+  fhir:id [ fhir:v "matilda-pract"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"matilda-pract\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;matilda-pract&quot; </p></div><p><b>name</b>: Ana Lopez </p></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Lopez" ] ;
+     fhir:given ( [ fhir:v "Ana" ] ) ;
+     fhir:prefix ( [ fhir:v "Dr." ] )
+  ] ) . # 
+
+<https://myserver.org/Condition/matilda-cond-1> a fhir:Condition ;
+  fhir:id [ fhir:v "matilda-cond-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"matilda-cond-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;matilda-cond-1&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Crohn's disease <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#34000006)</span></p><p><b>subject</b>: <a href=\"#Patient_matilda-patient\">See above (Patient/matilda-patient: Matilda Gravitate)</a></p><p><b>onset</b>: 2015</p><p><b>asserter</b>: <a href=\"#Practitioner_matilda-pract\">See above (Practitioner/matilda-pract: Dr. Ana Lopez)</a></p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:34000006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "34000006" ] ;
+       fhir:display [ fhir:v "Crohn's disease" ]
+     ] ) ;
+     fhir:text [ fhir:v "Crohn's disease" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/matilda-patient> ;
+     fhir:reference [ fhir:v "Patient/matilda-patient" ] ;
+     fhir:display [ fhir:v "Matilda Gravitate" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2015"^^xsd:gYear] ; # 
+  fhir:asserter [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Practitioner/matilda-pract> ;
+     fhir:reference [ fhir:v "Practitioner/matilda-pract" ] ;
+     fhir:display [ fhir:v "Dr. Ana Lopez" ]
+  ] . # 
+
+<https://myserver.org/MedicationStatement/matilda-med-stat-1> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "matilda-med-stat-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"matilda-med-stat-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;matilda-med-stat-1&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_9d7be868-8264-4d94-ad04-ef04ecc92e51\">See above (Medication/9d7be868-8264-4d94-ad04-ef04ecc92e51: Humira 20 mg)</a></p><p><b>subject</b>: <a href=\"#Patient_matilda-patient\">See above (Patient/matilda-patient: Matilda Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Subcutaneous use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20066000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e51> ;
+     fhir:reference [ fhir:v "Medication/9d7be868-8264-4d94-ad04-ef04ecc92e51" ] ;
+     fhir:display [ fhir:v "Humira 20 mg" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/matilda-patient> ;
+     fhir:reference [ fhir:v "Patient/matilda-patient" ] ;
+     fhir:display [ fhir:v "Matilda Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20066000" ] ;
+         fhir:display [ fhir:v "Subcutaneous use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/matilda-med-stat-2> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "matilda-med-stat-2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"matilda-med-stat-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;matilda-med-stat-2&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et\">See above (Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et: PARACETAMOL 1000 MG)</a></p><p><b>subject</b>: <a href=\"#Patient_matilda-patient\">See above (Patient/matilda-patient: Matilda Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et> ;
+     fhir:reference [ fhir:v "Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et" ] ;
+     fhir:display [ fhir:v "PARACETAMOL 1000 MG" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/matilda-patient> ;
+     fhir:reference [ fhir:v "Patient/matilda-patient" ] ;
+     fhir:display [ fhir:v "Matilda Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/matilda-med-stat-3> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "matilda-med-stat-3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"matilda-med-stat-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;matilda-med-stat-3&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu\">See above (Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu: Pentasa 1g mesalazine)</a></p><p><b>subject</b>: <a href=\"#Patient_matilda-patient\">See above (Patient/matilda-patient: Matilda Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu> ;
+     fhir:reference [ fhir:v "Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu" ] ;
+     fhir:display [ fhir:v "Pentasa 1g mesalazine" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/matilda-patient> ;
+     fhir:reference [ fhir:v "Patient/matilda-patient" ] ;
+     fhir:display [ fhir:v "Matilda Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e51> a fhir:Medication ;
+  fhir:id [ fhir:v "9d7be868-8264-4d94-ad04-ef04ecc92e51"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"9d7be868-8264-4d94-ad04-ef04ecc92e51\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;9d7be868-8264-4d94-ad04-ef04ecc92e51&quot; </p></div><p><b>code</b>: Humira 20 mg <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#EU/1/96/007/035; phpid#0xe72f98caa2b13cb3ccb489a1a7945c91 &quot;Humira 20 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#L04AB04 &quot;adalimumab&quot;)</span></p><p><b>form</b>: Solution for injection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#11201000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>adalimumab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#FYS6T7F842)</span></td><td>20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code ml = 'ml')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ema.europa.eu/fhir/marketingAuthorizationNumber"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EU/1/96/007/035" ] ;
+       fhir:display [ fhir:v "Humira 20 mg" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0xe72f98caa2b13cb3ccb489a1a7945c91" ] ;
+       fhir:display [ fhir:v "Humira 20 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "L04AB04" ] ;
+       fhir:display [ fhir:v "adalimumab" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11201000" ] ;
+       fhir:display [ fhir:v "Solution for injection" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "FYS6T7F842" ] ;
+         fhir:display [ fhir:v "adalimumab" ]
+       ] ) ;
+       fhir:text [ fhir:v "adalimumab" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ml" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et> a fhir:Medication ;
+  fhir:id [ fhir:v "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et&quot; </p></div><p><b>code</b>: DOLOCATIL 1 g tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#PL31654/0006; phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED &quot;Paracetamol 1g tablets&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#N02BE01 &quot;paracetamol&quot;)</span></p><p><b>form</b>: Coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10220000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>ACETAMINOPHEN <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#362O9ITL9D)</span></td><td>1000 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ema.europa.eu/fhir/marketingAuthorizationNumber"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PL31654/0006" ] ;
+       fhir:display [ fhir:v "DOLOCATIL 1 g tablets" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0xE857DA811B4A6F3BD57810C45D2EA1ED" ] ;
+       fhir:display [ fhir:v "Paracetamol 1g tablets" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "N02BE01" ] ;
+       fhir:display [ fhir:v "paracetamol" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10220000" ] ;
+       fhir:display [ fhir:v "Coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "362O9ITL9D" ] ;
+         fhir:display [ fhir:v "ACETAMINOPHEN" ]
+       ] ) ;
+       fhir:text [ fhir:v "ACETAMINOPHEN" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "1000"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu> a fhir:Medication ;
+  fhir:id [ fhir:v "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu&quot; </p></div><p><b>code</b>: Pentasa Slow Release Tablets 1g <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#77022; phpid#0xF79CABF272B6A7EEF104DDDA44E827xx &quot;Mesalazine, 1g, Tablets&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#A07EC02 &quot;mesalazine&quot;)</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>MESALAMINE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#4Q81I59GXC)</span></td><td>1000 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/man"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "77022" ] ;
+       fhir:display [ fhir:v "Pentasa Slow Release Tablets 1g" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0xF79CABF272B6A7EEF104DDDA44E827xx" ] ;
+       fhir:display [ fhir:v "Mesalazine, 1g, Tablets" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "A07EC02" ] ;
+       fhir:display [ fhir:v "mesalazine" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10219000" ] ;
+       fhir:display [ fhir:v "Tablet" ]
+     ] ) ;
+     fhir:text [ fhir:v "Tablet" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4Q81I59GXC" ] ;
+         fhir:display [ fhir:v "MESALAMINE" ]
+       ] ) ;
+       fhir:text [ fhir:v "MESALAMINE" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "1000"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,859 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "gravitate-Pedro",
+  "identifier" : {
+    "system" : "https://www.gravitatehealth.eu/sid/doc",
+    "value" : "Pedro-ips-1"
+  },
+  "type" : "document",
+  "timestamp" : "2021-04-18T09:22:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://myserver.org/Composition/5702fd1d-dd26-402e-a7c0-7629a5d9bba1",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "gravitate-Pedro",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Id:</b> gravitate-Pedro<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Pedro Gravitate<br/><b>Sections:</b><br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4)</li><br/><ul><li><b>Entry:</b> <a href=\"Condition-pedro-cond-1.html\">HIV</a></li><br/><li><b>Entry:</b> <a href=\"Condition-pedro-cond-2.html\">Depression</a></li><br/><li><b>Entry:</b> <a href=\"Condition-pedro-cond-3.html\">IBS</a></li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0)</li><br/><ul><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-1.html\">Dovato lamivudine and dolutegravir, 300 mg/50 mg</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-2.html\">Mirtazapine 15 mg</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-3.html\">Calcium carbonate 500 mg</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-4.html\">Cinitrapide 1 mg</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-5.html\">Collagen and magnesium supplements</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-6.html\">Vitamin C supplements</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-7.html\">Protein supplements</a></li><br/></ul></ul></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "60591-5",
+          "display" : "Patient summary Document"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/pedro-patient",
+        "display" : "Pedro Gravitate"
+      },
+      "date" : "2018-07-10T15:22:00+02:00",
+      "author" : [{
+        "reference" : "Practitioner/pedro-pract",
+        "display" : "Dr. Anna Karlsson"
+      }],
+      "title" : "Patient Summary (Pedro Gravitate)",
+      "confidentiality" : "N",
+      "section" : [{
+        "title" : "Problem List",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11450-4",
+            "display" : "Problem list Reported"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Condition/pedro-cond-1",
+          "display" : "Depression"
+        },
+        {
+          "reference" : "Condition/pedro-cond-2",
+          "display" : "HIV"
+        },
+        {
+          "reference" : "Condition/pedro-cond-3",
+          "display" : "IBS"
+        }]
+      },
+      {
+        "title" : "Medication Summary",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10160-0",
+            "display" : "Hx of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "MedicationStatement/pedro-med-stat-1",
+          "display" : "Dovato lamivudine and dolutegravir, 300 mg/50 mg"
+        },
+        {
+          "reference" : "MedicationStatement/pedro-med-stat-2",
+          "display" : "Mirtazapine 15 mg"
+        },
+        {
+          "reference" : "MedicationStatement/pedro-med-stat-3",
+          "display" : "Calcium carbonate 500 mg"
+        },
+        {
+          "reference" : "MedicationStatement/pedro-med-stat-4",
+          "display" : "Cinitrapide 1 mg"
+        },
+        {
+          "reference" : "MedicationStatement/pedro-med-stat-5",
+          "display" : "Collagen and magnesium supplements"
+        },
+        {
+          "reference" : "MedicationStatement/pedro-med-stat-6",
+          "display" : "Vitamin C supplements"
+        },
+        {
+          "reference" : "MedicationStatement/pedro-med-stat-7",
+          "display" : "Protein supplements"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Patient/pedro-patient",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "pedro-patient",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Age: 42 years. I live alone, single. Electronics store salesperson Smoker since the age of 20 Interests: cultural events and concerts. I enjoy mountain activities, skiing in winter and hiking the rest of the year. Health Conditions HIV (diagnosed with 38 years) Depression</div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "urn:iso:std:iso:3166",
+              "code" : "ES",
+              "display" : "Spain"
+            }]
+          }
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+      }],
+      "identifier" : [{
+        "system" : "https://www.gravitatehealth.eu/sid/doc",
+        "value" : "Pedro-1"
+      }],
+      "active" : true,
+      "name" : [{
+        "family" : "Gravitate",
+        "given" : ["Pedro"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1980-10-05"
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Practitioner/pedro-pract",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "pedro-pract",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"pedro-pract\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;pedro-pract&quot; </p></div><p><b>name</b>: Xavier García </p></div>"
+      },
+      "name" : [{
+        "family" : "García",
+        "given" : ["Xavier"],
+        "prefix" : ["Dr."]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Condition/pedro-cond-1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "pedro-cond-1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"pedro-cond-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;pedro-cond-1&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Depressive disorder (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#35489007)</span></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "35489007",
+          "display" : "Depressive disorder (disorder)"
+        }],
+        "text" : "Depressive disorder (disorder)"
+      },
+      "subject" : {
+        "reference" : "Patient/pedro-patient",
+        "display" : "Pedro Gravitate"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Condition/pedro-cond-2",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "pedro-cond-2",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"pedro-cond-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;pedro-cond-2&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Human immunodeficiency virus infection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#86406008)</span></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><p><b>onset</b>: 2018</p><p><b>asserter</b>: <a href=\"#Practitioner_pedro-pract\">See above (Practitioner/pedro-pract: Dr. Xavier García)</a></p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "86406008",
+          "display" : "Human immunodeficiency virus infection"
+        }],
+        "text" : "Human immunodeficiency virus infection"
+      },
+      "subject" : {
+        "reference" : "Patient/pedro-patient",
+        "display" : "Pedro Gravitate"
+      },
+      "onsetDateTime" : "2018",
+      "asserter" : {
+        "reference" : "Practitioner/pedro-pract",
+        "display" : "Dr. Xavier García"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Condition/pedro-cond-3",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "pedro-cond-3",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"pedro-cond-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;pedro-cond-3&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Irritable bowel syndrome <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#10743008)</span></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "10743008",
+          "display" : "Irritable bowel syndrome"
+        }],
+        "text" : "Irritable bowel syndrome"
+      },
+      "subject" : {
+        "reference" : "Patient/pedro-patient",
+        "display" : "Pedro Gravitate"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/pedro-med-stat-1",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "pedro-med-stat-1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-1&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_9d7be868-8264-4d94-ad04-ef04ecc92e52\">See above (Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52: Dovato 50 mg/300 mg (Dolutegravir/ Lamivudine) tablets)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52",
+        "display" : "Dovato 50 mg/300 mg (Dolutegravir/ Lamivudine) tablets"
+      },
+      "subject" : {
+        "reference" : "Patient/pedro-patient",
+        "display" : "Pedro Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/pedro-med-stat-2",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "pedro-med-stat-2",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-2&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4\">See above (Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4: Mirtazapine 30 mg Coated Tablet)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4",
+        "display" : "Mirtazapine 30 mg Coated Tablet"
+      },
+      "subject" : {
+        "reference" : "Patient/pedro-patient",
+        "display" : "Pedro Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/pedro-med-stat-3",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "pedro-med-stat-3",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-3&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda7785g\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g: CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g",
+        "display" : "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
+      },
+      "subject" : {
+        "reference" : "Patient/pedro-patient",
+        "display" : "Pedro Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/pedro-med-stat-4",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "pedro-med-stat-4",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-4&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77854\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854: cinitrapide 1 mg)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854",
+        "display" : "cinitrapide 1 mg"
+      },
+      "subject" : {
+        "reference" : "Patient/pedro-patient",
+        "display" : "Pedro Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/pedro-med-stat-5",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "pedro-med-stat-5",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-5\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-5&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77855\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855: Collagen and magnesium supplements)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855",
+        "display" : "Collagen and magnesium supplements"
+      },
+      "subject" : {
+        "reference" : "Patient/pedro-patient",
+        "display" : "Pedro Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/pedro-med-stat-6",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "pedro-med-stat-6",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-6\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-6&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77856\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856: Vitaminc C supplement)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856",
+        "display" : "Vitaminc C supplement"
+      },
+      "subject" : {
+        "reference" : "Patient/pedro-patient",
+        "display" : "Pedro Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/pedro-med-stat-7",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "pedro-med-stat-7",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-7\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-7&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77857\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857: Protein supplements)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857",
+        "display" : "Protein supplements"
+      },
+      "subject" : {
+        "reference" : "Patient/pedro-patient",
+        "display" : "Pedro Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "9d7be868-8264-4d94-ad04-ef04ecc92e52",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"9d7be868-8264-4d94-ad04-ef04ecc92e52\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;9d7be868-8264-4d94-ad04-ef04ecc92e52&quot; </p></div><p><b>code</b>: Dovato 50 mg/300 mg 30 tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#EU/1/19/1370/001; phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA &quot;lamivudine and dolutegravir, 300 mg/50 mg, tablets&quot;; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#787165000 &quot;Dolutegravir- and lamivudine-containing product in oral dose form&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#J05AR25 &quot;lamivudine and dolutegravir&quot;)</span></p><p><b>form</b>: Coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10220000)</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: lamivudine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#2T8Q726O95)</span></p><p><b>strength</b>: 300 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: dolutegravir <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#DKO1W9H7M1)</span></p><p><b>strength</b>: 50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+          "code" : "EU/1/19/1370/001",
+          "display" : "Dovato 50 mg/300 mg 30 tablets"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0x073AF2E5B92AE19E8B67635AFFB3D6CA",
+          "display" : "lamivudine and dolutegravir, 300 mg/50 mg, tablets"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "787165000",
+          "display" : "Dolutegravir- and lamivudine-containing product in oral dose form"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J05AR25",
+          "display" : "lamivudine and dolutegravir"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10220000",
+          "display" : "Coated tablet"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "2T8Q726O95",
+            "display" : "lamivudine"
+          }],
+          "text" : "lamivudine"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 300,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tablet",
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "15054000"
+          }
+        }
+      },
+      {
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "DKO1W9H7M1",
+            "display" : "dolutegravir"
+          }],
+          "text" : "dolutegravir"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 50,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tablet",
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "15054000"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4&quot; </p></div><p><b>code</b>: MIRTAZAPINA CINFA 30 mg Coated Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#PL31654/0006; phpid#0x6c47381b040e5b588db23b2272f28eec &quot;mirtazapine 30 mg, tablets&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#N06AX11 &quot;mirtazapine&quot;)</span></p><p><b>form</b>: Coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10220000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Mirtazapine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#A051Q2099Q)</span></td><td>30 g<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+          "code" : "PL31654/0006",
+          "display" : "MIRTAZAPINA CINFA 30 mg Coated Tablet"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0x6c47381b040e5b588db23b2272f28eec",
+          "display" : "mirtazapine 30 mg, tablets"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "N06AX11",
+          "display" : "mirtazapine"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10220000",
+          "display" : "Coated tablet"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "A051Q2099Q",
+            "display" : "Mirtazapine"
+          }],
+          "text" : "Mirtazapine"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 30,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "g"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tablet",
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "15054000"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "6f4151e9-91f6-4f1e-adc3-fb94dda7785g",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda7785g\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda7785g&quot; </p></div><p><b>code</b>: CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#16028/0049; phpid#0xF79CABF272B6A7EEF104DDDA44E82716 &quot;Calcium carbonate 500 mg&quot;)</span></p><p><b>form</b>: Effervescent tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10222000)</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: calcium carbonate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#H0G9379FGK &quot;Calcium carbonate&quot;)</span></p><p><b>strength</b>: 1000 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: cholecalciferol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#1C6V77QF41)</span></p><p><b>strength</b>: 880 {UI}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {UI} = '{UI}')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.gravitatehealth.eu/sid/man",
+          "code" : "16028/0049",
+          "display" : "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0xF79CABF272B6A7EEF104DDDA44E82716",
+          "display" : "Calcium carbonate 500 mg"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10222000",
+          "display" : "Effervescent tablet"
+        }],
+        "text" : "Effervescent tablet"
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "H0G9379FGK",
+            "display" : "Calcium carbonate"
+          }],
+          "text" : "calcium carbonate"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 1000,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tablet",
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "15054000"
+          }
+        }
+      },
+      {
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "1C6V77QF41",
+            "display" : "cholecalciferol"
+          }],
+          "text" : "cholecalciferol"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 880,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "{UI}"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tablet",
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "15054000"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "6f4151e9-91f6-4f1e-adc3-fb94dda77854",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda77854\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda77854&quot; </p></div><p><b>code</b>: BLASTON 1 mg tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#xxxxxx; phpid#0xbb82cd10ab2add752b2b9224931077b2 &quot;cinitrapide 1 mg tablet&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#A03FA08 &quot;Cinitapride&quot;)</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>CINITAPRIDE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#R8I97I2L24)</span></td><td>1 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.gravitatehealth.eu/sid/man",
+          "code" : "xxxxxx",
+          "display" : "BLASTON 1 mg tablets"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0xbb82cd10ab2add752b2b9224931077b2",
+          "display" : "cinitrapide 1 mg tablet"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "A03FA08",
+          "display" : "Cinitapride"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10219000",
+          "display" : "Tablet"
+        }],
+        "text" : "Tablet"
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "R8I97I2L24",
+            "display" : "CINITAPRIDE"
+          }],
+          "text" : "CINITAPRIDE"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 1,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tablet",
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "15054000"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "6f4151e9-91f6-4f1e-adc3-fb94dda77855",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda77855\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda77855&quot; </p></div><p><b>code</b>: AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#yyy)</span></p><p><b>form</b>: Oral powder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10201000)</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: MAGNESIUM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#I38ZP9992A)</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: HYALURONIC ACID <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#S270N0TRQY)</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: HUMAN TYPE I COLLAGEN <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#PT3TGI7OIP)</span></p></blockquote></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.gravitatehealth.eu/sid/man",
+          "code" : "yyy",
+          "display" : "AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10201000",
+          "display" : "Oral powder"
+        }],
+        "text" : "Oral powder"
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "I38ZP9992A",
+            "display" : "MAGNESIUM"
+          }],
+          "text" : "MAGNESIUM"
+        }
+      },
+      {
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "S270N0TRQY",
+            "display" : "HYALURONIC ACID"
+          }],
+          "text" : "HYALURONIC ACID"
+        }
+      },
+      {
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "PT3TGI7OIP",
+            "display" : "HUMAN TYPE I COLLAGEN"
+          }],
+          "text" : "HUMAN TYPE I COLLAGEN"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "6f4151e9-91f6-4f1e-adc3-fb94dda77856",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda77856\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda77856&quot; </p></div><p><b>code</b>: SORIA NATURAL VITAMINA C 36 COMPRIMIDOS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#kkk; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#A11GA01 &quot;ascorbic acid (vit C)&quot;)</span></p><p><b>form</b>: Modified-release tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10227000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td></tr><tr><td>*</td><td>Vitamin C <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#PQ6CK8PD0R &quot;ASCORBIC ACID&quot;)</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.gravitatehealth.eu/sid/man",
+          "code" : "kkk",
+          "display" : "SORIA NATURAL VITAMINA C 36 COMPRIMIDOS"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "A11GA01",
+          "display" : "ascorbic acid (vit C)"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10227000",
+          "display" : "Modified-release tablet"
+        }],
+        "text" : "Modified-release tablet"
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "PQ6CK8PD0R",
+            "display" : "ASCORBIC ACID"
+          }],
+          "text" : "Vitamin C"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "6f4151e9-91f6-4f1e-adc3-fb94dda77857",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda77857\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda77857&quot; </p></div><p><b>code</b>: NATURES PLUS SPIRU-TEIN BATIDO PROTEINA SABOR COOKIES 525GR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#zzzz)</span></p><p><b>form</b>: Oral powder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10201000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td></tr><tr><td>*</td><td>SOY PROTEIN <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#R44IWB3RN5)</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.gravitatehealth.eu/sid/man",
+          "code" : "zzzz",
+          "display" : "NATURES PLUS SPIRU-TEIN BATIDO PROTEINA SABOR COOKIES 525GR"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10201000",
+          "display" : "Oral powder"
+        }],
+        "text" : "Oral powder"
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "R44IWB3RN5",
+            "display" : "SOY PROTEIN"
+          }],
+          "text" : "SOY PROTEIN"
+        }
+      }]
+    }
+  }]
+}

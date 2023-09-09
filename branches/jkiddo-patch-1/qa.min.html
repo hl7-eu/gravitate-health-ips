@@ -1,0 +1,515 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 27, errors = 10, warn = 12, info = 51-->
+<head>
+  <title>GhR4ImplementationGuide : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for GhR4ImplementationGuide</h1>
+ <p>Generated Mon Apr 24 10:20:07 UTC 2023, FHIR version 4.0.1 for hl7.eu.fhir.gh-ips#0.1.0 (canonical = <a href="http://hl7.eu/fhir/ig/gravitate-health-ips">http://hl7.eu/fhir/ig/gravitate-health-ips</a> (<a href="http://hl7.eu/fhir/ig/gravitate-health-ips/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.3.4</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.eu.fhir.gh-ips, Canonical = http://hl7.eu/fhir/ig/gravitate-health-ips</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>The file package-list.json should not exist in the root folder <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li><span title="Invalid HTTP response 404 from http://hl7.eu/fhir/ig/gravitate-health-ips/package-list.json?nocache=1682331606566 (Not Found) (content in /tmp/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">1 Suppressed Issue</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.eu.fhir.gh-ips</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.eu/fhir/ig/gravitate-health-ips</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="background-color: #ffcccc">HL7 Packages must have an id that starts with hl7.fhir.</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.1.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.ips</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="background-color: #ffcccc">current</span><span style="background-color: #ffcccc"> </span><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red; background-color: #ffcccc" title="Illegal Version">V</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/ips</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://build.fhir.org/ig/HL7/fhir-ips/</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Cannot be published with a dependency on a current build version</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above. Latest Release is 5.1.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> fhir.dicom</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2022.4.20221006 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/packages/fhir.dicom</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/packages/fhir.dicom</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 2023.1.20230123</td></tr>
+</table><para>Templates: hl7.eu.fhir.pscp.template#0.0.1 -&gt; fhir.base.template#current</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.eu/fhir/ig/gravitate-health-ips (Problem #1 with package-list.json at http://hl7.eu/fhir/ig/gravitate-health-ips: Invalid HTTP response 404 from http://hl7.eu/fhir/ig/gravitate-health-ips/package-list.json?nocache=1682331563460 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 10, warn = 12, info = 51, broken links = 27</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>27</b></td><td><b>7</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-questi-dimens-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-questi-dimens-cs</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-Questionnaire-example"><b>/github/workspace/fsh-generated/resources/Questionnaire-Questionnaire-example</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-example-persona-profile"><b>/github/workspace/fsh-generated/resources/StructureDefinition-example-persona-profile</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-PDcategoryVS"><b>/github/workspace/fsh-generated/resources/ValueSet-PDcategoryVS</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-PDtypeVS"><b>/github/workspace/fsh-generated/resources/ValueSet-PDtypeVS</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/PDcategoryVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/PDtypeVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/questi-dimens-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Cecilia.html#l819">output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 288</a></b></td><td><b>error</b></td><td><b>The link 'Condition-cecilia-cond-1.html' for &quot;COPD&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Cecilia.html#l826">output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 364</a></b></td><td><b>error</b></td><td><b>The link 'Condition-cecilia-cond-2.html' for &quot;Diabetese Type 2&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Cecilia.html#l833">output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 452</a></b></td><td><b>error</b></td><td><b>The link 'Condition-cecilia-cond-3.html' for &quot;Osteoporosis&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Cecilia.html#l840">output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 536</a></b></td><td><b>error</b></td><td><b>The link 'Condition-cecilia-cond-4.html' for &quot;Congestive Heart Failure&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Cecilia.html#l857">output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 735</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-cecilia-med-stat-1.html' for &quot;Fosamax 70 mg tablets&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Cecilia.html#l864">output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 842</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-cecilia-med-stat-2.html' for &quot;Metformine + sitagliptine&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Cecilia.html#l871">output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 953</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-cecilia-med-stat-3.html' for &quot;Fluticasone 92mcg + vilanterol 22mcg&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Cecilia.html#l878">output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 1075</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-cecilia-med-stat-4.html' for &quot;Digoxin&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Matilda.html#l671">output/Bundle-gravitate-Matilda.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 532, column 288</a></b></td><td><b>error</b></td><td><b>The link 'Condition-matilda-cond-1.html' for &quot;Crohn's disease&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Matilda.html#l688">output/Bundle-gravitate-Matilda.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 532, column 478</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-matilda-med-stat-1.html' for &quot;Humira 40 mg&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Matilda.html#l695">output/Bundle-gravitate-Matilda.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 532, column 576</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-matilda-med-stat-2.html' for &quot;Paracetamol 500 mg&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Matilda.html#l702">output/Bundle-gravitate-Matilda.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 532, column 680</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-matilda-med-stat-3.html' for &quot;Pentasa 1g mesalazine&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Pedro.html#l952">output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 284</a></b></td><td><b>error</b></td><td><b>The link 'Condition-pedro-cond-1.html' for &quot;HIV&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Pedro.html#l959">output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 357</a></b></td><td><b>error</b></td><td><b>The link 'Condition-pedro-cond-2.html' for &quot;Depression&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Pedro.html#l966">output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 437</a></b></td><td><b>error</b></td><td><b>The link 'Condition-pedro-cond-3.html' for &quot;IBS&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Pedro.html#l983">output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 613</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-pedro-med-stat-1.html' for &quot;Dovato lamivudine and dolutegravir, 300 mg/50 mg&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Pedro.html#l990">output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 745</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-pedro-med-stat-2.html' for &quot;Mirtazapine 15 mg&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Pedro.html#l997">output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 846</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-pedro-med-stat-3.html' for &quot;Calcium carbonate 500 mg&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Pedro.html#l1004">output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 954</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-pedro-med-stat-4.html' for &quot;Cinitrapide 1 mg&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Pedro.html#l1011">output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 1054</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-pedro-med-stat-5.html' for &quot;Collagen and magnesium supplements&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Pedro.html#l1018">output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 1172</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-pedro-med-stat-6.html' for &quot;Vitamin C supplements&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-gravitate-Pedro.html#l1025">output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 1277</a></b></td><td><b>error</b></td><td><b>The link 'MedicationStatement-pedro-med-stat-7.html' for &quot;Protein supplements&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="SampleData.html#l339">output/SampleData.html#/html/body/div/div/div/div/div/ul/li/a at Line 201, column 8</a></b></td><td><b>error</b></td><td><b>The link 'Composition-gravitate-Cecilia.html' for &quot;Cecilia (SWE)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="SampleData.html#l343">output/SampleData.html#/html/body/div/div/div/div/div/ul/li/a at Line 202, column 8</a></b></td><td><b>error</b></td><td><b>The link 'Composition-gravitate-helen.html' for &quot;Helen (GB)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="SampleData.html#l347">output/SampleData.html#/html/body/div/div/div/div/div/ul/li/a at Line 203, column 8</a></b></td><td><b>error</b></td><td><b>The link 'Composition-gravitate-Pedro.html' for &quot;Pedro (ES)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="SampleData.html#l351">output/SampleData.html#/html/body/div/div/div/div/div/ul/li/a at Line 204, column 8</a></b></td><td><b>error</b></td><td><b>The link 'Composition-gravitate-Matilda.html' for &quot;Matilda (ES)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="SampleData.html#l355">output/SampleData.html#/html/body/div/div/div/div/div/ul/li/a at Line 205, column 8</a></b></td><td><b>error</b></td><td><b>The link 'Composition-gravitate-maria.html' for &quot;Maria (NOR)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-questi-dimens-cs"> </a>
+<h2><a href="CodeSystem-questi-dimens-cs.html">fsh-generated/resources/CodeSystem-questi-dimens-cs.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem (l1/c3651)</b></td><td><b>error</b></td><td title="CODESYSTEM_SHAREABLE_MISSING_HL7"><b>The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem (l1/c3651)</b></td><td><b>error</b></td><td title="CODESYSTEM_SHAREABLE_MISSING_HL7"><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem (l1/c3651)</b></td><td><b>error</b></td><td title="CODESYSTEM_SHAREABLE_MISSING_HL7"><b>The ShareableCodeSystem profile says that the description element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem (l1/c3651)</b></td><td><b>error</b></td><td title="CODESYSTEM_SHAREABLE_MISSING_HL7"><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Questionnaire-Questionnaire-example"> </a>
+<h2><a href="Questionnaire-Questionnaire-example.html">fsh-generated/resources/Questionnaire-Questionnaire-example.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[2].answerOption[2].value.ofType(Coding) (l1/c46393)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#O should be 'Other Gender', not 'Other' for 'http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#O'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[2].answerOption[3].value.ofType(Coding) (l1/c46531)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#ND should be 'Non-disclosed gender', not 'Non-Disclosed' for 'http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#ND'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[9].answerOption[2].value.ofType(Coding) (l1/c50336)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME should be 'some', not 'some (2-3)' for 'http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.item[11].answerOption[2].value.ofType(Coding) (l1/c51075)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME should be 'some', not 'some (2-3)' for 'http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-example-persona-profile"> </a>
+<h2><a href="StructureDefinition-example-persona-profile.html">fsh-generated/resources/StructureDefinition-example-persona-profile.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health-ips/StructureDefinition/example-persona-profile')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-PDcategoryVS"> </a>
+<h2><a href="ValueSet-PDcategoryVS.html">fsh-generated/resources/ValueSet-PDcategoryVS.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c493)</b></td><td><b>error</b></td><td title="VALUESET_SHAREABLE_MISSING_HL7"><b>The ShareableValueSet profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c493)</b></td><td><b>error</b></td><td title="VALUESET_SHAREABLE_MISSING_HL7"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c493)</b></td><td><b>error</b></td><td title="VALUESET_SHAREABLE_MISSING_HL7"><b>The ShareableValueSet profile says that the description element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-PDtypeVS"> </a>
+<h2><a href="ValueSet-PDtypeVS.html">fsh-generated/resources/ValueSet-PDtypeVS.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c481)</b></td><td><b>error</b></td><td title="VALUESET_SHAREABLE_MISSING_HL7"><b>The ShareableValueSet profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c481)</b></td><td><b>error</b></td><td title="VALUESET_SHAREABLE_MISSING_HL7"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c481)</b></td><td><b>error</b></td><td title="VALUESET_SHAREABLE_MISSING_HL7"><b>The ShareableValueSet profile says that the description element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>No schematrons available for Logical Models</b></p><ul>
+ <li>The link 'StructureDefinition-Patient.sch' for &quot;Schematron&quot; cannot be resolved <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="CODESYSTEM_SHAREABLE_MISSING_HL7"> </a>
+<h2>CODESYSTEM_SHAREABLE_MISSING_HL7</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-questi-dimens-cs.html">fsh-generated/resources/CodeSystem-questi-dimens-cs.json</a></td><td><b>The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-questi-dimens-cs.html">fsh-generated/resources/CodeSystem-questi-dimens-cs.json</a></td><td><b>The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-questi-dimens-cs.html">fsh-generated/resources/CodeSystem-questi-dimens-cs.json</a></td><td><b>The ShareableCodeSystem profile says that the description element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-questi-dimens-cs.html">fsh-generated/resources/CodeSystem-questi-dimens-cs.json</a></td><td><b>The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_PassThrough_TX_Message"> </a>
+<h2>Terminology_PassThrough_TX_Message</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-Questionnaire-example.html">fsh-generated/resources/Questionnaire-Questionnaire-example.json</a></td><td><b>Display Name for http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#O should be 'Other Gender', not 'Other' for 'http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#O'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-Questionnaire-example.html">fsh-generated/resources/Questionnaire-Questionnaire-example.json</a></td><td><b>Display Name for http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#ND should be 'Non-disclosed gender', not 'Non-Disclosed' for 'http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#ND'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-Questionnaire-example.html">fsh-generated/resources/Questionnaire-Questionnaire-example.json</a></td><td><b>Display Name for http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME should be 'some', not 'some (2-3)' for 'http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-Questionnaire-example.html">fsh-generated/resources/Questionnaire-Questionnaire-example.json</a></td><td><b>Display Name for http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME should be 'some', not 'some (2-3)' for 'http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Cecilia.html">fsh-generated/resources/Bundle-gravitate-Cecilia.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Cecilia.html">fsh-generated/resources/Bundle-gravitate-Cecilia.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Cecilia.html">fsh-generated/resources/Bundle-gravitate-Cecilia.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Cecilia.html">fsh-generated/resources/Bundle-gravitate-Cecilia.json</a></td><td><b>Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Cecilia.html">fsh-generated/resources/Bundle-gravitate-Cecilia.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Matilda.html">fsh-generated/resources/Bundle-gravitate-Matilda.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Matilda.html">fsh-generated/resources/Bundle-gravitate-Matilda.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Matilda.html">fsh-generated/resources/Bundle-gravitate-Matilda.json</a></td><td><b>Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Pedro.html">fsh-generated/resources/Bundle-gravitate-Pedro.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Pedro.html">fsh-generated/resources/Bundle-gravitate-Pedro.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Pedro.html">fsh-generated/resources/Bundle-gravitate-Pedro.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Pedro.html">fsh-generated/resources/Bundle-gravitate-Pedro.json</a></td><td><b>Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Pedro.html">fsh-generated/resources/Bundle-gravitate-Pedro.json</a></td><td><b>Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Pedro.html">fsh-generated/resources/Bundle-gravitate-Pedro.json</a></td><td><b>Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Pedro.html">fsh-generated/resources/Bundle-gravitate-Pedro.json</a></td><td><b>Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-Pedro.html">fsh-generated/resources/Bundle-gravitate-Pedro.json</a></td><td><b>Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-helen.html">fsh-generated/resources/Bundle-gravitate-helen.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-helen.html">fsh-generated/resources/Bundle-gravitate-helen.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-helen.html">fsh-generated/resources/Bundle-gravitate-helen.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-helen.html">fsh-generated/resources/Bundle-gravitate-helen.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-1.html">fsh-generated/resources/Bundle-gravitate-ips-1.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-1.html">fsh-generated/resources/Bundle-gravitate-ips-1.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-1.html">fsh-generated/resources/Bundle-gravitate-ips-1.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-1.html">fsh-generated/resources/Bundle-gravitate-ips-1.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-1.html">fsh-generated/resources/Bundle-gravitate-ips-1.json</a></td><td><b>Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-1.html">fsh-generated/resources/Bundle-gravitate-ips-1.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-2.html">fsh-generated/resources/Bundle-gravitate-ips-2.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-2.html">fsh-generated/resources/Bundle-gravitate-ips-2.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-2.html">fsh-generated/resources/Bundle-gravitate-ips-2.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-2.html">fsh-generated/resources/Bundle-gravitate-ips-2.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-2.html">fsh-generated/resources/Bundle-gravitate-ips-2.json</a></td><td><b>Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-2.html">fsh-generated/resources/Bundle-gravitate-ips-2.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-3.html">fsh-generated/resources/Bundle-gravitate-ips-3.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-3.html">fsh-generated/resources/Bundle-gravitate-ips-3.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-3.html">fsh-generated/resources/Bundle-gravitate-ips-3.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-3.html">fsh-generated/resources/Bundle-gravitate-ips-3.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-3.html">fsh-generated/resources/Bundle-gravitate-ips-3.json</a></td><td><b>Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-3.html">fsh-generated/resources/Bundle-gravitate-ips-3.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-4.html">fsh-generated/resources/Bundle-gravitate-ips-4.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-4.html">fsh-generated/resources/Bundle-gravitate-ips-4.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-4.html">fsh-generated/resources/Bundle-gravitate-ips-4.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-4.html">fsh-generated/resources/Bundle-gravitate-ips-4.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-4.html">fsh-generated/resources/Bundle-gravitate-ips-4.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-ips-4.html">fsh-generated/resources/Bundle-gravitate-ips-4.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-maria.html">fsh-generated/resources/Bundle-gravitate-maria.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-maria.html">fsh-generated/resources/Bundle-gravitate-maria.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-maria.html">fsh-generated/resources/Bundle-gravitate-maria.json</a></td><td><b>Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-maria.html">fsh-generated/resources/Bundle-gravitate-maria.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-maria.html">fsh-generated/resources/Bundle-gravitate-maria.json</a></td><td><b>Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-gravitate-maria.html">fsh-generated/resources/Bundle-gravitate-maria.json</a></td><td><b>Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALUESET_SHAREABLE_MISSING_HL7"> </a>
+<h2>VALUESET_SHAREABLE_MISSING_HL7</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-PDcategoryVS.html">fsh-generated/resources/ValueSet-PDcategoryVS.json</a></td><td><b>The ShareableValueSet profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-PDcategoryVS.html">fsh-generated/resources/ValueSet-PDcategoryVS.json</a></td><td><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-PDcategoryVS.html">fsh-generated/resources/ValueSet-PDcategoryVS.json</a></td><td><b>The ShareableValueSet profile says that the description element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-PDtypeVS.html">fsh-generated/resources/ValueSet-PDtypeVS.json</a></td><td><b>The ShareableValueSet profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-PDtypeVS.html">fsh-generated/resources/ValueSet-PDtypeVS.json</a></td><td><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-PDtypeVS.html">fsh-generated/resources/ValueSet-PDtypeVS.json</a></td><td><b>The ShareableValueSet profile says that the description element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile</b></td>
+   </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.GH-IPS\Home - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/pcsp.css" rel="stylesheet"/>
+    <link href="assets/css/ips-viewer.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
+            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
+          </a>
+        </div>
+ <!--        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
+        </div> -->
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide (FHIR R4)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contextual information
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="connections.html">Connections</a>
+      </li>
+      <li>
+        <a href="use-case-example.html">Use Case</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Capability Statements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CapabilityStatement-capability-statement-ema.html">SmPC / PL</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="copyright.html">Copyright</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide (FHIR R4), published by . This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/hl7-eu/gravitate-health-ips">https://github.com/hl7-eu/gravitate-health-ips</a> and changes regularly. See the <a href="http://hl7.eu/fhir/ig/gravitate-health-ips/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.eu/fhir/ig/gravitate-health-ips/ImplementationGuide/hl7.eu.fhir.gh-ips<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.eu/fhir/ig/gravitate-health-ips/ImplementationGuide/hl7.eu.fhir.gh-ips"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.eu/fhir/ig/gravitate-health-ips/ImplementationGuide/hl7.eu.fhir.gh-ips|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2023-04-28
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">GhR4ImplementationGuide</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#objective" id="markdown-toc-objective">Objective</a></li>
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
+  <li><a href="#relationships-with-other-projects-and-guidelines" id="markdown-toc-relationships-with-other-projects-and-guidelines">Relationships with Other Projects and Guidelines</a></li>
+  <li><a href="#overly-simplfied-model" id="markdown-toc-overly-simplfied-model">Overly simplfied model</a></li>
+  <li><a href="#authors-and-contributors" id="markdown-toc-authors-and-contributors">Authors and Contributors</a></li>
+</ul>
+
+</div>
+<h3 id="overview">Overview</h3>
+<p>This FHIR Implementation Guide demonstrates how to integrate patient health information from the International Patient Summary (IPS) with medicinal product information from regulatory approved electronic Product Information (ePI) documents.</p>
+
+<p>Together, the IPS and ePI will facilitate the creation of new digital platforms that give patients a more accessible way of acquiring trusted health and medicinal product Information.</p>
+
+<h3 id="purpose">Purpose</h3>
+<p>To specify how to:</p>
+<ol>
+  <li>Extract a medication list and patient information (e.g., allergies, immunizations, conditions) from an IPS.</li>
+  <li>Acquire the ePI documents (in multiple languages) that correspond to each medication in the medication list.</li>
+  <li>Combine and display the IPS and ePI information for consumer consumption.</li>
+</ol>
+
+<h3 id="objective">Objective</h3>
+<p>It is Gravitate Health’s vision that engagement of citizens in their own health can only be achieved with access to actionable, understandable, relevant, reliable and evidence-based information that meets their specific needs, health context, and literacy level.</p>
+
+<p>To that end, the Gravitate-Health project aims to:</p>
+<ol>
+  <li>Equip and empower citizens with digital information tools that make them confident, active, and responsive in their patient journey.</li>
+  <li>Encourage safe use of medicines for better health outcomes and quality of life.</li>
+  <li>Support the implementation of a common European ePI standard, a common IPS Standard and their connection to the health and healthcare system.</li>
+  <li>Provide input to policy makers on potential legislative developments to support use of new digital tools.</li>
+</ol>
+
+<h3 id="background">Background</h3>
+<h4 id="gravitate-health">Gravitate Health</h4>
+<p>Gravitate Health is a public – private partnership with 39 members from Europe and the US, co-led by University of Oslo (coordinator) and Pfizer (industry lead), funded by the Innovative Medicines Initiative (IMI) – a joint undertaking of the European Commission, the European Federation of Pharmaceutical Industries and Associations (EFPIA), IMI2 Associated Partners.</p>
+
+<h4 id="fhir-documents">FHIR Documents</h4>
+<p>Both the ePI and the IPS are based on the FHIR Document model; meaning, a Bundle resource, Composition resource and a collection of other resources. Refer to <a href="http://hl7.org/fhir/documents.html">section 3.3 FHIR Documents</a> of the FHIR specification for further details on documents.</p>
+
+<h4 id="epi-documents">ePI Documents</h4>
+<p>A medicine’s product information is a pivotal source of regulated and scientifically validated information that assists healthcare professionals (Summary of Product Characteristics or SmPC) in prescribing and dispensing the medicine and informs consumers about its safe use (Patient Information Leaflet or PIL).</p>
+
+<p>Trusted medicinal product information is based on non-computable formats (i.e., Word or PDF); is difficult to find; difficult to search; and is not meeting patient needs (e.g., available in multiple languages, accessibility support, readability).</p>
+
+<p>As a result, patients and healthcare professionals turn to disparate sources that may or may not be trustworthy or complete. It can also contribute to less than optimal levels of understanding, use, or access to medicinal infromation. This can be a barrier to a citizens active and meaningful participation in their healthcare and clinical research.</p>
+
+<p>Hence the need to transition to a modern electronic platform that resolves issues related to distribution, format and content of medicinal product information.</p>
+
+<h4 id="ips-documents">IPS Documents</h4>
+<p>An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care. The IPS is minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant. Refer to the <a href="http://build.fhir.org/ig/HL7/fhir-ips/index.html">IPS Implementation Guide</a> for further detail.</p>
+
+<h3 id="scope">Scope</h3>
+<h4 id="in-scope">In-scope</h4>
+<p>FHIR ePI documents (Refer to section ## for a list of in-scope Resources)
+FHIR IPS documents (Refer to section ## for a list of in-scope Resources)</p>
+
+<h4 id="out-of-scope">Out of Scope</h4>
+<p>It is not in the scope of this Implementation Guide to provide any solutions and strategies for the creation, sharing, mapping, translation, and use of the ePI or IPS.</p>
+
+<p>All resources should be considered out of scope unless explicitly mentioned in this Implementation Guide.</p>
+
+<h3 id="relationships-with-other-projects-and-guidelines">Relationships with Other Projects and Guidelines</h3>
+
+<p><a href="https://www.imi.europa.eu/projects-results/project-factsheets/gravitate-health">Innovative Medicines Initiative (IMI) Gravitate-Health</a></p>
+
+<p><a href="https://www.ema.europa.eu/en/electronic-product-information-human-medicines-european-union-key-principles">European Medicine Agency (EMA) Electronic product information (ePI) for human medicines</a></p>
+
+<p><a href="https://github.com/EuropeanMedicinesAgency/ePI-consultation">EMA ePI API specification v1.0</a></p>
+
+<p><a href="https://www.ema.europa.eu/en/human-regulatory/research-development/data-medicines-iso-idmp-standards/substance-product-organisation-referential-spor-master-data">EMA Substance, product, organisation and referential (SPOR) master data</a></p>
+
+<p><a href="https://www.iso.org/standard/79491.html">International Patient Summary (IPS)</a></p>
+
+<p><a href="https://www.iso.org/news/ref2234.html">International Organization for Standardization (ISO) standard for the IDentification of Medicinal Products (IDMP)</a></p>
+
+<h3 id="overly-simplfied-model">Overly simplfied model</h3>
+
+<div style="text-align: center;"><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="205px" preserveAspectRatio="none" style="width:668px;height:205px;background:#FFFFFF;" version="1.1" viewBox="0 0 668 205" width="668px" zoomAndPan="magnify"><defs><filter height="300%" id="frwleddbeev3" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><!--MD5=[034284c04f2d8f57b873bc167ca71878]
+cluster Data sources--><polygon fill="#FFFFFF" filter="url(#frwleddbeev3)" points="28.5,122,38.5,112,651.5,112,651.5,188,641.5,198,28.5,198,28.5,122" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="641.5" x2="651.5" y1="122" y2="112" /><line style="stroke:#000000;stroke-width:1.5;" x1="28.5" x2="641.5" y1="122" y2="122" /><line style="stroke:#000000;stroke-width:1.5;" x1="641.5" x2="641.5" y1="122" y2="198" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="104" x="284" y="137.9951">Data sources</text><!--MD5=[20f600c16228b3c23bd7d9463899ef95]
+cluster Gravitate Health--><polygon fill="#FFFFFF" filter="url(#frwleddbeev3)" points="139.5,16,149.5,6,342.5,6,342.5,82,332.5,92,139.5,92,139.5,16" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="332.5" x2="342.5" y1="16" y2="6" /><line style="stroke:#000000;stroke-width:1.5;" x1="139.5" x2="332.5" y1="16" y2="16" /><line style="stroke:#000000;stroke-width:1.5;" x1="332.5" x2="332.5" y1="16" y2="92" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="127" x="173.5" y="31.9951">Gravitate Health</text><!--MD5=[071e78633efbeefa968f9a56b3156a97]
+entity bundle--><ellipse cx="319.5" cy="167" fill="#FEFECE" filter="url(#frwleddbeev3)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="295.5" y="196.9951">bundle</text><!--MD5=[f3295848e80e18732035a2c41b51cbb4]
+entity International Patient Summary - IPS--><rect fill="#FEFECE" filter="url(#frwleddbeev3)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="279" x="364" y="144" /><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="623" y="149" /><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="621" y="151" /><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="621" y="155" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="239" x="379" y="176.9951">International Patient Summary - IPS</text><!--MD5=[a60473b75d4f986aa3df25514ea4f59b]
+entity documents--><ellipse cx="45.5" cy="167" fill="#FEFECE" filter="url(#frwleddbeev3)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="6" y="196.9951">documents</text><!--MD5=[ba5f44d15704637e8d600e747f56b867]
+entity EMA ePI Consultation--><rect fill="#FEFECE" filter="url(#frwleddbeev3)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="186" x="89.5" y="144" /><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="255.5" y="149" /><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="253.5" y="151" /><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="253.5" y="155" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="104.5" y="176.9951">EMA ePI Consultation</text><!--MD5=[52fc337e3c6fb21b4449709e57136fac]
+entity G-lens--><rect fill="#FEFECE" filter="url(#frwleddbeev3)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="85" x="198" y="38" /><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="263" y="43" /><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="261" y="45" /><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="261" y="49" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="213" y="70.9951">G-lens</text><!--MD5=[154514a94e574376a2985061006990e8]
+link bundle to International Patient Summary - IPS--><path d="M328.8438,167 C340.5557,167 352.2677,167 363.9797,167 " fill="none" id="bundle-International Patient Summary - IPS" style="stroke:#A80036;stroke-width:1.0;" /><!--MD5=[decca3172e99933170a9e0fcd32c152e]
+link documents to EMA ePI Consultation--><path d="M54.5977,167 C66.0889,167 77.5801,167 89.0713,167 " fill="none" id="documents-EMA ePI Consultation" style="stroke:#A80036;stroke-width:1.0;" /><!--MD5=[95c03fdabfe0090dbce504c6a077b1b1]
+link G-lens to documents--><path d="M197.6889,64.504 C160.753,69.5566 107.9148,81.8917 72.5,112 C60.0195,122.6104 52.7839,140.3584 48.9994,152.817 " fill="none" id="G-lens-to-documents" style="stroke:#A80036;stroke-width:1.0;" /><polygon fill="#A80036" points="47.5835,157.7963,53.8928,150.2337,48.9512,152.987,46.198,148.0454,47.5835,157.7963" style="stroke:#A80036;stroke-width:1.0;" /><!--MD5=[87807641220234c4be93a36e4d07185e]
+link G-lens to bundle--><path d="M268.3471,84.1973 C277.1047,92.3844 286.3462,102.045 293.5,112 C302.6932,124.793 310,141.3494 314.4977,152.941 " fill="none" id="G-lens-to-bundle" style="stroke:#A80036;stroke-width:1.0;" /><polygon fill="#A80036" points="316.3633,157.8861,316.9288,148.0535,314.5983,153.208,309.4438,150.8775,316.3633,157.8861" style="stroke:#A80036;stroke-width:1.0;" /></g></svg></div>
+
+<p><strong>Note:</strong> Model is overly simplified</p>
+
+<h3 id="authors-and-contributors">Authors and Contributors</h3>
+
+<table rules="groups">
+  <thead>
+    <tr>
+      <th style="text-align: left">Roles</th>
+      <th style="text-align: left">Name</th>
+      <th style="text-align: left">Organization</th>
+      <th style="text-align: left">Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Author</td>
+      <td style="text-align: left">Jens Kristian Villadsen</td>
+      <td style="text-align: left">Trifork</td>
+      <td style="text-align: left">jvi_at_trifork.com</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Author</td>
+      <td style="text-align: left">Craig Anderson</td>
+      <td style="text-align: left">Pfizer</td>
+      <td style="text-align: left">craig.anderson2@pfizer.com</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Author</td>
+      <td style="text-align: left">Giorgio Cangioli</td>
+      <td style="text-align: left">HL7 Europe</td>
+      <td style="text-align: left">giorgio.cangioli_at_gmail.com</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh-ips#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 28, 2023 20:31+0000">2023-04-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+	Links: <a style="color: #81BEF7"
+ 		href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7"
+ 		href="qa.html">QA Report</a>
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health-ips/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+	<a style="color: #81BEF7"
+ 		rel="license"
+ 		href="http://hl7.org/fhir/R4/license.html">
+		<img style="border-style: none;"
+   			alt="CC0"
+   			src="cc0.png"/>
+	</a>
+	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+	<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->
+	<div id=container width=100% style="display:block;" >
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
+		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
+			<img height="41"
+   				alt="a EU funded project"
+   				src="assets/images/eu.png"/>
+		</div>
+	</div>
+	<div>
+	</div>
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

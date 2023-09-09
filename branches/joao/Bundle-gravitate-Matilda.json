@@ -1,0 +1,422 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "gravitate-Matilda",
+  "identifier" : {
+    "system" : "https://www.gravitatehealth.eu/sid/doc",
+    "value" : "Matilda-ips-1"
+  },
+  "type" : "document",
+  "timestamp" : "2021-04-18T09:22:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://myserver.org/Composition/matilda-comp",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "gravitate-Matilda",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Id:</b> gravitate-Matilda<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Matilda Gravitate<br/><b>Sections:</b><br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4)</li><br/><ul><li><b>Entry:</b> <a href=\"Condition-matilda-cond-1.html\">Crohn's disease</a></li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0)</li><br/><ul><li><b>Entry:</b> <a href=\"MedicationStatement-matilda-med-stat-1.html\">Humira 40 mg</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-matilda-med-stat-2.html\">Paracetamol 500 mg</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-matilda-med-stat-3.html\">Pentasa 1g mesalazine</a></li><br/></ul></ul></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "60591-5",
+          "display" : "Patient summary Document"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/matilda-patient",
+        "display" : "Matilda Gravitate"
+      },
+      "date" : "2018-07-10T15:22:00+02:00",
+      "author" : [{
+        "reference" : "Practitioner/matilda-pract",
+        "display" : "Dr. Ana Lopez"
+      }],
+      "title" : "Patient Summary (Matilda Gravitate)",
+      "confidentiality" : "N",
+      "section" : [{
+        "title" : "Problem List",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11450-4",
+            "display" : "Problem list Reported"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Condition/matilda-cond-1",
+          "display" : "Crohn's disease"
+        }]
+      },
+      {
+        "title" : "Medication Summary",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10160-0",
+            "display" : "Hx of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "MedicationStatement/matilda-med-stat-1",
+          "display" : "Humira 40 mg"
+        },
+        {
+          "reference" : "MedicationStatement/matilda-med-stat-2",
+          "display" : "Paracetamol 500 mg"
+        },
+        {
+          "reference" : "MedicationStatement/matilda-med-stat-3",
+          "display" : "Pentasa 1g mesalazine"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Patient/matilda-patient",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "matilda-patient",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"matilda-patient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;matilda-patient&quot; </p></div><blockquote><p><b>citizenship</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></blockquote><p><b>value</b>: Spain <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#ES)</span></p></blockquote><p><b>identifier</b>: id:\u00a0Matilda-1</p><p><b>active</b>: true</p><p><b>name</b>: Matilda Gravitate </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1950-09-01</p></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "urn:iso:std:iso:3166",
+              "code" : "ES",
+              "display" : "Spain"
+            }]
+          }
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+      }],
+      "identifier" : [{
+        "system" : "https://www.gravitatehealth.eu/sid/doc",
+        "value" : "Matilda-1"
+      }],
+      "active" : true,
+      "name" : [{
+        "family" : "Gravitate",
+        "given" : ["Matilda"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1950-09-01"
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Practitioner/matilda-pract",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "matilda-pract",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"matilda-pract\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;matilda-pract&quot; </p></div><p><b>name</b>: Ana Lopez </p></div>"
+      },
+      "name" : [{
+        "family" : "Lopez",
+        "given" : ["Ana"],
+        "prefix" : ["Dr."]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Condition/matilda-cond-1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "matilda-cond-1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"matilda-cond-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;matilda-cond-1&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Crohn's disease <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#34000006)</span></p><p><b>subject</b>: <a href=\"#Patient_matilda-patient\">See above (Patient/matilda-patient: Matilda Gravitate)</a></p><p><b>onset</b>: 2015</p><p><b>asserter</b>: <a href=\"#Practitioner_matilda-pract\">See above (Practitioner/matilda-pract: Dr. Ana Lopez)</a></p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "34000006",
+          "display" : "Crohn's disease"
+        }],
+        "text" : "Crohn's disease"
+      },
+      "subject" : {
+        "reference" : "Patient/matilda-patient",
+        "display" : "Matilda Gravitate"
+      },
+      "onsetDateTime" : "2015",
+      "asserter" : {
+        "reference" : "Practitioner/matilda-pract",
+        "display" : "Dr. Ana Lopez"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/matilda-med-stat-1",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "matilda-med-stat-1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"matilda-med-stat-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;matilda-med-stat-1&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_9d7be868-8264-4d94-ad04-ef04ecc92e51\">See above (Medication/9d7be868-8264-4d94-ad04-ef04ecc92e51: Humira 20 mg)</a></p><p><b>subject</b>: <a href=\"#Patient_matilda-patient\">See above (Patient/matilda-patient: Matilda Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Subcutaneous use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20066000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/9d7be868-8264-4d94-ad04-ef04ecc92e51",
+        "display" : "Humira 20 mg"
+      },
+      "subject" : {
+        "reference" : "Patient/matilda-patient",
+        "display" : "Matilda Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20066000",
+            "display" : "Subcutaneous use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/matilda-med-stat-2",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "matilda-med-stat-2",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"matilda-med-stat-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;matilda-med-stat-2&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et\">See above (Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et: PARACETAMOL 1000 MG)</a></p><p><b>subject</b>: <a href=\"#Patient_matilda-patient\">See above (Patient/matilda-patient: Matilda Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et",
+        "display" : "PARACETAMOL 1000 MG"
+      },
+      "subject" : {
+        "reference" : "Patient/matilda-patient",
+        "display" : "Matilda Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/matilda-med-stat-3",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "matilda-med-stat-3",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"matilda-med-stat-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;matilda-med-stat-3&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu\">See above (Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu: Pentasa 1g mesalazine)</a></p><p><b>subject</b>: <a href=\"#Patient_matilda-patient\">See above (Patient/matilda-patient: Matilda Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu",
+        "display" : "Pentasa 1g mesalazine"
+      },
+      "subject" : {
+        "reference" : "Patient/matilda-patient",
+        "display" : "Matilda Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e51",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "9d7be868-8264-4d94-ad04-ef04ecc92e51",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"9d7be868-8264-4d94-ad04-ef04ecc92e51\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;9d7be868-8264-4d94-ad04-ef04ecc92e51&quot; </p></div><p><b>code</b>: Humira 20 mg <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#EU/1/96/007/035; phpid#0xe72f98caa2b13cb3ccb489a1a7945c91 &quot;Humira 20 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#L04AB04 &quot;adalimumab&quot;)</span></p><p><b>form</b>: Solution for injection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#11201000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>adalimumab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#FYS6T7F842)</span></td><td>20 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code ml = 'ml')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+          "code" : "EU/1/96/007/035",
+          "display" : "Humira 20 mg"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0xe72f98caa2b13cb3ccb489a1a7945c91",
+          "display" : "Humira 20 mg solution for injection in pre-filled syringe 2 pre-filled syringes + 2 alcohol pads"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "L04AB04",
+          "display" : "adalimumab"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "11201000",
+          "display" : "Solution for injection"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "FYS6T7F842",
+            "display" : "adalimumab"
+          }],
+          "text" : "adalimumab"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 20,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "ml"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et&quot; </p></div><p><b>code</b>: DOLOCATIL 1 g tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#PL31654/0006; phpid#0xE857DA811B4A6F3BD57810C45D2EA1ED &quot;Paracetamol 1g tablets&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#N02BE01 &quot;paracetamol&quot;)</span></p><p><b>form</b>: Coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10220000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>ACETAMINOPHEN <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#362O9ITL9D)</span></td><td>1000 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+          "code" : "PL31654/0006",
+          "display" : "DOLOCATIL 1 g tablets"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0xE857DA811B4A6F3BD57810C45D2EA1ED",
+          "display" : "Paracetamol 1g tablets"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "N02BE01",
+          "display" : "paracetamol"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10220000",
+          "display" : "Coated tablet"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "362O9ITL9D",
+            "display" : "ACETAMINOPHEN"
+          }],
+          "text" : "ACETAMINOPHEN"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 1000,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tablet",
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "15054000"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu&quot; </p></div><p><b>code</b>: Pentasa Slow Release Tablets 1g <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#77022; phpid#0xF79CABF272B6A7EEF104DDDA44E827xx &quot;Mesalazine, 1g, Tablets&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#A07EC02 &quot;mesalazine&quot;)</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>MESALAMINE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#4Q81I59GXC)</span></td><td>1000 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.gravitatehealth.eu/sid/man",
+          "code" : "77022",
+          "display" : "Pentasa Slow Release Tablets 1g"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0xF79CABF272B6A7EEF104DDDA44E827xx",
+          "display" : "Mesalazine, 1g, Tablets"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "A07EC02",
+          "display" : "mesalazine"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10219000",
+          "display" : "Tablet"
+        }],
+        "text" : "Tablet"
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "4Q81I59GXC",
+            "display" : "MESALAMINE"
+          }],
+          "text" : "MESALAMINE"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 1000,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tablet",
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "15054000"
+          }
+        }
+      }]
+    }
+  }]
+}

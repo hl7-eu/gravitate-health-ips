@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PDtypeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul/></div>
+  </text>
+  <url value="http://hl7.eu/fhir/ig/gravitate-health-ips/ValueSet/PDtypeVS"/>
+  <version value="0.1.0"/>
+  <name value="PDtypeVS"/>
+  <status value="active"/>
+  <date value="2023-04-18T08:40:20+00:00"/>
+  <contact>
+    <name value="Gravitate Health Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.gravitatehealth.eu/"/>
+    </telecom>
+  </contact>
+</ValueSet>

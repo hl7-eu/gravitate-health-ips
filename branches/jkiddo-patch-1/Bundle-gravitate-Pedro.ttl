@@ -1,0 +1,873 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health-ips/Bundle/gravitate-Pedro> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "gravitate-Pedro"] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/doc"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Pedro-ips-1" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2021-04-18T09:22:00+02:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Composition/5702fd1d-dd26-402e-a7c0-7629a5d9bba1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Composition/5702fd1d-dd26-402e-a7c0-7629a5d9bba1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Patient/pedro-patient"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Patient/pedro-patient> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Practitioner/pedro-pract"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Practitioner/pedro-pract> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Condition/pedro-cond-1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Condition/pedro-cond-1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Condition/pedro-cond-2"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Condition/pedro-cond-2> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Condition/pedro-cond-3"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Condition/pedro-cond-3> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/pedro-med-stat-1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/pedro-med-stat-1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/pedro-med-stat-2"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/pedro-med-stat-2> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/pedro-med-stat-3"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/pedro-med-stat-3> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/pedro-med-stat-4"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/pedro-med-stat-4> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/pedro-med-stat-5"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/pedro-med-stat-5> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/pedro-med-stat-6"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/pedro-med-stat-6> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/pedro-med-stat-7"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/pedro-med-stat-7> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857> )
+  ] ) . # 
+
+<https://myserver.org/Composition/5702fd1d-dd26-402e-a7c0-7629a5d9bba1> a fhir:Composition ;
+  fhir:id [ fhir:v "gravitate-Pedro"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Id:</b> gravitate-Pedro<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Pedro Gravitate<br/><b>Sections:</b><br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4)</li><br/><ul><li><b>Entry:</b> <a href=\"Condition-pedro-cond-1.html\">HIV</a></li><br/><li><b>Entry:</b> <a href=\"Condition-pedro-cond-2.html\">Depression</a></li><br/><li><b>Entry:</b> <a href=\"Condition-pedro-cond-3.html\">IBS</a></li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0)</li><br/><ul><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-1.html\">Dovato lamivudine and dolutegravir, 300 mg/50 mg</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-2.html\">Mirtazapine 15 mg</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-3.html\">Calcium carbonate 500 mg</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-4.html\">Cinitrapide 1 mg</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-5.html\">Collagen and magnesium supplements</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-6.html\">Vitamin C supplements</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-pedro-med-stat-7.html\">Protein supplements</a></li><br/></ul></ul></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ] ;
+       fhir:display [ fhir:v "Patient summary Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/pedro-patient> ;
+     fhir:reference [ fhir:v "Patient/pedro-patient" ] ;
+     fhir:display [ fhir:v "Pedro Gravitate" ]
+  ] ; # 
+  fhir:date [ fhir:v "2018-07-10T15:22:00+02:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Practitioner/pedro-pract> ;
+     fhir:reference [ fhir:v "Practitioner/pedro-pract" ] ;
+     fhir:display [ fhir:v "Dr. Anna Karlsson" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Patient Summary (Pedro Gravitate)"] ; # 
+  fhir:confidentiality [ fhir:v "N"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Problem List" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ] ;
+         fhir:display [ fhir:v "Problem list Reported" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Condition/pedro-cond-1> ;
+       fhir:reference [ fhir:v "Condition/pedro-cond-1" ] ;
+       fhir:display [ fhir:v "Depression" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Condition/pedro-cond-2> ;
+       fhir:reference [ fhir:v "Condition/pedro-cond-2" ] ;
+       fhir:display [ fhir:v "HIV" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Condition/pedro-cond-3> ;
+       fhir:reference [ fhir:v "Condition/pedro-cond-3" ] ;
+       fhir:display [ fhir:v "IBS" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Medication Summary" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:10160-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10160-0" ] ;
+         fhir:display [ fhir:v "Hx of Medication use" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/pedro-med-stat-1> ;
+       fhir:reference [ fhir:v "MedicationStatement/pedro-med-stat-1" ] ;
+       fhir:display [ fhir:v "Dovato lamivudine and dolutegravir, 300 mg/50 mg" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/pedro-med-stat-2> ;
+       fhir:reference [ fhir:v "MedicationStatement/pedro-med-stat-2" ] ;
+       fhir:display [ fhir:v "Mirtazapine 15 mg" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/pedro-med-stat-3> ;
+       fhir:reference [ fhir:v "MedicationStatement/pedro-med-stat-3" ] ;
+       fhir:display [ fhir:v "Calcium carbonate 500 mg" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/pedro-med-stat-4> ;
+       fhir:reference [ fhir:v "MedicationStatement/pedro-med-stat-4" ] ;
+       fhir:display [ fhir:v "Cinitrapide 1 mg" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/pedro-med-stat-5> ;
+       fhir:reference [ fhir:v "MedicationStatement/pedro-med-stat-5" ] ;
+       fhir:display [ fhir:v "Collagen and magnesium supplements" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/pedro-med-stat-6> ;
+       fhir:reference [ fhir:v "MedicationStatement/pedro-med-stat-6" ] ;
+       fhir:display [ fhir:v "Vitamin C supplements" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/pedro-med-stat-7> ;
+       fhir:reference [ fhir:v "MedicationStatement/pedro-med-stat-7" ] ;
+       fhir:display [ fhir:v "Protein supplements" ]
+     ] )
+  ] ) . # 
+
+<https://myserver.org/Patient/pedro-patient> a fhir:Patient ;
+  fhir:id [ fhir:v "pedro-patient"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Age: 42 years. I live alone, single. Electronics store salesperson Smoker since the age of 20 Interests: cultural events and concerts. I enjoy mountain activities, skiing in winter and hiking the rest of the year. Health Conditions HIV (diagnosed with 38 years) Depression</div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ES" ] ;
+           fhir:display [ fhir:v "Spain" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-citizenship"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/doc"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Pedro-1" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Gravitate" ] ;
+     fhir:given ( [ fhir:v "Pedro" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1980-10-05"^^xsd:date] . # 
+
+<https://myserver.org/Practitioner/pedro-pract> a fhir:Practitioner ;
+  fhir:id [ fhir:v "pedro-pract"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"pedro-pract\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;pedro-pract&quot; </p></div><p><b>name</b>: Xavier García </p></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "García" ] ;
+     fhir:given ( [ fhir:v "Xavier" ] ) ;
+     fhir:prefix ( [ fhir:v "Dr." ] )
+  ] ) . # 
+
+<https://myserver.org/Condition/pedro-cond-1> a fhir:Condition ;
+  fhir:id [ fhir:v "pedro-cond-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"pedro-cond-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;pedro-cond-1&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Depressive disorder (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#35489007)</span></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:35489007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "35489007" ] ;
+       fhir:display [ fhir:v "Depressive disorder (disorder)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Depressive disorder (disorder)" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/pedro-patient> ;
+     fhir:reference [ fhir:v "Patient/pedro-patient" ] ;
+     fhir:display [ fhir:v "Pedro Gravitate" ]
+  ] . # 
+
+<https://myserver.org/Condition/pedro-cond-2> a fhir:Condition ;
+  fhir:id [ fhir:v "pedro-cond-2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"pedro-cond-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;pedro-cond-2&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Human immunodeficiency virus infection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#86406008)</span></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><p><b>onset</b>: 2018</p><p><b>asserter</b>: <a href=\"#Practitioner_pedro-pract\">See above (Practitioner/pedro-pract: Dr. Xavier García)</a></p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:86406008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86406008" ] ;
+       fhir:display [ fhir:v "Human immunodeficiency virus infection" ]
+     ] ) ;
+     fhir:text [ fhir:v "Human immunodeficiency virus infection" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/pedro-patient> ;
+     fhir:reference [ fhir:v "Patient/pedro-patient" ] ;
+     fhir:display [ fhir:v "Pedro Gravitate" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2018"^^xsd:gYear] ; # 
+  fhir:asserter [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Practitioner/pedro-pract> ;
+     fhir:reference [ fhir:v "Practitioner/pedro-pract" ] ;
+     fhir:display [ fhir:v "Dr. Xavier García" ]
+  ] . # 
+
+<https://myserver.org/Condition/pedro-cond-3> a fhir:Condition ;
+  fhir:id [ fhir:v "pedro-cond-3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"pedro-cond-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;pedro-cond-3&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Irritable bowel syndrome <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#10743008)</span></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:10743008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10743008" ] ;
+       fhir:display [ fhir:v "Irritable bowel syndrome" ]
+     ] ) ;
+     fhir:text [ fhir:v "Irritable bowel syndrome" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/pedro-patient> ;
+     fhir:reference [ fhir:v "Patient/pedro-patient" ] ;
+     fhir:display [ fhir:v "Pedro Gravitate" ]
+  ] . # 
+
+<https://myserver.org/MedicationStatement/pedro-med-stat-1> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "pedro-med-stat-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-1&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_9d7be868-8264-4d94-ad04-ef04ecc92e52\">See above (Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52: Dovato 50 mg/300 mg (Dolutegravir/ Lamivudine) tablets)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52> ;
+     fhir:reference [ fhir:v "Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52" ] ;
+     fhir:display [ fhir:v "Dovato 50 mg/300 mg (Dolutegravir/ Lamivudine) tablets" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/pedro-patient> ;
+     fhir:reference [ fhir:v "Patient/pedro-patient" ] ;
+     fhir:display [ fhir:v "Pedro Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/pedro-med-stat-2> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "pedro-med-stat-2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-2&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4\">See above (Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4: Mirtazapine 30 mg Coated Tablet)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4> ;
+     fhir:reference [ fhir:v "Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4" ] ;
+     fhir:display [ fhir:v "Mirtazapine 30 mg Coated Tablet" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/pedro-patient> ;
+     fhir:reference [ fhir:v "Patient/pedro-patient" ] ;
+     fhir:display [ fhir:v "Pedro Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/pedro-med-stat-3> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "pedro-med-stat-3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-3&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda7785g\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g: CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g> ;
+     fhir:reference [ fhir:v "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g" ] ;
+     fhir:display [ fhir:v "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/pedro-patient> ;
+     fhir:reference [ fhir:v "Patient/pedro-patient" ] ;
+     fhir:display [ fhir:v "Pedro Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/pedro-med-stat-4> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "pedro-med-stat-4"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-4&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77854\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854: cinitrapide 1 mg)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854> ;
+     fhir:reference [ fhir:v "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854" ] ;
+     fhir:display [ fhir:v "cinitrapide 1 mg" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/pedro-patient> ;
+     fhir:reference [ fhir:v "Patient/pedro-patient" ] ;
+     fhir:display [ fhir:v "Pedro Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/pedro-med-stat-5> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "pedro-med-stat-5"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-5\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-5&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77855\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855: Collagen and magnesium supplements)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855> ;
+     fhir:reference [ fhir:v "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855" ] ;
+     fhir:display [ fhir:v "Collagen and magnesium supplements" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/pedro-patient> ;
+     fhir:reference [ fhir:v "Patient/pedro-patient" ] ;
+     fhir:display [ fhir:v "Pedro Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/pedro-med-stat-6> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "pedro-med-stat-6"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-6\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-6&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77856\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856: Vitaminc C supplement)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856> ;
+     fhir:reference [ fhir:v "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856" ] ;
+     fhir:display [ fhir:v "Vitaminc C supplement" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/pedro-patient> ;
+     fhir:reference [ fhir:v "Patient/pedro-patient" ] ;
+     fhir:display [ fhir:v "Pedro Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/pedro-med-stat-7> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "pedro-med-stat-7"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"pedro-med-stat-7\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;pedro-med-stat-7&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77857\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857: Protein supplements)</a></p><p><b>subject</b>: <a href=\"#Patient_pedro-patient\">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857> ;
+     fhir:reference [ fhir:v "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857" ] ;
+     fhir:display [ fhir:v "Protein supplements" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/pedro-patient> ;
+     fhir:reference [ fhir:v "Patient/pedro-patient" ] ;
+     fhir:display [ fhir:v "Pedro Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52> a fhir:Medication ;
+  fhir:id [ fhir:v "9d7be868-8264-4d94-ad04-ef04ecc92e52"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"9d7be868-8264-4d94-ad04-ef04ecc92e52\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;9d7be868-8264-4d94-ad04-ef04ecc92e52&quot; </p></div><p><b>code</b>: Dovato 50 mg/300 mg 30 tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#EU/1/19/1370/001; phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA &quot;lamivudine and dolutegravir, 300 mg/50 mg, tablets&quot;; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#787165000 &quot;Dolutegravir- and lamivudine-containing product in oral dose form&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#J05AR25 &quot;lamivudine and dolutegravir&quot;)</span></p><p><b>form</b>: Coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10220000)</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: lamivudine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#2T8Q726O95)</span></p><p><b>strength</b>: 300 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: dolutegravir <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#DKO1W9H7M1)</span></p><p><b>strength</b>: 50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ema.europa.eu/fhir/marketingAuthorizationNumber"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EU/1/19/1370/001" ] ;
+       fhir:display [ fhir:v "Dovato 50 mg/300 mg 30 tablets" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0x073AF2E5B92AE19E8B67635AFFB3D6CA" ] ;
+       fhir:display [ fhir:v "lamivudine and dolutegravir, 300 mg/50 mg, tablets" ]
+     ] [
+       a sct:787165000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "787165000" ] ;
+       fhir:display [ fhir:v "Dolutegravir- and lamivudine-containing product in oral dose form" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J05AR25" ] ;
+       fhir:display [ fhir:v "lamivudine and dolutegravir" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10220000" ] ;
+       fhir:display [ fhir:v "Coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2T8Q726O95" ] ;
+         fhir:display [ fhir:v "lamivudine" ]
+       ] ) ;
+       fhir:text [ fhir:v "lamivudine" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "300"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DKO1W9H7M1" ] ;
+         fhir:display [ fhir:v "dolutegravir" ]
+       ] ) ;
+       fhir:text [ fhir:v "dolutegravir" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4> a fhir:Medication ;
+  fhir:id [ fhir:v "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4&quot; </p></div><p><b>code</b>: MIRTAZAPINA CINFA 15 mg Coated Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#PL31654/0006; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#N06AX11 &quot;mirtazapine&quot;)</span></p><p><b>form</b>: Coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10220000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Mirtazapine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#A051Q2099Q)</span></td><td>15 g<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ema.europa.eu/fhir/marketingAuthorizationNumber"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PL31654/0006" ] ;
+       fhir:display [ fhir:v "MIRTAZAPINA CINFA 15 mg Coated Tablet" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "N06AX11" ] ;
+       fhir:display [ fhir:v "mirtazapine" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10220000" ] ;
+       fhir:display [ fhir:v "Coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A051Q2099Q" ] ;
+         fhir:display [ fhir:v "Mirtazapine" ]
+       ] ) ;
+       fhir:text [ fhir:v "Mirtazapine" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g> a fhir:Medication ;
+  fhir:id [ fhir:v "6f4151e9-91f6-4f1e-adc3-fb94dda7785g"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda7785g\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda7785g&quot; </p></div><p><b>code</b>: CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#16028/0049)</span></p><p><b>form</b>: Effervescent tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10222000)</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: calcium carbonate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#H0G9379FGK &quot;Calcium carbonate&quot;)</span></p><p><b>strength</b>: 1000 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: cholecalciferol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#1C6V77QF41)</span></p><p><b>strength</b>: 880 {UI}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {UI} = '{UI}')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/man"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "16028/0049" ] ;
+       fhir:display [ fhir:v "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10222000" ] ;
+       fhir:display [ fhir:v "Effervescent tablet" ]
+     ] ) ;
+     fhir:text [ fhir:v "Effervescent tablet" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "H0G9379FGK" ] ;
+         fhir:display [ fhir:v "Calcium carbonate" ]
+       ] ) ;
+       fhir:text [ fhir:v "calcium carbonate" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "1000"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1C6V77QF41" ] ;
+         fhir:display [ fhir:v "cholecalciferol" ]
+       ] ) ;
+       fhir:text [ fhir:v "cholecalciferol" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "880"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "{UI}" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854> a fhir:Medication ;
+  fhir:id [ fhir:v "6f4151e9-91f6-4f1e-adc3-fb94dda77854"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda77854\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda77854&quot; </p></div><p><b>code</b>: BLASTON 1 mg tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#xxxxxx; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#A03FA08 &quot;Cinitapride&quot;)</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>CINITAPRIDE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#R8I97I2L24)</span></td><td>1 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/man"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "xxxxxx" ] ;
+       fhir:display [ fhir:v "BLASTON 1 mg tablets" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "A03FA08" ] ;
+       fhir:display [ fhir:v "Cinitapride" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10219000" ] ;
+       fhir:display [ fhir:v "Tablet" ]
+     ] ) ;
+     fhir:text [ fhir:v "Tablet" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "R8I97I2L24" ] ;
+         fhir:display [ fhir:v "CINITAPRIDE" ]
+       ] ) ;
+       fhir:text [ fhir:v "CINITAPRIDE" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855> a fhir:Medication ;
+  fhir:id [ fhir:v "6f4151e9-91f6-4f1e-adc3-fb94dda77855"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda77855\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda77855&quot; </p></div><p><b>code</b>: AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#yyy)</span></p><p><b>form</b>: Oral powder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10201000)</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: MAGNESIUM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#I38ZP9992A)</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: HYALURONIC ACID <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#S270N0TRQY)</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: HUMAN TYPE I COLLAGEN <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#PT3TGI7OIP)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/man"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "yyy" ] ;
+       fhir:display [ fhir:v "AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10201000" ] ;
+       fhir:display [ fhir:v "Oral powder" ]
+     ] ) ;
+     fhir:text [ fhir:v "Oral powder" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "I38ZP9992A" ] ;
+         fhir:display [ fhir:v "MAGNESIUM" ]
+       ] ) ;
+       fhir:text [ fhir:v "MAGNESIUM" ]
+     ]
+  ] [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "S270N0TRQY" ] ;
+         fhir:display [ fhir:v "HYALURONIC ACID" ]
+       ] ) ;
+       fhir:text [ fhir:v "HYALURONIC ACID" ]
+     ]
+  ] [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PT3TGI7OIP" ] ;
+         fhir:display [ fhir:v "HUMAN TYPE I COLLAGEN" ]
+       ] ) ;
+       fhir:text [ fhir:v "HUMAN TYPE I COLLAGEN" ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856> a fhir:Medication ;
+  fhir:id [ fhir:v "6f4151e9-91f6-4f1e-adc3-fb94dda77856"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda77856\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda77856&quot; </p></div><p><b>code</b>: SORIA NATURAL VITAMINA C 36 COMPRIMIDOS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#kkk; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#A11GA01 &quot;ascorbic acid (vit C)&quot;)</span></p><p><b>form</b>: Modified-release tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10227000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td></tr><tr><td>*</td><td>Vitamin C <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#PQ6CK8PD0R &quot;ASCORBIC ACID&quot;)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/man"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "kkk" ] ;
+       fhir:display [ fhir:v "SORIA NATURAL VITAMINA C 36 COMPRIMIDOS" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "A11GA01" ] ;
+       fhir:display [ fhir:v "ascorbic acid (vit C)" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10227000" ] ;
+       fhir:display [ fhir:v "Modified-release tablet" ]
+     ] ) ;
+     fhir:text [ fhir:v "Modified-release tablet" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PQ6CK8PD0R" ] ;
+         fhir:display [ fhir:v "ASCORBIC ACID" ]
+       ] ) ;
+       fhir:text [ fhir:v "Vitamin C" ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857> a fhir:Medication ;
+  fhir:id [ fhir:v "6f4151e9-91f6-4f1e-adc3-fb94dda77857"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda77857\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda77857&quot; </p></div><p><b>code</b>: NATURES PLUS SPIRU-TEIN BATIDO PROTEINA SABOR COOKIES 525GR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#zzzz)</span></p><p><b>form</b>: Oral powder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10201000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td></tr><tr><td>*</td><td>SOY PROTEIN <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#R44IWB3RN5)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/man"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "zzzz" ] ;
+       fhir:display [ fhir:v "NATURES PLUS SPIRU-TEIN BATIDO PROTEINA SABOR COOKIES 525GR" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10201000" ] ;
+       fhir:display [ fhir:v "Oral powder" ]
+     ] ) ;
+     fhir:text [ fhir:v "Oral powder" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "R44IWB3RN5" ] ;
+         fhir:display [ fhir:v "SOY PROTEIN" ]
+       ] ) ;
+       fhir:text [ fhir:v "SOY PROTEIN" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

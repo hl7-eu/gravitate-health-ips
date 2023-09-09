@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="10923e08-4e55-44a2-bf21-5f58bc1cf4b7"/>
+  <meta>
+    <lastUpdated value="2023-04-24T13:54:56.911+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health-ips/ValueSet/PDcategoryVS"/>
+    <resource>
+      <ValueSet>
+        <id value="PDcategoryVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.eu/fhir/ig/gravitate-health-ips/ValueSet/PDcategoryVS"/>
+        <version value="0.1.0"/>
+        <name value="PDcategoryVS"/>
+        <status value="active"/>
+        <date value="2023-04-24T13:54:56+00:00"/>
+        <contact>
+          <name value="Gravitate Health Project"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.gravitatehealth.eu/"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:c4f3bdcd-10d4-418d-92e2-064fbb1d6412"/>
+          <timestamp value="2023-04-24T13:55:57+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.eu/fhir/ig/gravitate-health-ips/ValueSet/PDtypeVS"/>
+    <resource>
+      <ValueSet>
+        <id value="PDtypeVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.eu/fhir/ig/gravitate-health-ips/ValueSet/PDtypeVS"/>
+        <version value="0.1.0"/>
+        <name value="PDtypeVS"/>
+        <status value="active"/>
+        <date value="2023-04-24T13:54:56+00:00"/>
+        <contact>
+          <name value="Gravitate Health Project"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.gravitatehealth.eu/"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:eff60731-4466-473b-8bd3-0a20a3bccdfc"/>
+          <timestamp value="2023-04-24T13:55:58+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

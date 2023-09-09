@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="questi-dimens-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">None<a name="questi-dimens-cs-None"> </a></td><td>None</td><td>None</td></tr><tr><td style="white-space:nowrap">F<a name="questi-dimens-cs-F"> </a></td><td>Female</td><td>Female</td></tr><tr><td style="white-space:nowrap">M<a name="questi-dimens-cs-M"> </a></td><td>Male</td><td>Male</td></tr><tr><td style="white-space:nowrap">O<a name="questi-dimens-cs-O"> </a></td><td>Other Gender</td><td>Other Gender</td></tr><tr><td style="white-space:nowrap">ND<a name="questi-dimens-cs-ND"> </a></td><td>Non-disclosed gender</td><td>Non-disclosed gender</td></tr><tr><td style="white-space:nowrap">0<a name="questi-dimens-cs-0"> </a></td><td>Non Smoker</td><td/></tr><tr><td style="white-space:nowrap">1<a name="questi-dimens-cs-1"> </a></td><td>1-5</td><td/></tr><tr><td style="white-space:nowrap">2<a name="questi-dimens-cs-2"> </a></td><td>6-20</td><td/></tr><tr><td style="white-space:nowrap">3<a name="questi-dimens-cs-3"> </a></td><td>&gt;20</td><td/></tr><tr><td style="white-space:nowrap">SINGLE<a name="questi-dimens-cs-SINGLE"> </a></td><td>single</td><td/></tr><tr><td style="white-space:nowrap">SOME<a name="questi-dimens-cs-SOME"> </a></td><td>some</td><td/></tr><tr><td style="white-space:nowrap">MANY<a name="questi-dimens-cs-MANY"> </a></td><td>Many</td><td/></tr><tr><td style="white-space:nowrap">Low<a name="questi-dimens-cs-Low"> </a></td><td>Low</td><td>Low</td></tr><tr><td style="white-space:nowrap">Medium<a name="questi-dimens-cs-Medium"> </a></td><td>Medium</td><td>Medium</td></tr><tr><td style="white-space:nowrap">High<a name="questi-dimens-cs-High"> </a></td><td>High</td><td>High</td></tr><tr><td style="white-space:nowrap">U<a name="questi-dimens-cs-U"> </a></td><td>Unemployed/Retired</td><td/></tr><tr><td style="white-space:nowrap">EM<a name="questi-dimens-cs-EM"> </a></td><td>Employed Manual</td><td/></tr><tr><td style="white-space:nowrap">ENM<a name="questi-dimens-cs-ENM"> </a></td><td>Employed non Manual</td><td/></tr></table></div>
+  </text>
+  <url value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+  <version value="0.1.0"/>
+  <name value="QuestionnaireDimensionCS"/>
+  <status value="active"/>
+  <date value="2023-04-24T13:54:56+00:00"/>
+  <contact>
+    <name value="Gravitate Health Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.gravitatehealth.eu/"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="18"/>
+  <concept>
+    <code value="None"/>
+    <display value="None"/>
+    <definition value="None"/>
+  </concept>
+  <concept>
+    <code value="F"/>
+    <display value="Female"/>
+    <definition value="Female"/>
+  </concept>
+  <concept>
+    <code value="M"/>
+    <display value="Male"/>
+    <definition value="Male"/>
+  </concept>
+  <concept>
+    <code value="O"/>
+    <display value="Other Gender"/>
+    <definition value="Other Gender"/>
+  </concept>
+  <concept>
+    <code value="ND"/>
+    <display value="Non-disclosed gender"/>
+    <definition value="Non-disclosed gender"/>
+  </concept>
+  <concept>
+    <code value="0"/>
+    <display value="Non Smoker"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="1-5"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="6-20"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="&gt;20"/>
+  </concept>
+  <concept>
+    <code value="SINGLE"/>
+    <display value="single"/>
+  </concept>
+  <concept>
+    <code value="SOME"/>
+    <display value="some"/>
+  </concept>
+  <concept>
+    <code value="MANY"/>
+    <display value="Many"/>
+  </concept>
+  <concept>
+    <code value="Low"/>
+    <display value="Low"/>
+    <definition value="Low"/>
+  </concept>
+  <concept>
+    <code value="Medium"/>
+    <display value="Medium"/>
+    <definition value="Medium"/>
+  </concept>
+  <concept>
+    <code value="High"/>
+    <display value="High"/>
+    <definition value="High"/>
+  </concept>
+  <concept>
+    <code value="U"/>
+    <display value="Unemployed/Retired"/>
+  </concept>
+  <concept>
+    <code value="EM"/>
+    <display value="Employed Manual"/>
+  </concept>
+  <concept>
+    <code value="ENM"/>
+    <display value="Employed non Manual"/>
+  </concept>
+</CodeSystem>

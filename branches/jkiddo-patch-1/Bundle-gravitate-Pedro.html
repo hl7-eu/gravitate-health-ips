@@ -1,0 +1,908 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7.EU.FHIR.GH-IPS\Pedro Gravitate's IPS - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/pcsp.css"/>
+    <link rel="stylesheet" href="assets/css/ips-viewer.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"11.9"}
+    h3,h4,h5,h6{--heading-prefix:"11.9"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+        
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="https://www.gravitatehealth.eu/">
+            <img src="assets/images/logo-header.jpg" alt="Visit the Project website" height="60"/>
+          </a>
+        </div>
+   <!-- <div id="family-nav">
+          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
+        </div> -->
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide (FHIR R4)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contextual information
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="connections.html">Connections</a>
+      </li>
+      <li>
+        <a href="use-case-example.html">Use Case</a>
+      </li>
+      <li>
+        <a href="Connecting-data.html">How Data connects</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Capability Statements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CapabilityStatement-capability-statement-ema.html">SmPC / PL</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="copyright.html">Copyright</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Pedro Gravitate's IPS</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Gravitate Health FHIR Implementation Guide (FHIR R4), published by . This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/hl7-eu/gravitate-health-ips">https://github.com/hl7-eu/gravitate-health-ips</a> and changes regularly. See the <a href="http://hl7.eu/fhir/ig/gravitate-health-ips/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-gravitate-Pedro.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-gravitate-Pedro.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-gravitate-Pedro.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Bundle: Pedro Gravitate's IPS</h2>
+
+  <table class="null">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+
+
+   
+   
+  
+  <b>id:</b>
+  gravitate-Pedro
+<br/>
+
+
+
+
+
+  <b>Composition status:</b>
+  final
+<br/>
+
+  <b>Composition Type:</b>
+  Patient summary Document
+<br/>
+<b>Subject:</b>
+<div class="patient block indent">
+
+  
+  
+  
+    <b>identifier:</b>
+    Pedro-1<br/>
+  
+    <b>Name:</b>
+    Pedro Gravitate<br/>
+  
+    <b>active:</b>
+    true<br/>
+  
+    <b>gender:</b>
+    male<br/>
+  
+    <b>Birth Date:</b>
+    1980-10-05<br/>
+
+</div>
+<br/>
+<h3>Sections:</h3>
+<br/>
+
+
+
+  <h4>Problem List</h4>
+
+  
+
+
+  
+    
+    <div class="problem-list block">
+
+      
+
+        
+
+        <div class="condition indent block">
+
+          
+            <b>Condition:</b>
+            Depressive disorder (disorder) (35489007)<br/>
+          
+            <b>clinicalStatus:</b>
+            active <br/>
+          
+          
+        </div>
+
+      
+
+        
+
+        <div class="condition indent block">
+
+          
+            <b>Condition:</b>
+            Human immunodeficiency virus infection (86406008)<br/>
+          
+            <b>clinicalStatus:</b>
+            active <br/>
+          
+            <b>asserter:</b>
+            Dr. Xavier García <br/>
+          
+            <b>onsetDateTime:</b>
+            2018 <br/>
+          
+        </div>
+
+      
+
+        
+
+        <div class="condition indent block">
+
+          
+            <b>Condition:</b>
+            Irritable bowel syndrome (10743008)<br/>
+          
+            <b>clinicalStatus:</b>
+            active <br/>
+          
+          
+        </div>
+
+      
+    </div>
+
+  
+
+  
+
+
+
+  <h4>Medication Summary</h4>
+
+  
+
+
+  
+
+  
+    
+    <div class="medication-summary block">
+
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+            Dovato 50 mg/300 mg (Dolutegravir/ Lamivudine) tablets <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://ema.europa.eu/fhir/marketingAuthorizationNumber
+                      <b>Code:</b>
+                      EU/1/19/1370/001 [Dovato 50 mg/300 mg 30 tablets]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://www.who-umc.org/phpid
+                      <b>Code:</b>
+                      0x073AF2E5B92AE19E8B67635AFFB3D6CA [lamivudine and dolutegravir, 300 mg/50 mg, tablets]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://snomed.info/sct
+                      <b>Code:</b>
+                      787165000 [Dolutegravir- and lamivudine-containing product in oral dose form]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      J05AR25 [lamivudine and dolutegravir]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                Coated tablet <br/>
+              
+                <b>Ingredient:</b>
+                lamivudine (http://fdasis.nlm.nih.gov#2T8Q726O95) <br/>
+                
+                  <b>strength:</b>
+                  300 mg/1 Tablet <br/>
+                
+
+              
+                <b>Ingredient:</b>
+                dolutegravir (http://fdasis.nlm.nih.gov#DKO1W9H7M1) <br/>
+                
+                  <b>strength:</b>
+                  50 mg/1 Tablet <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral use<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+            Mirtazapine 30 mg Coated Tablet <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://ema.europa.eu/fhir/marketingAuthorizationNumber
+                      <b>Code:</b>
+                      PL31654/0006 [MIRTAZAPINA CINFA 15 mg Coated Tablet]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N06AX11 [mirtazapine]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                Coated tablet <br/>
+              
+                <b>Ingredient:</b>
+                Mirtazapine (http://fdasis.nlm.nih.gov#A051Q2099Q) <br/>
+                
+                  <b>strength:</b>
+                  15 g/1 Tablet <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral use<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+            CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://www.gravitatehealth.eu/sid/man
+                      <b>Code:</b>
+                      16028/0049 [CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                Effervescent tablet <br/>
+              
+                <b>Ingredient:</b>
+                Calcium carbonate (http://fdasis.nlm.nih.gov#H0G9379FGK) <br/>
+                
+                  <b>strength:</b>
+                  1000 mg/1 Tablet <br/>
+                
+
+              
+                <b>Ingredient:</b>
+                cholecalciferol (http://fdasis.nlm.nih.gov#1C6V77QF41) <br/>
+                
+                  <b>strength:</b>
+                  880 {UI}/1 Tablet <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral use<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+            cinitrapide 1 mg <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://www.gravitatehealth.eu/sid/man
+                      <b>Code:</b>
+                      xxxxxx [BLASTON 1 mg tablets]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      A03FA08 [Cinitapride]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                Tablet <br/>
+              
+                <b>Ingredient:</b>
+                CINITAPRIDE (http://fdasis.nlm.nih.gov#R8I97I2L24) <br/>
+                
+                  <b>strength:</b>
+                  1 mg/1 Tablet <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral use<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+            Collagen and magnesium supplements <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://www.gravitatehealth.eu/sid/man
+                      <b>Code:</b>
+                      yyy [AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                Oral powder <br/>
+              
+                <b>Ingredient:</b>
+                MAGNESIUM (http://fdasis.nlm.nih.gov#I38ZP9992A) <br/>
+                
+
+              
+                <b>Ingredient:</b>
+                HYALURONIC ACID (http://fdasis.nlm.nih.gov#S270N0TRQY) <br/>
+                
+
+              
+                <b>Ingredient:</b>
+                HUMAN TYPE I COLLAGEN (http://fdasis.nlm.nih.gov#PT3TGI7OIP) <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral use<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+            Vitaminc C supplement <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://www.gravitatehealth.eu/sid/man
+                      <b>Code:</b>
+                      kkk [SORIA NATURAL VITAMINA C 36 COMPRIMIDOS]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      A11GA01 [ascorbic acid (vit C)]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                Modified-release tablet <br/>
+              
+                <b>Ingredient:</b>
+                ASCORBIC ACID (http://fdasis.nlm.nih.gov#PQ6CK8PD0R) <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral use<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+            Protein supplements <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://www.gravitatehealth.eu/sid/man
+                      <b>Code:</b>
+                      zzzz [NATURES PLUS SPIRU-TEIN BATIDO PROTEINA SABOR COOKIES 525GR]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                Oral powder <br/>
+              
+                <b>Ingredient:</b>
+                SOY PROTEIN (http://fdasis.nlm.nih.gov#R44IWB3RN5) <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral use<br/>
+        </div>
+      
+    </div>
+  
+
+
+
+
+
+
+
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <div><hr/><b>Id:</b> gravitate-Pedro<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> Pedro Gravitate<br/><b>Sections:</b><br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4)</li><br/><ul><li><a name="l952">​</a><b>Entry:</b> <a href="Condition-pedro-cond-1.html">HIV</a></li><br/><li><a name="l959">​</a><b>Entry:</b> <a href="Condition-pedro-cond-2.html">Depression</a></li><br/><li><a name="l966">​</a><b>Entry:</b> <a href="Condition-pedro-cond-3.html">IBS</a></li><br/></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0)</li><br/><ul><li><a name="l983">​</a><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-1.html">Dovato lamivudine and dolutegravir, 300 mg/50 mg</a></li><br/><li><a name="l990">​</a><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-2.html">Mirtazapine 15 mg</a></li><br/><li><a name="l997">​</a><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-3.html">Calcium carbonate 500 mg</a></li><br/><li><a name="l1004">​</a><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-4.html">Cinitrapide 1 mg</a></li><br/><li><a name="l1011">​</a><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-5.html">Collagen and magnesium supplements</a></li><br/><li><a name="l1018">​</a><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-6.html">Vitamin C supplements</a></li><br/><li><a name="l1025">​</a><b>Entry:</b> <a href="MedicationStatement-pedro-med-stat-7.html">Protein supplements</a></li><br/></ul></ul><hr/><div><h2>Problem List</h2></div><ul><li><a href="#Condition_pedro-cond-1">See above (Condition/pedro-cond-1: Depression)</a></li><li><a href="#Condition_pedro-cond-2">See above (Condition/pedro-cond-2: HIV)</a></li><li><a href="#Condition_pedro-cond-3">See above (Condition/pedro-cond-3: IBS)</a></li></ul><div><h2>Medication Summary</h2></div><ul><li><a href="#MedicationStatement_pedro-med-stat-1">See above (MedicationStatement/pedro-med-stat-1: Dovato lamivudine and dolutegravir, 300 mg/50 mg)</a></li><li><a href="#MedicationStatement_pedro-med-stat-2">See above (MedicationStatement/pedro-med-stat-2: Mirtazapine 15 mg)</a></li><li><a href="#MedicationStatement_pedro-med-stat-3">See above (MedicationStatement/pedro-med-stat-3: Calcium carbonate 500 mg)</a></li><li><a href="#MedicationStatement_pedro-med-stat-4">See above (MedicationStatement/pedro-med-stat-4: Cinitrapide 1 mg)</a></li><li><a href="#MedicationStatement_pedro-med-stat-5">See above (MedicationStatement/pedro-med-stat-5: Collagen and magnesium supplements)</a></li><li><a href="#MedicationStatement_pedro-med-stat-6">See above (MedicationStatement/pedro-med-stat-6: Vitamin C supplements)</a></li><li><a href="#MedicationStatement_pedro-med-stat-7">See above (MedicationStatement/pedro-med-stat-7: Protein supplements)</a></li></ul><hr/><h2>Additional Document Content</h2><a name="https-//myserver.org/Patient/pedro-patient"> </a><a name="Patient_pedro-patient"> </a><hr/><p>2. https://myserver.org/Patient/pedro-patient (Patient/pedro-patient)</p><blockquote><p>Age: 42 years. I live alone, single. Electronics store salesperson Smoker since the age of 20 Interests: cultural events and concerts. I enjoy mountain activities, skiing in winter and hiking the rest of the year. Health Conditions HIV (diagnosed with 38 years) Depression</p></blockquote><a name="https-//myserver.org/Practitioner/pedro-pract"> </a><a name="Practitioner_pedro-pract"> </a><hr/><p>3. https://myserver.org/Practitioner/pedro-pract (Practitioner/pedro-pract)</p><blockquote><p><p><b>Generated Narrative: Practitioner</b><a name="pedro-pract"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner "pedro-pract" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>name</b>: Xavier García </p></p></blockquote><a name="https-//myserver.org/Condition/pedro-cond-1"> </a><a name="Condition_pedro-cond-1"> </a><hr/><p>4. https://myserver.org/Condition/pedro-cond-1 (Condition/pedro-cond-1)</p><blockquote><p><p><b>Generated Narrative: Condition</b><a name="pedro-cond-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition "pedro-cond-1" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Depressive disorder (disorder) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#35489007)</span></p><p><b>subject</b>: <a href="#Patient_pedro-patient">See above (Patient/pedro-patient: Pedro Gravitate)</a></p></p></blockquote><a name="https-//myserver.org/Condition/pedro-cond-2"> </a><a name="Condition_pedro-cond-2"> </a><hr/><p>5. https://myserver.org/Condition/pedro-cond-2 (Condition/pedro-cond-2)</p><blockquote><p><p><b>Generated Narrative: Condition</b><a name="pedro-cond-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition "pedro-cond-2" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Human immunodeficiency virus infection <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#86406008)</span></p><p><b>subject</b>: <a href="#Patient_pedro-patient">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><p><b>onset</b>: 2018</p></p></blockquote><a name="https-//myserver.org/Condition/pedro-cond-3"> </a><a name="Condition_pedro-cond-3"> </a><hr/><p>6. https://myserver.org/Condition/pedro-cond-3 (Condition/pedro-cond-3)</p><blockquote><p><p><b>Generated Narrative: Condition</b><a name="pedro-cond-3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition "pedro-cond-3" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Irritable bowel syndrome <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#10743008)</span></p><p><b>subject</b>: <a href="#Patient_pedro-patient">See above (Patient/pedro-patient: Pedro Gravitate)</a></p></p></blockquote><a name="https-//myserver.org/MedicationStatement/pedro-med-stat-1"> </a><a name="MedicationStatement_pedro-med-stat-1"> </a><hr/><p>7. https://myserver.org/MedicationStatement/pedro-med-stat-1 (MedicationStatement/pedro-med-stat-1)</p><blockquote><p><p><b>Generated Narrative: MedicationStatement</b><a name="pedro-med-stat-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement "pedro-med-stat-1" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>status</b>: RECORDED</p><p><b>subject</b>: <a href="#Patient_pedro-patient">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></p></blockquote><a name="https-//myserver.org/MedicationStatement/pedro-med-stat-2"> </a><a name="MedicationStatement_pedro-med-stat-2"> </a><hr/><p>8. https://myserver.org/MedicationStatement/pedro-med-stat-2 (MedicationStatement/pedro-med-stat-2)</p><blockquote><p><p><b>Generated Narrative: MedicationStatement</b><a name="pedro-med-stat-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement "pedro-med-stat-2" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>status</b>: RECORDED</p><p><b>subject</b>: <a href="#Patient_pedro-patient">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></p></blockquote><a name="https-//myserver.org/MedicationStatement/pedro-med-stat-3"> </a><a name="MedicationStatement_pedro-med-stat-3"> </a><hr/><p>9. https://myserver.org/MedicationStatement/pedro-med-stat-3 (MedicationStatement/pedro-med-stat-3)</p><blockquote><p><p><b>Generated Narrative: MedicationStatement</b><a name="pedro-med-stat-3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement "pedro-med-stat-3" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>status</b>: RECORDED</p><p><b>subject</b>: <a href="#Patient_pedro-patient">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></p></blockquote><a name="https-//myserver.org/MedicationStatement/pedro-med-stat-4"> </a><a name="MedicationStatement_pedro-med-stat-4"> </a><hr/><p>10. https://myserver.org/MedicationStatement/pedro-med-stat-4 (MedicationStatement/pedro-med-stat-4)</p><blockquote><p><p><b>Generated Narrative: MedicationStatement</b><a name="pedro-med-stat-4"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement "pedro-med-stat-4" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>status</b>: RECORDED</p><p><b>subject</b>: <a href="#Patient_pedro-patient">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></p></blockquote><a name="https-//myserver.org/MedicationStatement/pedro-med-stat-5"> </a><a name="MedicationStatement_pedro-med-stat-5"> </a><hr/><p>11. https://myserver.org/MedicationStatement/pedro-med-stat-5 (MedicationStatement/pedro-med-stat-5)</p><blockquote><p><p><b>Generated Narrative: MedicationStatement</b><a name="pedro-med-stat-5"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement "pedro-med-stat-5" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>status</b>: RECORDED</p><p><b>subject</b>: <a href="#Patient_pedro-patient">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></p></blockquote><a name="https-//myserver.org/MedicationStatement/pedro-med-stat-6"> </a><a name="MedicationStatement_pedro-med-stat-6"> </a><hr/><p>12. https://myserver.org/MedicationStatement/pedro-med-stat-6 (MedicationStatement/pedro-med-stat-6)</p><blockquote><p><p><b>Generated Narrative: MedicationStatement</b><a name="pedro-med-stat-6"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement "pedro-med-stat-6" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>status</b>: RECORDED</p><p><b>subject</b>: <a href="#Patient_pedro-patient">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></p></blockquote><a name="https-//myserver.org/MedicationStatement/pedro-med-stat-7"> </a><a name="MedicationStatement_pedro-med-stat-7"> </a><hr/><p>13. https://myserver.org/MedicationStatement/pedro-med-stat-7 (MedicationStatement/pedro-med-stat-7)</p><blockquote><p><p><b>Generated Narrative: MedicationStatement</b><a name="pedro-med-stat-7"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement "pedro-med-stat-7" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>status</b>: RECORDED</p><p><b>subject</b>: <a href="#Patient_pedro-patient">See above (Patient/pedro-patient: Pedro Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></p></blockquote><a name="https-//myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52"> </a><a name="Medication_9d7be868-8264-4d94-ad04-ef04ecc92e52"> </a><hr/><p>14. https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52 (Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52)</p><blockquote><p><p><b>Generated Narrative: Medication</b><a name="9d7be868-8264-4d94-ad04-ef04ecc92e52"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication "9d7be868-8264-4d94-ad04-ef04ecc92e52" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>code</b>: Dovato 50 mg/300 mg 30 tablets <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (marketingAuthorizationNumber#EU/1/19/1370/001; phpid#0x073AF2E5B92AE19E8B67635AFFB3D6CA "lamivudine and dolutegravir, 300 mg/50 mg, tablets"; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#787165000 "Dolutegravir- and lamivudine-containing product in oral dose form"; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#J05AR25 "lamivudine and dolutegravir")</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Strength</b></td></tr><tr><td>*</td><td>300 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr><tr><td>*</td><td>50 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></p></blockquote><a name="https-//myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4"> </a><a name="Medication_fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4"> </a><hr/><p>15. https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4 (Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4)</p><blockquote><p><p><b>Generated Narrative: Medication</b><a name="fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication "fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>code</b>: MIRTAZAPINA CINFA 15 mg Coated Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (marketingAuthorizationNumber#PL31654/0006; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#N06AX11 "mirtazapine")</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Strength</b></td></tr><tr><td>*</td><td>15 g<span style="background: LightGoldenRodYellow"> (Details: UCUM code g = 'g')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></p></blockquote><a name="https-//myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g"> </a><a name="Medication_6f4151e9-91f6-4f1e-adc3-fb94dda7785g"> </a><hr/><p>16. https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g)</p><blockquote><p><p><b>Generated Narrative: Medication</b><a name="6f4151e9-91f6-4f1e-adc3-fb94dda7785g"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication "6f4151e9-91f6-4f1e-adc3-fb94dda7785g" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>code</b>: CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (man#16028/0049)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Strength</b></td></tr><tr><td>*</td><td>1000 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr><tr><td>*</td><td>880 {UI}<span style="background: LightGoldenRodYellow"> (Details: UCUM code {UI} = '{UI}')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></p></blockquote><a name="https-//myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854"> </a><a name="Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77854"> </a><hr/><p>17. https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854 (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854)</p><blockquote><p><p><b>Generated Narrative: Medication</b><a name="6f4151e9-91f6-4f1e-adc3-fb94dda77854"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication "6f4151e9-91f6-4f1e-adc3-fb94dda77854" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>code</b>: BLASTON 1 mg tablets <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (man#xxxxxx; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#A03FA08 "Cinitapride")</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Strength</b></td></tr><tr><td>*</td><td>1 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></p></blockquote><a name="https-//myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855"> </a><a name="Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77855"> </a><hr/><p>18. https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855 (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855)</p><blockquote><p><p><b>Generated Narrative: Medication</b><a name="6f4151e9-91f6-4f1e-adc3-fb94dda77855"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication "6f4151e9-91f6-4f1e-adc3-fb94dda77855" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>code</b>: AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (man#yyy)</span></p><blockquote><p><b>ingredient</b></p></blockquote><p><b style="color: maroon">Exception generating Narrative: type org.hl7.fhir.r5.model.Medication$MedicationIngredientComponent not handled - should not be here</b></p></p></blockquote><a name="https-//myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856"> </a><a name="Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77856"> </a><hr/><p>19. https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856 (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856)</p><blockquote><p><p><b>Generated Narrative: Medication</b><a name="6f4151e9-91f6-4f1e-adc3-fb94dda77856"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication "6f4151e9-91f6-4f1e-adc3-fb94dda77856" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>code</b>: SORIA NATURAL VITAMINA C 36 COMPRIMIDOS <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (man#kkk; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#A11GA01 "ascorbic acid (vit C)")</span></p><blockquote><p><b>ingredient</b></p></blockquote><p><b style="color: maroon">Exception generating Narrative: type org.hl7.fhir.r5.model.Medication$MedicationIngredientComponent not handled - should not be here</b></p></p></blockquote><a name="https-//myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857"> </a><a name="Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77857"> </a><hr/><p>20. https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857 (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857)</p><blockquote><p><p><b>Generated Narrative: Medication</b><a name="6f4151e9-91f6-4f1e-adc3-fb94dda77857"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication "6f4151e9-91f6-4f1e-adc3-fb94dda77857" </p></div><h3>Texts</h3><table class="grid"><tr><td>-</td><td><b>Div</b></td></tr><tr><td>*</td><td>&lt;div/&gt;</td></tr></table><p><b>code</b>: NATURES PLUS SPIRU-TEIN BATIDO PROTEINA SABOR COOKIES 525GR <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (man#zzzz)</span></p><blockquote><p><b>ingredient</b></p></blockquote><p><b style="color: maroon">Exception generating Narrative: type org.hl7.fhir.r5.model.Medication$MedicationIngredientComponent not handled - should not be here</b></p></p></blockquote></div>
+
+  
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh-ips#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 24, 2023 10:19+0000">2023-04-24</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333">
+	Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7" href="qa.html">QA Report</a>
+	  <!-- <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health-ips/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> | -->
+	<a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html">
+		<img src="cc0.png" alt="CC0" style="border-style: none;"/>
+	</a>
+	  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	  <!-- <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a> -->
+	  <!-- <br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a> -->
+	<div id="container width=100% style=&quot;display:block;&quot; ">
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;">The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
+		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
+			<img src="assets/images/eu.png" alt="a EU funded project" height="41"/>
+		</div>
+	</div>
+	<div>
+	</div>
+</div>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

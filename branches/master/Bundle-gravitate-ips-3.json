@@ -1,0 +1,646 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "gravitate-ips-3",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"]
+  },
+  "identifier" : {
+    "system" : "https://www.gravitatehealth.eu/sid/doc",
+    "value" : "ips-3"
+  },
+  "type" : "document",
+  "timestamp" : "2021-09-03T08:38:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://myserver.org/Composition/2fa5b223-ebce-4f39-9c66-5dc014f73571",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "ips-example-3",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"ips-example-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;ips-example-3&quot; </p></div><p><b>status</b>: final</p><p><b>type</b>: Patient summary Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#60591-5)</span></p><p><b>date</b>: 2018-07-10 15:22:00+0200</p><p><b>author</b>: <a href=\"#Practitioner_1ece89c5-fda3-4db9-ace6-decbe6c603d1\">See above (Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d1: Dr. Anna Karlsson)</a></p><p><b>title</b>: Patient Summary (Maria Gravitate)</p><p><b>confidentiality</b>: N</p></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "60591-5",
+          "display" : "Patient summary Document"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1",
+        "display" : "Example 1 Gravitate"
+      },
+      "date" : "2018-07-10T15:22:00+02:00",
+      "author" : [{
+        "reference" : "Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d1",
+        "display" : "Dr. Anna Karlsson"
+      }],
+      "title" : "Patient Summary (Maria Gravitate)",
+      "confidentiality" : "N",
+      "section" : [{
+        "title" : "Allergies and Intolerances",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48765-2",
+            "display" : "Allergies and adverse reactions Document"
+          }]
+        },
+        "entry" : [{
+          "reference" : "AllergyIntolerance/1dff4474-fa08-4f45-8260-dbb23094bf01",
+          "display" : "Hay fever (pollen)"
+        }]
+      },
+      {
+        "title" : "Problem List",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11450-4",
+            "display" : "Problem list Reported"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Condition/bcc79261-142c-48ec-b032-f3f9af49ec51",
+          "display" : "Psoriasis"
+        },
+        {
+          "reference" : "Condition/f06b7cf8-c15c-4288-a0f9-45a1026e5131",
+          "display" : "Hypertension"
+        },
+        {
+          "reference" : "Condition/a4a9d90a-d1b0-4d60-82f0-c52343dc6251",
+          "display" : "Congestive heart failure"
+        }]
+      },
+      {
+        "title" : "Medication Summary",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10160-0",
+            "display" : "Hx of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "MedicationStatement/29074ca4-efcb-4ff4-8446-feed2399a891",
+          "display" : "Dimethyl fumarate 30 mg Gastro-resistant tablet"
+        },
+        {
+          "reference" : "MedicationStatement/f6cb1218-f81c-4338-80d8-3c10910f78f1",
+          "display" : "Irbesartan 75 mg Tablet"
+        },
+        {
+          "reference" : "MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade87b1",
+          "display" : "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+        },
+        {
+          "reference" : "Medication/5d129355-4b20-40d8-841f-7f93acbc3e61",
+          "display" : "valproic acid"
+        }]
+      },
+      {
+        "title" : "Pregnancy History",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10162-6",
+            "display" : "Pregnancies Hx"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/e06e43a1-38d4-468f-8c35-f7f12da91061",
+          "display" : "Pregrancy Status"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "c154158f-6a43-4ab7-8443-e7f4bf915dd1",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"c154158f-6a43-4ab7-8443-e7f4bf915dd1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;c154158f-6a43-4ab7-8443-e7f4bf915dd1&quot; </p></div><blockquote><p><b>citizenship</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></blockquote><p><b>value</b>: Norway <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#NO)</span></p></blockquote><p><b>identifier</b>: id:\u00a0ips-3</p><p><b>active</b>: true</p><p><b>name</b>: IPS 3 example Gravitate </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1978-05-05</p></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "urn:iso:std:iso:3166",
+              "code" : "NO",
+              "display" : "Norway"
+            }]
+          }
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+      }],
+      "identifier" : [{
+        "system" : "https://www.gravitatehealth.eu/sid/doc",
+        "value" : "ips-3"
+      }],
+      "active" : true,
+      "name" : [{
+        "family" : "Gravitate",
+        "given" : ["IPS 3 example"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1978-05-05"
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d1",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "1ece89c5-fda3-4db9-ace6-decbe6c603d1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dr. Anne Karlsson</div>"
+      },
+      "name" : [{
+        "family" : "Karlsson",
+        "given" : ["Anne"],
+        "prefix" : ["Dr."]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/AllergyIntolerance/1dff4474-fa08-4f45-8260-dbb23094bf01",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "id" : "1dff4474-fa08-4f45-8260-dbb23094bf01",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hay fever</div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "256259004",
+          "display" : "Pollen"
+        }]
+      },
+      "patient" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1",
+        "display" : "Maria Gravitate"
+      },
+      "reaction" : [{
+        "manifestation" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "21719001",
+            "display" : "Allergic rhinitis caused by pollen"
+          }],
+          "text" : "Hay fever"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Condition/bcc79261-142c-48ec-b032-f3f9af49ec51",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "bcc79261-142c-48ec-b032-f3f9af49ec51",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"bcc79261-142c-48ec-b032-f3f9af49ec51\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;bcc79261-142c-48ec-b032-f3f9af49ec51&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Psoriasis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#9014002)</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd1\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1: Maria Gravitate)</a></p><p><b>asserter</b>: <a href=\"#Practitioner_1ece89c5-fda3-4db9-ace6-decbe6c603d1\">See above (Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d1: Dr. Anna Karlsson)</a></p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "9014002",
+          "display" : "Psoriasis"
+        }],
+        "text" : "Psoriasis"
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1",
+        "display" : "Maria Gravitate"
+      },
+      "asserter" : {
+        "reference" : "Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d1",
+        "display" : "Dr. Anna Karlsson"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Condition/a4a9d90a-d1b0-4d60-82f0-c52343dc6251",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "a4a9d90a-d1b0-4d60-82f0-c52343dc6251",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Congestive heart failure (2015)</div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "42343007",
+          "display" : "Congestive heart failure"
+        }],
+        "text" : "Congestive heart failure"
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1",
+        "display" : "Maria Gravitate"
+      },
+      "onsetDateTime" : "2015",
+      "asserter" : {
+        "reference" : "Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d1",
+        "display" : "Dr. Anna Karlsson"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e5131",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "f06b7cf8-c15c-4288-a0f9-45a1026e5131",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"f06b7cf8-c15c-4288-a0f9-45a1026e5131\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;f06b7cf8-c15c-4288-a0f9-45a1026e5131&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Hypertension <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#38341003 &quot;HT - Hypertension&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd1\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1: Maria Gravitate)</a></p><p><b>onset</b>: 1993</p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "38341003",
+          "display" : "HT - Hypertension"
+        }],
+        "text" : "Hypertension"
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1",
+        "display" : "Maria Gravitate"
+      },
+      "onsetDateTime" : "1993"
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/29074ca4-efcb-4ff4-8446-feed2399a891",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "29074ca4-efcb-4ff4-8446-feed2399a891",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Brand Name</th><th>MAN</th><th>Active Substance</th><th>Common Name</th><th>ATC</th><th>Strength</th><th>Dose Form</th><th>RoA</th></tr></thead><tbody><tr><td>Skilarence</td><td>EU/1/17/1201/001</td><td>dimethyl fumarate (FO2303MNI2)</td><td>dimethyl fumarate</td><td>L04AX07</td><td>30 mg</td><td>Gastro-resistant tablet</td><td>Oral use</td></tr></tbody></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/b50ae644-e0b7-4007-809f-26f493cbe361",
+        "display" : "Dimethyl fumarate 30 mg Tablet"
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1",
+        "display" : "Maria Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/f6cb1218-f81c-4338-80d8-3c10910f78f1",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "f6cb1218-f81c-4338-80d8-3c10910f78f1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"f6cb1218-f81c-4338-80d8-3c10910f78f1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;f6cb1218-f81c-4338-80d8-3c10910f78f1&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_de131e15-ed13-4b31-b38c-3204a84d99c1\">See above (Medication/de131e15-ed13-4b31-b38c-3204a84d99c1: Irbesartan 75 mg Tablet)</a></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd1\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1: Maria Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/de131e15-ed13-4b31-b38c-3204a84d99c1",
+        "display" : "Irbesartan 75 mg Tablet"
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1",
+        "display" : "Maria Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade87b1",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "f26084c9-b1c8-46d9-acb2-1d400ade87b1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"f26084c9-b1c8-46d9-acb2-1d400ade87b1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;f26084c9-b1c8-46d9-acb2-1d400ade87b1&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_9ac3356c-4ea4-4814-84c3-235484f2ef11\">See above (Medication/9ac3356c-4ea4-4814-84c3-235484f2ef11: Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray)</a></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd1\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1: Maria Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td>Nasal use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20049000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/9ac3356c-4ea4-4814-84c3-235484f2ef11",
+        "display" : "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1",
+        "display" : "Maria Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20049000",
+            "display" : "Nasal use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/b50ae644-e0b7-4007-809f-26f493cbe361",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "b50ae644-e0b7-4007-809f-26f493cbe361",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"b50ae644-e0b7-4007-809f-26f493cbe361\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;b50ae644-e0b7-4007-809f-26f493cbe361&quot; </p></div><p><b>code</b>: Skilarence <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (pmswi#EU/1/17/1201/001; phpid#0x9982CA8A825D4561506CE808982E3B9D &quot;dimethyl fumarate, 30 mg/ 1 tablet, Gastro-resistant tablet&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#L04AX07 &quot;dimethyl fumarate&quot;)</span></p><p><b>form</b>: Gastro-resistant tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10225000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td>dimethyl fumarate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#FO2303MNI2)</span></td><td>30 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {tablet} = '{tablet}')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://spor.ema.europa.eu/pmswi",
+          "code" : "EU/1/17/1201/001",
+          "display" : "Skilarence"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0x9982CA8A825D4561506CE808982E3B9D",
+          "display" : "dimethyl fumarate, 30 mg/ 1 tablet, Gastro-resistant tablet"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "L04AX07",
+          "display" : "dimethyl fumarate"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10225000",
+          "display" : "Gastro-resistant tablet"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "FO2303MNI2",
+            "display" : "dimethyl fumarate"
+          }],
+          "text" : "dimethyl fumarate"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 30,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tablet",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "{tablet}"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/de131e15-ed13-4b31-b38c-3204a84d99c1",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "de131e15-ed13-4b31-b38c-3204a84d99c1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"de131e15-ed13-4b31-b38c-3204a84d99c1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;de131e15-ed13-4b31-b38c-3204a84d99c1&quot; </p></div><p><b>code</b>: Karvea <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (pmswi#EMEA/H/C/000142; phpid#0x8DFB446EDB3B8AE508AE493827A704E4 &quot;Irbesartan, 75 mg/ 1 tablet, Tablet&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#C09DA04 &quot;irbesartan and diuretics&quot;)</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td>irbesartan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#J0E2756Z7N)</span></td><td>75 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {tablet} = '{tablet}')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://spor.ema.europa.eu/pmswi",
+          "code" : "EMEA/H/C/000142",
+          "display" : "Karvea"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0x8DFB446EDB3B8AE508AE493827A704E4",
+          "display" : "Irbesartan, 75 mg/ 1 tablet, Tablet"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "C09DA04",
+          "display" : "irbesartan and diuretics"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10219000",
+          "display" : "Tablet"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "J0E2756Z7N",
+            "display" : "irbesartan"
+          }],
+          "text" : "irbesartan"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 75,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tablet",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "{tablet}"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/9ac3356c-4ea4-4814-84c3-235484f2ef11",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "9ac3356c-4ea4-4814-84c3-235484f2ef11",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"9ac3356c-4ea4-4814-84c3-235484f2ef11\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;9ac3356c-4ea4-4814-84c3-235484f2ef11&quot; </p></div><p><b>code</b>: Boots Decongestant 0.05% w/v Nasal spray <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#16028/0049; phpid#0xF79CABF272B6A7EEF104DDDA44E82716 &quot;Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#R01AA05 &quot;oxymetazoline&quot;)</span></p><p><b>form</b>: Nasal spray, solution <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td>oxymetazoline hydrochloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#K89MJ0S5VY)</span></td><td>0.05 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code ml = 'ml')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.gravitatehealth.eu/sid/man",
+          "code" : "16028/0049",
+          "display" : "Boots Decongestant 0.05% w/v Nasal spray"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0xF79CABF272B6A7EEF104DDDA44E82716",
+          "display" : "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "R01AA05",
+          "display" : "oxymetazoline"
+        }]
+      },
+      "form" : {
+        "text" : "Nasal spray, solution"
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "K89MJ0S5VY",
+            "display" : "oxymetazoline hydrochloride"
+          }],
+          "text" : "oxymetazoline hydrochloride"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 0.05,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "ml",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "ml"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/5d129355-4b20-40d8-841f-7f93acbc3e61",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "5d129355-4b20-40d8-841f-7f93acbc3e61",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"5d129355-4b20-40d8-841f-7f93acbc3e61\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;5d129355-4b20-40d8-841f-7f93acbc3e61&quot; </p></div><p><b>code</b>: valproic acid <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#N03AG01)</span></p><p><b>form</b>: Nasal spray, solution <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td>oxymetazoline hydrochloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#K89MJ0S5VY)</span></td><td>0.05 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code ml = 'ml')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "N03AG01",
+          "display" : "valproic acid"
+        }]
+      },
+      "form" : {
+        "text" : "Nasal spray, solution"
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "K89MJ0S5VY",
+            "display" : "oxymetazoline hydrochloride"
+          }],
+          "text" : "oxymetazoline hydrochloride"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 0.05,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "ml",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "ml"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Observation/e06e43a1-38d4-468f-8c35-f7f12da91061",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "e06e43a1-38d4-468f-8c35-f7f12da91061",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"e06e43a1-38d4-468f-8c35-f7f12da91061\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;e06e43a1-38d4-468f-8c35-f7f12da91061&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: Pregnancy status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#82810-3)</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd1\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1)</a></p><p><b>effective</b>: 2020-01-10</p><p><b>value</b>: Pregnant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA15173-0)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "82810-3",
+          "display" : "Pregnancy status"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd1"
+      },
+      "effectiveDateTime" : "2020-01-10",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA15173-0",
+          "display" : "Pregnant"
+        }]
+      }
+    }
+  }]
+}

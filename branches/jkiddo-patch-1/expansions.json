@@ -1,0 +1,70 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "90fe7345-714d-481d-a7f5-7a0d69fb4cca",
+  "meta" : {
+    "lastUpdated" : "2023-04-24T10:19:24.810+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://hl7.eu/fhir/ig/gravitate-health-ips/ValueSet/PDcategoryVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "PDcategoryVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://hl7.eu/fhir/ig/gravitate-health-ips/ValueSet/PDcategoryVS",
+      "version" : "0.1.0",
+      "name" : "PDcategoryVS",
+      "status" : "active",
+      "date" : "2023-04-24T10:19:24+00:00",
+      "contact" : [{
+        "name" : "Gravitate Health Project",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.gravitatehealth.eu/"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bb754dc2-099c-46dd-8f1c-4899972156b7",
+        "timestamp" : "2023-04-24T10:19:54+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.eu/fhir/ig/gravitate-health-ips/ValueSet/PDtypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "PDtypeVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://hl7.eu/fhir/ig/gravitate-health-ips/ValueSet/PDtypeVS",
+      "version" : "0.1.0",
+      "name" : "PDtypeVS",
+      "status" : "active",
+      "date" : "2023-04-24T10:19:24+00:00",
+      "contact" : [{
+        "name" : "Gravitate Health Project",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.gravitatehealth.eu/"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:ec1750e2-5d9e-4820-930b-7903042003f9",
+        "timestamp" : "2023-04-24T10:19:54+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  }]
+}

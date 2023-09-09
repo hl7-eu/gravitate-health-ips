@@ -1,0 +1,1091 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ig/gravitate-health-ips/Bundle/gravitate-Alicia> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "gravitate-Alicia"] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/doc"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "alicia-ips-1" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2023-04-18T09:22:00+02:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Composition/alicia-comp"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Composition/alicia-comp> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Patient/alicia-patient"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Patient/alicia-patient> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Practitioner/alicia-pract"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Practitioner/alicia-pract> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Condition/alicia-cond-1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Condition/alicia-cond-1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Condition/alicia-cond-2"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Condition/alicia-cond-2> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Condition/alicia-cond-3"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Condition/alicia-cond-3> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Condition/alicia-cond-4"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Condition/alicia-cond-4> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/alicia-med-stat-1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/alicia-med-stat-1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/alicia-med-stat-2"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/alicia-med-stat-2> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/alicia-med-stat-3"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/alicia-med-stat-3> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/alicia-med-stat-4"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/alicia-med-stat-4> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/alicia-med-stat-5"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/alicia-med-stat-5> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/alicia-med-stat-6"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/alicia-med-stat-6> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/MedicationStatement/alicia-med-stat-7"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/MedicationStatement/alicia-med-stat-7> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77853"^^xsd:anyURI ] ;
+     fhir:resource ( <https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77853> )
+  ] ) . # 
+
+<https://myserver.org/Composition/alicia-comp> a fhir:Composition ;
+  fhir:id [ fhir:v "gravitate-Alicia"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Id:</b> gravitate-alicia<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> alicia Gravitate<br/><b>Sections:</b><br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4)</li><br/><ul><li><b>Entry:</b> <a href=\"Condition-alicia-cond-1.html\">HIV</a></li><br/><li><b>Entry:</b> <a href=\"Condition-alicia-cond-2.html\">Trigeminal neuralgia</a></li><br/><li><b>Entry:</b> <a href=\"Condition-alicia-cond-3.html\">Depression</a></li><br/><li><b>Entry:</b> <a href=\"Condition-alicia-cond-4.html\">Overweight</a></li></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0)</li><br/><ul><li><b>Entry:</b> <a href=\"MedicationStatement-alicia-med-stat-1.html\">BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-alicia-med-stat-2.html\">Calcium/Vit D</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-alicia-med-stat-3.html\">Folic Acid + Cyanocobalamin + Iodur 1 t QD</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-alicia-med-stat-4.html\">Carbamazepine 1 t TID</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-alicia-med-stat-5.html\">Orlistat 1 cp TID</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-alicia-med-stat-6.html\">St. John’s Wort 2 cp BID</a></li><br/><li><b>Entry:</b> <a href=\"MedicationStatement-alicia-med-stat-7.html\">Collagen and magnesium supplements</a></li><br/></ul></ul></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ] ;
+       fhir:display [ fhir:v "Patient summary Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/alicia-patient> ;
+     fhir:reference [ fhir:v "Patient/alicia-patient" ] ;
+     fhir:display [ fhir:v "Alicia Gravitate" ]
+  ] ; # 
+  fhir:date [ fhir:v "2018-07-10T15:22:00+02:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Practitioner/alicia-pract> ;
+     fhir:reference [ fhir:v "Practitioner/alicia-pract" ] ;
+     fhir:display [ fhir:v "Dr. Walter Waltz" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Patient Summary (Alicia Gravitate)"] ; # 
+  fhir:confidentiality [ fhir:v "N"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Problem List" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ] ;
+         fhir:display [ fhir:v "Problem list Reported" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Condition/alicia-cond-1> ;
+       fhir:reference [ fhir:v "Condition/alicia-cond-1" ] ;
+       fhir:display [ fhir:v "Depression" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Condition/alicia-cond-2> ;
+       fhir:reference [ fhir:v "Condition/alicia-cond-2" ] ;
+       fhir:display [ fhir:v "HIV" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Condition/alicia-cond-3> ;
+       fhir:reference [ fhir:v "Condition/alicia-cond-3" ] ;
+       fhir:display [ fhir:v "Trigeminal neuralgia" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Condition/alicia-cond-4> ;
+       fhir:reference [ fhir:v "Condition/alicia-cond-4" ] ;
+       fhir:display [ fhir:v "Overweight" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Medication Summary" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:10160-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10160-0" ] ;
+         fhir:display [ fhir:v "Hx of Medication use" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/alicia-med-stat-1> ;
+       fhir:reference [ fhir:v "MedicationStatement/alicia-med-stat-1" ] ;
+       fhir:display [ fhir:v "BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/alicia-med-stat-2> ;
+       fhir:reference [ fhir:v "MedicationStatement/alicia-med-stat-2" ] ;
+       fhir:display [ fhir:v "Folic Acid + Cyanocobalamin + Iodur 1 t QD" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/alicia-med-stat-3> ;
+       fhir:reference [ fhir:v "MedicationStatement/alicia-med-stat-3" ] ;
+       fhir:display [ fhir:v "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/alicia-med-stat-4> ;
+       fhir:reference [ fhir:v "MedicationStatement/alicia-med-stat-4" ] ;
+       fhir:display [ fhir:v "Carbamazepine  1 t TID" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/alicia-med-stat-5> ;
+       fhir:reference [ fhir:v "MedicationStatement/alicia-med-stat-5" ] ;
+       fhir:display [ fhir:v "Orlistat 1 cp TID" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/alicia-med-stat-6> ;
+       fhir:reference [ fhir:v "MedicationStatement/alicia-med-stat-6" ] ;
+       fhir:display [ fhir:v "St. John’s Wort 2 cp BID" ]
+     ] [
+       fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/MedicationStatement/alicia-med-stat-7> ;
+       fhir:reference [ fhir:v "MedicationStatement/alicia-med-stat-7" ] ;
+       fhir:display [ fhir:v "Collagen and magnesium supplements" ]
+     ] )
+  ] ) . # 
+
+<https://myserver.org/Patient/alicia-patient> a fhir:Patient ;
+  fhir:id [ fhir:v "alicia-patient"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Age: 28 years. I live with my boyfriend. PhD Student Interests: I love reading and walking outdoors with my dog. I also love art and photography. Health Conditions: HIV (diagnosed with 25 years) Trigeminal neuralgia Depression Overweight</div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ES" ] ;
+           fhir:display [ fhir:v "Spain" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-citizenship"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/doc"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "alicia-1" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Gravitate" ] ;
+     fhir:given ( [ fhir:v "Alicia" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1998-10-05"^^xsd:date] . # 
+
+<https://myserver.org/Practitioner/alicia-pract> a fhir:Practitioner ;
+  fhir:id [ fhir:v "alicia-pract"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"alicia-pract\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;alicia-pract&quot; </p></div><p><b>name</b>: Walter Waltz </p></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Waltz" ] ;
+     fhir:given ( [ fhir:v "Walter" ] ) ;
+     fhir:prefix ( [ fhir:v "Dr." ] )
+  ] ) . # 
+
+<https://myserver.org/Condition/alicia-cond-1> a fhir:Condition ;
+  fhir:id [ fhir:v "alicia-cond-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"alicia-cond-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;alicia-cond-1&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Depressive disorder (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#35489007)</span></p><p><b>subject</b>: <a href=\"#Patient_alicia-patient\">See above (Patient/alicia-patient: alicia Gravitate)</a></p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:35489007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "35489007" ] ;
+       fhir:display [ fhir:v "Depressive disorder (disorder)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Depressive disorder (disorder)" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/alicia-patient> ;
+     fhir:reference [ fhir:v "Patient/alicia-patient" ] ;
+     fhir:display [ fhir:v "alicia Gravitate" ]
+  ] . # 
+
+<https://myserver.org/Condition/alicia-cond-2> a fhir:Condition ;
+  fhir:id [ fhir:v "alicia-cond-2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"alicia-cond-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;alicia-cond-2&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Human immunodeficiency virus infection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#86406008)</span></p><p><b>subject</b>: <a href=\"#Patient_alicia-patient\">See above (Patient/alicia-patient: alicia Gravitate)</a></p><p><b>onset</b>: 2018</p><p><b>asserter</b>: <a href=\"#Practitioner_alicia-pract\">See above (Practitioner/alicia-pract: Dr. Walter Waltz)</a></p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:86406008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86406008" ] ;
+       fhir:display [ fhir:v "Human immunodeficiency virus infection" ]
+     ] ) ;
+     fhir:text [ fhir:v "Human immunodeficiency virus infection" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/alicia-patient> ;
+     fhir:reference [ fhir:v "Patient/alicia-patient" ] ;
+     fhir:display [ fhir:v "alicia Gravitate" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2018"^^xsd:gYear] ; # 
+  fhir:asserter [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Practitioner/alicia-pract> ;
+     fhir:reference [ fhir:v "Practitioner/alicia-pract" ] ;
+     fhir:display [ fhir:v "Dr. Walter Waltz" ]
+  ] . # 
+
+<https://myserver.org/Condition/alicia-cond-3> a fhir:Condition ;
+  fhir:id [ fhir:v "alicia-cond-3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"alicia-cond-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;alicia-cond-3&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Trigeminal neuralgia (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#31681005)</span></p><p><b>subject</b>: <a href=\"#Patient_alicia-patient\">See above (Patient/alicia-patient: alicia Gravitate)</a></p><p><b>onset</b>: 2018</p><p><b>asserter</b>: <a href=\"#Practitioner_alicia-pract\">See above (Practitioner/alicia-pract: Dr. Walter Waltz)</a></p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:31681005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "31681005" ] ;
+       fhir:display [ fhir:v "Trigeminal neuralgia (disorder)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Trigeminal neuralgia (disorder)" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/alicia-patient> ;
+     fhir:reference [ fhir:v "Patient/alicia-patient" ] ;
+     fhir:display [ fhir:v "alicia Gravitate" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2018"^^xsd:gYear] ; # 
+  fhir:asserter [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Practitioner/alicia-pract> ;
+     fhir:reference [ fhir:v "Practitioner/alicia-pract" ] ;
+     fhir:display [ fhir:v "Dr. Walter Waltz" ]
+  ] . # 
+
+<https://myserver.org/Condition/alicia-cond-4> a fhir:Condition ;
+  fhir:id [ fhir:v "alicia-cond-4"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"alicia-cond-4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;alicia-cond-4&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Overweight (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#238131007)</span></p><p><b>subject</b>: <a href=\"#Patient_alicia-patient\">See above (Patient/alicia-patient: Alicia Gravitate)</a></p><p><b>onset</b>: 2018</p><p><b>asserter</b>: <a href=\"#Practitioner_alicia-pract\">See above (Practitioner/alicia-pract: Dr. Walter Waltz)</a></p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:238131007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "238131007" ] ;
+       fhir:display [ fhir:v "Overweight (finding)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Overweight (finding)" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/alicia-patient> ;
+     fhir:reference [ fhir:v "Patient/alicia-patient" ] ;
+     fhir:display [ fhir:v "Alicia Gravitate" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2018"^^xsd:gYear] ; # 
+  fhir:asserter [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Practitioner/alicia-pract> ;
+     fhir:reference [ fhir:v "Practitioner/alicia-pract" ] ;
+     fhir:display [ fhir:v "Dr. Walter Waltz" ]
+  ] . # 
+
+<https://myserver.org/MedicationStatement/alicia-med-stat-1> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "alicia-med-stat-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"alicia-med-stat-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;alicia-med-stat-1&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_9d7be868-8264-4d94-ad04-ef04ecc92i99\">See above (Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99: BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD)</a></p><p><b>subject</b>: <a href=\"#Patient_alicia-patient\">See above (Patient/alicia-patient: Alicia Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99> ;
+     fhir:reference [ fhir:v "Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99" ] ;
+     fhir:display [ fhir:v "BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/alicia-patient> ;
+     fhir:reference [ fhir:v "Patient/alicia-patient" ] ;
+     fhir:display [ fhir:v "Alicia Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/alicia-med-stat-2> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "alicia-med-stat-2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"alicia-med-stat-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;alicia-med-stat-2&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1\">See above (Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1: Folic Acid + Cyanocobalamin + Iodur 1 t QD)</a></p><p><b>subject</b>: <a href=\"#Patient_alicia-patient\">See above (Patient/alicia-patient: Alicia Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1> ;
+     fhir:reference [ fhir:v "Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1" ] ;
+     fhir:display [ fhir:v "Folic Acid + Cyanocobalamin + Iodur 1 t QD" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/alicia-patient> ;
+     fhir:reference [ fhir:v "Patient/alicia-patient" ] ;
+     fhir:display [ fhir:v "Alicia Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/alicia-med-stat-3> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "alicia-med-stat-3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"alicia-med-stat-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;alicia-med-stat-3&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda7785h\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h: CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES)</a></p><p><b>subject</b>: <a href=\"#Patient_alicia-patient\">See above (Patient/alicia-patient: Alicia Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h> ;
+     fhir:reference [ fhir:v "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h" ] ;
+     fhir:display [ fhir:v "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/alicia-patient> ;
+     fhir:reference [ fhir:v "Patient/alicia-patient" ] ;
+     fhir:display [ fhir:v "Alicia Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/alicia-med-stat-4> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "alicia-med-stat-4"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"alicia-med-stat-4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;alicia-med-stat-4&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda78356\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356: Carbamazepine  1 t TID)</a></p><p><b>subject</b>: <a href=\"#Patient_alicia-patient\">See above (Patient/alicia-patient: alicia Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356> ;
+     fhir:reference [ fhir:v "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356" ] ;
+     fhir:display [ fhir:v "Carbamazepine  1 t TID" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/alicia-patient> ;
+     fhir:reference [ fhir:v "Patient/alicia-patient" ] ;
+     fhir:display [ fhir:v "alicia Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/alicia-med-stat-5> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "alicia-med-stat-5"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"alicia-med-stat-5\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;alicia-med-stat-5&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda78333\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333: Orlistat 1 cp TID)</a></p><p><b>subject</b>: <a href=\"#Patient_alicia-patient\">See above (Patient/alicia-patient: Alicia Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333> ;
+     fhir:reference [ fhir:v "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333" ] ;
+     fhir:display [ fhir:v "Orlistat 1 cp TID" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/alicia-patient> ;
+     fhir:reference [ fhir:v "Patient/alicia-patient" ] ;
+     fhir:display [ fhir:v "Alicia Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/alicia-med-stat-6> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "alicia-med-stat-6"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"alicia-med-stat-6\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;alicia-med-stat-6&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda79261\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261: St. John’s Wort 2 cp BID)</a></p><p><b>subject</b>: <a href=\"#Patient_alicia-patient\">See above (Patient/alicia-patient: Alicia Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261> ;
+     fhir:reference [ fhir:v "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261" ] ;
+     fhir:display [ fhir:v "St. John’s Wort 2 cp BID" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/alicia-patient> ;
+     fhir:reference [ fhir:v "Patient/alicia-patient" ] ;
+     fhir:display [ fhir:v "Alicia Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/MedicationStatement/alicia-med-stat-7> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "alicia-med-stat-7"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"alicia-med-stat-7\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;alicia-med-stat-7&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77853\">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77853: Collagen and magnesium supplements)</a></p><p><b>subject</b>: <a href=\"#Patient_alicia-patient\">See above (Patient/alicia-patient: alicia Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77853> ;
+     fhir:reference [ fhir:v "Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77853" ] ;
+     fhir:display [ fhir:v "Collagen and magnesium supplements" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.eu/fhir/ig/gravitate-health-ips/Patient/alicia-patient> ;
+     fhir:reference [ fhir:v "Patient/alicia-patient" ] ;
+     fhir:display [ fhir:v "alicia Gravitate" ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367> a fhir:Medication, fhir:Medication ;
+  fhir:id [ fhir:v "6f4151e9-91f6-4f1e-adc3-fb94dda78367"], [ fhir:v "6f4151e9-91f6-4f1e-adc3-fb94dda78367"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda78367\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda78367&quot; </p></div><p><b>code</b>: Flucelvax <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#EU/1/18/1326/001; phpid#0xbb82cd10ab2add752b2b9224931000k2; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#A03ku92)</span></p><p><b>form</b>: suspension for injection in pre-filled syringe <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10219999)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#TU2UN5CG9C)</span></td><td>15 mcg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mcg = 'mcg')</span>/1 suspension for injection in pre-filled syringe<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+  ], [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda78367\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda78367&quot; </p></div><p><b>code</b>: Flucelvax <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#EU/1/18/1326/001; phpid#0xbb82cd10ab2add752b2b9224931000k2; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#A03ku92)</span></p><p><b>form</b>: suspension for injection in pre-filled syringe <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10219999)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#TU2UN5CG9C)</span></td><td>15 mcg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mcg = 'mcg')</span>/1 suspension for injection in pre-filled syringe<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ema.europa.eu/fhir/marketingAuthorizationNumber"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EU/1/18/1326/001" ] ;
+       fhir:display [ fhir:v "Flucelvax" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0xbb82cd10ab2add752b2b9224931000k2" ] ;
+       fhir:display [ fhir:v "Flucelvax" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "A03ku92" ] ;
+       fhir:display [ fhir:v "Flucelvax" ]
+     ] )
+  ], [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ema.europa.eu/fhir/marketingAuthorizationNumber"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EU/1/18/1326/001" ] ;
+       fhir:display [ fhir:v "Flucelvax" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0xbb82cd10ab2add752b2b9224931000k2" ] ;
+       fhir:display [ fhir:v "Flucelvax" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "A03ku92" ] ;
+       fhir:display [ fhir:v "Flucelvax" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10219999" ] ;
+       fhir:display [ fhir:v "suspension for injection in pre-filled syringe" ]
+     ] ) ;
+     fhir:text [ fhir:v "suspension for injection in pre-filled syringe" ]
+  ], [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10219999" ] ;
+       fhir:display [ fhir:v "suspension for injection in pre-filled syringe" ]
+     ] ) ;
+     fhir:text [ fhir:v "suspension for injection in pre-filled syringe" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TU2UN5CG9C" ] ;
+         fhir:display [ fhir:v "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE" ]
+       ] ) ;
+       fhir:text [ fhir:v "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mcg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "suspension for injection in pre-filled syringe" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TU2UN5CG9C" ] ;
+         fhir:display [ fhir:v "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE" ]
+       ] ) ;
+       fhir:text [ fhir:v "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mcg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "suspension for injection in pre-filled syringe" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261> a fhir:Medication ;
+  fhir:id [ fhir:v "6f4151e9-91f6-4f1e-adc3-fb94dda79261"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda79261\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda79261&quot; </p></div><p><b>code</b>: St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras 200 mg tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#xxxxxx; phpid#0xbb82cd10ab2add752b2b9224931099j1; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#A03FA02 &quot;HYPERICUM PERFORATUM WHOLE&quot;)</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>HYPERICUM PERFORATUM WHOLE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#XK4IUX8MNB)</span></td><td>175 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/man"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "xxxxxx" ] ;
+       fhir:display [ fhir:v "St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras 200 mg tablet" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0xbb82cd10ab2add752b2b9224931099j1" ] ;
+       fhir:display [ fhir:v "St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras 200 mg tablet" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "A03FA02" ] ;
+       fhir:display [ fhir:v "HYPERICUM PERFORATUM WHOLE" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10219000" ] ;
+       fhir:display [ fhir:v "Tablet" ]
+     ] ) ;
+     fhir:text [ fhir:v "Tablet" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "XK4IUX8MNB" ] ;
+         fhir:display [ fhir:v "HYPERICUM PERFORATUM WHOLE" ]
+       ] ) ;
+       fhir:text [ fhir:v "HYPERICUM PERFORATUM WHOLE" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "175"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h> a fhir:Medication ;
+  fhir:id [ fhir:v "6f4151e9-91f6-4f1e-adc3-fb94dda7785h"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda7785h\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda7785h&quot; </p></div><p><b>code</b>: CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#16028/0049; phpid#0xF79CABF272B6A7EEF104DDDA44E82716 &quot;Calcium carbonate 500 mg&quot;)</span></p><p><b>form</b>: Effervescent tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10222000)</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: calcium carbonate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#H0G9379FGK &quot;Calcium carbonate&quot;)</span></p><p><b>strength</b>: 1000 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: cholecalciferol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#1C6V77QF41)</span></p><p><b>strength</b>: 880 {UI}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {UI} = '{UI}')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/man"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "16028/0049" ] ;
+       fhir:display [ fhir:v "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0xF79CABF272B6A7EEF104DDDA44E82716" ] ;
+       fhir:display [ fhir:v "Calcium carbonate 500 mg" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10222000" ] ;
+       fhir:display [ fhir:v "Effervescent tablet" ]
+     ] ) ;
+     fhir:text [ fhir:v "Effervescent tablet" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "H0G9379FGK" ] ;
+         fhir:display [ fhir:v "Calcium carbonate" ]
+       ] ) ;
+       fhir:text [ fhir:v "calcium carbonate" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "1000"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1C6V77QF41" ] ;
+         fhir:display [ fhir:v "cholecalciferol" ]
+       ] ) ;
+       fhir:text [ fhir:v "cholecalciferol" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "880"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "{UI}" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1> a fhir:Medication ;
+  fhir:id [ fhir:v "fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1&quot; </p></div><p><b>code</b>: Folic Acid + Cyanocobalamin + Iodur 1 t QD <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#PL31654/0092; phpid#0x6c47381b040e5b588db23b2272f22ppf; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#B03B &quot;VITAMIN B12 AND FOLIC ACID&quot;)</span></p><p><b>form</b>: Coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10220000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>FOLIC ACID <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#935E97BOY8)</span></td><td>30 g<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ema.europa.eu/fhir/marketingAuthorizationNumber"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PL31654/0092" ] ;
+       fhir:display [ fhir:v "Folic Acid + Cyanocobalamin + Iodur 1 t QD" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0x6c47381b040e5b588db23b2272f22ppf" ] ;
+       fhir:display [ fhir:v "Folic Acid + Cyanocobalamin + Iodur 1 t QD" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "B03B" ] ;
+       fhir:display [ fhir:v "VITAMIN B12 AND FOLIC ACID" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10220000" ] ;
+       fhir:display [ fhir:v "Coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "935E97BOY8" ] ;
+         fhir:display [ fhir:v "FOLIC ACID" ]
+       ] ) ;
+       fhir:text [ fhir:v "FOLIC ACID" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99> a fhir:Medication ;
+  fhir:id [ fhir:v "9d7be868-8264-4d94-ad04-ef04ecc92i99"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"9d7be868-8264-4d94-ad04-ef04ecc92i99\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;9d7be868-8264-4d94-ad04-ef04ecc92i99&quot; </p></div><p><b>code</b>: Biktarvy 30 mg/120 mg/15 mg film-coated tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#EU/1/18/1289/001; phpid#0x073AF2E5B92AE19E8B67635AFFB3D9nq; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#774856007 &quot;Product containing only bictegravir and emtricitabine and tenofovir (medicinal product)&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#J05AR20 &quot;emtricitabine, tenofovir alafenamide and bictegravir&quot;)</span></p><p><b>form</b>: Coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10220000)</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: bictegravir <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#8GB79LOJ07)</span></p><p><b>strength</b>: 30 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: emtricitabine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#G70B4ETF4S)</span></p><p><b>strength</b>: 120 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: tenofovir alafenamida <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#EL9943AG5J)</span></p><p><b>strength</b>: 15 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ema.europa.eu/fhir/marketingAuthorizationNumber"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EU/1/18/1289/001" ] ;
+       fhir:display [ fhir:v "Biktarvy 30 mg/120 mg/15 mg film-coated tablets" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0x073AF2E5B92AE19E8B67635AFFB3D9nq" ] ;
+       fhir:display [ fhir:v "Biktarvy 30 mg/120 mg/15 mg film-coated tablets" ]
+     ] [
+       a sct:774856007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "774856007" ] ;
+       fhir:display [ fhir:v "Product containing only bictegravir and emtricitabine and tenofovir (medicinal product)" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J05AR20" ] ;
+       fhir:display [ fhir:v "emtricitabine, tenofovir alafenamide and bictegravir" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10220000" ] ;
+       fhir:display [ fhir:v "Coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8GB79LOJ07" ] ;
+         fhir:display [ fhir:v "bictegravir" ]
+       ] ) ;
+       fhir:text [ fhir:v "bictegravir" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "G70B4ETF4S" ] ;
+         fhir:display [ fhir:v "emtricitabine" ]
+       ] ) ;
+       fhir:text [ fhir:v "emtricitabine" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "120"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "EL9943AG5J" ] ;
+         fhir:display [ fhir:v "tenofovir alafenamida" ]
+       ] ) ;
+       fhir:text [ fhir:v "tenofovir alafenamida" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356> a fhir:Medication ;
+  fhir:id [ fhir:v "6f4151e9-91f6-4f1e-adc3-fb94dda78356"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda78356\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda78356&quot; </p></div><p><b>code</b>: Carbamazepine 200 mg tablets <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#xxxx; phpid#xxx &quot;Carbamazepine 2oo mg tablets&quot;)</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>CARBAMAZEPINE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#33CM23913M)</span></td><td>200 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ema.europa.eu/fhir/marketingAuthorizationNumber"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "xxxx" ] ;
+       fhir:display [ fhir:v "Carbamazepine 200 mg tablets" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "xxx" ] ;
+       fhir:display [ fhir:v "Carbamazepine 2oo mg tablets" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10219000" ] ;
+       fhir:display [ fhir:v "Tablet" ]
+     ] ) ;
+     fhir:text [ fhir:v "Tablet" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "33CM23913M" ] ;
+         fhir:display [ fhir:v "CARBAMAZEPINE" ]
+       ] ) ;
+       fhir:text [ fhir:v "CARBAMAZEPINE" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "200"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333> a fhir:Medication ;
+  fhir:id [ fhir:v "6f4151e9-91f6-4f1e-adc3-fb94dda78333"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda78333\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda78333&quot; </p></div><p><b>code</b>: Orlistat 60 mg capsule <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (marketingAuthorizationNumber#xx; phpid#xx)</span></p><p><b>form</b>: Capsule, hard <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10210000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>ORLISTAT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#95M8R751W8)</span></td><td>60 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ema.europa.eu/fhir/marketingAuthorizationNumber"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "xx" ] ;
+       fhir:display [ fhir:v "Orlistat 60 mg capsule" ]
+     ] [
+       fhir:system [ fhir:v "https://www.who-umc.org/phpid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "xx" ] ;
+       fhir:display [ fhir:v "Orlistat 60 mg capsule" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10210000" ] ;
+       fhir:display [ fhir:v "Capsule, hard" ]
+     ] ) ;
+     fhir:text [ fhir:v "Capsule, hard" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "95M8R751W8" ] ;
+         fhir:display [ fhir:v "ORLISTAT" ]
+       ] ) ;
+       fhir:text [ fhir:v "ORLISTAT" ]
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "60"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Tablet" ] ;
+         fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15054000" ]
+       ]
+     ]
+  ] ) . # 
+
+<https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77853> a fhir:Medication ;
+  fhir:id [ fhir:v "6f4151e9-91f6-4f1e-adc3-fb94dda77853"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"6f4151e9-91f6-4f1e-adc3-fb94dda77853\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda77853&quot; </p></div><p><b>code</b>: AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (man#yyy)</span></p><p><b>form</b>: Oral powder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10201000)</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: MAGNESIUM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#I38ZP9992A)</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: HYALURONIC ACID <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#S270N0TRQY)</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: HUMAN TYPE I COLLAGEN <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#PT3TGI7OIP)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.gravitatehealth.eu/sid/man"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "yyy" ] ;
+       fhir:display [ fhir:v "AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10201000" ] ;
+       fhir:display [ fhir:v "Oral powder" ]
+     ] ) ;
+     fhir:text [ fhir:v "Oral powder" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "I38ZP9992A" ] ;
+         fhir:display [ fhir:v "MAGNESIUM" ]
+       ] ) ;
+       fhir:text [ fhir:v "MAGNESIUM" ]
+     ]
+  ] [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "S270N0TRQY" ] ;
+         fhir:display [ fhir:v "HYALURONIC ACID" ]
+       ] ) ;
+       fhir:text [ fhir:v "HYALURONIC ACID" ]
+     ]
+  ] [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PT3TGI7OIP" ] ;
+         fhir:display [ fhir:v "HUMAN TYPE I COLLAGEN" ]
+       ] ) ;
+       fhir:text [ fhir:v "HUMAN TYPE I COLLAGEN" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

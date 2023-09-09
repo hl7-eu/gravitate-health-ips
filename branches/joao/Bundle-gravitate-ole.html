@@ -1,0 +1,2984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.GH-IPS\Ole Gravitate&#39;s IPS - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/pcsp.css" rel="stylesheet"/>
+    <link href="assets/css/ips-viewer.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"10.11"}
+    h3,h4,h5,h6{--heading-prefix:"10.11"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.gravitatehealth.eu/">
+            <img height="60" alt="Visit the Project website" src="assets/images/logo-header.jpg"/>
+          </a>
+        </div>
+ <!--        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="https://www.pancare.eu/projects"><img height="40" alt="Visit the PanCareSurPass website" src="assets/images/who-logo-www.jpg"/> </a>
+        </div> -->
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Gravitate Health FHIR Implementation Guide (FHIR R4)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contextual information
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="connections.html">Connections</a>
+      </li>
+      <li>
+        <a href="use-case-example.html">Use Case</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Capability Statements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CapabilityStatement-capability-statement-ema.html">SmPC / PL</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="copyright.html">Copyright</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Ole Gravitate's IPS</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Gravitate Health FHIR Implementation Guide (FHIR R4), published by . This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/hl7-eu/gravitate-health-ips">https://github.com/hl7-eu/gravitate-health-ips</a> and changes regularly. See the <a href="http://hl7.eu/fhir/ig/gravitate-health-ips/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-gravitate-ole.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-gravitate-ole.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-gravitate-ole.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Bundle: Ole Gravitate&#39;s IPS</h2>
+
+  <table class="">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+
+
+   
+   
+  
+  <b>id:</b>
+  gravitate-ole
+<br/>
+
+
+
+
+
+  <b>Composition status:</b>
+  final
+<br/>
+
+  <b>Composition Type:</b>
+  Patient summary Document
+<br/>
+<b>Subject:</b>
+<div class="patient block indent">
+
+  
+  
+  
+    <b>identifier:</b>
+    0101010101<br/>
+  
+    <b>Name:</b>
+    Ole Rasmussen<br/>
+  
+    <b>active:</b>
+    true<br/>
+  
+    <b>gender:</b>
+    unknown<br/>
+  
+    <b>Birth Date:</b>
+    1901-01-01<br/>
+
+</div>
+<br/>
+<h3>Sections:</h3>
+<br/>
+
+
+
+  <h4>Medication Summary</h4>
+
+  
+
+
+  
+
+  
+    
+    <div class="medication-summary block">
+
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28105044712 [Pinemol]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N02BE01 [Paracetamol]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                PARACETAMOL (https://laegemiddelstyrelsen.dk/LMS30/Substans#PARACETAMOL) <br/>
+                
+                  <b>strength:</b>
+                  1000 mg/1 filmovertrukne tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101005764 [Marevan]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      B01AA03 [Warfarin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                tabletter <br/>
+              
+                <b>Ingredient:</b>
+                WARFARINNATRIUM (https://laegemiddelstyrelsen.dk/LMS30/Substans#WARFARINNATRIUM) <br/>
+                
+                  <b>strength:</b>
+                  2.5 mg/1 tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101921397 [Beclomet Easyhaler]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      R03BA01 [Beclomethason]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                inhalationspulver <br/>
+              
+                <b>Ingredient:</b>
+                BECLOMETASONDIPROPIONAT (https://laegemiddelstyrelsen.dk/LMS30/Substans#BECLOMETASONDIPROPIONAT) <br/>
+                
+                  <b>strength:</b>
+                  200 ug/1 dose <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Til inhalation<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            on-hold <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28105398114 [Eltroxin]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      H03AA01 [Levothyroxinnatrium]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                tabletter <br/>
+              
+                <b>Ingredient:</b>
+                LEVOTHYROXINNATRIUM (https://laegemiddelstyrelsen.dk/LMS30/Substans#LEVOTHYROXINNATRIUM) <br/>
+                
+                  <b>strength:</b>
+                  100 ug/1 tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            on-hold <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101317587 [Pamol]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N02BE01 [Paracetamol]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                PARACETAMOL (https://laegemiddelstyrelsen.dk/LMS30/Substans#PARACETAMOL) <br/>
+                
+                  <b>strength:</b>
+                  500 mg/1 filmovertrukne tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.dkma.dk/medicinecard/xml.schema/2015/01/01/DrugIdentifierPredefinedSourceType/Magistrel
+                      <b>Code:</b>
+                      73019000051 [Cannabidiol]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                orale dråber <br/>
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            on-hold <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28105468514 [Betolvex]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      B03BA01 [Cyanocobalamin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                CYANOCOBALAMIN (https://laegemiddelstyrelsen.dk/LMS30/Substans#CYANOCOBALAMIN) <br/>
+                
+                  <b>strength:</b>
+                  1 mg/1 filmovertrukne tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            stopped <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101107682 [Betolvex]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      B03BA01 [Cyanocobalamin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                CYANOCOBALAMIN (https://laegemiddelstyrelsen.dk/LMS30/Substans#CYANOCOBALAMIN) <br/>
+                
+                  <b>strength:</b>
+                  1 mg/1 filmovertrukne tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            completed <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101339688 [Spirocort Turbuhaler]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      R03BA02 [Budesonid]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                inhalationspulver <br/>
+              
+                <b>Ingredient:</b>
+                BUDESONID (https://laegemiddelstyrelsen.dk/LMS30/Substans#BUDESONID) <br/>
+                
+                  <b>strength:</b>
+                  400 ug/1 dose <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Til inhalation<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            stopped <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101674394 [Panodil]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N02BE01 [Paracetamol]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                PARACETAMOL (https://laegemiddelstyrelsen.dk/LMS30/Substans#PARACETAMOL) <br/>
+                
+                  <b>strength:</b>
+                  1000 mg/1 filmovertrukne tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101807196 [Cabaser]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N04BC06 [Cabergolin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                tabletter <br/>
+              
+                <b>Ingredient:</b>
+                CABERGOLIN (https://laegemiddelstyrelsen.dk/LMS30/Substans#CABERGOLIN) <br/>
+                
+                  <b>strength:</b>
+                  1 mg/1 tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28105484214 [Abasaglar KwikPen]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      A10AE04 [Insulin glargin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                injektionsvæske, opløsning i fyldt pen <br/>
+              
+                <b>Ingredient:</b>
+                Insulin glargin (https://laegemiddelstyrelsen.dk/LMS30/Substans#Insulin glargin) <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Subkutan anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            stopped <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101674394 [Panodil]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N02BE01 [Paracetamol]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                PARACETAMOL (https://laegemiddelstyrelsen.dk/LMS30/Substans#PARACETAMOL) <br/>
+                
+                  <b>strength:</b>
+                  1000 mg/1 filmovertrukne tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.dkma.dk/medicinecard/xml.schema/2015/01/01/DrugIdentifierPredefinedSourceType/Magistrel
+                      <b>Code:</b>
+                      73019000250 [Røde morfindråber]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N02AA01 [Morphin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                orale dråber <br/>
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101891697 [Telfast]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      R06AX26 [Fexofenadin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                FEXOFENADINHYDROCHLORID (https://laegemiddelstyrelsen.dk/LMS30/Substans#FEXOFENADINHYDROCHLORID) <br/>
+                
+                  <b>strength:</b>
+                  120 mg/1 filmovertrukne tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.dkma.dk/medicinecard/xml.schema/2015/01/01/DrugIdentifierPredefinedSourceType/Magistrel
+                      <b>Code:</b>
+                      73019000053 [Cannabidiol]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                orale dråber <br/>
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28105051112 [Asubtela]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      G03AA12 [Drospirenon og ethinylestradiol]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                DROSPIRENON (https://laegemiddelstyrelsen.dk/LMS30/Substans#DROSPIRENON) <br/>
+                
+
+              
+                <b>Ingredient:</b>
+                Ethinylestradiol (https://laegemiddelstyrelsen.dk/LMS30/Substans#Ethinylestradiol) <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            completed <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.dkma.dk/medicinecard/xml.schema/2015/01/01/DrugIdentifierPredefinedSourceType/Magistrel
+                      <b>Code:</b>
+                      73019685388 [Cannabidiol/dronabinol ]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N02BG10 [Cannabinoider]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                orale dråber <br/>
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Dental anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28102960614 [Abacavir/Lamivudin "Mylan"]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      J05AR02 [Lamivudin og abacavir]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                Abacavirhydrochlorid (https://laegemiddelstyrelsen.dk/LMS30/Substans#Abacavirhydrochlorid) <br/>
+                
+
+              
+                <b>Ingredient:</b>
+                LAMIVUDIN (https://laegemiddelstyrelsen.dk/LMS30/Substans#LAMIVUDIN) <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28100902676 [Primcillin]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      J01CE02 [Phenoxymethylpenicillin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                granulat til oral suspension <br/>
+              
+                <b>Ingredient:</b>
+                Phenoxymethylpenicillinkalium (https://laegemiddelstyrelsen.dk/LMS30/Substans#Phenoxymethylpenicillinkalium) <br/>
+                
+                  <b>strength:</b>
+                  50 mg/1 milliliter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28103253401 [Actrapid Penfill]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      A10AB01 [Insulin (human)]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                injektionsvæske, opløsning i cylinderampul <br/>
+              
+                <b>Ingredient:</b>
+                Insulin, humant (rDNA) (https://laegemiddelstyrelsen.dk/LMS30/Substans#Insulin, humant (rDNA)) <br/>
+                
+                  <b>strength:</b>
+                  100 [iU]/1 milliliter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Subkutan anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28100736376 [Morfin "DAK"]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N02AA01 [Morphin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                injektionsvæske, opløsning <br/>
+              
+                <b>Ingredient:</b>
+                MORPHINHYDROCHLORID (trihydrate) (https://laegemiddelstyrelsen.dk/LMS30/Substans#MORPHINHYDROCHLORID (trihydrate)) <br/>
+                
+                  <b>strength:</b>
+                  20 mg/1 milliliter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Intramuskulær anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28100902676 [Primcillin]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      J01CE02 [Phenoxymethylpenicillin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                granulat til oral suspension <br/>
+              
+                <b>Ingredient:</b>
+                Phenoxymethylpenicillinkalium (https://laegemiddelstyrelsen.dk/LMS30/Substans#Phenoxymethylpenicillinkalium) <br/>
+                
+                  <b>strength:</b>
+                  50 mg/1 milliliter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101492592 [Bricanyl Turbuhaler]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      R03AC03 [Terbutalin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                inhalationspulver <br/>
+              
+                <b>Ingredient:</b>
+                TERBUTALINSULFAT (https://laegemiddelstyrelsen.dk/LMS30/Substans#TERBUTALINSULFAT) <br/>
+                
+                  <b>strength:</b>
+                  0.25 mg/1 dose <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Til inhalation<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101497692 [Risperdal]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N05AX08 [Risperidon]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                RISPERIDON (https://laegemiddelstyrelsen.dk/LMS30/Substans#RISPERIDON) <br/>
+                
+                  <b>strength:</b>
+                  1 mg/1 filmovertrukne tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101492592 [Bricanyl Turbuhaler]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      R03AC03 [Terbutalin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                inhalationspulver <br/>
+              
+                <b>Ingredient:</b>
+                TERBUTALINSULFAT (https://laegemiddelstyrelsen.dk/LMS30/Substans#TERBUTALINSULFAT) <br/>
+                
+                  <b>strength:</b>
+                  0.25 mg/1 dose <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Til inhalation<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.dkma.dk/medicinecard/xml.schema/2015/01/01/DrugIdentifierPredefinedSourceType/Local
+                      <b>Code:</b>
+                      87000042004 [Vioxx]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      M01AH02 [Rofecoxib]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                oral opløsning <br/>
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101317587 [Pamol]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N02BE01 [Paracetamol]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                PARACETAMOL (https://laegemiddelstyrelsen.dk/LMS30/Substans#PARACETAMOL) <br/>
+                
+                  <b>strength:</b>
+                  500 mg/1 filmovertrukne tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101492592 [Bricanyl Turbuhaler]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      R03AC03 [Terbutalin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                inhalationspulver <br/>
+              
+                <b>Ingredient:</b>
+                TERBUTALINSULFAT (https://laegemiddelstyrelsen.dk/LMS30/Substans#TERBUTALINSULFAT) <br/>
+                
+                  <b>strength:</b>
+                  0.25 mg/1 dose <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Til inhalation<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101195484 [Pinex]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N02BE01 [Paracetamol]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                brusetabletter <br/>
+              
+                <b>Ingredient:</b>
+                PARACETAMOL (https://laegemiddelstyrelsen.dk/LMS30/Substans#PARACETAMOL) <br/>
+                
+                  <b>strength:</b>
+                  500 mg/1 brusetabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28103176800 [Panodil]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N02BE01 [Paracetamol]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                tabletter med modificeret udløsning <br/>
+              
+                <b>Ingredient:</b>
+                PARACETAMOL (https://laegemiddelstyrelsen.dk/LMS30/Substans#PARACETAMOL) <br/>
+                
+                  <b>strength:</b>
+                  665 mg/1 tabletter med modificeret udløsning <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28100485165 [Celeston]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      H02AB01 [Betamethason]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                injektionsvæske, suspension <br/>
+              
+                <b>Ingredient:</b>
+                BETAMETHASONDINATRIUMPHOSPHAT (https://laegemiddelstyrelsen.dk/LMS30/Substans#BETAMETHASONDINATRIUMPHOSPHAT) <br/>
+                
+
+              
+                <b>Ingredient:</b>
+                BETAMETHASONACETAT (https://laegemiddelstyrelsen.dk/LMS30/Substans#BETAMETHASONACETAT) <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101492592 [Bricanyl Turbuhaler]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      R03AC03 [Terbutalin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                inhalationspulver <br/>
+              
+                <b>Ingredient:</b>
+                TERBUTALINSULFAT (https://laegemiddelstyrelsen.dk/LMS30/Substans#TERBUTALINSULFAT) <br/>
+                
+                  <b>strength:</b>
+                  0.25 mg/1 dose <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Til inhalation<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28103606003 [Alendronat "Mylan"]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      M05BA04 [Alendronsyre]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                tabletter <br/>
+              
+                <b>Ingredient:</b>
+                Natriumalendronattrihydrat (https://laegemiddelstyrelsen.dk/LMS30/Substans#Natriumalendronattrihydrat) <br/>
+                
+                  <b>strength:</b>
+                  70 mg/1 tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28104061107 [Cyklonova]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      B02AA02 [Tranexamsyre]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                TRANEXAMSYRE (https://laegemiddelstyrelsen.dk/LMS30/Substans#TRANEXAMSYRE) <br/>
+                
+                  <b>strength:</b>
+                  500 mg/1 filmovertrukne tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28100636073 [Panodil]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N02BE01 [Paracetamol]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                filmovertrukne tabletter <br/>
+              
+                <b>Ingredient:</b>
+                PARACETAMOL (https://laegemiddelstyrelsen.dk/LMS30/Substans#PARACETAMOL) <br/>
+                
+                  <b>strength:</b>
+                  500 mg/1 filmovertrukne tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28104249507 [Amlodipin "Teva"]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      C08CA01 [Amlodipin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                tabletter <br/>
+              
+                <b>Ingredient:</b>
+                AMLODIPINBESILAT (https://laegemiddelstyrelsen.dk/LMS30/Substans#AMLODIPINBESILAT) <br/>
+                
+                  <b>strength:</b>
+                  10 mg/1 tabletter <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            stopped <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.dkma.dk/medicinecard/xml.schema/2015/01/01/DrugIdentifierPredefinedSourceType/Magistrel
+                      <b>Code:</b>
+                      73019000071 [Kokain]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      S01HA01 [Cocain]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                øjendråber <br/>
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Intrabronkial anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            completed <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.dkma.dk/medicinecard/xml.schema/2015/01/01/DrugIdentifierPredefinedSourceType/Magistrel
+                      <b>Code:</b>
+                      73019000052 [Cannabidiol]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                orale dråber <br/>
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Oral anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.dkma.dk/medicinecard/xml.schema/2015/01/01/DrugIdentifierPredefinedSourceType/Magistrel
+                      <b>Code:</b>
+                      73019000331 [Morfin u. stabilisering]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N02AA01 [Morphin]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                injektionsvæske <br/>
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Endotrakeopulmonar anvendelse<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            unknown <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101697994 [Sevorane]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      N01AB08 [Sevofluran]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                væske til inhalationsdamp <br/>
+              
+                <b>Ingredient:</b>
+                SEVOFLURAN (https://laegemiddelstyrelsen.dk/LMS30/Substans#SEVOFLURAN) <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Til inhalation<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            active <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      https://laegemiddelstyrelsen.dk/LMS01/DrugID
+                      <b>Code:</b>
+                      28101339688 [Spirocort Turbuhaler]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      R03BA02 [Budesonid]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                inhalationspulver <br/>
+              
+                <b>Ingredient:</b>
+                BUDESONID (https://laegemiddelstyrelsen.dk/LMS30/Substans#BUDESONID) <br/>
+                
+                  <b>strength:</b>
+                  400 ug/1 dose <br/>
+                
+
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Til inhalation<br/>
+        </div>
+      
+        <div class="medicationStatement indent block">
+
+          
+
+
+          
+            <b>Medication:</b>
+             <br/>
+          
+
+          
+            <b>status:</b>
+            stopped <br/>
+          
+          
+          
+          
+            <b>Medication Detail:</b>
+            <div class="medication indent block">
+
+              
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.dkma.dk/medicinecard/xml.schema/2015/01/01/DrugIdentifierPredefinedSourceType/Magistrel
+                      <b>Code:</b>
+                      73019685346 [Nikotinsyre]</li>
+                  </ul>
+
+                
+                  <ul>
+                    <li>
+                      <b>System</b>
+                      http://www.whocc.no/atc
+                      <b>Code:</b>
+                      C04AC01 [Nicotinsyre]</li>
+                  </ul>
+
+                
+              
+
+              
+                <b>Dose Form:</b>
+                tabletter <br/>
+              
+            </div>
+          
+
+          
+            <b>Route:</b>
+            Vaginal anvendelse<br/>
+        </div>
+      
+    </div>
+  
+
+
+
+  <h4>Immunizations</h4>
+
+  
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+  
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gravitatehealth.eu/"></a>.  Package hl7.eu.fhir.gh-ips#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 28, 2023 20:31+0000">2023-04-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+	Links: <a style="color: #81BEF7"
+ 		href="toc.html">Table of Contents</a> |
+	<a style="color: #81BEF7"
+ 		href="qa.html">QA Report</a>
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.eu/fhir/ig/gravitate-health-ips/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+	<a style="color: #81BEF7"
+ 		rel="license"
+ 		href="http://hl7.org/fhir/R4/license.html">
+		<img style="border-style: none;"
+   			alt="CC0"
+   			src="cc0.png"/>
+	</a>
+	<!--<a style="color: #81BEF7" href="todo.html">Search</a> | -->
+	<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+	<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->
+	<div id=container width=100% style="display:block;" >
+		<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The Gravitate Health project has received funding from the IMI 2 Joint Undertaking under grant agreement No 945334.<br/>
+			This joint undertaking receives support from the EU H2020 research and innovation programme and EFPIA.</div>
+		<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;">
+			<img height="41"
+   				alt="a EU funded project"
+   				src="assets/images/eu.png"/>
+		</div>
+	</div>
+	<div>
+	</div>
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

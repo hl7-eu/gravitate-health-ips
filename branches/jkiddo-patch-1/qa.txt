@@ -1,0 +1,141 @@
+﻿GhR4ImplementationGuide : Validation Results
+=========================================
+
+err = 10, warn = 12, info = 51
+IG Publisher Version: 1.3.4
+Generated Mon Apr 24 10:20:07 UTC 2023. FHIR version 4.0.1 for hl7.eu.fhir.gh-ips#0.1.0 (canonical = http://hl7.eu/fhir/ig/gravitate-health-ips)
+ Build Errors : 27 / 7 / 0
+ /github/workspace/fsh-generated/resources/Bundle-gravitate-Cecilia : 0 / 0 / 20
+ /github/workspace/fsh-generated/resources/Bundle-gravitate-Matilda : 0 / 0 / 14
+ /github/workspace/fsh-generated/resources/Bundle-gravitate-Pedro : 0 / 0 / 29
+ /github/workspace/fsh-generated/resources/Bundle-gravitate-helen : 0 / 0 / 15
+ /github/workspace/fsh-generated/resources/Bundle-gravitate-ips-1 : 0 / 0 / 21
+ /github/workspace/fsh-generated/resources/Bundle-gravitate-ips-2 : 0 / 0 / 20
+ /github/workspace/fsh-generated/resources/Bundle-gravitate-ips-3 : 0 / 0 / 22
+ /github/workspace/fsh-generated/resources/Bundle-gravitate-ips-4 : 0 / 0 / 26
+ /github/workspace/fsh-generated/resources/Bundle-gravitate-maria : 0 / 0 / 20
+ /github/workspace/fsh-generated/resources/CodeSystem-questi-dimens-cs : 4 / 0 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.gh-ips : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-Questionnaire-example : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponse-example : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-example-persona-profile : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-PDcategoryVS : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-PDtypeVS : 3 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/PDcategoryVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/PDtypeVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/questi-dimens-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 288: The link 'Condition-cecilia-cond-1.html' for "COPD" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 364: The link 'Condition-cecilia-cond-2.html' for "Diabetese Type 2" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 452: The link 'Condition-cecilia-cond-3.html' for "Osteoporosis" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 536: The link 'Condition-cecilia-cond-4.html' for "Congestive Heart Failure" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 735: The link 'MedicationStatement-cecilia-med-stat-1.html' for "Fosamax 70 mg tablets" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 842: The link 'MedicationStatement-cecilia-med-stat-2.html' for "Metformine + sitagliptine" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 953: The link 'MedicationStatement-cecilia-med-stat-3.html' for "Fluticasone 92mcg + vilanterol 22mcg" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Cecilia.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 674, column 1075: The link 'MedicationStatement-cecilia-med-stat-4.html' for "Digoxin" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Matilda.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 532, column 288: The link 'Condition-matilda-cond-1.html' for "Crohn's disease" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Matilda.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 532, column 478: The link 'MedicationStatement-matilda-med-stat-1.html' for "Humira 40 mg" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Matilda.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 532, column 576: The link 'MedicationStatement-matilda-med-stat-2.html' for "Paracetamol 500 mg" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Matilda.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 532, column 680: The link 'MedicationStatement-matilda-med-stat-3.html' for "Pentasa 1g mesalazine" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 284: The link 'Condition-pedro-cond-1.html' for "HIV" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 357: The link 'Condition-pedro-cond-2.html' for "Depression" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 437: The link 'Condition-pedro-cond-3.html' for "IBS" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 613: The link 'MedicationStatement-pedro-med-stat-1.html' for "Dovato lamivudine and dolutegravir, 300 mg/50 mg" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 745: The link 'MedicationStatement-pedro-med-stat-2.html' for "Mirtazapine 15 mg" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 846: The link 'MedicationStatement-pedro-med-stat-3.html' for "Calcium carbonate 500 mg" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 954: The link 'MedicationStatement-pedro-med-stat-4.html' for "Cinitrapide 1 mg" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 1054: The link 'MedicationStatement-pedro-med-stat-5.html' for "Collagen and magnesium supplements" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 1172: The link 'MedicationStatement-pedro-med-stat-6.html' for "Vitamin C supplements" cannot be resolved
+ERROR: /github/workspace/output/Bundle-gravitate-Pedro.html#/html/body/div/div/div/div/div/div/ul/ul/li/a at Line 820, column 1277: The link 'MedicationStatement-pedro-med-stat-7.html' for "Protein supplements" cannot be resolved
+ERROR: /github/workspace/output/SampleData.html#/html/body/div/div/div/div/div/ul/li/a at Line 201, column 8: The link 'Composition-gravitate-Cecilia.html' for "Cecilia (SWE)" cannot be resolved
+ERROR: /github/workspace/output/SampleData.html#/html/body/div/div/div/div/div/ul/li/a at Line 202, column 8: The link 'Composition-gravitate-helen.html' for "Helen (GB)" cannot be resolved
+ERROR: /github/workspace/output/SampleData.html#/html/body/div/div/div/div/div/ul/li/a at Line 203, column 8: The link 'Composition-gravitate-Pedro.html' for "Pedro (ES)" cannot be resolved
+ERROR: /github/workspace/output/SampleData.html#/html/body/div/div/div/div/div/ul/li/a at Line 204, column 8: The link 'Composition-gravitate-Matilda.html' for "Matilda (ES)" cannot be resolved
+ERROR: /github/workspace/output/SampleData.html#/html/body/div/div/div/div/div/ul/li/a at Line 205, column 8: The link 'Composition-gravitate-maria.html' for "Maria (NOR)" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-gravitate-Cecilia.json ==
+INFORMATION: Bundle/gravitate-Cecilia: Bundle.entry[11].resource/*Medication/b50ae644-e0b7-4007-809f-26f493cbe36c*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Cecilia: Bundle.entry[11].resource/*Medication/b50ae644-e0b7-4007-809f-26f493cbe36c*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Cecilia: Bundle.entry[12].resource/*Medication/de131e15-ed13-4b31-b38c-3204a84d99c4*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Cecilia: Bundle.entry[13].resource/*Medication/9ac3356c-4ea4-4814-84c3-235484f2ef19*/.code.coding[0]: Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Cecilia: Bundle.entry[13].resource/*Medication/9ac3356c-4ea4-4814-84c3-235484f2ef19*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+== fsh-generated/resources/Bundle-gravitate-Matilda.json ==
+INFORMATION: Bundle/gravitate-Matilda: Bundle.entry[7].resource/*Medication/9d7be868-8264-4d94-ad04-ef04ecc92e51*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Matilda: Bundle.entry[8].resource/*Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7et*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Matilda: Bundle.entry[9].resource/*Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7eu*/.code.coding[0]: Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated
+== fsh-generated/resources/Bundle-gravitate-Pedro.json ==
+INFORMATION: Bundle/gravitate-Pedro: Bundle.entry[13].resource/*Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Pedro: Bundle.entry[13].resource/*Medication/9d7be868-8264-4d94-ad04-ef04ecc92e52*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Pedro: Bundle.entry[14].resource/*Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e4*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Pedro: Bundle.entry[15].resource/*Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785g*/.code.coding[0]: Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Pedro: Bundle.entry[16].resource/*Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77854*/.code.coding[0]: Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Pedro: Bundle.entry[17].resource/*Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77855*/.code.coding[0]: Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Pedro: Bundle.entry[18].resource/*Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77856*/.code.coding[0]: Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-Pedro: Bundle.entry[19].resource/*Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77857*/.code.coding[0]: Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated
+== fsh-generated/resources/Bundle-gravitate-helen.json ==
+INFORMATION: Bundle/gravitate-helen: Bundle.entry[8].resource/*Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-helen: Bundle.entry[8].resource/*Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-helen: Bundle.entry[9].resource/*Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-helen: Bundle.entry[9].resource/*Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2f7e3*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+== fsh-generated/resources/Bundle-gravitate-ips-1.json ==
+INFORMATION: Bundle/gravitate-ips-1: Bundle.entry[11].resource/*Medication/b50ae644-e0b7-4007-809f-26f493cbe365*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-1: Bundle.entry[11].resource/*Medication/b50ae644-e0b7-4007-809f-26f493cbe365*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-1: Bundle.entry[12].resource/*Medication/de131e15-ed13-4b31-b38c-3204a84d99c5*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-1: Bundle.entry[12].resource/*Medication/de131e15-ed13-4b31-b38c-3204a84d99c5*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-1: Bundle.entry[13].resource/*Medication/9ac3356c-4ea4-4814-84c3-235484f2ef15*/.code.coding[0]: Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-1: Bundle.entry[13].resource/*Medication/9ac3356c-4ea4-4814-84c3-235484f2ef15*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+== fsh-generated/resources/Bundle-gravitate-ips-2.json ==
+INFORMATION: Bundle/gravitate-ips-2: Bundle.entry[10].resource/*Medication/b50ae644-e0b7-4007-809f-26f493cbe363*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-2: Bundle.entry[10].resource/*Medication/b50ae644-e0b7-4007-809f-26f493cbe363*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-2: Bundle.entry[11].resource/*Medication/de131e15-ed13-4b31-b38c-3204a84d99c3*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-2: Bundle.entry[11].resource/*Medication/de131e15-ed13-4b31-b38c-3204a84d99c3*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-2: Bundle.entry[12].resource/*Medication/9ac3356c-4ea4-4814-84c3-235484f2ef13*/.code.coding[0]: Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-2: Bundle.entry[12].resource/*Medication/9ac3356c-4ea4-4814-84c3-235484f2ef13*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+== fsh-generated/resources/Bundle-gravitate-ips-3.json ==
+INFORMATION: Bundle/gravitate-ips-3: Bundle.entry[10].resource/*Medication/b50ae644-e0b7-4007-809f-26f493cbe361*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-3: Bundle.entry[10].resource/*Medication/b50ae644-e0b7-4007-809f-26f493cbe361*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-3: Bundle.entry[11].resource/*Medication/de131e15-ed13-4b31-b38c-3204a84d99c1*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-3: Bundle.entry[11].resource/*Medication/de131e15-ed13-4b31-b38c-3204a84d99c1*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-3: Bundle.entry[12].resource/*Medication/9ac3356c-4ea4-4814-84c3-235484f2ef11*/.code.coding[0]: Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-3: Bundle.entry[12].resource/*Medication/9ac3356c-4ea4-4814-84c3-235484f2ef11*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+== fsh-generated/resources/Bundle-gravitate-ips-4.json ==
+INFORMATION: Bundle/gravitate-ips-4: Bundle.entry[11].resource/*Medication/b50ae644-e0b7-4007-809f-26f493cbe362*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-4: Bundle.entry[11].resource/*Medication/b50ae644-e0b7-4007-809f-26f493cbe362*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-4: Bundle.entry[12].resource/*Medication/de131e15-ed13-4b31-b38c-3204a84d99c2*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-4: Bundle.entry[12].resource/*Medication/de131e15-ed13-4b31-b38c-3204a84d99c2*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-4: Bundle.entry[13].resource/*Medication/9ac3356c-4ea4-4814-84c3-235484f2ef12*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-ips-4: Bundle.entry[13].resource/*Medication/9ac3356c-4ea4-4814-84c3-235484f2ef12*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+== fsh-generated/resources/Bundle-gravitate-maria.json ==
+INFORMATION: Bundle/gravitate-maria: Bundle.entry[10].resource/*Medication/b50ae644-e0b7-4007-809f-26f493cbe36b*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-maria: Bundle.entry[10].resource/*Medication/b50ae644-e0b7-4007-809f-26f493cbe36b*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-maria: Bundle.entry[11].resource/*Medication/de131e15-ed13-4b31-b38c-3204a84d99c7*/.code.coding[0]: Code System URI 'http://ema.europa.eu/fhir/marketingAuthorizationNumber' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-maria: Bundle.entry[11].resource/*Medication/de131e15-ed13-4b31-b38c-3204a84d99c7*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-maria: Bundle.entry[12].resource/*Medication/9ac3356c-4ea4-4814-84c3-235484f2ef10*/.code.coding[0]: Code System URI 'https://www.gravitatehealth.eu/sid/man' is unknown so the code cannot be validated
+INFORMATION: Bundle/gravitate-maria: Bundle.entry[12].resource/*Medication/9ac3356c-4ea4-4814-84c3-235484f2ef10*/.code.coding[1]: Code System URI 'https://www.who-umc.org/phpid' is unknown so the code cannot be validated
+== fsh-generated/resources/CodeSystem-questi-dimens-cs.json ==
+INFORMATION: CodeSystem/questi-dimens-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/questi-dimens-cs: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/questi-dimens-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/questi-dimens-cs: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/questi-dimens-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+== fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.gh-ips.json ==
+== fsh-generated/resources/Questionnaire-Questionnaire-example.json ==
+WARNING: Questionnaire/Questionnaire-example: Questionnaire.item[2].answerOption[2].value.ofType(Coding): Display Name for http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#O should be 'Other Gender', not 'Other' for 'http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#O'
+WARNING: Questionnaire/Questionnaire-example: Questionnaire.item[2].answerOption[3].value.ofType(Coding): Display Name for http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#ND should be 'Non-disclosed gender', not 'Non-Disclosed' for 'http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#ND'
+WARNING: Questionnaire/Questionnaire-example: Questionnaire.item[9].answerOption[2].value.ofType(Coding): Display Name for http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME should be 'some', not 'some (2-3)' for 'http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME'
+WARNING: Questionnaire/Questionnaire-example: Questionnaire.item[11].answerOption[2].value.ofType(Coding): Display Name for http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME should be 'some', not 'some (2-3)' for 'http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME'
+== fsh-generated/resources/QuestionnaireResponse-QuestionnaireResponse-example.json ==
+== fsh-generated/resources/StructureDefinition-example-persona-profile.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health-ips/StructureDefinition/example-persona-profile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-PDcategoryVS.json ==
+ERROR: ValueSet/PDcategoryVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
+ERROR: ValueSet/PDcategoryVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
+ERROR: ValueSet/PDcategoryVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-PDtypeVS.json ==
+ERROR: ValueSet/PDtypeVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
+ERROR: ValueSet/PDtypeVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
+ERROR: ValueSet/PDtypeVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile

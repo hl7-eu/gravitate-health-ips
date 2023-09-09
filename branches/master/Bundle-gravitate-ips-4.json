@@ -1,0 +1,893 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "gravitate-ips-4",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"]
+  },
+  "identifier" : {
+    "system" : "https://www.gravitatehealth.eu/sid/doc",
+    "value" : "ips-4"
+  },
+  "type" : "document",
+  "timestamp" : "2021-09-03T08:38:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://myserver.org/Composition/2fa5b223-ebce-4f39-9c66-5dc014f73579",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "ips-example-4",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"ips-example-4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;ips-example-4&quot; </p></div><p><b>status</b>: final</p><p><b>type</b>: Patient summary Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#60591-5)</span></p><p><b>date</b>: 2018-07-10 15:22:00+0200</p><p><b>author</b>: <a href=\"#Practitioner_1ece89c5-fda3-4db9-ace6-decbe6c603d2\">See above (Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d2: Dr. Anna Karlsson)</a></p><p><b>title</b>: Patient Summary (IPS Example 4 Gravitate)</p><p><b>confidentiality</b>: N</p></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "60591-5",
+          "display" : "Patient summary Document"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "Example 4 Gravitate"
+      },
+      "date" : "2018-07-10T15:22:00+02:00",
+      "author" : [{
+        "reference" : "Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d2",
+        "display" : "Dr. Anna Karlsson"
+      }],
+      "title" : "Patient Summary (IPS Example 4 Gravitate)",
+      "confidentiality" : "N",
+      "section" : [{
+        "title" : "Allergies and Intolerances",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48765-2",
+            "display" : "Allergies and adverse reactions Document"
+          }]
+        },
+        "entry" : [{
+          "reference" : "AllergyIntolerance/1dff4474-fa08-4f45-8260-dbb23094bf02",
+          "display" : "Hay fever (pollen)"
+        },
+        {
+          "reference" : "AllergyIntolerance/9d18cddb-8e58-4fbb-82ec-09cc561ac802",
+          "display" : "Lactose Intolerance"
+        }]
+      },
+      {
+        "title" : "Problem List",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11450-4",
+            "display" : "Problem list Reported"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Condition/bcc79261-142c-48ec-b032-f3f9af49ec52",
+          "display" : "Psoriasis"
+        },
+        {
+          "reference" : "Condition/f06b7cf8-c15c-4288-a0f9-45a1026e5132",
+          "display" : "Hypertension"
+        },
+        {
+          "reference" : "Condition/a4a9d90a-d1b0-4d60-82f0-c52343dc6252",
+          "display" : "Congestive heart failure"
+        }]
+      },
+      {
+        "title" : "Medication Summary",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10160-0",
+            "display" : "Hx of Medication use"
+          }]
+        },
+        "entry" : [{
+          "reference" : "MedicationStatement/29074ca4-efcb-4ff4-8446-feed2399a892",
+          "display" : "Remsima 100 mg powder for concentrate for solution for infusion"
+        },
+        {
+          "reference" : "MedicationStatement/f6cb1218-f81c-4338-80d8-3c10910f78f2",
+          "display" : "Irbesartan 75 mg Tablet"
+        },
+        {
+          "reference" : "MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade87b2",
+          "display" : "Pentasa Slow Release Tablets 1g"
+        }]
+      },
+      {
+        "title" : "Vital Signs",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8716-3",
+            "display" : "Vital Signs"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/bw",
+          "display" : "Body weight"
+        },
+        {
+          "reference" : "Observation/bh",
+          "display" : "Body height"
+        },
+        {
+          "reference" : "Observation/bp",
+          "display" : "Blood pressure"
+        }]
+      },
+      {
+        "title" : "Results",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "30954-2",
+            "display" : "Relevant diagnostic tests/laboratory data Narrative"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/glucose",
+          "display" : "glucose"
+        }]
+      },
+      {
+        "title" : "Pregnancy History",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10162-6",
+            "display" : "Pregnancies Hx"
+          }]
+        },
+        "entry" : [{
+          "reference" : "Observation/e06e43a1-38d4-468f-8c35-f7f12da91062",
+          "display" : "Pregrancy Status"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"c154158f-6a43-4ab7-8443-e7f4bf915dd2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;c154158f-6a43-4ab7-8443-e7f4bf915dd2&quot; </p></div><blockquote><p><b>citizenship</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></blockquote><p><b>value</b>: Norway <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#NO)</span></p></blockquote><p><b>identifier</b>: id:\u00a0ips-4</p><p><b>active</b>: true</p><p><b>name</b>: IPS 4 example Gravitate </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1989-05-05</p></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "urn:iso:std:iso:3166",
+              "code" : "NO",
+              "display" : "Norway"
+            }]
+          }
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+      }],
+      "identifier" : [{
+        "system" : "https://www.gravitatehealth.eu/sid/doc",
+        "value" : "ips-4"
+      }],
+      "active" : true,
+      "name" : [{
+        "family" : "Gravitate",
+        "given" : ["IPS 4 example"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1989-05-05"
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d2",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "1ece89c5-fda3-4db9-ace6-decbe6c603d2",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"1ece89c5-fda3-4db9-ace6-decbe6c603d2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;1ece89c5-fda3-4db9-ace6-decbe6c603d2&quot; </p></div><p><b>name</b>: Anne Karlsson </p></div>"
+      },
+      "name" : [{
+        "family" : "Karlsson",
+        "given" : ["Anne"],
+        "prefix" : ["Dr."]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/AllergyIntolerance/1dff4474-fa08-4f45-8260-dbb23094bf02",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "id" : "1dff4474-fa08-4f45-8260-dbb23094bf02",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AllergyIntolerance</b><a name=\"1dff4474-fa08-4f45-8260-dbb23094bf02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AllergyIntolerance &quot;1dff4474-fa08-4f45-8260-dbb23094bf02&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-allergyintolerance-clinical.html\">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-allergyintolerance-verification.html\">AllergyIntolerance Verification Status</a>#confirmed)</span></p><p><b>type</b>: allergy</p><p><b>category</b>: environment</p><p><b>code</b>: Pollen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#256259004)</span></p><p><b>patient</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Manifestation</b></td></tr><tr><td style=\"display: none\">*</td><td>Hay fever <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#21719001 &quot;Allergic rhinitis caused by pollen&quot;)</span></td></tr></table></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code" : "confirmed"
+        }]
+      },
+      "type" : "allergy",
+      "category" : ["environment"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "256259004",
+          "display" : "Pollen"
+        }]
+      },
+      "patient" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "reaction" : [{
+        "manifestation" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "21719001",
+            "display" : "Allergic rhinitis caused by pollen"
+          }],
+          "text" : "Hay fever"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/AllergyIntolerance/9d18cddb-8e58-4fbb-82ec-09cc561ac802",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "id" : "9d18cddb-8e58-4fbb-82ec-09cc561ac802",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AllergyIntolerance</b><a name=\"9d18cddb-8e58-4fbb-82ec-09cc561ac802\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AllergyIntolerance &quot;9d18cddb-8e58-4fbb-82ec-09cc561ac802&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-allergyintolerance-clinical.html\">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-allergyintolerance-verification.html\">AllergyIntolerance Verification Status</a>#confirmed)</span></p><p><b>type</b>: intolerance</p><p><b>category</b>: food</p><p><b>code</b>: Intolerance to lactose <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#782415009)</span></p><p><b>patient</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><p><b>onset</b>: 1 year<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><p><b>recordedDate</b>: 2009-10-09</p><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td></tr><tr><td style=\"display: none\">*</td><td>lactose <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#47703008)</span></td><td>Abdominal pain <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#21522001)</span>, Abdominal bloating <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#116289008)</span>, Diarrhea <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#62315008)</span></td></tr></table></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code" : "confirmed"
+        }]
+      },
+      "type" : "intolerance",
+      "category" : ["food"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "782415009",
+          "display" : "Intolerance to lactose"
+        }]
+      },
+      "patient" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "onsetAge" : {
+        "value" : 1,
+        "unit" : "year",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      },
+      "recordedDate" : "2009-10-09",
+      "reaction" : [{
+        "substance" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "47703008",
+            "display" : "lactose"
+          }]
+        },
+        "manifestation" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "21522001",
+            "display" : "Abdominal pain"
+          }]
+        },
+        {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "116289008",
+            "display" : "Abdominal bloating"
+          }]
+        },
+        {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "62315008",
+            "display" : "Diarrhea"
+          }]
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Condition/bcc79261-142c-48ec-b032-f3f9af49ec52",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "bcc79261-142c-48ec-b032-f3f9af49ec52",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"bcc79261-142c-48ec-b032-f3f9af49ec52\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;bcc79261-142c-48ec-b032-f3f9af49ec52&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Psoriasis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#9014002)</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><p><b>asserter</b>: <a href=\"#Practitioner_1ece89c5-fda3-4db9-ace6-decbe6c603d2\">See above (Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d2: Dr. Anna Karlsson)</a></p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "9014002",
+          "display" : "Psoriasis"
+        }],
+        "text" : "Psoriasis"
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "asserter" : {
+        "reference" : "Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d2",
+        "display" : "Dr. Anna Karlsson"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Condition/a4a9d90a-d1b0-4d60-82f0-c52343dc6252",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "a4a9d90a-d1b0-4d60-82f0-c52343dc6252",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"a4a9d90a-d1b0-4d60-82f0-c52343dc6252\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;a4a9d90a-d1b0-4d60-82f0-c52343dc6252&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Congestive heart failure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#42343007)</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><p><b>onset</b>: 2015</p><p><b>asserter</b>: <a href=\"#Practitioner_1ece89c5-fda3-4db9-ace6-decbe6c603d2\">See above (Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d2: Dr. Anna Karlsson)</a></p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "42343007",
+          "display" : "Congestive heart failure"
+        }],
+        "text" : "Congestive heart failure"
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "onsetDateTime" : "2015",
+      "asserter" : {
+        "reference" : "Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d2",
+        "display" : "Dr. Anna Karlsson"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e5132",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "f06b7cf8-c15c-4288-a0f9-45a1026e5132",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"f06b7cf8-c15c-4288-a0f9-45a1026e5132\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;f06b7cf8-c15c-4288-a0f9-45a1026e5132&quot; </p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Hypertension <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#38341003 &quot;HT - Hypertension&quot;)</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><p><b>onset</b>: 1993</p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "38341003",
+          "display" : "HT - Hypertension"
+        }],
+        "text" : "Hypertension"
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "onsetDateTime" : "1993"
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/29074ca4-efcb-4ff4-8446-feed2399a892",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "29074ca4-efcb-4ff4-8446-feed2399a892",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"29074ca4-efcb-4ff4-8446-feed2399a892\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;29074ca4-efcb-4ff4-8446-feed2399a892&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_b50ae644-e0b7-4007-809f-26f493cbe362\">See above (Medication/b50ae644-e0b7-4007-809f-26f493cbe362: Remsima 100 mg powder for concentrate for solution for infusion)</a></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td>Intravenous use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20045000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/b50ae644-e0b7-4007-809f-26f493cbe362",
+        "display" : "Remsima 100 mg powder for concentrate for solution for infusion"
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20045000",
+            "display" : "Intravenous use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/f6cb1218-f81c-4338-80d8-3c10910f78f2",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "f6cb1218-f81c-4338-80d8-3c10910f78f2",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"f6cb1218-f81c-4338-80d8-3c10910f78f2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;f6cb1218-f81c-4338-80d8-3c10910f78f2&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_de131e15-ed13-4b31-b38c-3204a84d99c2\">See above (Medication/de131e15-ed13-4b31-b38c-3204a84d99c2: Karvea 75 mg Tablet)</a></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/de131e15-ed13-4b31-b38c-3204a84d99c2",
+        "display" : "Karvea 75 mg Tablet"
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade87b2",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "f26084c9-b1c8-46d9-acb2-1d400ade87b2",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"f26084c9-b1c8-46d9-acb2-1d400ade87b2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;f26084c9-b1c8-46d9-acb2-1d400ade87b2&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"#Medication_9ac3356c-4ea4-4814-84c3-235484f2ef12\">See above (Medication/9ac3356c-4ea4-4814-84c3-235484f2ef12: Humalog 100 U/ml 5 pre-filled pen)</a></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Route</b></td></tr><tr><td style=\"display: none\">*</td><td>Subcutaneous use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#20066000)</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "medicationReference" : {
+        "reference" : "Medication/9ac3356c-4ea4-4814-84c3-235484f2ef12",
+        "display" : "Humalog 100 U/ml 5 pre-filled pen"
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "dosage" : [{
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20066000",
+            "display" : "Subcutaneous use"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/b50ae644-e0b7-4007-809f-26f493cbe362",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "b50ae644-e0b7-4007-809f-26f493cbe362",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"b50ae644-e0b7-4007-809f-26f493cbe362\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;b50ae644-e0b7-4007-809f-26f493cbe362&quot; </p></div><p><b>code</b>: Remsima 100 mg powder for concentrate for solution for infusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (pmswi#EU/1/13/853/001; phpid#0xF79CABF272B6A7EEF104DDDA44E82718 &quot;Infliximab 100 mg powder for concentrate for solution for infusion&quot;)</span></p><p><b>form</b>: Powder for concentrate for solution for injection/infusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#50049250)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td>INFLIXIMAB <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#B72HH48FLU)</span></td><td>100 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Vial<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {vial} = '{vial}')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://spor.ema.europa.eu/pmswi",
+          "code" : "EU/1/13/853/001",
+          "display" : "Remsima 100 mg powder for concentrate for solution for infusion"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0xF79CABF272B6A7EEF104DDDA44E82718",
+          "display" : "Infliximab 100 mg powder for concentrate for solution for infusion"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "50049250",
+          "display" : "Powder for concentrate for solution for injection/infusion"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "B72HH48FLU",
+            "display" : "INFLIXIMAB"
+          }],
+          "text" : "INFLIXIMAB"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 100,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Vial",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "{vial}"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/de131e15-ed13-4b31-b38c-3204a84d99c2",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "de131e15-ed13-4b31-b38c-3204a84d99c2",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"de131e15-ed13-4b31-b38c-3204a84d99c2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;de131e15-ed13-4b31-b38c-3204a84d99c2&quot; </p></div><p><b>code</b>: Karvea 75 mg/ 1 tablet, Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (pmswi#EU/1/97/049/001; phpid#0xF79CABF272B6A7EEF104DDDA44E82719 &quot;Irbesartan, 75 mg/ 1 tablet, Tablet&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#C09DA04 &quot;irbesartan and diuretics&quot;)</span></p><p><b>form</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td>irbesartan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#J0E2756Z7N)</span></td><td>75 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {tablet} = '{tablet}')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://spor.ema.europa.eu/pmswi",
+          "code" : "EU/1/97/049/001",
+          "display" : "Karvea 75 mg/ 1 tablet, Tablet"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0xF79CABF272B6A7EEF104DDDA44E82719",
+          "display" : "Irbesartan, 75 mg/ 1 tablet, Tablet"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "C09DA04",
+          "display" : "irbesartan and diuretics"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10219000",
+          "display" : "Tablet"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "J0E2756Z7N",
+            "display" : "irbesartan"
+          }],
+          "text" : "irbesartan"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 75,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tablet",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "{tablet}"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Medication/9ac3356c-4ea4-4814-84c3-235484f2ef12",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "9ac3356c-4ea4-4814-84c3-235484f2ef12",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"9ac3356c-4ea4-4814-84c3-235484f2ef12\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;9ac3356c-4ea4-4814-84c3-235484f2ef12&quot; </p></div><p><b>code</b>: Humalog Mix50 KwikPen 100 U/ml 5 pre-filled pen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (pmswi#EU/1/96/007/035; phpid#0xF79CABF272B6A7EEF104DDDA44E82717 &quot;Insulin Lispro 100 U/ml 5 pre-filled pen&quot;)</span></p><p><b>form</b>: Suspension for injection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#11202000)</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td>Insulin Lispro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html\">Unique Ingredient Identifier (UNII)</a>#GFX7QIS1II)</span></td><td>100 U<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code U = 'U')</span>/1 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code ml = 'ml')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://spor.ema.europa.eu/pmswi",
+          "code" : "EU/1/96/007/035",
+          "display" : "Humalog Mix50 KwikPen 100 U/ml 5 pre-filled pen"
+        },
+        {
+          "system" : "https://www.who-umc.org/phpid",
+          "code" : "0xF79CABF272B6A7EEF104DDDA44E82717",
+          "display" : "Insulin Lispro 100 U/ml 5 pre-filled pen"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "11202000",
+          "display" : "Suspension for injection"
+        }],
+        "text" : "Suspension for injection"
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "GFX7QIS1II",
+            "display" : "Insulin Lispro"
+          }],
+          "text" : "Insulin Lispro"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 100,
+            "unit" : "U",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "U"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "ml",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "ml"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Observation/e06e43a1-38d4-468f-8c35-f7f12da91062",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "e06e43a1-38d4-468f-8c35-f7f12da91062",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"e06e43a1-38d4-468f-8c35-f7f12da91062\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;e06e43a1-38d4-468f-8c35-f7f12da91062&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: Pregnancy status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#82810-3)</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><p><b>effective</b>: 2020-01-10</p><p><b>value</b>: Pregnant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA15173-0)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "82810-3",
+          "display" : "Pregnancy status"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "effectiveDateTime" : "2020-01-10",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA15173-0",
+          "display" : "Pregnant"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Observation/bw",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "bw",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"bw\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;bw&quot; </p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><p><b>effective</b>: 2009-10-09</p><p><b>value</b>: 70 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "29463-7",
+          "display" : "Body weight"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "effectiveDateTime" : "2009-10-09",
+      "valueQuantity" : {
+        "value" : 70,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kg"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Observation/bh",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "bh",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"bh\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;bh&quot; </p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body height <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><p><b>effective</b>: 2009-10-09</p><p><b>value</b>: 170 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cm = 'cm')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8302-2",
+          "display" : "Body height"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "effectiveDateTime" : "2009-10-09",
+      "valueQuantity" : {
+        "value" : 170,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cm"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Observation/bp",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "bp",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"bp\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;bp&quot; </p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Blood pressure panel with all children optional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85354-9)</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><p><b>effective</b>: 2009-10-09</p><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8462-4)</span></p><p><b>value</b>: 80 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6)</span></p><p><b>value</b>: 120 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "85354-9",
+          "display" : "Blood pressure panel with all children optional"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "effectiveDateTime" : "2009-10-09",
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8462-4",
+            "display" : "Diastolic blood pressure"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 80,
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8480-6",
+            "display" : "Systolic blood pressure"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 120,
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://myserver.org/Observation/glucose",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "glucose",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"glucose\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;glucose&quot; </p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Glucose [Moles/volume] in Blood <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#15074-8)</span></p><p><b>subject</b>: <a href=\"#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd2\">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2: IPS 4 Gravitate)</a></p><p><b>effective</b>: 2013-04-02 09:30:10+0100</p><p><b>value</b>: 6.3 mmol/l<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#H)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>3.1 mmol/l<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "15074-8",
+          "display" : "Glucose [Moles/volume] in Blood"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd2",
+        "display" : "IPS 4 Gravitate"
+      },
+      "effectiveDateTime" : "2013-04-02T09:30:10+01:00",
+      "valueQuantity" : {
+        "value" : 6.3,
+        "unit" : "mmol/l",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mmol/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "referenceRange" : [{
+        "low" : {
+          "value" : 3.1,
+          "unit" : "mmol/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/L"
+        },
+        "high" : {
+          "value" : 6.2,
+          "unit" : "mmol/l",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/L"
+        }
+      }]
+    }
+  }]
+}

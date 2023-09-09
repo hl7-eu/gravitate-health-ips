@@ -1,0 +1,43 @@
+[
+  {
+    "id" : "questi-dimens-cs",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs",
+    "version" : "0.1.0",
+    "name" : "QuestionnaireDimensionCS"
+  },
+  {
+    "id" : "hl7.eu.fhir.gh-ips",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.eu/fhir/ig/gravitate-health-ips/ImplementationGuide/hl7.eu.fhir.gh-ips",
+    "version" : "0.1.0",
+    "name" : "GhR4ImplementationGuide"
+  },
+  {
+    "id" : "example-persona-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.eu/fhir/ig/gravitate-health-ips/StructureDefinition/example-persona-profile",
+    "version" : "0.1.0",
+    "name" : "PersonaDimension"
+  },
+  {
+    "id" : "PDcategoryVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.eu/fhir/ig/gravitate-health-ips/ValueSet/PDcategoryVS",
+    "version" : "0.1.0",
+    "name" : "PDcategoryVS"
+  },
+  {
+    "id" : "PDtypeVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.eu/fhir/ig/gravitate-health-ips/ValueSet/PDtypeVS",
+    "version" : "0.1.0",
+    "name" : "PDtypeVS"
+  },
+  {
+    "id" : "Questionnaire-example",
+    "type" : "Questionnaire",
+    "url" : "https://myserver.org/Questionnaire/196f47ee-45c1-470e-888c-742cb0098b72",
+    "version" : "0.1.0"
+  }
+]

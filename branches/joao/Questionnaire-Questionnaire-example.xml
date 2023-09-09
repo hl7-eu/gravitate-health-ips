@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="Questionnaire-example"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The linkId for the item">LinkId</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the itemcan appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">An questionnaire to gather personal info regarding mental stability</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://myserver.org/Questionnaire/196f47ee-45c1-470e-888c-742cb0098b72#0.1.0</td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.age" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-quantity.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Quantity" class="hierarchy"/> age</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1. What's your age?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-quantity">quantity</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.social-sup" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> social-sup</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2. How's your Social Support?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.social-sup">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.sex" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> sex</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3. Please state you gender.</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.sex">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.workLife" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> workLife</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4. How's your work Life ?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.workLife">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.smoking" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> smoking</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5. How many cigaretes do you smoke per day?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.smoking">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.physical" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> physical</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6. How is your physical activity?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.physical">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.organized" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> organized</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">7. How organized are you?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.organized">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.extrovert" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> extrovert</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">8. How Extrovert do you feel?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.extrovert">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.emotional" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> emotional</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">9. How emotional do you feel?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.emotional">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.nrdiagnoses" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> nrdiagnoses</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">10. Nr of Diagnoses that you have?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.nrdiagnoses">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.chronic" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-boolean.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Boolean" class="hierarchy"/> chronic</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">11. Do you have a chronic afliction?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.nrmedicine" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> nrmedicine</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">12. Nr of medicines that you have?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.nrmedicine">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.healthadvice" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> healthadvice</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">13. Did you receive any health advice?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.healthadvice">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.concern" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> concern</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">14. Did you have any concern domains?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.concern">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.shareinfo" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> shareinfo</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">15. How willing are you to share information?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.shareinfo">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.mood" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> mood</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">16. How's your mood level?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.mood">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.autonomy" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> autonomy</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">17. How's your Autonomy?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.autonomy">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.healthliteracy" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> healthliteracy</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">18. How's your level of health literacy?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.healthliteracy">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.digitalliteracy" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> digitalliteracy</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">19. How's your level of digital literacy?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.digitalliteracy">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.toolsupport" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> toolsupport</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">20. How's your level of tool support interest?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.toolsupport">3 options</a></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Option Sets</b></p><a name="opt-item.social-sup"> </a><p><b>Answer options for social-sup</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#None (&quot;None&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Low (&quot;Low&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Medium (&quot;Medium&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#High (&quot;High&quot;)</li></ul><a name="opt-item.sex"> </a><p><b>Answer options for sex</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#F (&quot;Female&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#M (&quot;Male&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#O (&quot;Other&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#ND (&quot;Non-Disclosed&quot;)</li></ul><a name="opt-item.workLife"> </a><p><b>Answer options for workLife</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#U (&quot;Unemployed/Retired&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#EM (&quot;Employed Manual&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#ENM (&quot;Employed non Manual&quot;)</li></ul><a name="opt-item.smoking"> </a><p><b>Answer options for smoking</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#0 (&quot;Non Smoker&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#1 (&quot;1-5&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#2 (&quot;6-20&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#3 (&quot;&gt;20&quot;)</li></ul><a name="opt-item.physical"> </a><p><b>Answer options for physical</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#None (&quot;None&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Low (&quot;Low&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Medium (&quot;Medium&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#High (&quot;High&quot;)</li></ul><a name="opt-item.organized"> </a><p><b>Answer options for organized</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Low (&quot;Low&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Medium (&quot;Medium&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#High (&quot;High&quot;)</li></ul><a name="opt-item.extrovert"> </a><p><b>Answer options for extrovert</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Low (&quot;Low&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Medium (&quot;Medium&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#High (&quot;High&quot;)</li></ul><a name="opt-item.emotional"> </a><p><b>Answer options for emotional</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Low (&quot;Low&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Medium (&quot;Medium&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#High (&quot;High&quot;)</li></ul><a name="opt-item.nrdiagnoses"> </a><p><b>Answer options for nrdiagnoses</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#None (&quot;None&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SINGLE (&quot;single&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME (&quot;some (2-3)&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#MANY (&quot;Many&quot;)</li></ul><a name="opt-item.nrmedicine"> </a><p><b>Answer options for nrmedicine</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#None (&quot;None&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SINGLE (&quot;single&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME (&quot;some (2-3)&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#MANY (&quot;Many&quot;)</li></ul><a name="opt-item.healthadvice"> </a><p><b>Answer options for healthadvice</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#None (&quot;None&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SINGLE (&quot;single&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME (&quot;some&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#MANY (&quot;Many&quot;)</li></ul><a name="opt-item.concern"> </a><p><b>Answer options for concern</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#None (&quot;None&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SINGLE (&quot;single&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#SOME (&quot;some&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#MANY (&quot;Many&quot;)</li></ul><a name="opt-item.shareinfo"> </a><p><b>Answer options for shareinfo</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Low (&quot;Low&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Medium (&quot;Medium&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#High (&quot;High&quot;)</li></ul><a name="opt-item.mood"> </a><p><b>Answer options for mood</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Low (&quot;Low&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Medium (&quot;Medium&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#High (&quot;High&quot;)</li></ul><a name="opt-item.autonomy"> </a><p><b>Answer options for autonomy</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Low (&quot;Low&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Medium (&quot;Medium&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#High (&quot;High&quot;)</li></ul><a name="opt-item.healthliteracy"> </a><p><b>Answer options for healthliteracy</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Low (&quot;Low&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Medium (&quot;Medium&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#High (&quot;High&quot;)</li></ul><a name="opt-item.digitalliteracy"> </a><p><b>Answer options for digitalliteracy</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Low (&quot;Low&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Medium (&quot;Medium&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#High (&quot;High&quot;)</li></ul><a name="opt-item.toolsupport"> </a><p><b>Answer options for toolsupport</b></p><ul><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Low (&quot;Low&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#Medium (&quot;Medium&quot;)</li><li style="font-size: 11px">http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs#High (&quot;High&quot;)</li></ul></div>
+  </text>
+  <url value="https://myserver.org/Questionnaire/196f47ee-45c1-470e-888c-742cb0098b72"/>
+  <version value="0.1.0"/>
+  <status value="active"/>
+  <date value="2023-04-18T08:40:20+00:00"/>
+  <contact>
+    <name value="Gravitate Health Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.gravitatehealth.eu/"/>
+    </telecom>
+  </contact>
+  <description value="An questionnaire to gather personal info regarding mental stability"/>
+  <item>
+    <linkId value="age"/>
+    <prefix value="1"/>
+    <text value="What's your age?"/>
+    <type value="quantity"/>
+  </item>
+  <item>
+    <linkId value="social-sup"/>
+    <prefix value="2"/>
+    <text value="How's your Social Support?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="None"/>
+        <display value="None"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Low"/>
+        <display value="Low"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Medium"/>
+        <display value="Medium"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="High"/>
+        <display value="High"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="sex"/>
+    <prefix value="3"/>
+    <text value="Please state you gender."/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="F"/>
+        <display value="Female"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="M"/>
+        <display value="Male"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="O"/>
+        <display value="Other"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="ND"/>
+        <display value="Non-Disclosed"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="workLife"/>
+    <prefix value="4"/>
+    <text value="How's your work Life ?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="U"/>
+        <display value="Unemployed/Retired"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="EM"/>
+        <display value="Employed Manual"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="ENM"/>
+        <display value="Employed non Manual"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="smoking"/>
+    <prefix value="5"/>
+    <text value="How many cigaretes do you smoke per day?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="0"/>
+        <display value="Non Smoker"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="1"/>
+        <display value="1-5"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="2"/>
+        <display value="6-20"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="3"/>
+        <display value="&gt;20"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="physical"/>
+    <prefix value="6"/>
+    <text value="How is your physical activity?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="None"/>
+        <display value="None"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Low"/>
+        <display value="Low"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Medium"/>
+        <display value="Medium"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="High"/>
+        <display value="High"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="organized"/>
+    <prefix value="7"/>
+    <text value="How organized are you?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Low"/>
+        <display value="Low"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Medium"/>
+        <display value="Medium"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="High"/>
+        <display value="High"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="extrovert"/>
+    <prefix value="8"/>
+    <text value="How Extrovert do you feel?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Low"/>
+        <display value="Low"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Medium"/>
+        <display value="Medium"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="High"/>
+        <display value="High"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="emotional"/>
+    <prefix value="9"/>
+    <text value="How emotional do you feel?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Low"/>
+        <display value="Low"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Medium"/>
+        <display value="Medium"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="High"/>
+        <display value="High"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="nrdiagnoses"/>
+    <prefix value="10"/>
+    <text value="Nr of Diagnoses that you have?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="None"/>
+        <display value="None"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="SINGLE"/>
+        <display value="single"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="SOME"/>
+        <display value="some (2-3)"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="MANY"/>
+        <display value="Many"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="chronic"/>
+    <prefix value="11"/>
+    <text value="Do you have a chronic afliction?"/>
+    <type value="boolean"/>
+  </item>
+  <item>
+    <linkId value="nrmedicine"/>
+    <prefix value="12"/>
+    <text value="Nr of medicines that you have?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="None"/>
+        <display value="None"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="SINGLE"/>
+        <display value="single"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="SOME"/>
+        <display value="some (2-3)"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="MANY"/>
+        <display value="Many"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="healthadvice"/>
+    <prefix value="13"/>
+    <text value="Did you receive any health advice?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="None"/>
+        <display value="None"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="SINGLE"/>
+        <display value="single"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="SOME"/>
+        <display value="some"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="MANY"/>
+        <display value="Many"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="concern"/>
+    <prefix value="14"/>
+    <text value="Did you have any concern domains?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="None"/>
+        <display value="None"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="SINGLE"/>
+        <display value="single"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="SOME"/>
+        <display value="some"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="MANY"/>
+        <display value="Many"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="shareinfo"/>
+    <prefix value="15"/>
+    <text value="How willing are you to share information?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Low"/>
+        <display value="Low"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Medium"/>
+        <display value="Medium"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="High"/>
+        <display value="High"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="mood"/>
+    <prefix value="16"/>
+    <text value="How's your mood level?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Low"/>
+        <display value="Low"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Medium"/>
+        <display value="Medium"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="High"/>
+        <display value="High"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="autonomy"/>
+    <prefix value="17"/>
+    <text value="How's your Autonomy?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Low"/>
+        <display value="Low"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Medium"/>
+        <display value="Medium"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="High"/>
+        <display value="High"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="healthliteracy"/>
+    <prefix value="18"/>
+    <text value="How's your level of health literacy?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Low"/>
+        <display value="Low"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Medium"/>
+        <display value="Medium"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="High"/>
+        <display value="High"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="digitalliteracy"/>
+    <prefix value="19"/>
+    <text value="How's your level of digital literacy?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Low"/>
+        <display value="Low"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Medium"/>
+        <display value="Medium"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="High"/>
+        <display value="High"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="toolsupport"/>
+    <prefix value="20"/>
+    <text value="How's your level of tool support interest?"/>
+    <type value="choice"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Low"/>
+        <display value="Low"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="Medium"/>
+        <display value="Medium"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://hl7.eu/fhir/ig/gravitate-health-ips/CodeSystem/questi-dimens-cs"/>
+        <code value="High"/>
+        <display value="High"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+</Questionnaire>

@@ -1,0 +1,13 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.gh-ips.json	5632	-	0	0	0	0	0	0	5	496	0	0	0	0	0	0	0	0	0	0	100	176	0	0	0	2	0	1
+fsh-generated/resources/Bundle-gravitate-Pedro.json	29254	57	1	0	0	0	50	0	3	443	0	0	0	0	0	0	0	1	0	0	139	145	0	0	0	0	0	0
+fsh-generated/resources/Bundle-gravitate-Alicia.json	29699	54	0	0	0	0	25	0	2	131	0	0	0	0	0	0	0	0	0	0	133	90	0	0	0	0	0	0
+fsh-generated/resources/Bundle-gravitate-maria.json	20207	47	0	0	0	0	21	0	2	156	0	0	0	0	0	0	0	0	0	0	79	68	0	0	0	0	0	0
+fsh-generated/resources/Bundle-gravitate-ole.json	213025	278	0	0	0	0	133	0	9	1223	0	0	0	0	0	0	0	1	0	0	902	678	0	0	0	0	0	2
+fsh-generated/resources/Bundle-gravitate-ips-2.json	21519	42	0	0	0	0	21	0	1	149	0	0	0	0	0	0	0	1	0	0	111	75	0	0	0	0	0	0
+fsh-generated/resources/Bundle-gravitate-ips-3.json	21437	42	0	0	0	0	38	0	0	49	0	0	0	0	0	0	0	0	0	0	90	62	0	0	0	0	0	0
+fsh-generated/resources/Bundle-gravitate-Cecilia.json	18112	39	0	0	0	0	15	0	1	53	0	0	0	0	0	0	0	0	0	0	83	54	0	0	0	0	0	0
+fsh-generated/resources/Bundle-gravitate-ips-1.json	21578	42	0	0	0	0	22	0	1	28	0	0	0	0	0	0	0	0	0	0	81	58	0	0	0	0	0	0
+fsh-generated/resources/Bundle-gravitate-helen.json	16136	34	0	0	0	0	21	0	0	155	0	0	0	0	0	0	0	0	0	0	56	39	0	0	0	0	0	0
+fsh-generated/resources/Bundle-gravitate-ips-4.json	28382	51	0	0	0	0	29	0	1	573	0	0	0	0	0	0	0	0	0	0	130	124	0	0	0	0	0	0
+fsh-generated/resources/Bundle-gravitate-Matilda.json	13738	31	0	0	0	0	13	0	1	27	0	0	0	0	0	0	0	0	0	0	61	41	0	0	0	0	0	0

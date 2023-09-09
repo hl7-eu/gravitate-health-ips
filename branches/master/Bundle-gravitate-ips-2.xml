@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="gravitate-ips-2"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"/>
+  </meta>
+  <identifier>
+    <system value="https://www.gravitatehealth.eu/sid/doc"/>
+    <value value="ips-2"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2021-09-03T08:38:00+02:00"/>
+  <entry>
+    <fullUrl value="https://myserver.org/Composition/2fa5b223-ebce-4f39-9c66-5dc014f73573"/>
+    <resource>
+      <Composition>
+        <id value="ips-example-2"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Composition</b><a name="ips-example-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition &quot;ips-example-2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-Composition-uv-ips.html">Composition (IPS)</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Patient summary Document <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#60591-5)</span></p><p><b>date</b>: 2018-07-10 15:22:00+0200</p><p><b>author</b>: <a href="#Practitioner_1ece89c5-fda3-4db9-ace6-decbe6c603d3">See above (Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d3: Dr. Number2)</a></p><p><b>title</b>: Patient Summary (IPS2)</p><p><b>confidentiality</b>: N</p></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient summary Document"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3"/>
+          <display value="IPS-2"/>
+        </subject>
+        <date value="2018-07-10T15:22:00+02:00"/>
+        <author>
+          <reference value="Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d3"/>
+          <display value="Dr. Number2"/>
+        </author>
+        <title value="Patient Summary (IPS2)"/>
+        <confidentiality value="N"/>
+        <section>
+          <title value="Medication Summary"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="10160-0"/>
+              <display value="Hx of Medication use"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Ogivri	trastuzumab 150 mg	powder for concentrate for solution for infusion</li></ul><ul><li>Lipcut	Simvastatin	5 mg	tablet</li></ul><ul><li>Enbrel Etanercept 25 mg powder for solution for injection</li></ul><ul><li>Tegretol Carbamazepine	200 mg	tablets</li></ul></div>
+          </text>
+          <entry>
+            <reference value="MedicationStatement/29074ca4-efcb-4ff4-8446-feed2399a893"/>
+            <display value="Ogivri&#x9;trastuzumab 150 mg&#x9;powder for concentrate for solution for infusion"/>
+          </entry>
+          <entry>
+            <reference value="MedicationStatement/f6cb1218-f81c-4338-80d8-3c10910f78f3"/>
+            <display value="Lipcut&#x9;Simvastatin&#x9;5 mg tablet"/>
+          </entry>
+          <entry>
+            <reference value="MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade87b3"/>
+            <display value="Enbrel Etanercept 25 mg powder for solution for injection"/>
+          </entry>
+          <entry>
+            <reference value="MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade94gy"/>
+            <display value="Tegretol Carbamazepine&#x9;200 mg&#x9;tablets"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Allergies and Intolerances"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="48765-2"/>
+              <display value="Allergies and adverse reactions Document"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>No infos about Allergies</li></ul></div>
+          </text>
+          <entry>
+            <reference value="AllergyIntolerance/0dff4474-fa08-4f45-8260-dbb23094bf07"/>
+            <display value="No infos about Allergies"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Problem List"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="11450-4"/>
+              <display value="Problem list Reported"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Malignant neoplasm of breast (disorder)</li></ul><ul><li>Hypercholesterolemia</li></ul><ul><li>Rheumatoid arthritis</li></ul><ul><li>Epilepsy</li></ul></div>
+          </text>
+          <entry>
+            <reference value="Condition/bcc79261-142c-48ec-b032-f3f9af49ec53"/>
+            <display value="Malignant neoplasm of breast (disorder)"/>
+          </entry>
+          <entry>
+            <reference value="Condition/f06b7cf8-c15c-4288-a0f9-45a1026e5133"/>
+            <display value="Hypercholesterolemia"/>
+          </entry>
+          <entry>
+            <reference value="Condition/a4a9d90a-d1b0-4d60-82f0-c52343dc6253"/>
+            <display value="Rheumatoid arthritis"/>
+          </entry>
+          <entry>
+            <reference value="Condition/f06b7cf8-c15c-4288-a0f9-45a1026e6788"/>
+            <display value="Epilepsy (disorder)"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3"/>
+    <resource>
+      <Patient>
+        <id value="c154158f-6a43-4ab7-8443-e7f4bf915dd3"/>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="c154158f-6a43-4ab7-8443-e7f4bf915dd3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;c154158f-6a43-4ab7-8443-e7f4bf915dd3&quot; </p></div><blockquote><p><b>citizenship</b></p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></blockquote><p><b>value</b>: Norway <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#NO)</span></p></blockquote><p><b>identifier</b>: id: ips-2</p><p><b>active</b>: true</p><p><b>name</b>: IPS-2 Gravitate </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1946-05-05</p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+          <extension url="code">
+            <valueCodeableConcept>
+              <coding>
+                <system value="urn:iso:std:iso:3166"/>
+                <code value="NO"/>
+                <display value="Norway"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+        </extension>
+        <identifier>
+          <system value="https://www.gravitatehealth.eu/sid/doc"/>
+          <value value="ips-2"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <family value="Gravitate"/>
+          <given value="IPS-2"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1946-05-05"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d3"/>
+    <resource>
+      <Practitioner>
+        <id value="1ece89c5-fda3-4db9-ace6-decbe6c603d3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="1ece89c5-fda3-4db9-ace6-decbe6c603d3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;1ece89c5-fda3-4db9-ace6-decbe6c603d3&quot; </p></div><p><b>name</b>: IPS 2 </p></div>
+        </text>
+        <name>
+          <family value="2"/>
+          <given value="IPS"/>
+          <prefix value="Dr."/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/AllergyIntolerance/0dff4474-fa08-4f45-8260-dbb23094bf07"/>
+    <resource>
+      <AllergyIntolerance>
+        <id value="0dff4474-fa08-4f45-8260-dbb23094bf07"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: AllergyIntolerance</b><a name="0dff4474-fa08-4f45-8260-dbb23094bf07"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource AllergyIntolerance &quot;0dff4474-fa08-4f45-8260-dbb23094bf07&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-AllergyIntolerance-uv-ips.html">Allergy Intolerance (IPS)</a></p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-allergyintolerance-clinical.html">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-allergyintolerance-verification.html">AllergyIntolerance Verification Status</a>#confirmed)</span></p><p><b>code</b>: No information about allergies <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://build.fhir.org/ig/HL7/fhir-ips//CodeSystem-absent-unknown-uv-ips.html">Absent and Unknown Data - IPS</a>#no-allergy-info)</span></p><p><b>patient</b>: <a href="#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd3">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3: IPS-2)</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+            <code value="no-allergy-info"/>
+          </coding>
+        </code>
+        <patient>
+          <reference value="Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3"/>
+          <display value="IPS-2"/>
+        </patient>
+      </AllergyIntolerance>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Condition/bcc79261-142c-48ec-b032-f3f9af49ec53"/>
+    <resource>
+      <Condition>
+        <id value="bcc79261-142c-48ec-b032-f3f9af49ec53"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="bcc79261-142c-48ec-b032-f3f9af49ec53"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;bcc79261-142c-48ec-b032-f3f9af49ec53&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a></p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Malignant neoplasm of breast <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#254837009 &quot;Malignant neoplasm of breast (disorder)&quot;)</span></p><p><b>subject</b>: <a href="#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd3">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3: IPS-2)</a></p><p><b>asserter</b>: <a href="#Practitioner_1ece89c5-fda3-4db9-ace6-decbe6c603d3">See above (Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d3: Dr. IPS2)</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="254837009"/>
+            <display value="Malignant neoplasm of breast (disorder)"/>
+          </coding>
+          <text value="Malignant neoplasm of breast"/>
+        </code>
+        <subject>
+          <reference value="Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3"/>
+          <display value="IPS-2"/>
+        </subject>
+        <asserter>
+          <reference value="Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d3"/>
+          <display value="Dr. IPS2"/>
+        </asserter>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Condition/a4a9d90a-d1b0-4d60-82f0-c52343dc6253"/>
+    <resource>
+      <Condition>
+        <id value="a4a9d90a-d1b0-4d60-82f0-c52343dc6253"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="a4a9d90a-d1b0-4d60-82f0-c52343dc6253"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;a4a9d90a-d1b0-4d60-82f0-c52343dc6253&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a></p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Rheumatoid arthritis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#69896004 &quot;Rheumatoid arthritis (disorder)&quot;)</span></p><p><b>subject</b>: <a href="#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd3">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3: IPS-2)</a></p><p><b>onset</b>: 2015</p><p><b>asserter</b>: <a href="#Practitioner_1ece89c5-fda3-4db9-ace6-decbe6c603d3">See above (Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d3: Dr. IPS2)</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="69896004"/>
+            <display value="Rheumatoid arthritis (disorder)"/>
+          </coding>
+          <text value="Rheumatoid arthritis"/>
+        </code>
+        <subject>
+          <reference value="Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3"/>
+          <display value="IPS-2"/>
+        </subject>
+        <onsetDateTime value="2015"/>
+        <asserter>
+          <reference value="Practitioner/1ece89c5-fda3-4db9-ace6-decbe6c603d3"/>
+          <display value="Dr. IPS2"/>
+        </asserter>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e5133"/>
+    <resource>
+      <Condition>
+        <id value="f06b7cf8-c15c-4288-a0f9-45a1026e5133"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="f06b7cf8-c15c-4288-a0f9-45a1026e5133"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;f06b7cf8-c15c-4288-a0f9-45a1026e5133&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a></p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Hypercholesterolemia <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#13644009 &quot;Hypercholesterolemia (disorder)&quot;)</span></p><p><b>subject</b>: <a href="#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd3">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3: IPS-2)</a></p><p><b>onset</b>: 1993</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="13644009"/>
+            <display value="Hypercholesterolemia (disorder)"/>
+          </coding>
+          <text value="Hypercholesterolemia"/>
+        </code>
+        <subject>
+          <reference value="Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3"/>
+          <display value="IPS-2"/>
+        </subject>
+        <onsetDateTime value="1993"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Condition/f06b7cf8-c15c-4288-a0f9-45a1026e6788"/>
+    <resource>
+      <Condition>
+        <id value="f06b7cf8-c15c-4288-a0f9-45a1026e6788"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="f06b7cf8-c15c-4288-a0f9-45a1026e6788"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;f06b7cf8-c15c-4288-a0f9-45a1026e6788&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a></p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Epilepsy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#84757009 &quot;Epilepsy (disorder)&quot;)</span></p><p><b>subject</b>: <a href="#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd3">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3: IPS-2)</a></p><p><b>onset</b>: 1993</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="84757009"/>
+            <display value="Epilepsy (disorder)"/>
+          </coding>
+          <text value="Epilepsy"/>
+        </code>
+        <subject>
+          <reference value="Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3"/>
+          <display value="IPS-2"/>
+        </subject>
+        <onsetDateTime value="1993"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/29074ca4-efcb-4ff4-8446-feed2399a893"/>
+    <resource>
+      <MedicationStatement>
+        <id value="29074ca4-efcb-4ff4-8446-feed2399a893"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="29074ca4-efcb-4ff4-8446-feed2399a893"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;29074ca4-efcb-4ff4-8446-feed2399a893&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-MedicationStatement-uv-ips.html">Medication Statement (IPS)</a></p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_b50ae644-e0b7-4007-809f-26f493cbe363">See above (Medication/b50ae644-e0b7-4007-809f-26f493cbe363: trastuzumab)</a></p><p><b>subject</b>: <a href="#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd3">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3: IPS-2)</a></p><p><b>effective</b>: 2015</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Route</b></td></tr><tr><td style="display: none">*</td><td>Intravenous use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20045000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/b50ae644-e0b7-4007-809f-26f493cbe363"/>
+          <display value="trastuzumab"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3"/>
+          <display value="IPS-2"/>
+        </subject>
+        <effectiveDateTime value="2015"/>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20045000"/>
+              <display value="Intravenous use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/f6cb1218-f81c-4338-80d8-3c10910f78f3"/>
+    <resource>
+      <MedicationStatement>
+        <id value="f6cb1218-f81c-4338-80d8-3c10910f78f3"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="f6cb1218-f81c-4338-80d8-3c10910f78f3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;f6cb1218-f81c-4338-80d8-3c10910f78f3&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-MedicationStatement-uv-ips.html">Medication Statement (IPS)</a></p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_de131e15-ed13-4b31-b38c-3204a84d99c3">See above (Medication/de131e15-ed13-4b31-b38c-3204a84d99c3: simvastatin)</a></p><p><b>subject</b>: <a href="#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd3">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3: IPS-2)</a></p><p><b>effective</b>: 2020</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Route</b></td></tr><tr><td style="display: none">*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/de131e15-ed13-4b31-b38c-3204a84d99c3"/>
+          <display value="simvastatin"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3"/>
+          <display value="IPS-2"/>
+        </subject>
+        <effectiveDateTime value="2020"/>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20053000"/>
+              <display value="Oral use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade87b3"/>
+    <resource>
+      <MedicationStatement>
+        <id value="f26084c9-b1c8-46d9-acb2-1d400ade87b3"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="f26084c9-b1c8-46d9-acb2-1d400ade87b3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;f26084c9-b1c8-46d9-acb2-1d400ade87b3&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-MedicationStatement-uv-ips.html">Medication Statement (IPS)</a></p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_9ac3356c-4ea4-4814-84c3-235484f2ef13">See above (Medication/9ac3356c-4ea4-4814-84c3-235484f2ef13: enbrel)</a></p><p><b>subject</b>: <a href="#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd3">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3: IPS-2)</a></p><p><b>effective</b>: 2023</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Route</b></td></tr><tr><td style="display: none">*</td><td>Subcutaneous use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20066000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/9ac3356c-4ea4-4814-84c3-235484f2ef13"/>
+          <display value="enbrel"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3"/>
+          <display value="IPS-2"/>
+        </subject>
+        <effectiveDateTime value="2023"/>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20066000"/>
+              <display value="Subcutaneous use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade94gy"/>
+    <resource>
+      <MedicationStatement>
+        <id value="f26084c9-b1c8-46d9-acb2-1d400ade94gy"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="f26084c9-b1c8-46d9-acb2-1d400ade94gy"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;f26084c9-b1c8-46d9-acb2-1d400ade94gy&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-MedicationStatement-uv-ips.html">Medication Statement (IPS)</a></p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_9ac3356c-4ea4-4814-84c3-235484f2jk90">See above (Medication/9ac3356c-4ea4-4814-84c3-235484f2jk90: carbamazepine)</a></p><p><b>subject</b>: <a href="#Patient_c154158f-6a43-4ab7-8443-e7f4bf915dd3">See above (Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3: IPS-2)</a></p><p><b>effective</b>: 2020</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Route</b></td></tr><tr><td style="display: none">*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/9ac3356c-4ea4-4814-84c3-235484f2jk90"/>
+          <display value="carbamazepine"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/c154158f-6a43-4ab7-8443-e7f4bf915dd3"/>
+          <display value="IPS-2"/>
+        </subject>
+        <effectiveDateTime value="2020"/>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20053000"/>
+              <display value="Oral use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/b50ae644-e0b7-4007-809f-26f493cbe363"/>
+    <resource>
+      <Medication>
+        <id value="b50ae644-e0b7-4007-809f-26f493cbe363"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="b50ae644-e0b7-4007-809f-26f493cbe363"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;b50ae644-e0b7-4007-809f-26f493cbe363&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-Medication-uv-ips.html">Medication (IPS)</a></p></div><p><b>code</b>: 4249 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (no#4249)</span></p><p><b>form</b>: Powder and solvent for concentrate for solution for infusion <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#50042000)</span></p><h3>Ingredients</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item[x]</b></td></tr><tr><td style="display: none">*</td><td>trastuzumab <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#P188ANX8CK)</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://example.org/mpid/no"/>
+            <code value="4249"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="50042000"/>
+            <display value="Powder and solvent for concentrate for solution for infusion"/>
+          </coding>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="P188ANX8CK"/>
+              <display value="trastuzumab"/>
+            </coding>
+            <text value="trastuzumab"/>
+          </itemCodeableConcept>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/de131e15-ed13-4b31-b38c-3204a84d99c3"/>
+    <resource>
+      <Medication>
+        <id value="de131e15-ed13-4b31-b38c-3204a84d99c3"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="de131e15-ed13-4b31-b38c-3204a84d99c3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;de131e15-ed13-4b31-b38c-3204a84d99c3&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-Medication-uv-ips.html">Medication (IPS)</a></p></div><p><b>code</b>: Lipcut	Simvastatin	5 mg	tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (phpid#F92168108C432D63DACDD70444176BB3)</span></p><p><b>form</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item[x]</b></td></tr><tr><td style="display: none">*</td><td>SIMVASTATIN <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#AGG2FN16EV)</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="F92168108C432D63DACDD70444176BB3"/>
+            <display value="Lipcut&#x9;Simvastatin&#x9;5 mg&#x9;tablet"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10219000"/>
+            <display value="Tablet"/>
+          </coding>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="AGG2FN16EV"/>
+              <display value="SIMVASTATIN"/>
+            </coding>
+            <text value="SIMVASTATIN"/>
+          </itemCodeableConcept>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/9ac3356c-4ea4-4814-84c3-235484f2ef13"/>
+    <resource>
+      <Medication>
+        <id value="9ac3356c-4ea4-4814-84c3-235484f2ef13"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="9ac3356c-4ea4-4814-84c3-235484f2ef13"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;9ac3356c-4ea4-4814-84c3-235484f2ef13&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-Medication-uv-ips.html">Medication (IPS)</a></p></div><p><b>code</b>: Enbrel Etanercept	25 mg powder for solution for injection <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (phpid#0xF79CABF272B6A7EEF104DDDA44E82716)</span></p><p><b>form</b>: Powder and solution for solution for injection <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#50041500)</span></p><h3>Ingredients</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item[x]</b></td></tr><tr><td style="display: none">*</td><td>Enbrel Etanercept	25 mg <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#OP401G7OJC &quot;ETANERCEPT (ENBREL)&quot;)</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="0xF79CABF272B6A7EEF104DDDA44E82716"/>
+            <display value="Enbrel Etanercept&#x9;25 mg powder for solution for injection"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="50041500"/>
+            <display value="Powder and solution for solution for injection"/>
+          </coding>
+          <text value="Powder and solution for solution for injection"/>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="OP401G7OJC"/>
+              <display value="ETANERCEPT (ENBREL)"/>
+            </coding>
+            <text value="Enbrel Etanercept&#x9;25 mg"/>
+          </itemCodeableConcept>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/9ac3356c-4ea4-4814-84c3-235484f2jk90"/>
+    <resource>
+      <Medication>
+        <id value="9ac3356c-4ea4-4814-84c3-235484f2jk90"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="9ac3356c-4ea4-4814-84c3-235484f2jk90"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;9ac3356c-4ea4-4814-84c3-235484f2jk90&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/HL7/fhir-ips//StructureDefinition-Medication-uv-ips.html">Medication (IPS)</a></p></div><p><b>code</b>: Tegretol	Carbamazepine	200 mg	tablets <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (phpid#5C62673C79E096D37914D32A45AA8F4D; phpid#FB9808F4FED210183F412F9998622287)</span></p><p><b>form</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item[x]</b></td></tr><tr><td style="display: none">*</td><td>CARBAMAZEPINE <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#33CM23913M)</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="5C62673C79E096D37914D32A45AA8F4D"/>
+            <display value="Tegretol&#x9;Carbamazepine&#x9;200 mg&#x9;tablets"/>
+          </coding>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="FB9808F4FED210183F412F9998622287"/>
+            <display value="Tegretol&#x9;Carbamazepine&#x9;200 mg&#x9;tablets"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10219000"/>
+            <display value="Tablet"/>
+          </coding>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="33CM23913M"/>
+              <display value="CARBAMAZEPINE"/>
+            </coding>
+            <text value="CARBAMAZEPINE"/>
+          </itemCodeableConcept>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="gravitate-Alicia"/>
+  <identifier>
+    <system value="https://www.gravitatehealth.eu/sid/doc"/>
+    <value value="alicia-ips-1"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2023-04-18T09:22:00+02:00"/>
+  <entry>
+    <fullUrl value="https://myserver.org/Composition/alicia-comp"/>
+    <resource>
+      <Composition>
+        <id value="gravitate-Alicia"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><b>Id:</b> gravitate-alicia<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> alicia Gravitate<br/><b>Sections:</b><br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4)</li><br/><ul><li><b>Entry:</b> <a href="Condition-alicia-cond-1.html">HIV</a></li><br/><li><b>Entry:</b> <a href="Condition-alicia-cond-2.html">Trigeminal neuralgia</a></li><br/><li><b>Entry:</b> <a href="Condition-alicia-cond-3.html">Depression</a></li><br/><li><b>Entry:</b> <a href="Condition-alicia-cond-4.html">Overweight</a></li></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0)</li><br/><ul><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-1.html">BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD</a></li><br/><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-2.html">Calcium/Vit D</a></li><br/><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-3.html">Folic Acid + Cyanocobalamin + Iodur 1 t QD</a></li><br/><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-4.html">Carbamazepine 1 t TID</a></li><br/><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-5.html">Orlistat 1 cp TID</a></li><br/><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-6.html">St. John’s Wort 2 cp BID</a></li><br/><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-7.html">Collagen and magnesium supplements</a></li><br/></ul></ul></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient summary Document"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/alicia-patient"/>
+          <display value="Alicia Gravitate"/>
+        </subject>
+        <date value="2018-07-10T15:22:00+02:00"/>
+        <author>
+          <reference value="Practitioner/alicia-pract"/>
+          <display value="Dr. Walter Waltz"/>
+        </author>
+        <title value="Patient Summary (Alicia Gravitate)"/>
+        <confidentiality value="N"/>
+        <section>
+          <title value="Problem List"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="11450-4"/>
+              <display value="Problem list Reported"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Condition/alicia-cond-1"/>
+            <display value="Depression"/>
+          </entry>
+          <entry>
+            <reference value="Condition/alicia-cond-2"/>
+            <display value="HIV"/>
+          </entry>
+          <entry>
+            <reference value="Condition/alicia-cond-3"/>
+            <display value="Trigeminal neuralgia"/>
+          </entry>
+          <entry>
+            <reference value="Condition/alicia-cond-4"/>
+            <display value="Overweight"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Medication Summary"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="10160-0"/>
+              <display value="Hx of Medication use"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="MedicationStatement/alicia-med-stat-1"/>
+            <display value="BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD"/>
+          </entry>
+          <entry>
+            <reference value="MedicationStatement/alicia-med-stat-2"/>
+            <display value="Folic Acid + Cyanocobalamin + Iodur 1 t QD"/>
+          </entry>
+          <entry>
+            <reference value="MedicationStatement/alicia-med-stat-3"/>
+            <display value="CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"/>
+          </entry>
+          <entry>
+            <reference value="MedicationStatement/alicia-med-stat-4"/>
+            <display value="Carbamazepine  1 t TID"/>
+          </entry>
+          <entry>
+            <reference value="MedicationStatement/alicia-med-stat-5"/>
+            <display value="Orlistat 1 cp TID"/>
+          </entry>
+          <entry>
+            <reference value="MedicationStatement/alicia-med-stat-6"/>
+            <display value="St. John’s Wort 2 cp BID"/>
+          </entry>
+          <entry>
+            <reference value="MedicationStatement/alicia-med-stat-7"/>
+            <display value="Collagen and magnesium supplements"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Patient/alicia-patient"/>
+    <resource>
+      <Patient>
+        <id value="alicia-patient"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Age: 28 years. I live with my boyfriend. PhD Student Interests: I love reading and walking outdoors with my dog. I also love art and photography. Health Conditions: HIV (diagnosed with 25 years) Trigeminal neuralgia Depression Overweight</div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+          <extension url="code">
+            <valueCodeableConcept>
+              <coding>
+                <system value="urn:iso:std:iso:3166"/>
+                <code value="ES"/>
+                <display value="Spain"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+        </extension>
+        <identifier>
+          <system value="https://www.gravitatehealth.eu/sid/doc"/>
+          <value value="alicia-1"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <family value="Gravitate"/>
+          <given value="Alicia"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1998-10-05"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Practitioner/alicia-pract"/>
+    <resource>
+      <Practitioner>
+        <id value="alicia-pract"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="alicia-pract"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;alicia-pract&quot; </p></div><p><b>name</b>: Walter Waltz </p></div>
+        </text>
+        <name>
+          <family value="Waltz"/>
+          <given value="Walter"/>
+          <prefix value="Dr."/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Condition/alicia-cond-1"/>
+    <resource>
+      <Condition>
+        <id value="alicia-cond-1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="alicia-cond-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;alicia-cond-1&quot; </p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Depressive disorder (disorder) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#35489007)</span></p><p><b>subject</b>: <a href="#Patient_alicia-patient">See above (Patient/alicia-patient: alicia Gravitate)</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="35489007"/>
+            <display value="Depressive disorder (disorder)"/>
+          </coding>
+          <text value="Depressive disorder (disorder)"/>
+        </code>
+        <subject>
+          <reference value="Patient/alicia-patient"/>
+          <display value="alicia Gravitate"/>
+        </subject>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Condition/alicia-cond-2"/>
+    <resource>
+      <Condition>
+        <id value="alicia-cond-2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="alicia-cond-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;alicia-cond-2&quot; </p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Human immunodeficiency virus infection <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#86406008)</span></p><p><b>subject</b>: <a href="#Patient_alicia-patient">See above (Patient/alicia-patient: alicia Gravitate)</a></p><p><b>onset</b>: 2018</p><p><b>asserter</b>: <a href="#Practitioner_alicia-pract">See above (Practitioner/alicia-pract: Dr. Walter Waltz)</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="86406008"/>
+            <display value="Human immunodeficiency virus infection"/>
+          </coding>
+          <text value="Human immunodeficiency virus infection"/>
+        </code>
+        <subject>
+          <reference value="Patient/alicia-patient"/>
+          <display value="alicia Gravitate"/>
+        </subject>
+        <onsetDateTime value="2018"/>
+        <asserter>
+          <reference value="Practitioner/alicia-pract"/>
+          <display value="Dr. Walter Waltz"/>
+        </asserter>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Condition/alicia-cond-3"/>
+    <resource>
+      <Condition>
+        <id value="alicia-cond-3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="alicia-cond-3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;alicia-cond-3&quot; </p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Trigeminal neuralgia (disorder) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#31681005)</span></p><p><b>subject</b>: <a href="#Patient_alicia-patient">See above (Patient/alicia-patient: alicia Gravitate)</a></p><p><b>onset</b>: 2018</p><p><b>asserter</b>: <a href="#Practitioner_alicia-pract">See above (Practitioner/alicia-pract: Dr. Walter Waltz)</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="31681005"/>
+            <display value="Trigeminal neuralgia (disorder)"/>
+          </coding>
+          <text value="Trigeminal neuralgia (disorder)"/>
+        </code>
+        <subject>
+          <reference value="Patient/alicia-patient"/>
+          <display value="alicia Gravitate"/>
+        </subject>
+        <onsetDateTime value="2018"/>
+        <asserter>
+          <reference value="Practitioner/alicia-pract"/>
+          <display value="Dr. Walter Waltz"/>
+        </asserter>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Condition/alicia-cond-4"/>
+    <resource>
+      <Condition>
+        <id value="alicia-cond-4"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="alicia-cond-4"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;alicia-cond-4&quot; </p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Overweight (finding) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#238131007)</span></p><p><b>subject</b>: <a href="#Patient_alicia-patient">See above (Patient/alicia-patient: Alicia Gravitate)</a></p><p><b>onset</b>: 2018</p><p><b>asserter</b>: <a href="#Practitioner_alicia-pract">See above (Practitioner/alicia-pract: Dr. Walter Waltz)</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="238131007"/>
+            <display value="Overweight (finding)"/>
+          </coding>
+          <text value="Overweight (finding)"/>
+        </code>
+        <subject>
+          <reference value="Patient/alicia-patient"/>
+          <display value="Alicia Gravitate"/>
+        </subject>
+        <onsetDateTime value="2018"/>
+        <asserter>
+          <reference value="Practitioner/alicia-pract"/>
+          <display value="Dr. Walter Waltz"/>
+        </asserter>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/alicia-med-stat-1"/>
+    <resource>
+      <MedicationStatement>
+        <id value="alicia-med-stat-1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="alicia-med-stat-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;alicia-med-stat-1&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_9d7be868-8264-4d94-ad04-ef04ecc92i99">See above (Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99: BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD)</a></p><p><b>subject</b>: <a href="#Patient_alicia-patient">See above (Patient/alicia-patient: Alicia Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99"/>
+          <display value="BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/alicia-patient"/>
+          <display value="Alicia Gravitate"/>
+        </subject>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20053000"/>
+              <display value="Oral use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/alicia-med-stat-2"/>
+    <resource>
+      <MedicationStatement>
+        <id value="alicia-med-stat-2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="alicia-med-stat-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;alicia-med-stat-2&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1">See above (Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1: Folic Acid + Cyanocobalamin + Iodur 1 t QD)</a></p><p><b>subject</b>: <a href="#Patient_alicia-patient">See above (Patient/alicia-patient: Alicia Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1"/>
+          <display value="Folic Acid + Cyanocobalamin + Iodur 1 t QD"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/alicia-patient"/>
+          <display value="Alicia Gravitate"/>
+        </subject>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20053000"/>
+              <display value="Oral use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/alicia-med-stat-3"/>
+    <resource>
+      <MedicationStatement>
+        <id value="alicia-med-stat-3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="alicia-med-stat-3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;alicia-med-stat-3&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda7785h">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h: CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES)</a></p><p><b>subject</b>: <a href="#Patient_alicia-patient">See above (Patient/alicia-patient: Alicia Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h"/>
+          <display value="CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/alicia-patient"/>
+          <display value="Alicia Gravitate"/>
+        </subject>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20053000"/>
+              <display value="Oral use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/alicia-med-stat-4"/>
+    <resource>
+      <MedicationStatement>
+        <id value="alicia-med-stat-4"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="alicia-med-stat-4"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;alicia-med-stat-4&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda78356">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356: Carbamazepine  1 t TID)</a></p><p><b>subject</b>: <a href="#Patient_alicia-patient">See above (Patient/alicia-patient: alicia Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356"/>
+          <display value="Carbamazepine  1 t TID"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/alicia-patient"/>
+          <display value="alicia Gravitate"/>
+        </subject>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20053000"/>
+              <display value="Oral use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/alicia-med-stat-5"/>
+    <resource>
+      <MedicationStatement>
+        <id value="alicia-med-stat-5"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="alicia-med-stat-5"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;alicia-med-stat-5&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda78333">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333: Orlistat 1 cp TID)</a></p><p><b>subject</b>: <a href="#Patient_alicia-patient">See above (Patient/alicia-patient: Alicia Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333"/>
+          <display value="Orlistat 1 cp TID"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/alicia-patient"/>
+          <display value="Alicia Gravitate"/>
+        </subject>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20053000"/>
+              <display value="Oral use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/alicia-med-stat-6"/>
+    <resource>
+      <MedicationStatement>
+        <id value="alicia-med-stat-6"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="alicia-med-stat-6"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;alicia-med-stat-6&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda79261">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261: St. John’s Wort 2 cp BID)</a></p><p><b>subject</b>: <a href="#Patient_alicia-patient">See above (Patient/alicia-patient: Alicia Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261"/>
+          <display value="St. John’s Wort 2 cp BID"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/alicia-patient"/>
+          <display value="Alicia Gravitate"/>
+        </subject>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20053000"/>
+              <display value="Oral use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/MedicationStatement/alicia-med-stat-7"/>
+    <resource>
+      <MedicationStatement>
+        <id value="alicia-med-stat-7"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="alicia-med-stat-7"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;alicia-med-stat-7&quot; </p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href="#Medication_6f4151e9-91f6-4f1e-adc3-fb94dda77853">See above (Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77853: Collagen and magnesium supplements)</a></p><p><b>subject</b>: <a href="#Patient_alicia-patient">See above (Patient/alicia-patient: alicia Gravitate)</a></p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Route</b></td></tr><tr><td>*</td><td>Oral use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20053000)</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationReference>
+          <reference value="Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77853"/>
+          <display value="Collagen and magnesium supplements"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/alicia-patient"/>
+          <display value="alicia Gravitate"/>
+        </subject>
+        <dosage>
+          <route>
+            <coding>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="20053000"/>
+              <display value="Oral use"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367"/>
+    <resource>
+      <Medication>
+        <id value="6f4151e9-91f6-4f1e-adc3-fb94dda78367"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="6f4151e9-91f6-4f1e-adc3-fb94dda78367"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda78367&quot; </p></div><p><b>code</b>: Flucelvax <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (marketingAuthorizationNumber#EU/1/18/1326/001; phpid#0xbb82cd10ab2add752b2b9224931000k2; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#A03ku92)</span></p><p><b>form</b>: suspension for injection in pre-filled syringe <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10219999)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#TU2UN5CG9C)</span></td><td>15 mcg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mcg = 'mcg')</span>/1 suspension for injection in pre-filled syringe<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://ema.europa.eu/fhir/marketingAuthorizationNumber"/>
+            <code value="EU/1/18/1326/001"/>
+            <display value="Flucelvax"/>
+          </coding>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="0xbb82cd10ab2add752b2b9224931000k2"/>
+            <display value="Flucelvax"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="A03ku92"/>
+            <display value="Flucelvax"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10219999"/>
+            <display value="suspension for injection in pre-filled syringe"/>
+          </coding>
+          <text value="suspension for injection in pre-filled syringe"/>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="TU2UN5CG9C"/>
+              <display value="INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"/>
+            </coding>
+            <text value="INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="15"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mcg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="suspension for injection in pre-filled syringe"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261"/>
+    <resource>
+      <Medication>
+        <id value="6f4151e9-91f6-4f1e-adc3-fb94dda79261"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="6f4151e9-91f6-4f1e-adc3-fb94dda79261"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda79261&quot; </p></div><p><b>code</b>: St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras 200 mg tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (man#xxxxxx; phpid#0xbb82cd10ab2add752b2b9224931099j1; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#A03FA02 &quot;HYPERICUM PERFORATUM WHOLE&quot;)</span></p><p><b>form</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>HYPERICUM PERFORATUM WHOLE <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#XK4IUX8MNB)</span></td><td>175 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="https://www.gravitatehealth.eu/sid/man"/>
+            <code value="xxxxxx"/>
+            <display value="St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras 200 mg tablet"/>
+          </coding>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="0xbb82cd10ab2add752b2b9224931099j1"/>
+            <display value="St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras 200 mg tablet"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="A03FA02"/>
+            <display value="HYPERICUM PERFORATUM WHOLE"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10219000"/>
+            <display value="Tablet"/>
+          </coding>
+          <text value="Tablet"/>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="XK4IUX8MNB"/>
+              <display value="HYPERICUM PERFORATUM WHOLE"/>
+            </coding>
+            <text value="HYPERICUM PERFORATUM WHOLE"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="175"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h"/>
+    <resource>
+      <Medication>
+        <id value="6f4151e9-91f6-4f1e-adc3-fb94dda7785h"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="6f4151e9-91f6-4f1e-adc3-fb94dda7785h"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda7785h&quot; </p></div><p><b>code</b>: CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (man#16028/0049; phpid#0xF79CABF272B6A7EEF104DDDA44E82716 &quot;Calcium carbonate 500 mg&quot;)</span></p><p><b>form</b>: Effervescent tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10222000)</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: calcium carbonate <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#H0G9379FGK &quot;Calcium carbonate&quot;)</span></p><p><b>strength</b>: 1000 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: cholecalciferol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#1C6V77QF41)</span></p><p><b>strength</b>: 880 {UI}<span style="background: LightGoldenRodYellow"> (Details: UCUM code {UI} = '{UI}')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote></div>
+        </text>
+        <code>
+          <coding>
+            <system value="https://www.gravitatehealth.eu/sid/man"/>
+            <code value="16028/0049"/>
+            <display value="CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"/>
+          </coding>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="0xF79CABF272B6A7EEF104DDDA44E82716"/>
+            <display value="Calcium carbonate 500 mg"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10222000"/>
+            <display value="Effervescent tablet"/>
+          </coding>
+          <text value="Effervescent tablet"/>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="H0G9379FGK"/>
+              <display value="Calcium carbonate"/>
+            </coding>
+            <text value="calcium carbonate"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="1000"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="1C6V77QF41"/>
+              <display value="cholecalciferol"/>
+            </coding>
+            <text value="cholecalciferol"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="880"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="{UI}"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367"/>
+    <resource>
+      <Medication>
+        <id value="6f4151e9-91f6-4f1e-adc3-fb94dda78367"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="6f4151e9-91f6-4f1e-adc3-fb94dda78367"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda78367&quot; </p></div><p><b>code</b>: Flucelvax <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (marketingAuthorizationNumber#EU/1/18/1326/001; phpid#0xbb82cd10ab2add752b2b9224931000k2; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#A03ku92)</span></p><p><b>form</b>: suspension for injection in pre-filled syringe <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10219999)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#TU2UN5CG9C)</span></td><td>15 mcg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mcg = 'mcg')</span>/1 suspension for injection in pre-filled syringe<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://ema.europa.eu/fhir/marketingAuthorizationNumber"/>
+            <code value="EU/1/18/1326/001"/>
+            <display value="Flucelvax"/>
+          </coding>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="0xbb82cd10ab2add752b2b9224931000k2"/>
+            <display value="Flucelvax"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="A03ku92"/>
+            <display value="Flucelvax"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10219999"/>
+            <display value="suspension for injection in pre-filled syringe"/>
+          </coding>
+          <text value="suspension for injection in pre-filled syringe"/>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="TU2UN5CG9C"/>
+              <display value="INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"/>
+            </coding>
+            <text value="INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="15"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mcg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="suspension for injection in pre-filled syringe"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1"/>
+    <resource>
+      <Medication>
+        <id value="fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1&quot; </p></div><p><b>code</b>: Folic Acid + Cyanocobalamin + Iodur 1 t QD <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (marketingAuthorizationNumber#PL31654/0092; phpid#0x6c47381b040e5b588db23b2272f22ppf; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#B03B &quot;VITAMIN B12 AND FOLIC ACID&quot;)</span></p><p><b>form</b>: Coated tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10220000)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>FOLIC ACID <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#935E97BOY8)</span></td><td>30 g<span style="background: LightGoldenRodYellow"> (Details: UCUM code g = 'g')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://ema.europa.eu/fhir/marketingAuthorizationNumber"/>
+            <code value="PL31654/0092"/>
+            <display value="Folic Acid + Cyanocobalamin + Iodur 1 t QD"/>
+          </coding>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="0x6c47381b040e5b588db23b2272f22ppf"/>
+            <display value="Folic Acid + Cyanocobalamin + Iodur 1 t QD"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="B03B"/>
+            <display value="VITAMIN B12 AND FOLIC ACID"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10220000"/>
+            <display value="Coated tablet"/>
+          </coding>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="935E97BOY8"/>
+              <display value="FOLIC ACID"/>
+            </coding>
+            <text value="FOLIC ACID"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="30"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="g"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99"/>
+    <resource>
+      <Medication>
+        <id value="9d7be868-8264-4d94-ad04-ef04ecc92i99"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="9d7be868-8264-4d94-ad04-ef04ecc92i99"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;9d7be868-8264-4d94-ad04-ef04ecc92i99&quot; </p></div><p><b>code</b>: Biktarvy 30 mg/120 mg/15 mg film-coated tablets <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (marketingAuthorizationNumber#EU/1/18/1289/001; phpid#0x073AF2E5B92AE19E8B67635AFFB3D9nq; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#774856007 &quot;Product containing only bictegravir and emtricitabine and tenofovir (medicinal product)&quot;; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>#J05AR20 &quot;emtricitabine, tenofovir alafenamide and bictegravir&quot;)</span></p><p><b>form</b>: Coated tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10220000)</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: bictegravir <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#8GB79LOJ07)</span></p><p><b>strength</b>: 30 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: emtricitabine <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#G70B4ETF4S)</span></p><p><b>strength</b>: 120 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: tenofovir alafenamida <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#EL9943AG5J)</span></p><p><b>strength</b>: 15 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></p></blockquote></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://ema.europa.eu/fhir/marketingAuthorizationNumber"/>
+            <code value="EU/1/18/1289/001"/>
+            <display value="Biktarvy 30 mg/120 mg/15 mg film-coated tablets"/>
+          </coding>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="0x073AF2E5B92AE19E8B67635AFFB3D9nq"/>
+            <display value="Biktarvy 30 mg/120 mg/15 mg film-coated tablets"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="774856007"/>
+            <display value="Product containing only bictegravir and emtricitabine and tenofovir (medicinal product)"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="J05AR20"/>
+            <display value="emtricitabine, tenofovir alafenamide and bictegravir"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10220000"/>
+            <display value="Coated tablet"/>
+          </coding>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="8GB79LOJ07"/>
+              <display value="bictegravir"/>
+            </coding>
+            <text value="bictegravir"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="30"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="G70B4ETF4S"/>
+              <display value="emtricitabine"/>
+            </coding>
+            <text value="emtricitabine"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="120"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="EL9943AG5J"/>
+              <display value="tenofovir alafenamida"/>
+            </coding>
+            <text value="tenofovir alafenamida"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="15"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356"/>
+    <resource>
+      <Medication>
+        <id value="6f4151e9-91f6-4f1e-adc3-fb94dda78356"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="6f4151e9-91f6-4f1e-adc3-fb94dda78356"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda78356&quot; </p></div><p><b>code</b>: Carbamazepine 200 mg tablets <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (marketingAuthorizationNumber#xxxx; phpid#xxx &quot;Carbamazepine 2oo mg tablets&quot;)</span></p><p><b>form</b>: Tablet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10219000)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>CARBAMAZEPINE <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#33CM23913M)</span></td><td>200 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://ema.europa.eu/fhir/marketingAuthorizationNumber"/>
+            <code value="xxxx"/>
+            <display value="Carbamazepine 200 mg tablets"/>
+          </coding>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="xxx"/>
+            <display value="Carbamazepine 2oo mg tablets"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10219000"/>
+            <display value="Tablet"/>
+          </coding>
+          <text value="Tablet"/>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="33CM23913M"/>
+              <display value="CARBAMAZEPINE"/>
+            </coding>
+            <text value="CARBAMAZEPINE"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="200"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333"/>
+    <resource>
+      <Medication>
+        <id value="6f4151e9-91f6-4f1e-adc3-fb94dda78333"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="6f4151e9-91f6-4f1e-adc3-fb94dda78333"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda78333&quot; </p></div><p><b>code</b>: Orlistat 60 mg capsule <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (marketingAuthorizationNumber#xx; phpid#xx)</span></p><p><b>form</b>: Capsule, hard <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10210000)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>ORLISTAT <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#95M8R751W8)</span></td><td>60 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://standardterms.edqm.eu code 15054000 = 'Tablet')</span></td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://ema.europa.eu/fhir/marketingAuthorizationNumber"/>
+            <code value="xx"/>
+            <display value="Orlistat 60 mg capsule"/>
+          </coding>
+          <coding>
+            <system value="https://www.who-umc.org/phpid"/>
+            <code value="xx"/>
+            <display value="Orlistat 60 mg capsule"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10210000"/>
+            <display value="Capsule, hard"/>
+          </coding>
+          <text value="Capsule, hard"/>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="95M8R751W8"/>
+              <display value="ORLISTAT"/>
+            </coding>
+            <text value="ORLISTAT"/>
+          </itemCodeableConcept>
+          <strength>
+            <numerator>
+              <value value="60"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>
+            </numerator>
+            <denominator>
+              <value value="1"/>
+              <unit value="Tablet"/>
+              <system value="http://standardterms.edqm.eu"/>
+              <code value="15054000"/>
+            </denominator>
+          </strength>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda77853"/>
+    <resource>
+      <Medication>
+        <id value="6f4151e9-91f6-4f1e-adc3-fb94dda77853"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="6f4151e9-91f6-4f1e-adc3-fb94dda77853"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;6f4151e9-91f6-4f1e-adc3-fb94dda77853&quot; </p></div><p><b>code</b>: AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (man#yyy)</span></p><p><b>form</b>: Oral powder <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10201000)</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: MAGNESIUM <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#I38ZP9992A)</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: HYALURONIC ACID <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#S270N0TRQY)</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: HUMAN TYPE I COLLAGEN <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-UNII.html">Unique Ingredient Identifier (UNII)</a>#PT3TGI7OIP)</span></p></blockquote></div>
+        </text>
+        <code>
+          <coding>
+            <system value="https://www.gravitatehealth.eu/sid/man"/>
+            <code value="yyy"/>
+            <display value="AQUILEA ARTICULACIONES COLAGENO Y MAGNESIO 375GR"/>
+          </coding>
+        </code>
+        <form>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10201000"/>
+            <display value="Oral powder"/>
+          </coding>
+          <text value="Oral powder"/>
+        </form>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="I38ZP9992A"/>
+              <display value="MAGNESIUM"/>
+            </coding>
+            <text value="MAGNESIUM"/>
+          </itemCodeableConcept>
+        </ingredient>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="S270N0TRQY"/>
+              <display value="HYALURONIC ACID"/>
+            </coding>
+            <text value="HYALURONIC ACID"/>
+          </itemCodeableConcept>
+        </ingredient>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://fdasis.nlm.nih.gov"/>
+              <code value="PT3TGI7OIP"/>
+              <display value="HUMAN TYPE I COLLAGEN"/>
+            </coding>
+            <text value="HUMAN TYPE I COLLAGEN"/>
+          </itemCodeableConcept>
+        </ingredient>
+      </Medication>
+    </resource>
+  </entry>
+</Bundle>
