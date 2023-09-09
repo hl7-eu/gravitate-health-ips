@@ -265,7 +265,7 @@ Instance: b50ae644-e0b7-4007-809f-26f493cbe363
 InstanceOf: Medication-uv-ips
 Usage: #inline
 //* code.coding[0] = $spor-man#EU/1/17/1201/001 "Skilarence"
-* code.coding[0] =  http://example.org/mpid/no/4249
+* code.coding[0] =  http://example.org/mpid/no#4249
 //* code.coding[+] = $phpid#7532F47F36A3585D1F348BBDDA057862 "Ogivri	trastuzumab 150 mg	powder for concentrate for solution for infusion"
 //* code.coding[+] = $atc#L04AX07 "dimethyl fumarate"
 * form = $edqm#50042000 "Powder and solvent for concentrate for solution for infusion"
