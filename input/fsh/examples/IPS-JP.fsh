@@ -262,7 +262,7 @@ Instance: b50ae644-e0b7-4007-809f-26f493cbe369c
 InstanceOf: Medication-uv-ips
 Usage: #inline
 //* code.coding[0] = $spor-man#EU/1/17/1201/001 "Skilarence"
-* code.coding[0] =  http://www.pmda.jp/#874291
+* code.coding[0] =  http://iyaku.info/medicine/#4291447D2024
 //* code.coding[+] = $phpid#7532F47F36A3585D1F348BBDDA057862 "Ogivri	trastuzumab 150 mg	powder for concentrate for solution for infusion"
 //* code.coding[+] = $atc#L04AX07 "dimethyl fumarate"
 * form = $edqm#50042000 "Powder and solvent for concentrate for solution for infusion"
@@ -271,11 +271,12 @@ Usage: #inline
 	
 
 
+
 Instance: de131e15-ed13-4b31-b38c-3204a84d99c9c
 InstanceOf: Medication-uv-ips
 Usage: #inline
-* code.coding[0] =  http://www.pmda.jp/#872189
-* code.coding[+] = $phpid#F92168108C432D63DACDD70444176BB3 "Lipcut	Simvastatin	20 mg	tablet"
+* code.coding[0] =  http://iyaku.info/medicine/#2189011F1262
+* code.coding[+] = $phpid#F92168108C432D63DACDD70444176BB3 "Lipcut	Simvastatin	5 mg	tablet"
 //* code.coding[+] = $atc#C09DA04 "irbesartan and diuretics"
 * form = $edqm#10219000 "Tablet"
 * ingredient.itemCodeableConcept = $unii#AGG2FN16EV "SIMVASTATIN"
@@ -296,6 +297,7 @@ Usage: #inline
 Instance: 9ac3356c-4ea4-4814-84c3-235484f2jk99c
 InstanceOf: Medication-uv-ips
 Usage: #inline
+* code.coding[+] = http://iyaku.info/medicine/#1139002F1070
 * code.coding[+] = $phpid#5C62673C79E096D37914D32A45AA8F4D "Tegretol	Carbamazepine	200 mg	tablets" //level 3
 * code.coding[+] = $phpid#FB9808F4FED210183F412F9998622287 "Tegretol	Carbamazepine	200 mg	tablets" //level 4
 
