@@ -274,7 +274,7 @@ Usage: #inline
 Instance: de131e15-ed13-4b31-b38c-3204a84d99c9c
 InstanceOf: Medication-uv-ips
 Usage: #inline
-* code.coding[0] =  http://www.pmda.jp/#sim874291
+* code.coding[0] =  http://www.pmda.jp/#872189
 * code.coding[+] = $phpid#F92168108C432D63DACDD70444176BB3 "Lipcut	Simvastatin	20 mg	tablet"
 //* code.coding[+] = $atc#C09DA04 "irbesartan and diuretics"
 * form = $edqm#10219000 "Tablet"
