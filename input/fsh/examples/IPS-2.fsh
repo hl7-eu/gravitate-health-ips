@@ -278,7 +278,7 @@ Instance: de131e15-ed13-4b31-b38c-3204a84d99c3
 InstanceOf: Medication-uv-ips
 Usage: #inline
 //* code.coding[0] = $spor-man#EMEA/H/C/000142 "Karvea"
-* code.coding[+] = $phpid#F92168108C432D63DACDD70444176BB3 "Lipcut	Simvastatin	5 mg	tablet"
+* code.coding[+] = $phpid#F92168108C432D63DACDD70444176BB3 "Lipcut	Simvastatin	20 mg	tablet"
 //* code.coding[+] = $atc#C09DA04 "irbesartan and diuretics"
 * form = $edqm#10219000 "Tablet"
 * ingredient.itemCodeableConcept = $unii#AGG2FN16EV "SIMVASTATIN"
