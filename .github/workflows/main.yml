@@ -67,6 +67,4 @@ jobs:
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          # Run the publisher - don't run the batch script but run the line directly
-          args: java -Xmx4g -jar ./input-cache/publisher.jar publisher -ig . -auto-ig-build -repo https://github.com/${{github.repository}}
-
+          args: java -jar ./input-cache/publisher.jar publisher -ig .
