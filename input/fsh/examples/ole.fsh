@@ -193,7 +193,7 @@ Description: "Example of International Patient Summary for Ole Gravitate"
 * entry[=].resource = Inline-Instance-for-undefined-50
 * entry[+].fullUrl = "2d55c34d-acc9-3070-828a-b5426b8e50e5"
 * entry[=].resource = Inline-Instance-for-undefined-51
-* entry[+].fullUrl = "6df37577-c943-35fd-bad0-db9bec9ec548"
+* entry[+].fullUrl = "6df37577-c943-35fd-bad0-"
 * entry[=].resource = Inline-Instance-for-undefined-52
 * entry[+].fullUrl = "924ce259-decd-33ca-8969-e632a45c47f0"
 * entry[=].resource = Inline-Instance-for-undefined-53
@@ -284,7 +284,7 @@ Usage: #inline
 * section[=].entry[+] = Reference(Immunization/5d62e413-e1e2-33cc-bbc7-c7377fdf2bb5)
 * section[=].entry[+] = Reference(Immunization/0a77a697-1b3c-3b7f-85b4-4ff779290b07)
 * section[=].entry[+] = Reference(Immunization/2d55c34d-acc9-3070-828a-b5426b8e50e5)
-* section[=].entry[+] = Reference(Immunization/6df37577-c943-35fd-bad0-db9bec9ec548)
+//* section[=].entry[+] = Reference(Immunization/6df37577-c943-35fd-bad0-db9bec9ec548)
 * section[=].entry[+] = Reference(Immunization/924ce259-decd-33ca-8969-e632a45c47f0)
 * section[=].entry[+] = Reference(Immunization/139ad53a-217f-3e19-9540-d0d47a834174)
 * section[=].entry[+] = Reference(Immunization/312445f3-900b-3f77-aa81-854000a700cd)
@@ -2019,7 +2019,7 @@ Usage: #inline
 * vaccineCode.coding[0] = $atc#J07AF01 "Difteri toxoid"
 * vaccineCode.coding[+] = $drugid#32115313006 "Difterivaccine \"SSI\""
 * vaccineCode.coding[+] = $VaccineIdentifierType#1617206217 "Difteri"
-* patient = Reference(Patient/1c198804-cbd3-34d7-b9bc-825b7366c7c7)
+* patient = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
 * occurrenceDateTime = "2018-12-17T23:00:00+00:00"
 
 Instance: Inline-Instance-for-undefined-48
@@ -2034,7 +2034,7 @@ Usage: #inline
 * vaccineCode.coding[0] = $atc#J07CA02 "Difteri-pertussis-poliomyelitis-tetanus"
 * vaccineCode.coding[+] = $drugid#170641 "DiTeKiPol"
 * vaccineCode.coding[+] = $VaccineIdentifierType#1617151439 "Di-Te-Ki-Pol"
-* patient = Reference(Patient/1c198804-cbd3-34d7-b9bc-825b7366c7c7)
+* patient = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
 * occurrenceDateTime = "2019-02-07T23:00:00+00:00"
 
 Instance: Inline-Instance-for-undefined-49
@@ -2049,7 +2049,8 @@ Usage: #inline
 * vaccineCode.coding[0] = $atc#J07CA02 "Difteri-pertussis-poliomyelitis-tetanus"
 * vaccineCode.coding[+] = $drugid#32115313025 "DiTeKiPol Booster"
 * vaccineCode.coding[+] = $VaccineIdentifierType#1617151439 "Di-Te-Ki-Pol"
-* patient = Reference(Patient/1c198804-cbd3-34d7-b9bc-825b7366c7c7)
+* patient = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
+
 * occurrenceDateTime = "2019-01-31T23:00:00+00:00"
 
 Instance: Inline-Instance-for-undefined-50
@@ -2063,7 +2064,8 @@ Usage: #inline
 * status = #completed
 * vaccineCode.coding[0] = $atc#J07CA12 "Difteri-pertussis-polio-tetanus-hepatitis b"
 * vaccineCode.coding[+] = $VaccineIdentifierType#1617151408 "Di-Te-Ki-Pol-HepB"
-* patient = Reference(Patient/1c198804-cbd3-34d7-b9bc-825b7366c7c7)
+* patient = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
+
 * occurrenceDateTime = "2019-01-03T23:00:00+00:00"
 
 Instance: Inline-Instance-for-undefined-51
@@ -2078,13 +2080,14 @@ Usage: #inline
 * vaccineCode.coding[0] = $atc#J07AH04 "Meningococcus, tetraval. purified polysacc.antigen"
 * vaccineCode.coding[+] = $drugid#191336 "Mencevax ACWY"
 * vaccineCode.coding[+] = $VaccineIdentifierType#1617204292 "Meningokok gruppe ACWY polysakkarid"
-* patient = Reference(Patient/1c198804-cbd3-34d7-b9bc-825b7366c7c7)
+* patient = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
+
 * occurrenceDateTime = "2019-10-23T22:00:00+00:00"
 
 Instance: Inline-Instance-for-undefined-52
 InstanceOf: Immunization
 Usage: #inline
-* id = "6df37577-c943-35fd-bad0-db9bec9ec548"
+* id = "6df37577-c943-35fd-bad0-"
 * meta.profile[0] = "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization"
 * meta.profile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
 * identifier.system = "http://vaccinationsregister.dk/schemas/2013/12/01/VaccinationIdentifierType"
@@ -2092,7 +2095,8 @@ Usage: #inline
 * status = #entered-in-error
 * vaccineCode.coding[0] = $atc#J07CA12 "Difteri-pertussis-polio-tetanus-hepatitis b"
 * vaccineCode.coding[+] = $VaccineIdentifierType#1617151408 "Di-Te-Ki-Pol-HepB"
-* patient = Reference(Patient/1c198804-cbd3-34d7-b9bc-825b7366c7c7)
+* patient = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
+
 * occurrenceDateTime = "2019-06-19T14:57:39+00:00"
 
 Instance: Inline-Instance-for-undefined-53
@@ -2107,7 +2111,8 @@ Usage: #inline
 * vaccineCode.coding[0] = $atc#J07AG01 "Hemophilus influenzae b, purif. antig. conjugated"
 * vaccineCode.coding[+] = $drugid#32115313002 "Act-hib"
 * vaccineCode.coding[+] = $VaccineIdentifierType#1617205256 "Hæmophilus influenza type B"
-* patient = Reference(Patient/1c198804-cbd3-34d7-b9bc-825b7366c7c7)
+* patient = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
+
 * occurrenceDateTime = "2019-06-18T22:00:00+00:00"
 
 Instance: Inline-Instance-for-undefined-54
@@ -2122,7 +2127,8 @@ Usage: #inline
 * vaccineCode.coding[0] = $atc#J07CA02 "Difteri-pertussis-poliomyelitis-tetanus"
 * vaccineCode.coding[+] = $drugid#170641 "DiTeKiPol"
 * vaccineCode.coding[+] = $VaccineIdentifierType#1617151439 "Di-Te-Ki-Pol"
-* patient = Reference(Patient/1c198804-cbd3-34d7-b9bc-825b7366c7c7)
+* patient = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
+
 * occurrenceDateTime = "2019-06-18T22:00:00+00:00"
 
 Instance: Inline-Instance-for-undefined-55
@@ -2137,7 +2143,8 @@ Usage: #inline
 * vaccineCode.coding[0] = $atc#J07BN02 "Covid-19, virusvektor, non-replikerende"
 * vaccineCode.coding[+] = $drugid#32115548735 "Janssen COVID-19 vaccine"
 * vaccineCode.coding[+] = $VaccineIdentifierType#32115548736 "Janssen COVID-19 vaccine"
-* patient = Reference(Patient/1c198804-cbd3-34d7-b9bc-825b7366c7c7)
+* patient = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
+
 * occurrenceDateTime = "2021-05-27T10:35:39+00:00"
 
 Instance: e15164fc-8238-35e1-a56c-31f5f5d7c6b3
@@ -2151,7 +2158,8 @@ Usage: #inline
 * vaccineCode.coding[0] = $atc#J07BN01 "Covid-19, rna-baseret vaccine"
 * vaccineCode.coding[+] = $drugid#32115514735 "Pfizer BioNTech COVID-19 Vacc"
 * vaccineCode.coding[+] = $VaccineIdentifierType#32115515736 "Pfizer BioNTech Covid-19 vacc"
-* patient = Reference(Patient/1c198804-cbd3-34d7-b9bc-825b7366c7c7)
+* patient = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
+
 * occurrenceDateTime = "2022-01-03T23:00:00+00:00"
 
 Instance: d35d99ba-32af-373a-97e3-e2a9efc8ba1b
@@ -2165,7 +2173,8 @@ Usage: #inline
 * vaccineCode.coding[0] = $atc#J07BN01 "Covid-19, rna-baseret vaccine"
 * vaccineCode.coding[+] = $drugid#32115514735 "Pfizer BioNTech COVID-19 Vacc"
 * vaccineCode.coding[+] = $VaccineIdentifierType#32115515736 "Pfizer BioNTech Covid-19 vacc"
-* patient = Reference(Patient/1c198804-cbd3-34d7-b9bc-825b7366c7c7)
+* patient = Reference(f7ab35b2-cbaf-3e6c-8913-f046f50f7e33)
+
 * occurrenceDateTime = "2022-01-04T21:06:00+00:00"
 
 Instance: b469dcd5-3746-35d5-868f-09c7ebf1f460
