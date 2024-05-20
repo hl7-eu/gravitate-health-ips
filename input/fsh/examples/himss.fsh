@@ -195,7 +195,7 @@ Usage: #inline
 * status = #active
 * medicationReference = Reference(metformin-himss) "Metformin 500 mg Tablet"
 * subject = Reference(alicia-patient-himss) "Alicia HIMSS"
-* dosage.route = $edqm#20066000 "Subcutaneous use"
+* dosage.route = $edqm#20053000 "Oral use"
 
 // ====================================================== MEDICATIONS ======================================================
 // "bictegravir/emtricitabine/tenofovir alafenamide"
