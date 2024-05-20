@@ -44,6 +44,12 @@ Will the baby born in the journey? - Stay until the end
 * entry[=].resource = alicia-med-stat-2-himss
 
 
+* entry[+].fullUrl = "https://myserver.org/AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16-himss" 
+* entry[=].resource = cb6e84fa-4302-4569-ac1c-6b1b32507d16-himss
+* entry[+].fullUrl = "https://myserver.org/AllergyIntolerance/1dff4474-fa08-4f45-8260-dbb23094bf05-himss" 
+* entry[=].resource = 1dff4474-fa08-4f45-8260-dbb23094bf05-himss
+
+
 
 * entry[+].fullUrl = "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50-himss" 
 * entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92e50-himss
@@ -62,13 +68,11 @@ Usage: #inline
 Description: "Example of International Patient Summary for Alicia HIMSS"
 * id = "gravitate-Alicia"
 * status = #final
-* text.div = """<div xmlns="http://www.w3.org/1999/xhtml"><b>Id:</b> gravitate-alicia<br/><b>status:</b> final<br/><b>Type:</b> Patient summary Document<br/><b>Subject:</b> alicia Gravitate<br/><b>Sections:</b> <br/><ul><li><b>Title:</b> Problem List<br/><b>Code:</b> Problem list Reported (11450-4) </li><br/><ul><li><b>Entry:</b> <a href="Condition-alicia-cond-1.html">HIV</a> </li><br/><li><b>Entry:</b> <a href="Condition-alicia-cond-2.html">Trigeminal neuralgia</a> </li><br/><li><b>Entry:</b> <a href="Condition-alicia-cond-3.html">Depression</a> </li><br/><li><b>Entry:</b> <a href="Condition-alicia-cond-4.html">Overweight</a> </li></ul><li><b>Title:</b> Medication Summary<br/><b>Code:</b> Hx of Medication use (10160-0) </li><br/><ul><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-1.html">BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-2.html">Calcium/Vit D</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-3.html">Folic Acid + Cyanocobalamin + Iodur 1 t QD</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-4.html">Carbamazepine  1 t TID</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-5.html">Orlistat 1 cp TID</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-6.html">St. John’s Wort 2 cp BID</a> </li><br/><li><b>Entry:</b> <a href="MedicationStatement-alicia-med-stat-7.html">Collagen and magnesium supplements</a> </li><br/></ul></ul></div>"""
-* text.status = #generated
 * type = $loinc#60591-5 "Patient summary Document"
-* subject = Reference(alicia-patient-himss) "Alicia Gravitate"
+* subject = Reference(alicia-patient-himss) "Alicia HIMSS"
 * date = "2018-07-10T15:22:00+02:00"
 * author = Reference(alicia-pract-himss) "Dr. Walter Waltz"
-* title = "Patient Summary (Alicia Gravitate)"
+* title = "Patient Summary (Alicia HIMSS)"
 * confidentiality = #N
 
 * section[0].title = "Allergies and Intolerances"
@@ -105,7 +109,7 @@ Usage: #inline
 
 
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
-* identifier[=].value = "alicia-1"
+* identifier[=].value = "alicia-1-himss"
 * active = true
 * name.family = "HIMSS"
 * name.given = "Alicia"
