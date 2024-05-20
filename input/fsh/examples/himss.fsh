@@ -24,58 +24,34 @@ Will the baby born in the journey? - Stay until the end
 * identifier.value = "alicia-ips-himss"
 * type = #document
 * timestamp = "2024-05-20T09:22:00+02:00"
-* entry[0].fullUrl = "https://myserver.org/Composition/alicia-comp" // Composition
-* entry[=].resource = alicia-comp
-* entry[+].fullUrl = "https://myserver.org/Patient/alicia-patient" // Patient
-* entry[=].resource = alicia-patient
-* entry[+].fullUrl = "https://myserver.org/Practitioner/alicia-pract" // Practictioner
-* entry[=].resource = alicia-pract
+* entry[0].fullUrl = "https://myserver.org/Composition/alicia-comp-himss" // Composition
+* entry[=].resource = alicia-comp-himss
+* entry[+].fullUrl = "https://myserver.org/Patient/alicia-patient-himss" // Patient
+* entry[=].resource = alicia-patient-himss
+* entry[+].fullUrl = "https://myserver.org/Practitioner/alicia-pract-himss" // Practictioner
+* entry[=].resource = alicia-pract-himss
 
-* entry[+].fullUrl = "https://myserver.org/Condition/alicia-cond-1" // Condition 2
-* entry[=].resource = alicia-cond-1
-* entry[+].fullUrl = "https://myserver.org/Condition/alicia-cond-2" // Condition 2
-* entry[=].resource = alicia-cond-2
-* entry[+].fullUrl = "https://myserver.org/Condition/alicia-cond-3" // Condition 2
-* entry[=].resource = alicia-cond-3
-* entry[+].fullUrl = "https://myserver.org/Condition/alicia-cond-4" // Condition 2
-* entry[=].resource = alicia-cond-4
+* entry[+].fullUrl = "https://myserver.org/Condition/alicia-cond-1-himss" // Condition 2
+* entry[=].resource = alicia-cond-1-himss
+* entry[+].fullUrl = "https://myserver.org/Condition/alicia-cond-2-himss" // Condition 2
+* entry[=].resource = alicia-cond-2-himss
 
 
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-1" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-* entry[=].resource = alicia-med-stat-1
-//* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-2" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-//* entry[=].resource = alicia-med-stat-2
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-3" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = alicia-med-stat-3
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-4" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = alicia-med-stat-4
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-5" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = alicia-med-stat-5
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-6" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = alicia-med-stat-6
 
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-8" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = alicia-med-stat-8
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-1-himss" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[=].resource = alicia-med-stat-1-himss
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-2-himss" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[=].resource = alicia-med-stat-2-himss
 
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367" 
-* entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda78367
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda79261"
-* entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda79261
+* entry[+].fullUrl = "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92e50-himss" 
+* entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92e50-himss
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda7785h" 
-* entry[=].resource = 6f4151e9-91f6-4f1e-adc3-fb94dda7785h
+* entry[+].fullUrl = "https://myserver.org/Medication/de131e15-ed13-4b31-b38c-3204a84d99c5-himss"
+* entry[=].resource = de131e15-ed13-4b31-b38c-3204a84d99c5-himss
 
 
-* entry[+].fullUrl = "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99" 
-* entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92i99
-
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356" 
-* entry[=].resource =  6f4151e9-91f6-4f1e-adc3-fb94dda78356
-
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333" 
-* entry[=].resource =   6f4151e9-91f6-4f1e-adc3-fb94dda78333
 
 
 // ====================================================== COMPOSITION ======================================================
