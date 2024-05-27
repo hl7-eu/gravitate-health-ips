@@ -195,6 +195,21 @@
               {% if obs.valueQuantity %}
                 <b>Result:</b>
                 {{ obs.valueQuantity.value }}  {{obs.valueQuantity.unit}} <br/>{% endif %}
+                {% if obs.component %}
+                  <b>Result:</b>
+
+                  {% for comp in obs.component %}
+                    {% if comp.valueInteger %}
+                      {{ comp.code.text }} || {{comp.valueInteger}} <br/>{% endif %}
+                      {% if comp.valueQuantity %}
+                        <br/>
+                      {{ comp.code.text }} ||{{ comp.valueQuantity.value }}  {{comp.valueQuantity.unit}} <br/>{% endif %}
+                    
+                    {% endfor %}
+
+              {% endif %}
+
+                
               </div>
       
             {% endfor %}
@@ -230,6 +245,20 @@
               {% if obs.valueQuantity %}
                 <b>Result:</b>
                 {{ obs.valueQuantity.value }}  {{obs.valueQuantity.unit}} <br/>{% endif %}
+                {% if obs.component %}
+                  <b>Result:</b>
+
+                  {% for comp in obs.component %}
+                    {% if comp.valueInteger %}
+                      {{ comp.code.text }} || {{comp.valueInteger}} <br/>{% endif %}
+                      {% if comp.valueQuantity %}
+                        <br/>
+                      {{ comp.code.text }} ||{{ comp.valueQuantity.value }}  {{comp.valueQuantity.unit}} <br/>{% endif %}
+                    
+                    {% endfor %}
+
+            {% endif %}
+                
               </div>
       
             {% endfor %}
@@ -265,6 +294,21 @@
               {% if obs.valueQuantity %}
                 <b>Result:</b>
                 {{ obs.valueQuantity.value }}  {{obs.valueQuantity.unit}} <br/>{% endif %}
+                {% if obs.component %}
+                  <b>Result:</b>
+
+            {% for comp in obs.component %}
+              {% if comp.valueInteger %}
+                {{ comp.code.text }} || {{comp.valueInteger}} <br/>{% endif %}
+                {% if comp.valueQuantity %}
+                  <br/>
+                {{ comp.code.text }} ||{{ comp.valueQuantity.value }}  {{comp.valueQuantity.unit}} <br/>{% endif %}
+              
+              {% endfor %}
+
+            {% endif %}
+
+                
               </div>
       
             {% endfor %}
