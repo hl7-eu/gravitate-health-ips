@@ -110,6 +110,8 @@ Usage: #inline
 
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier[=].value = "alicia-1-himss"
+* identifier[+].system = "keycloak-id"
+* identifier[=].value = "20d6df9e-6ba9-4654-9e41-a8fc491f8e8b"
 * active = true
 * name.family = "HIMSS"
 * name.given = "Alicia"
@@ -197,6 +199,16 @@ Usage: #inline
 * subject = Reference(alicia-patient-himss) "Alicia HIMSS"
 * dosage.route = $edqm#20053000 "Oral use"
 
+Instance: alicia-med-stat-3-himss
+InstanceOf: MedicationStatement
+Usage: #inline
+
+* status = #active
+* medicationReference = Reference(ibuprofen-himss) "Metformin 500 mg Tablet"
+* subject = Reference(alicia-patient-himss) "Alicia HIMSS"
+* dosage.route = $edqm#20053000 "Oral use"
+
+
 // ====================================================== MEDICATIONS ======================================================
 // "bictegravir/emtricitabine/tenofovir alafenamide"
 Instance: de131e15-ed13-4b31-b38c-3204a84d99c5-himss
@@ -237,3 +249,22 @@ Usage: #inline
 * ingredient.strength.denominator.system = $ucum
 * ingredient.strength.denominator.code = #{tablet}
 
+Instance: ibuprofen-himss
+InstanceOf: Medication
+Usage: #inline
+
+
+* code.coding[0] = $spor-man#xxx ""
+* code.coding[+] = $phpid#xxxx ""
+
+* form = $edqm#10219000 "Tablet"
+* ingredient.itemCodeableConcept = $unii#WK2XYI10QM "IBUPROFEN"
+* ingredient.itemCodeableConcept.text = "IBUPROFEN"
+* ingredient.strength.numerator.value = 600
+* ingredient.strength.numerator.unit = "mg"
+* ingredient.strength.numerator.system = $ucum
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.unit = "Tablet"
+* ingredient.strength.denominator.system = $ucum
+* ingredient.strength.denominator.code = #{tablet}
