@@ -63,7 +63,8 @@ Will the baby born in the journey? - Stay until the end
 * entry[=].resource = alicia-med-stat-1-himss
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-2-himss" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
 * entry[=].resource = alicia-med-stat-2-himss
-
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-3-himss" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[=].resource = alicia-med-stat-3-himss
 
 * entry[+].fullUrl = "https://myserver.org/AllergyIntolerance/cb6e84fa-4302-4569-ac1c-6b1b32507d16-himss" 
 * entry[=].resource = cb6e84fa-4302-4569-ac1c-6b1b32507d16-himss
