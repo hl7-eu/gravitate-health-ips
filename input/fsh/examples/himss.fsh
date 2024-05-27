@@ -210,7 +210,7 @@ Description: "Example of International Patient Summary for Alicia HIMSS"
 * section[=].entry[+] = Reference(alicia-observation-16)
 
 
-// ==================================================== VITAL SIGNS
+// ==================================================== Social history
 
 * section[+].title = "Social history Narrative"
 * section[=].code = $loinc#29762-2 "Social history Narrative"
@@ -218,6 +218,15 @@ Description: "Example of International Patient Summary for Alicia HIMSS"
 * section[=].text.status = #additional
 
 * section[=].entry[+] = Reference(alicia-observation-18)
+
+
+// ======== pregnancy
+* section[+].title = "Pregnancy History"
+* section[=].code = $loinc#10162-6 "Pregnancies Hx"
+* section[=].text.div = "<div>Social history Narrative</div>"
+* section[=].text.status = #additional
+
+* section[=].entry[0] = Reference(alicia-preg-status) "Pregrancy Status"
 
 
 // ====================================================== PATIENT ======================================================
@@ -390,6 +399,18 @@ Usage: #inline
 * ingredient.strength.denominator.system = $ucum
 * ingredient.strength.denominator.code = #{tablet}
 
+
+
+
+// ====================================================== "Pregnancy"
+Instance: alicia-preg-status
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* code = http://loinc.org#82810-3 "Pregnancy status"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd1)
+* effectiveDateTime = "2024-01-10"
+* valueCodeableConcept = http://loinc.org#LA15173-0 "Pregnant"
 
 // ====================================================== Observations ======================================================
 
