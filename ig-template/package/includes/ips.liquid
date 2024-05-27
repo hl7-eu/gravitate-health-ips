@@ -168,4 +168,34 @@
   {% endif %}
 
 
+  {% if sec.title == "Relevant diagnostic tests &/or laboratory data" %}
+    {% assign obsr = bundle.entry | where: "resource.resourceType", "Observation" %}
+    <div class="results block">
+
+
+
+          {% assign obs = obsr.resource %}
+
+
+            <b>Code:</b>
+            {{ obs.code.text }} <br/>
+
+
+          {% if obs.status %}
+            <b>status:</b>
+            {{ obs.status }} <br/>{% endif %}
+
+            {% if obs.issued %}
+              <b>issued:</b>
+              {{ obs.issued }} <br/>{% endif %}
+          
+              {% if obs.valueQuantity %}
+                <b>Result:</b>
+                {{ obs.valueQuantity.value }} " " {{obs.valueQuantity.unit}} <br/>{% endif %}
+          
+                
+    </div>
+  {% endif %}
+
+
 {% endfor %}
