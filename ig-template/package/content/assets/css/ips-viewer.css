@@ -44,12 +44,45 @@ ul {
   
   }
 
+  .diagnostic {
+    
+    background: #e5cffa;
+  
+  }
+
   .results {
     
     background: #d6aeff;
   
   }
 
+  .vs {
+    
+    background: #ffaed4;
+  
+  }
+  .vital {
+    
+    background: #fbdcea;
+  
+  }
+
+
+
+
+  .socialhistory {
+    
+    background: #ffdfae;
+  
+  }
+  
+  .socialhistoryitem {
+    
+    background: #f7ecdc;
+  
+  }
+
+  
   .patient {
 
     background: #f1e2f5;

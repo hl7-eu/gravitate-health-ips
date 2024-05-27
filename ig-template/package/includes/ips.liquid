@@ -37,8 +37,7 @@
 
 </div>
 <br/>
-<h3>Sections:</h3>
-<br/>
+<h3>Sections</h3>
 
 
 {% for sec in composition.section %}
@@ -169,14 +168,18 @@
 
 
   {% if sec.title == "Relevant diagnostic tests &/or laboratory data" %}
-    {% assign obsr = bundle.entry | where: "resource.resourceType", "Observation" %}
+   
     <div class="results block">
 
+    {% for obsrid in sec.entry %}
+      
+      {% assign obsid = obsrid.reference | replace: 'Observation/', '' %}
+
+      {% assign obsr = bundle.entry | where: "resource.id", obsid | first %}
 
 
           {% assign obs = obsr.resource %}
-
-
+          <div class="diagnostic indent block">
             <b>Code:</b>
             {{ obs.code.text }} <br/>
 
@@ -191,10 +194,81 @@
           
               {% if obs.valueQuantity %}
                 <b>Result:</b>
-                {{ obs.valueQuantity.value }} " " {{obs.valueQuantity.unit}} <br/>{% endif %}
+                {{ obs.valueQuantity.value }}  {{obs.valueQuantity.unit}} <br/>{% endif %}
+              </div>
+      
+            {% endfor %}
+          </div>
+  {% endif %}
+
+
+  {% if sec.title == "Vital signs" %}
+   
+    <div class="vs block">
+
+    {% for obsrid in sec.entry %}
+      
+      {% assign obsid = obsrid.reference | replace: 'Observation/', '' %}
+
+      {% assign obsr = bundle.entry | where: "resource.id", obsid | first %}
+
+
+          {% assign obs = obsr.resource %}
+          <div class="vital indent block">
+            <b>Code:</b>
+            {{ obs.code.text }} <br/>
+
+
+          {% if obs.status %}
+            <b>status:</b>
+            {{ obs.status }} <br/>{% endif %}
+
+            {% if obs.issued %}
+              <b>issued:</b>
+              {{ obs.issued }} <br/>{% endif %}
           
-                
-    </div>
+              {% if obs.valueQuantity %}
+                <b>Result:</b>
+                {{ obs.valueQuantity.value }}  {{obs.valueQuantity.unit}} <br/>{% endif %}
+              </div>
+      
+            {% endfor %}
+          </div>
+  {% endif %}
+
+
+  {% if sec.title == "Social history Narrative" %}
+  
+    <div class="socialhistory block">
+
+    {% for obsrid in sec.entry %}
+      
+      {% assign obsid = obsrid.reference | replace: 'Observation/', '' %}
+
+      {% assign obsr = bundle.entry | where: "resource.id", obsid | first %}
+
+
+          {% assign obs = obsr.resource %}
+          <div class="socialhistoryitem indent block">
+            <b>Code:</b>
+            {{ obs.code.text }} <br/>
+
+
+          {% if obs.status %}
+            <b>status:</b>
+            {{ obs.status }} <br/>{% endif %}
+
+            {% if obs.issued %}
+              <b>issued:</b>
+              {{ obs.issued }} <br/>{% endif %}
+          
+              {% if obs.valueQuantity %}
+                <b>Result:</b>
+                {{ obs.valueQuantity.value }}  {{obs.valueQuantity.unit}} <br/>{% endif %}
+              </div>
+      
+            {% endfor %}
+          </div>
   {% endif %}
 
 

@@ -335,7 +335,7 @@ InstanceOf: MedicationStatement
 Usage: #inline
 
 * status = #active
-* medicationReference = Reference(ibuprofen-himss) "Metformin 500 mg Tablet"
+* medicationReference = Reference(ibuprofen-himss) "Ibuprofen 600 mg Tablet"
 * subject = Reference(alicia-patient-himss) "Alicia HIMSS"
 * dosage.route = $edqm#20053000 "Oral use"
 
