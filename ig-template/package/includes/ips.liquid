@@ -172,7 +172,7 @@
     <div class="results block">
 
     {% for obsrid in sec.entry %}
-      
+      {% if  obsrid.reference contains "Observation" %}
       {% assign obsid = obsrid.reference | replace: 'Observation/', '' %}
 
       {% assign obsr = bundle.entry | where: "resource.id", obsid | first %}
@@ -180,21 +180,21 @@
 
           {% assign obs = obsr.resource %}
           <div class="diagnostic indent block">
-            <b>Code:</b>
+            <b>Observation:</b>
             {{ obs.code.text }} <br/>
 
 
           {% if obs.status %}
-            <b>status:</b>
+            <b>Status:</b>
             {{ obs.status }} <br/>{% endif %}
 
             {% if obs.issued %}
-              <b>issued:</b>
+              <b>Issued:</b>
               {{ obs.issued }} <br/>{% endif %}
           
               {% if obs.valueQuantity %}
                 <b>Result:</b>
-                {{ obs.valueQuantity.value }}  {{obs.valueQuantity.unit}} <br/>{% endif %}
+              {{ obs.valueQuantity.value }}  {{obs.valueQuantity.unit}} {% if obs.interpretation[0].coding[0].display %} ({{obs.interpretation[0].coding[0].display}}){% endif %} {% if obs.referenceRange[0].low %} [{{obs.referenceRange[0].low.value}} {{obs.referenceRange[0].low.unit}}-{{obs.referenceRange[0].high.value}} {{obs.referenceRange[0].high.unit}}]{% endif %}<br/>{% endif %}
                 {% if obs.component %}
                   <b>Result:</b>
 
@@ -211,7 +211,36 @@
 
                 
               </div>
-      
+            {% endif %}
+
+            {% if  obsrid.reference contains "DocumentReference" %}
+
+              {% assign obsid = obsrid.reference | replace: 'DocumentReference/', '' %}
+
+              {% assign obsr = bundle.entry | where: "resource.id", obsid | first %}
+        
+        
+                  {% assign obs = obsr.resource %}
+                  <div class="diagnostic indent block">
+                    <b>Document Reference:</b>
+                    {{ obs.category[0].text }} <br/>
+        
+        
+                  {% if obs.status %}
+                    <b>Status:</b>
+                    {{ obs.status }} <br/>{% endif %}
+        
+                    {% if obs.date %}
+                      <b>Date:</b>
+                      {{ obs.date }} <br/>{% endif %}
+                  
+                
+        
+                        
+                      </div>
+
+            {% endif %}
+
             {% endfor %}
           </div>
   {% endif %}
@@ -235,16 +264,16 @@
 
 
           {% if obs.status %}
-            <b>status:</b>
+            <b>Status:</b>
             {{ obs.status }} <br/>{% endif %}
 
             {% if obs.issued %}
-              <b>issued:</b>
+              <b>Issued:</b>
               {{ obs.issued }} <br/>{% endif %}
           
               {% if obs.valueQuantity %}
                 <b>Result:</b>
-                {{ obs.valueQuantity.value }}  {{obs.valueQuantity.unit}} <br/>{% endif %}
+              {{ obs.valueQuantity.value }}  {{obs.valueQuantity.unit}} {% if obs.interpretation[0].coding[0].display %} ({{obs.interpretation[0].coding[0].display}}){% endif %} {% if obs.referenceRange[0].low %} [{{obs.referenceRange[0].low.value}} {{obs.referenceRange[0].low.unit}}-{{obs.referenceRange[0].high.value}} {{obs.referenceRange[0].high.unit}}]{% endif %}<br/>{% endif %}
                 {% if obs.component %}
                   <b>Result:</b>
 
@@ -293,15 +322,17 @@
           
               {% if obs.valueQuantity %}
                 <b>Result:</b>
-                {{ obs.valueQuantity.value }}  {{obs.valueQuantity.unit}} <br/>{% endif %}
+              {{ obs.valueQuantity.value }}  {{obs.valueQuantity.unit}} {% if obs.interpretation[0].coding[0].display %} ({{obs.interpretation[0].coding[0].display}}){% endif %} {% if obs.referenceRange[0].low %} [{{obs.referenceRange[0].low.value}} {{obs.referenceRange[0].low.unit}}-{{obs.referenceRange[0].high.value}} {{obs.referenceRange[0].high.unit}}]{% endif %}<br/>{% endif %}
                 {% if obs.component %}
                   <b>Result:</b>
 
             {% for comp in obs.component %}
+              <br/>
+
               {% if comp.valueInteger %}
                 {{ comp.code.text }} || {{comp.valueInteger}} <br/>{% endif %}
                 {% if comp.valueQuantity %}
-                  <br/>
+                  
                 {{ comp.code.text }} || {{ comp.valueQuantity.value }}  {{comp.valueQuantity.unit}} {% endif %}
               
               {% endfor %}
