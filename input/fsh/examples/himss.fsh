@@ -400,6 +400,27 @@ Usage: #inline
 * ingredient.strength.denominator.system = $ucum
 * ingredient.strength.denominator.code = #{tablet}
 
+Instance: novorapid-flexpen-himss
+InstanceOf: Medication
+Usage: #inline
+
+
+* code.coding[0] = $spor-man#xxx ""
+* code.coding[+] = $phpid#xxxx ""
+
+* form = $edqm#10219000 "Tablet"
+* ingredient.itemCodeableConcept = $unii#WK2XYI10QM "IBUPROFEN"
+* ingredient.itemCodeableConcept.text = "IBUPROFEN"
+* ingredient.strength.numerator.value = 600
+* ingredient.strength.numerator.unit = "mg"
+* ingredient.strength.numerator.system = $ucum
+* ingredient.strength.numerator.code = #mg
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.unit = "Tablet"
+* ingredient.strength.denominator.system = $ucum
+* ingredient.strength.denominator.code = #{tablet}
+
+
 
 
 
