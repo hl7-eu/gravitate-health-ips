@@ -67,7 +67,9 @@ ul {
   
   }
 
-
+  .nonumbers::before {
+    content: "" !important;
+  }
 
 
   .socialhistory {

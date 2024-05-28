@@ -36,11 +36,11 @@
     {{ pat.birthDate }}<br/>{% endif %}
 
 </div>
-<h3>Sections</h3>
+<h3 class="nonumbers">Sections</h3>
 
 
 {% for sec in composition.section %}
-  <h4>{{ sec.title }}</h4>
+  <h4 class="nonumbers">{{ sec.title }}</h4>
 
   {% if sec.title == "Allergies and Intolerances" %}
     {% assign allergies = bundle.entry | where: "resource.resourceType", "AllergyIntolerance" %}
