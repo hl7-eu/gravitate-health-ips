@@ -370,7 +370,7 @@ InstanceOf: Medication
 Usage: #inline
 
 
-* code.coding[0] = $spor-man#himss-metformin "Metformin 500 mg tablets"
+* code.coding[0] = https://www.gravitatehealth.eu/sid/doc#himss-metformin "Metformin 500 mg tablets"
 * code.coding[+] = $phpid#himss1 "himss-1"
 
 * form = $edqm#10219000 "Tablet"
@@ -390,7 +390,7 @@ InstanceOf: Medication
 Usage: #inline
 
 
-* code.coding[0] = $spor-man#himss-ibuprofen "Ibuprofen 600 mg Tablet"
+* code.coding[0] = https://www.gravitatehealth.eu/sid/doc#himss-ibuprofen "Ibuprofen 600 mg Tablet"
 * code.coding[+] = $phpid#himss2 "himss-2"
 
 * form = $edqm#10219000 "Tablet"
@@ -410,7 +410,7 @@ InstanceOf: Medication
 Usage: #inline
 
 
-* code.coding[0] = $spor-man#xxx ""
+* code.coding[0] = https://www.gravitatehealth.eu/sid/doc#himss-novorapid "Novorapid Flexpen 100 units/ml solution for injection in pre-filled pen"
 * code.coding[+] = $atc#A10AD04 "insulin lispro"
 * form = $edqm#11202000 "Suspension for injection"
 * ingredient.itemCodeableConcept = $unii#GFX7QIS1II "insulin lispro"
