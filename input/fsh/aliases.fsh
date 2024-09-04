@@ -23,6 +23,7 @@ Alias: $phpid = https://www.who-umc.org/phpid
 Alias: $gs1 = https://www.gs1.org/gtin
 Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 
+Alias: $list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-reason
 
 
 // =========== Extensions =======
