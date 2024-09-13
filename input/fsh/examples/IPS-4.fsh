@@ -53,8 +53,8 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[=].resource = bh
 
 
-* entry[+].fullUrl = "https://myserver.org/Observation/bp" // BP (Observation)
-* entry[=].resource = bp
+* entry[+].fullUrl = "https://myserver.org/Observation/ips4-bp" // BP (Observation)
+* entry[=].resource = ips4-bp
 
 * entry[+].fullUrl = "https://myserver.org/Observation/glucose" // Glucose (Observation)
 * entry[=].resource = glucose
@@ -101,7 +101,7 @@ Usage: #inline
 * section[=].code = $loinc#8716-3 "Vital Signs"
 * section[=].entry[+] = Reference(bw) "Body weight"
 * section[=].entry[+] = Reference(bh) "Body height"
-* section[=].entry[+] = Reference(bp) "Blood pressure"
+* section[=].entry[+] = Reference(ips4-bp) "Blood pressure"
 
 
 // ======== Results
@@ -343,7 +343,7 @@ Usage: #inline
 
 * valueQuantity = 170 'cm'
 
-Instance: bp
+Instance: ips4-bp
 InstanceOf: Observation
 Usage: #inline
 

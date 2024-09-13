@@ -39,6 +39,8 @@ Will the baby born in the journey? - Stay until the end
 
 */
 
+//      "diagnostic": "HAPI-1094: Resource Observation/alicia-observation-16 not found, specified in path: Composition.section.entry"
+//      "diagnostic": "HAPI-1094: Resource Observation/bp not found, specified in path: Composition.section.entry"
 
 
 * identifier.system = "https://www.gravitatehealth.eu/sid/doc"
@@ -86,18 +88,25 @@ Will the baby born in the journey? - Stay until the end
 
 * entry[+].fullUrl = "https://myserver.org/Observation/alicia-observation-1"
 * entry[=].resource = alicia-observation-1
+
 * entry[+].fullUrl = "https://myserver.org/Observation/alicia-observation-11"
 * entry[=].resource = alicia-observation-11
+
 * entry[+].fullUrl = "https://myserver.org/Observation/alicia-observation-12"
 * entry[=].resource = alicia-observation-12
+
 * entry[+].fullUrl = "https://myserver.org/Observation/alicia-observation-13"
 * entry[=].resource = alicia-observation-13
+
 * entry[+].fullUrl = "https://myserver.org/Observation/alicia-observation-14"
 * entry[=].resource = alicia-observation-14
+
 * entry[+].fullUrl = "https://myserver.org/Observation/alicia-observation-15"
 * entry[=].resource = alicia-observation-15
+
 * entry[+].fullUrl = "https://myserver.org/Observation/alicia-observation-16"
 * entry[=].resource = alicia-observation-16
+
 * entry[+].fullUrl = "https://myserver.org/Observation/alicia-observation-17"
 * entry[=].resource = alicia-observation-17
 * entry[+].fullUrl = "https://myserver.org/Observation/alicia-observation-18"
