@@ -87,7 +87,7 @@ Usage: #inline
 	Maria Gravitate, Female, 75 years old (1946-05-05)
 </div>"
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
-* identifier[=].value = "maria-1"
+* identifier[=].value = "ips-1"
 * active = true
 * name.family = "Gravitate"
 * name.given = "IPS"
