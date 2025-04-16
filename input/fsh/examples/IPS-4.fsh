@@ -33,6 +33,9 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[=].resource = f6cb1218-f81c-4338-80d8-3c10910f78f2
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/f26084c9-b1c8-46d9-acb2-1d400ade87b2" // Medication Statement 3
 * entry[=].resource = f26084c9-b1c8-46d9-acb2-1d400ade87b2
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/citalopram-statement" // Medication Statement 3
+* entry[=].resource = citalopram-statement
+
 
 * entry[+].fullUrl = "https://myserver.org/Medication/b50ae644-e0b7-4007-809f-26f493cbe362" // Medication 1
 * entry[=].resource = b50ae644-e0b7-4007-809f-26f493cbe362
@@ -40,6 +43,8 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[=].resource = de131e15-ed13-4b31-b38c-3204a84d99c2
 * entry[+].fullUrl = "https://myserver.org/Medication/9ac3356c-4ea4-4814-84c3-235484f2ef12" // Medication 3
 * entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2ef12
+* entry[+].fullUrl = "https://myserver.org/Medication/citalopram" // Medication 3
+* entry[=].resource = citalopram
 
 
 * entry[+].fullUrl = "https://myserver.org/Observation/e06e43a1-38d4-468f-8c35-f7f12da91062" // Pregnancy (Observation)
@@ -59,8 +64,11 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[+].fullUrl = "https://myserver.org/Observation/glucose" // Glucose (Observation)
 * entry[=].resource = glucose
 
+* entry[+].fullUrl = "https://myserver.org/Observation/egfr" // egfr (Observation)
+* entry[=].resource = egfr
 
-
+* entry[+].fullUrl = "https://myserver.org/Observation/potassium" // potassium (Observation)
+* entry[=].resource = potassium
 
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73579
@@ -95,6 +103,7 @@ Usage: #inline
 * section[=].entry[0] = Reference(29074ca4-efcb-4ff4-8446-feed2399a892) "Remsima 100 mg powder for concentrate for solution for infusion"
 * section[=].entry[+] = Reference(f6cb1218-f81c-4338-80d8-3c10910f78f2) "Irbesartan 75 mg Tablet"
 * section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade87b2) "Pentasa Slow Release Tablets 1g"
+* section[=].entry[+] = Reference(citalopram-statement) "citalopram statement"
 
 // ======== Vital Signs
 * section[+].title = "Vital Signs"
@@ -102,6 +111,8 @@ Usage: #inline
 * section[=].entry[+] = Reference(bw) "Body weight"
 * section[=].entry[+] = Reference(bh) "Body height"
 * section[=].entry[+] = Reference(ips4-bp) "Blood pressure"
+* section[=].entry[+] = Reference(egfr) "eGFR"
+* section[=].entry[+] = Reference(potassium) "potassium"
 
 
 // ======== Results
@@ -120,9 +131,12 @@ Usage: #inline
 Instance: c154158f-6a43-4ab7-8443-e7f4bf915dd2
 InstanceOf: Patient
 Usage: #inline
-* extension.extension.url = "code"
-* extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#NO "Norway"
-* extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+* extension[=].extension.url = "code"
+* extension[=].extension.valueCodeableConcept = urn:iso:std:iso:3166#NO "Norway"
+
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/individual-occupation"
+* extension[=].valueCodeableConcept = http://www.ilo.org/public/english/bureau/stat/isco#3421 "Athletes and sports players"
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier[=].value = "ips-4"
 * active = true
@@ -239,6 +253,13 @@ Usage: #inline
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
 * dosage.route = $edqm#20066000 "Subcutaneous use"
 
+Instance: citalopram-statement
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationReference = Reference(citalopram) "citalopram"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
+* dosage.route = $edqm#20066000 "Subcutaneous use"
 
 
 // ====== MEDICATIONS
@@ -297,6 +318,10 @@ Usage: #inline
 * ingredient.strength.denominator.system = $ucum
 * ingredient.strength.denominator.code = #ml
 
+Instance: citalopram
+InstanceOf: Medication
+Usage: #inline
+* code.coding[0] = $spor-man#204447
 
 
 
@@ -381,3 +406,34 @@ Usage: #inline
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "High"
 * referenceRange.low = 3.1 'mmol/L' "mmol/l"
 * referenceRange.high = 6.2 'mmol/L' "mmol/l"
+
+
+Instance: egfr
+InstanceOf: Observation
+Usage: #inline
+
+* status = #final
+
+* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+
+* code =  http://loinc.org#48643-1 "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M among black population"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
+
+* effectiveDateTime = "2013-04-02T09:30:10+01:00"
+
+* valueQuantity = 29 'mL/min/1.73m2' "mL/min/1.73m2"
+
+Instance: potassium
+InstanceOf: Observation
+Usage: #inline
+
+* status = #final
+
+* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+
+* code =  http://loinc.org#6298-4 "Potassium [Moles/volume] in Blood"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
+
+* effectiveDateTime = "2013-04-02T09:30:10+01:00"
+
+* valueQuantity = 2.5 'mmol/L' "mmol/L"

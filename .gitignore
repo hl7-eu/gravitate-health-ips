@@ -12,3 +12,5 @@ template
 .DS_Store
 .sdkmanrc
 .vscode/
+
+.DS_Store
