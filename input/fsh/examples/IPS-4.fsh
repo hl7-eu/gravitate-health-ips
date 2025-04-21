@@ -321,7 +321,7 @@ Usage: #inline
 Instance: citalopram
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#204447
+* code.coding[0] = $spor-man#204447 "citalopram"
 
 
 
