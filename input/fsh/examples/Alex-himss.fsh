@@ -5,7 +5,20 @@ Usage: #example
 Description: "Example of International Patient Summary for Alex Gravitate"
 /*
 Alex
-Age: 28 years.
+Age: 50 years.
+male
+
+He has been diagnosed with metabolic syndrome. He is active and travels a lot for his work
+
+Recently he has been diagnosed with prostate cancer at an early stage. 
+He needs to exchange his information with a lot of doctors that are not members of the same healthcare system, even internationally and where the healthcare providers have not the same level of digitalization
+
+
+While travelling he needs to get medication and check for interaction with the regular medication he takes. 
+He needs to share his medical record with several doctors that have not access to his medical history and files (IPS). He needs to grand consent to several doctor in the process for of his treatment.
+
+The patient arrives at the hospital and checks in using a self-service system, which issues a wristband and registers their information. This check-in process automatically sends admission data to the hospital systems. The medical team receives the treatment plan, including prescribed medications. 
+
 
 */
 
@@ -26,10 +39,10 @@ Age: 28 years.
 * entry[=].resource = Alex-cond-1
 * entry[+].fullUrl = "https://myserver.org/Condition/Alex-cond-2" // Condition 2
 * entry[=].resource = Alex-cond-2
-* entry[+].fullUrl = "https://myserver.org/Condition/Alex-cond-3" // Condition 2
-* entry[=].resource = Alex-cond-3
-* entry[+].fullUrl = "https://myserver.org/Condition/Alex-cond-4" // Condition 2
-* entry[=].resource = Alex-cond-4
+//* entry[+].fullUrl = "https://myserver.org/Condition/Alex-cond-3" // Condition 2
+//* entry[=].resource = Alex-cond-3
+//* entry[+].fullUrl = "https://myserver.org/Condition/Alex-cond-4" // Condition 2
+//* entry[=].resource = Alex-cond-4
 
 
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/Alex-med-stat-1" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
@@ -75,10 +88,10 @@ Description: "Example of International Patient Summary for Alex Gravitate"
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
 
-* section[=].entry[0] = Reference(Alex-cond-1) "Depression"
-* section[=].entry[+] = Reference(Alex-cond-2) "HIV" 
-* section[=].entry[+] = Reference(Alex-cond-3) "Trigeminal neuralgia" 
-* section[=].entry[+] = Reference(Alex-cond-4) "Overweight" 
+* section[=].entry[0] = Reference(Alex-cond-1) "Metabolic Syndrome"
+* section[=].entry[+] = Reference(Alex-cond-2) "Prostate Cancer" 
+//* section[=].entry[+] = Reference(Alex-cond-3) "" 
+//* section[=].entry[+] = Reference(Alex-cond-4) "" 
 
 // ====================================================== MEDICATIONS
 * section[+].title = "Medication Summary"
@@ -96,7 +109,7 @@ Instance: Alex-patient
 InstanceOf: Patient
 Usage: #inline
 * extension.extension.url = "code"
-* extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#ES "Spain"
+* extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#FR "France"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
 * text.status = #generated
 
@@ -118,12 +131,12 @@ Overweight
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier[=].value = "Alex-1"
 * identifier[+].system = "keycloak-id"
-* identifier[=].value = "31297ad1-cb3c-4138-a132-e64016170e1d"
+* identifier[=].value = "xxx"
 * active = true
 * name.family = "Gravitate"
 * name.given = "Alex"
 * gender = #female
-* birthDate = "1998-10-05" 
+* birthDate = "1975-10-05" 
 
 // ====================================================== Practitioner =========================================================
 Instance: Alex-pract
@@ -143,8 +156,8 @@ InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
-* code = $sct#35489007 "Depressive disorder (disorder)"
-* code.text = "Depressive disorder (disorder)"
+* code = $sct#237602007 "Metabolic syndrome X (disorder)"
+* code.text = "Metabolic syndrome X"
 * subject = Reference(Alex-patient) "Alex Gravitate"
 
 // --- HIV
@@ -153,12 +166,13 @@ InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
-* code = $sct#86406008 "Human immunodeficiency virus infection"
-* code.text = "Human immunodeficiency virus infection"
+* code = $sct#1259388006 "Primary carcinoma of prostate (disorder)"
+* code.text = "Primary carcinoma of prostate"
 * subject = Reference(Alex-patient) "Alex Gravitate"
 * onsetDateTime = "2018"
 * asserter = Reference(Alex-pract) "Dr. Walter Waltz"
 
+/*
 // --- Trigeminal neuralgia
 Instance: Alex-cond-3
 InstanceOf: Condition
@@ -185,7 +199,7 @@ Usage: #inline
 * subject = Reference(Alex-patient) "Alex Gravitate"
 * onsetDateTime = "2018"
 * asserter = Reference(Alex-pract) "Dr. Walter Waltz"
-
+*/
 // ====================================================== MEDICATION STATEMENTS ======================================================
 Instance: Alex-med-stat-1
 InstanceOf: MedicationStatement

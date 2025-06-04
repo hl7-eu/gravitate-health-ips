@@ -5,7 +5,31 @@ Usage: #example
 Description: "Example of International Patient Summary for Renee Gravitate"
 /*
 Renee
-Age: 28 years.
+Renée is a 75-year-old female person.
+
+Renée was diagnosed with aortic stenosis after experiencing gradual onset of dyspnea and fatigue, which progressed to angina and occasional syncope. 
+
+The patient is part of a cohort with a chronic disease: heart failure. 
+Clinical staff access a dashboard with aggregated health data and can view the patient’s detailed profile.
+
+
+After diagnosis, the patient is 
+enrolled in a home-based 
+Remote Patient Monitoring (RPM) 
+program. 
+Real-time data captured from medical devices in Renée’s home.
+All these data are added to the chronic disease dataset. 
+
+The patient experiences symptoms 
+such as dyspnea and fatigue, 
+which she reports through the 
+Gravitate-Health app. She then requests ambulance assistance directly via the application.
+During encounter, real-time data from the ambulance are linked to the patient’s profile.
+All collected information is integrated into the chronic disease dataset.
+Vital signs are transmitted into the medical record.
+
+
+
 
 */
 
@@ -26,10 +50,10 @@ Age: 28 years.
 * entry[=].resource = Renee-cond-1
 * entry[+].fullUrl = "https://myserver.org/Condition/Renee-cond-2" // Condition 2
 * entry[=].resource = Renee-cond-2
-* entry[+].fullUrl = "https://myserver.org/Condition/Renee-cond-3" // Condition 2
-* entry[=].resource = Renee-cond-3
-* entry[+].fullUrl = "https://myserver.org/Condition/Renee-cond-4" // Condition 2
-* entry[=].resource = Renee-cond-4
+//* entry[+].fullUrl = "https://myserver.org/Condition/Renee-cond-3" // Condition 2
+//* entry[=].resource = Renee-cond-3
+//* entry[+].fullUrl = "https://myserver.org/Condition/Renee-cond-4" // Condition 2
+//* entry[=].resource = Renee-cond-4
 
 
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-1" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
@@ -80,8 +104,8 @@ Description: "Example of International Patient Summary for Renee Gravitate"
 
 * section[=].entry[0] = Reference(Renee-cond-1) "Depression"
 * section[=].entry[+] = Reference(Renee-cond-2) "HIV" 
-* section[=].entry[+] = Reference(Renee-cond-3) "Trigeminal neuralgia" 
-* section[=].entry[+] = Reference(Renee-cond-4) "Overweight" 
+//* section[=].entry[+] = Reference(Renee-cond-3) "Trigeminal neuralgia" 
+//* section[=].entry[+] = Reference(Renee-cond-4) "Overweight" 
 
 // ====================================================== MEDICATIONS
 * section[+].title = "Medication Summary"
@@ -99,7 +123,7 @@ Instance: Renee-patient
 InstanceOf: Patient
 Usage: #inline
 * extension.extension.url = "code"
-* extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#ES "Spain"
+* extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#FR "France"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
 * text.status = #generated
 
@@ -121,12 +145,12 @@ Overweight
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier[=].value = "Renee-1"
 * identifier[+].system = "keycloak-id"
-* identifier[=].value = "31297ad1-cb3c-4138-a132-e64016170e1d"
+* identifier[=].value = "xx"
 * active = true
 * name.family = "Gravitate"
 * name.given = "Renee"
 * gender = #female
-* birthDate = "1998-10-05" 
+* birthDate = "1950-10-05" 
 
 // ====================================================== Practitioner =========================================================
 Instance: Renee-pract
@@ -140,28 +164,29 @@ Usage: #inline
 // ====================================================== CONDITIONS ======================================================
 
 
-// --- Depression
+// --- Aortic valve stenosis (disorder)
 Instance: Renee-cond-1
 InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
-* code = $sct#35489007 "Depressive disorder (disorder)"
-* code.text = "Depressive disorder (disorder)"
+* code = $sct#60573004 "Aortic valve stenosis (disorder)"
+* code.text = "Aortic valve stenosis"
 * subject = Reference(Renee-patient) "Renee Gravitate"
 
-// --- HIV
+// --- Heart failure (disorder)
 Instance: Renee-cond-2
 InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
-* code = $sct#86406008 "Human immunodeficiency virus infection"
-* code.text = "Human immunodeficiency virus infection"
+* code = $sct#84114007 "Heart failure (disorder)"
+* code.text = "Heart failure"
 * subject = Reference(Renee-patient) "Renee Gravitate"
 * onsetDateTime = "2018"
 * asserter = Reference(Renee-pract) "Dr. Walter Waltz"
 
+/*
 // --- Trigeminal neuralgia
 Instance: Renee-cond-3
 InstanceOf: Condition
@@ -188,7 +213,7 @@ Usage: #inline
 * subject = Reference(Renee-patient) "Renee Gravitate"
 * onsetDateTime = "2018"
 * asserter = Reference(Renee-pract) "Dr. Walter Waltz"
-
+*/
 // ====================================================== MEDICATION STATEMENTS ======================================================
 Instance: Renee-med-stat-1
 InstanceOf: MedicationStatement
@@ -323,8 +348,6 @@ Usage: #inline
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
 * ingredient.strength.denominator.unit = "Tablet"
-
-
 
 
 //"Flucelvax"
