@@ -131,7 +131,7 @@ Overweight
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier[=].value = "Alex-1"
 * identifier[+].system = "keycloak-id"
-* identifier[=].value = "xxx"
+* identifier[=].value = "66dfc284-c19e-427b-914e-b3156bdc86d6"
 * active = true
 * name.family = "Gravitate"
 * name.given = "Alex"
