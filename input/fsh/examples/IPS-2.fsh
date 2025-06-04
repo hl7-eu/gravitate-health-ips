@@ -144,6 +144,7 @@ Usage: #inline
 * name.given = "IPS-2"
 * gender = #female
 * birthDate = "1946-05-05"
+* generalPractitioner = Reference(1ece89c5-fda3-4db9-ace6-decbe6c603d3)
 // == Practitioner ===
 Instance: 1ece89c5-fda3-4db9-ace6-decbe6c603d3
 InstanceOf: Practitioner
@@ -153,6 +154,8 @@ Usage: #inline
 * name.given = "IPS"
 * name.prefix = "Dr."
 
+* telecom.system = #email
+* telecom.value = "example@example.org"
 
 // == ALLERGIES ===
 
