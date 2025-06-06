@@ -28,7 +28,40 @@ During encounter, real-time data from the ambulance are linked to the patient’
 All collected information is integrated into the chronic disease dataset.
 Vital signs are transmitted into the medical record.
 
+. Aspirin 75-100 mg PO OD
+	
+Single antiplatelet therapy (SAPT) is guideline-supported before and after TAVR to prevent valve-thrombosis and atherothrombotic events. In the POPular-TAVI RCT, aspirin alone reduced bleeding without increasing stroke/MI compared with DAPT. 
+	
+Confirm no other indication for anticoagulation; hold only if proceduralists request. Check platelet count, ask about GI bleeding risk.
+	 
 
+2. Atorvastatin 40 mg PO nightly
+	
+High-intensity statins cut 90-day and 1-year mortality after TAVR and reduce peri-operative complications, beyond lipid lowering. 
+	
+Aim for LDL < 70 mg/dL. Monitor LFTs at baseline / 6–8 wk. Watch for myalgia, CK if symptomatic.
+	 
+
+3. Furosemide 20 mg PO AM (↑ PRN)
+	
+Loop diuretics relieve pulmonary congestion and orthopnoea, improving exercise tolerance; ~50 % of TAVR candidates need them. Use the lowest dose that keeps René euvolaemic. 
+	
+Preload dependence in severe AS means over-diuresis can precipitate syncope/renal drop. Daily weights, creatinine, BP, electrolytes.
+	 
+
+4. Ramipril 1.25 mg PO nightly (titrate q1-2 wk)
+	
+ACE-inhibition is now considered safe in severe AS; the RIAS RCT showed ramipril slowed LV-hypertrophy and was well-tolerated. Post-TAVR cohorts on ACEI/ARB have ↓ 2-year mortality.  
+	
+Start very low, uptitrate slowly with close BP checks (goal SBP < 140 mmHg but > 100 mmHg). Hold if creatinine rises > 30 % or K⁺ > 5.5 mmol/L.
+	 
+
+5. Bisoprolol 1.25 mg PO OD
+	
+Low-dose β-blockade can control exertional angina, rate-control AF and lessen valvulo-arterial impedance. Retrospective data show a 62 % reduction in all-cause mortality in symptomatic AS patients on β-blockers. 
+	
+Avoid if resting HR < 60 bpm, SBP < 100 mmHg, or moderate-severe AR. Start low, titrate slowly, reassess exercise tolerance and syncope.
+	
 
 
 */
@@ -39,7 +72,7 @@ Vital signs are transmitted into the medical record.
 * identifier.value = "Renee-ips-1"
 * type = #document
 * timestamp = "2025-06-04T09:22:00+02:00"
-* entry[0].fullUrl = "https://myserver.org/Composition/Renee-comp" // Composition
+* entry[+].fullUrl = "https://myserver.org/Composition/Renee-comp" // Composition
 * entry[=].resource = Renee-comp
 * entry[+].fullUrl = "https://myserver.org/Patient/Renee-patient" // Patient
 * entry[=].resource = Renee-patient
@@ -56,14 +89,16 @@ Vital signs are transmitted into the medical record.
 //* entry[=].resource = Renee-cond-4
 
 
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-1" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-1" // Medication Statement 1 - "Aspirin 75-100 mg PO OD"
 * entry[=].resource = Renee-med-stat-1
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-2" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-2" // Medication Statement 2 - "Atorvastatin 40 mg PO nightly"
 * entry[=].resource = Renee-med-stat-2
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-3" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-3" // Medication Statement 3 - "Furosemide 20 mg PO AM (↑ PRN)"
 * entry[=].resource = Renee-med-stat-3
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-4" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-4" // Medication Statement 4 - "Ramipril 1.25 mg PO nightly (titrate q1-2 wk)"
 * entry[=].resource = Renee-med-stat-4
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-5" // Medication Statement 5 - "Bisoprolol 1.25 mg PO OD"
+* entry[=].resource = Renee-med-stat-5
 
 
 
@@ -79,7 +114,8 @@ Vital signs are transmitted into the medical record.
 * entry[+].fullUrl = "https://myserver.org/Medication/renee-med-4" 
 * entry[=].resource = renee-med-4
 
-
+* entry[+].fullUrl = "https://myserver.org/Medication/renee-med-5" 
+* entry[=].resource = renee-med-5
 
 // ====================================================== COMPOSITION ======================================================
 Instance: Renee-comp
@@ -113,10 +149,13 @@ Description: "Example of International Patient Summary for Renee Gravitate"
 * section[=].text.div = "<div>Medication list Reported</div>"
 * section[=].text.status = #additional
 
-* section[=].entry[0] = Reference(Renee-med-stat-1) "BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD"
-* section[=].entry[+] = Reference(Renee-med-stat-2) "Folic Acid + Cyanocobalamin + Iodur 1 t QD"
-* section[=].entry[+] = Reference(Renee-med-stat-3) "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
-* section[=].entry[+] = Reference(Renee-med-stat-4) "Carbamazepine  1 t TID"
+* section[=].entry[0] = Reference(Renee-med-stat-1) "Aspirin 75-100 mg PO OD"
+* section[=].entry[+] = Reference(Renee-med-stat-2) "Atorvastatin 40 mg PO nightly"
+* section[=].entry[+] = Reference(Renee-med-stat-3) "Furosemide 20 mg PO AM (↑ PRN)"
+* section[=].entry[+] = Reference(Renee-med-stat-4) "Ramipril 1.25 mg PO nightly (titrate q1-2 wk)"
+* section[=].entry[+] = Reference(Renee-med-stat-5) "Bisoprolol 1.25 mg PO OD"
+
+
 
 // ====================================================== PATIENT ======================================================
 Instance: Renee-patient
@@ -125,24 +164,8 @@ Usage: #inline
 * extension.extension.url = "code"
 * extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#FR "France"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
-* text.status = #generated
 
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-Age: 28 years.
-I live with my boyfriend. 
-PhD Student
-
-Interests: 
-I love reading and walking outdoors with my dog. I also love art and photography. 
-
-
-Health Conditions:
-HIV (diagnosed with 25 years) 
-Trigeminal neuralgia
-Depression 
-Overweight
-</div>"
-* identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
+* identifier[+].system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier[=].value = "Renee-1"
 * identifier[+].system = "keycloak-id"
 * identifier[=].value = "c693b6c7-8a8f-471d-a57d-69b59c797771"
@@ -215,11 +238,12 @@ Usage: #inline
 * asserter = Reference(Renee-pract) "Dr. Walter Waltz"
 */
 // ====================================================== MEDICATION STATEMENTS ======================================================
+
 Instance: Renee-med-stat-1
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(renee-med-1) "BIKTARVY Bictegravir/Emtricitabine/Tenofovir Alafenamide 1 t QD"
+* medicationReference = Reference(renee-med-1) "Aspirin 75-100 mg"
 * subject = Reference(Renee-patient) "Renee Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -228,7 +252,7 @@ Instance: Renee-med-stat-2
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(renee-med-2) "Folic Acid + Cyanocobalamin + Iodur 1 t QD"
+* medicationReference = Reference(renee-med-2) "Atorvastatin 40 mg PO nightly"
 * subject = Reference(Renee-patient) "Renee Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -237,7 +261,7 @@ Instance: Renee-med-stat-3
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(renee-med-3) "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES"
+* medicationReference = Reference(renee-med-3) "Furosemide 20 mg PO AM (↑ PRN)"
 * subject = Reference(Renee-patient) "Renee Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -245,76 +269,45 @@ Instance: Renee-med-stat-4
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(renee-med-4) "Carbamazepine  1 t TID"
+* medicationReference = Reference(renee-med-4) "Ramipril 1.25 mg PO nightly (titrate q1-2 wk)"
 * subject = Reference(Renee-patient) "Renee Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
+Instance: Renee-med-stat-5
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationReference = Reference(renee-med-5) "Bisoprolol 1.25 mg PO OD"
+* subject = Reference(Renee-patient) "Renee Gravitate"
+* dosage.route = $edqm#20053000 "Oral use"
 
 // ====================================================== MEDICATIONS ======================================================
 // "bictegravir/emtricitabine/tenofovir alafenamide"
+
+
 Instance: renee-med-1
 InstanceOf: Medication
 Usage: #inline
 
-* code.coding[0] = $spor-man#EU/1/18/1289/001 "Biktarvy 30 mg/120 mg/15 mg film-coated tablets" 
-* code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D9nq "Biktarvy 30 mg/120 mg/15 mg film-coated tablets" //not real PhPID
-* code.coding[+] = http://snomed.info/sct#774856007 "Product containing only bictegravir and emtricitabine and tenofovir (medicinal product)" 
-* code.coding[+] = $atc#J05AR20 "emtricitabine, tenofovir alafenamide and bictegravir"
-* form = $edqm#10220000 "Coated tablet"
-
-* ingredient.itemCodeableConcept = $unii#8GB79LOJ07 "bictegravir"
-* ingredient.itemCodeableConcept.text = "bictegravir"
-* ingredient.strength.numerator = 30 'mg'
-
+* code.coding[+] = $spor-man#himss-1 "Aspirin 75-100 mg" 
+* form = $edqm#10219000 "Tablet"
+* form.text = "Tablet"
+* ingredient.itemCodeableConcept = $unii#XK4IUX8MNB "HYPERICUM PERFORATUM WHOLE"
+* ingredient.itemCodeableConcept.text = "HYPERICUM PERFORATUM WHOLE"
+* ingredient.strength.numerator = 100 'mg'
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
 * ingredient.strength.denominator.unit = "Tablet"
 
-* ingredient[+].itemCodeableConcept = $unii#G70B4ETF4S "emtricitabine"
-* ingredient[=].itemCodeableConcept.text = "emtricitabine"
-* ingredient[=].strength.numerator = 120 'mg'
 
-* ingredient[=].strength.denominator.value = 1
-* ingredient[=].strength.denominator.code = #15054000
-* ingredient[=].strength.denominator.system = $edqm
-* ingredient[=].strength.denominator.unit = "Tablet"
-
-* ingredient[+].itemCodeableConcept = $unii#EL9943AG5J "tenofovir alafenamida"
-* ingredient[=].itemCodeableConcept.text = "tenofovir alafenamida"
-* ingredient[=].strength.numerator = 15 'mg'
-
-* ingredient[=].strength.denominator.value = 1
-* ingredient[=].strength.denominator.code = #15054000
-* ingredient[=].strength.denominator.system = $edqm
-* ingredient[=].strength.denominator.unit = "Tablet"
-
-// "Folic Acid + Cyanocobalamin + Iodur 1 t QD"
-/*Instance: fdb5c97f-0a46-41ba-bc34-2efd2ef2g8i1
-InstanceOf: Medication
-Usage: #inline
-* code.coding[0] = $spor-man#PL31654/0092 "Folic Acid + Cyanocobalamin + Iodur 1 t QD"
-* code.coding[+] = $phpid#0x6c47381b040e5b588db23b2272f22ppf "Folic Acid + Cyanocobalamin + Iodur 1 t QD" //not real PhPID
-* code.coding[+] = $atc#B03B "VITAMIN B12 AND FOLIC ACID"
-* form = $edqm#10220000 "Coated tablet"
-* ingredient.itemCodeableConcept = $unii#935E97BOY8 "FOLIC ACID"
-* ingredient.itemCodeableConcept.text = "FOLIC ACID"
-* ingredient.strength.numerator = 30 'g'
-* ingredient.strength.denominator.value = 1
-* ingredient.strength.denominator.code = #15054000
-* ingredient.strength.denominator.system = $edqm
-* ingredient.strength.denominator.unit = "Tablet"
-*/ //missing epI
-
-// "Calcium carbonate 1000 mg + Vitamin D3 880 UI"
+// * section[=].entry[+] = Reference(Renee-med-stat-2) "Atorvastatin 40 mg PO nightly"
 Instance: renee-med-2
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = https://spor.ema.europa.eu/pmswi#68290 "CALCIO/VITAMINA D3 ROVI 1000 mg/880 UI COMPRIMIDOS EFERVESCENTES" 
-* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Calcium Vitamin D" //not real PhPID
-//* code.coding[+] = $atc#A12AA04 "calcium carbonate"
-* form = $edqm#10222000 "Effervescent tablet"
-* form.text = "Effervescent tablet"
+* code.coding[+] = $spor-man#himss-2 "Atorvastatin 40 mg PO nightly" 
+* form = $edqm#10219000 "Tablet"
+* form.text = "Tablet"
 * ingredient.itemCodeableConcept = $unii#H0G9379FGK "Calcium carbonate"
 * ingredient.itemCodeableConcept.text = "calcium carbonate"
 * ingredient.strength.numerator = 1000 'mg'
@@ -323,46 +316,57 @@ Usage: #inline
 * ingredient.strength.denominator.system = $edqm
 * ingredient.strength.denominator.unit = "Tablet"
 
-* ingredient[+].itemCodeableConcept = $unii#1C6V77QF41 "cholecalciferol"
-* ingredient[=].itemCodeableConcept.text = "cholecalciferol"
-* ingredient[=].strength.numerator = 880 '{UI}'
-* ingredient[=].strength.denominator.value = 1
-* ingredient[=].strength.denominator.code = #15054000
-* ingredient[=].strength.denominator.system = $edqm
-* ingredient[=].strength.denominator.unit = "Tablet"
 
-//"St. John's Wort (HIPÉRICO ARKOPHARMA cápsulas duras, Hypericum perforatum L.)"
+
+//* section[=].entry[+] = Reference(Renee-med-stat-3) "Furosemide 20 mg PO AM (↑ PRN)"
 
 Instance: renee-med-3
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = https://spor.ema.europa.eu/pmswi#79963 "HIPÉRICO ARKOPHARMA cápsulas duras" 
-* code.coding[+] = $phpid#0xbb82cd10ab2add752b2b9224931099j1 "St. John's Wort (HIPÉRICO ARKOPHARMA) hard tablet" //not real PhPID
-* code.coding[+] = $atc#A03FA02 "HYPERICUM PERFORATUM WHOLE" // ATC NOT FOUND
+* code.coding[+] = $spor-man#himss-3 "Furosemide 20 mg PO AM (↑ PRN)" 
+
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
 * ingredient.itemCodeableConcept = $unii#XK4IUX8MNB "HYPERICUM PERFORATUM WHOLE"
 * ingredient.itemCodeableConcept.text = "HYPERICUM PERFORATUM WHOLE"
-* ingredient.strength.numerator = 175 'mg'
+* ingredient.strength.numerator = 20 'mg'
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
 * ingredient.strength.denominator.unit = "Tablet"
 
 
-//"Flucelvax"
+//* section[=].entry[+] = Reference(Renee-med-stat-4) "Ramipril 1.25 mg PO nightly (titrate q1-2 wk)"
+
+
 Instance: renee-med-4
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#EU/1/18/1326/001 "Flucelvax" 
-* code.coding[+] = $phpid#0xbb82cd10ab2add752b2b9224931000k2 "Flucelvax" //not real PhPID
-* code.coding[+] = $atc#A03ku92 "Flucelvax" // ATC NOT FOUND
-* form = $edqm#10219999 "suspension for injection in pre-filled syringe" //not real EDQM code
-* form.text = "suspension for injection in pre-filled syringe"
+* code.coding[+] = $spor-man#himss-4 "Ramipril 1.25 mg PO nightly (titrate q1-2 wk)" 
+
+* form = $edqm#10219000 "Tablet"
+* form.text = "Tablet"
 * ingredient.itemCodeableConcept = $unii#TU2UN5CG9C "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"
 * ingredient.itemCodeableConcept.text = "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"
-* ingredient.strength.numerator = 15 'mcg'
+* ingredient.strength.numerator = 1.25 'mg'
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
-* ingredient.strength.denominator.unit = "suspension for injection in pre-filled syringe"
+* ingredient.strength.denominator.unit = "Tablet"
+
+//* section[=].entry[+] = Reference(Renee-med-stat-5) "Bisoprolol 1.25 mg PO OD"
+
+Instance: renee-med-5
+InstanceOf: Medication
+Usage: #inline
+* code.coding[+] = $spor-man#himss-5 "Bisoprolol 1.25 mg PO OD" 
+
+* form = $edqm#10219000 "Tablet"
+* form.text = "Tablet"
+* ingredient.itemCodeableConcept = $unii#TU2UN5CG9C "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"
+* ingredient.itemCodeableConcept.text = "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"
+* ingredient.strength.numerator = 1.25 'mg'
+* ingredient.strength.denominator.value = 1
+* ingredient.strength.denominator.code = #15054000
+* ingredient.strength.denominator.system = $edqm
+* ingredient.strength.denominator.unit = "Tablet"

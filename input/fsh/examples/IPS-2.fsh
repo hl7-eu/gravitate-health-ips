@@ -88,7 +88,7 @@ Usage: #inline
 		<li>Tegretol Carbamazepine	200 mg	tablets</li>
 	</ul>
 </div>"
-* section[sectionMedications].entry[0] = Reference(29074ca4-efcb-4ff4-8446-feed2399a893) "Ogivri	trastuzumab 150 mg	powder for concentrate for solution for infusion"
+* section[sectionMedications].entry[+] = Reference(29074ca4-efcb-4ff4-8446-feed2399a893) "Ogivri	trastuzumab 150 mg	powder for concentrate for solution for infusion"
 * section[sectionMedications].entry[+] = Reference(f6cb1218-f81c-4338-80d8-3c10910f78f3) "Lipcut	Simvastatin	5 mg tablet"
 * section[sectionMedications].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade87b3) "Enbrel Etanercept 25 mg powder for solution for injection"
 * section[sectionMedications].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade94gy) "Tegretol Carbamazepine	200 mg	tablets"
@@ -145,6 +145,7 @@ Usage: #inline
 * gender = #female
 * birthDate = "1946-05-05"
 * generalPractitioner = Reference(1ece89c5-fda3-4db9-ace6-decbe6c603d3)
+
 // == Practitioner ===
 Instance: 1ece89c5-fda3-4db9-ace6-decbe6c603d3
 InstanceOf: Practitioner
