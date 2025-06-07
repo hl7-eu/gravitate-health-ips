@@ -72,18 +72,18 @@ Lowers PSA by ≈ 50 %—lab must adjust result; counsel on sexual AEs; rare dep
 * entry[=].resource = Alex-cond-1
 * entry[+].fullUrl = "https://myserver.org/Condition/Alex-cond-2" // Condition 2
 * entry[=].resource = Alex-cond-2
-//* entry[+].fullUrl = "https://myserver.org/Condition/Alex-cond-3" // Condition 2
-//* entry[=].resource = Alex-cond-3
-//* entry[+].fullUrl = "https://myserver.org/Condition/Alex-cond-4" // Condition 2
-//* entry[=].resource = Alex-cond-4
+* entry[+].fullUrl = "https://myserver.org/Condition/Alex-cond-3" // Condition 2
+* entry[=].resource = Alex-cond-3
+* entry[+].fullUrl = "https://myserver.org/Condition/Alex-cond-4" // Condition 2
+* entry[=].resource = Alex-cond-4
 
 
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/Alex-med-stat-1" // Metformin 500 mg PO with the two largest meals → slowly titrate to 1 g BID
 * entry[=].resource = Alex-med-stat-1
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/Alex-med-stat-2" // Atorvastatin 40 mg PO nightly
 * entry[=].resource = Alex-med-stat-2
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Alex-med-stat-3" // Lisinopril 10 mg PO daily
-* entry[=].resource = Alex-med-stat-3
+//* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Alex-med-stat-3" // Lisinopril 10 mg PO daily
+//* entry[=].resource = Alex-med-stat-3
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/Alex-med-stat-4" // Semaglutide 2.4 mg SC once weekly
 * entry[=].resource = Alex-med-stat-4
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/Alex-med-stat-5" // Finasteride 5 mg PO daily
@@ -97,8 +97,8 @@ Lowers PSA by ≈ 50 %—lab must adjust result; counsel on sexual AEs; rare dep
 * entry[+].fullUrl = "https://myserver.org/Medication/alex-med-2"
 * entry[=].resource = alex-med-2
 
-* entry[+].fullUrl = "https://myserver.org/Medication/alex-med-3" 
-* entry[=].resource = alex-med-3
+//* entry[+].fullUrl = "https://myserver.org/Medication/alex-med-3" 
+//* entry[=].resource = alex-med-3
 
 * entry[+].fullUrl = "https://myserver.org/Medication/alex-med-4" 
 * entry[=].resource = alex-med-4
@@ -131,8 +131,8 @@ Description: "Example of International Patient Summary for Alex Gravitate"
 
 * section[=].entry[+] = Reference(Alex-cond-1) "Metabolic Syndrome"
 * section[=].entry[+] = Reference(Alex-cond-2) "Prostate Cancer" 
-//* section[=].entry[+] = Reference(Alex-cond-3) "" 
-//* section[=].entry[+] = Reference(Alex-cond-4) "" 
+* section[=].entry[+] = Reference(Alex-cond-3) "DT2M" 
+* section[=].entry[+] = Reference(Alex-cond-4) "Overweigth" 
 
 // ====================================================== MEDICATIONS
 * section[+].title = "Medication Summary"
@@ -142,7 +142,7 @@ Description: "Example of International Patient Summary for Alex Gravitate"
 
 * section[=].entry[+] = Reference(Alex-med-stat-1) "Metformin 500 mg PO with the two largest meals → slowly titrate to 1 g BID"
 * section[=].entry[+] = Reference(Alex-med-stat-2) "Atorvastatin 40 mg PO nightly"
-* section[=].entry[+] = Reference(Alex-med-stat-3) "Lisinopril 10 mg PO daily"
+//* section[=].entry[+] = Reference(Alex-med-stat-3) "Lisinopril 10 mg PO daily"
 * section[=].entry[+] = Reference(Alex-med-stat-4) "Semaglutide 2.4 mg SC once weekly"
 * section[=].entry[+] = Reference(Alex-med-stat-5) "Finasteride 5 mg PO daily"
 
@@ -183,7 +183,7 @@ InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
-* code = $sct#237602007 "Metabolic syndrome X (disorder)"
+* code = $sct#237602007 "Metabolic syndrome X"
 * code.text = "Metabolic syndrome X"
 * subject = Reference(Alex-patient) "Alex Gravitate"
 
@@ -193,22 +193,22 @@ InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
-* code = $sct#1259388006 "Primary carcinoma of prostate (disorder)"
+* code = $sct#1259388006 "Primary carcinoma of prostate"
 * code.text = "Primary carcinoma of prostate"
 * subject = Reference(Alex-patient) "Alex Gravitate"
 * onsetDateTime = "2018"
 * asserter = Reference(Alex-pract) "Dr. Walter Waltz"
 
-/*
+
 // --- Trigeminal neuralgia
 Instance: Alex-cond-3
 InstanceOf: Condition
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
-* code = $sct#31681005 "Trigeminal neuralgia (disorder)"
-* code.text = "Trigeminal neuralgia (disorder)"
-//* subject = Reference(Alex-patient) "Alex Gravitate"
+* code = $sct#44054006 "Diabetes mellitus type 2"
+* code.text = "Diabetes mellitus type 2 (disorder)"
+* subject = Reference(Alex-patient) "Alex Gravitate"
 * subject.identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
 * subject.identifier[=].value = "Alex-1"
 
@@ -221,12 +221,12 @@ InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
-* code = $sct#238131007 "Overweight (finding)"
-* code.text = "Overweight (finding)"
+* code = $sct#238131007 "Overweight"
+* code.text = "Overweight"
 * subject = Reference(Alex-patient) "Alex Gravitate"
 * onsetDateTime = "2018"
 * asserter = Reference(Alex-pract) "Dr. Walter Waltz"
-*/
+
 // ====================================================== MEDICATION STATEMENTS ======================================================
 
 
@@ -247,7 +247,7 @@ Usage: #inline
 * subject = Reference(Alex-patient) "Alex Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
-
+/*
 Instance: Alex-med-stat-3
 InstanceOf: MedicationStatement
 Usage: #inline
@@ -255,7 +255,7 @@ Usage: #inline
 * medicationReference = Reference(alex-med-3) "Lisinopril 10 mg PO daily"
 * subject = Reference(Alex-patient) "Alex Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
-
+*/
 Instance: Alex-med-stat-4
 InstanceOf: MedicationStatement
 Usage: #inline
@@ -277,19 +277,20 @@ Usage: #inline
 Instance: alex-med-1
 InstanceOf: Medication
 Usage: #inline
-
+* code.coding[0] = https://www.gravitatehealth.eu/sid/doc#himss-metformin "Metformin 500 mg tablets"
 * code.coding[+] = $spor-man#himss-6 "Metformin 500 mg" 
 
-* form = $edqm#10220000 "Coated tablet"
-
-* ingredient.itemCodeableConcept = $unii#8GB79LOJ07 "bictegravir"
-* ingredient.itemCodeableConcept.text = "bictegravir"
-* ingredient.strength.numerator = 500 'mg'
-
+* form = $edqm#10219000 "Tablet"
+* ingredient.itemCodeableConcept = $unii#9100L32L2N "metformin"
+* ingredient.itemCodeableConcept.text = "metformin"
+* ingredient.strength.numerator.value = 500
+* ingredient.strength.numerator.unit = "mg"
+* ingredient.strength.numerator.system = $ucum
+* ingredient.strength.numerator.code = #mg
 * ingredient.strength.denominator.value = 1
-* ingredient.strength.denominator.code = #15054000
-* ingredient.strength.denominator.system = $edqm
 * ingredient.strength.denominator.unit = "Tablet"
+* ingredient.strength.denominator.system = $ucum
+* ingredient.strength.denominator.code = #{tablet}
 
 
 
@@ -298,7 +299,8 @@ Usage: #inline
 Instance: alex-med-2
 InstanceOf: Medication
 Usage: #inline
-* code.coding[+] = $spor-man#himss-7 "Metformin 500 mg" 
+* code.coding[0] = https://www.gravitatehealth.eu/sid/doc#himss-Atorvastatin "Atorvastatin 40 mg"
+* code.coding[+] = $spor-man#himss-7 "Atorvastatin 40 mg" 
 
 * form = $edqm#10220000 "Coated tablet"
 * ingredient.itemCodeableConcept = $unii#935E97BOY8 "FOLIC ACID"
@@ -311,7 +313,7 @@ Usage: #inline
 
 
 // * section[=].entry[+] = Reference(Alex-med-stat-3) "Lisinopril 10 mg PO daily"
-
+/*
 Instance: alex-med-3
 InstanceOf: Medication
 Usage: #inline
@@ -326,7 +328,7 @@ Usage: #inline
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
 * ingredient.strength.denominator.unit = "Tablet"
-
+*/
 
 
 
@@ -334,6 +336,8 @@ Usage: #inline
 Instance: alex-med-4
 InstanceOf: Medication
 Usage: #inline
+* code.coding[0] = https://www.gravitatehealth.eu/sid/doc#himss-semaglutide "Semaglutide 2.4 mg"
+
 * code.coding[+] = $spor-man#himss-9 "Semaglutide 2.4 mg " 
 
 * form = $edqm#10222000 "Effervescent tablet"
@@ -344,13 +348,15 @@ Usage: #inline
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
-* ingredient.strength.denominator.unit = "Tablet"
+* ingredient.strength.denominator.unit = "Dose"
 
 
 //* section[=].entry[+] = Reference(Alex-med-stat-5) "Finasteride 5 mg PO daily"
 Instance: alex-med-5
 InstanceOf: Medication
 Usage: #inline
+* code.coding[0] = https://www.gravitatehealth.eu/sid/doc#himss-finasteride "Finasteride 5 mg"
+
 * code.coding[+] = $spor-man#himss-10 "Finasteride 5 mg" 
 
 * form = $edqm#10222000 "Effervescent tablet"

@@ -28,7 +28,7 @@ During encounter, real-time data from the ambulance are linked to the patient’
 All collected information is integrated into the chronic disease dataset.
 Vital signs are transmitted into the medical record.
 
-. Aspirin 75-100 mg PO OD
+. aspirin 75 mg PO OD
 	
 Single antiplatelet therapy (SAPT) is guideline-supported before and after TAVR to prevent valve-thrombosis and atherothrombotic events. In the POPular-TAVI RCT, aspirin alone reduced bleeding without increasing stroke/MI compared with DAPT. 
 	
@@ -89,7 +89,7 @@ Avoid if resting HR < 60 bpm, SBP < 100 mmHg, or moderate-severe AR. Start low, 
 //* entry[=].resource = Renee-cond-4
 
 
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-1" // Medication Statement 1 - "Aspirin 75-100 mg PO OD"
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-1" // Medication Statement 1 - "aspirin 75 mg PO OD"
 * entry[=].resource = Renee-med-stat-1
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-2" // Medication Statement 2 - "Atorvastatin 40 mg PO nightly"
 * entry[=].resource = Renee-med-stat-2
@@ -149,7 +149,7 @@ Description: "Example of International Patient Summary for Renee Gravitate"
 * section[=].text.div = "<div>Medication list Reported</div>"
 * section[=].text.status = #additional
 
-* section[=].entry[0] = Reference(Renee-med-stat-1) "Aspirin 75-100 mg PO OD"
+* section[=].entry[0] = Reference(Renee-med-stat-1) "aspirin 75 mg PO OD"
 * section[=].entry[+] = Reference(Renee-med-stat-2) "Atorvastatin 40 mg PO nightly"
 * section[=].entry[+] = Reference(Renee-med-stat-3) "Furosemide 20 mg PO AM (↑ PRN)"
 * section[=].entry[+] = Reference(Renee-med-stat-4) "Ramipril 1.25 mg PO nightly (titrate q1-2 wk)"
@@ -193,7 +193,7 @@ InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
-* code = $sct#60573004 "Aortic valve stenosis (disorder)"
+* code = $sct#60573004 "Aortic valve stenosis"
 * code.text = "Aortic valve stenosis"
 * subject = Reference(Renee-patient) "Renee Gravitate"
 
@@ -203,7 +203,7 @@ InstanceOf: Condition-uv-ips
 Usage: #inline
 
 * clinicalStatus = $condition-clinical#active
-* code = $sct#84114007 "Heart failure (disorder)"
+* code = $sct#84114007 "Heart failure"
 * code.text = "Heart failure"
 * subject = Reference(Renee-patient) "Renee Gravitate"
 * onsetDateTime = "2018"
@@ -243,7 +243,7 @@ Instance: Renee-med-stat-1
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(renee-med-1) "Aspirin 75-100 mg"
+* medicationReference = Reference(renee-med-1) "aspirin 75 mg"
 * subject = Reference(Renee-patient) "Renee Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -289,12 +289,12 @@ Instance: renee-med-1
 InstanceOf: Medication
 Usage: #inline
 
-* code.coding[+] = $spor-man#himss-1 "Aspirin 75-100 mg" 
+* code.coding[+] = https://www.gravitatehealth.eu/sid/doc#himss-Aspirin "Aspirin 75 mg" 
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
 * ingredient.itemCodeableConcept = $unii#XK4IUX8MNB "HYPERICUM PERFORATUM WHOLE"
 * ingredient.itemCodeableConcept.text = "HYPERICUM PERFORATUM WHOLE"
-* ingredient.strength.numerator = 100 'mg'
+* ingredient.strength.numerator = 75 'mg'
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
@@ -305,12 +305,12 @@ Usage: #inline
 Instance: renee-med-2
 InstanceOf: Medication
 Usage: #inline
-* code.coding[+] = $spor-man#himss-2 "Atorvastatin 40 mg PO nightly" 
+* code.coding[+] = https://www.gravitatehealth.eu/sid/doc#himss-Atorvastatin "Atorvastatin 40 mg" 
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
 * ingredient.itemCodeableConcept = $unii#H0G9379FGK "Calcium carbonate"
 * ingredient.itemCodeableConcept.text = "calcium carbonate"
-* ingredient.strength.numerator = 1000 'mg'
+* ingredient.strength.numerator = 40 'mg'
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
@@ -323,6 +323,7 @@ Usage: #inline
 Instance: renee-med-3
 InstanceOf: Medication
 Usage: #inline
+* code.coding[0] = https://www.gravitatehealth.eu/sid/doc#himss-Furosemide "Furosemide 20 mg"
 * code.coding[+] = $spor-man#himss-3 "Furosemide 20 mg PO AM (↑ PRN)" 
 
 * form = $edqm#10219000 "Tablet"
@@ -342,7 +343,7 @@ Usage: #inline
 Instance: renee-med-4
 InstanceOf: Medication
 Usage: #inline
-* code.coding[+] = $spor-man#himss-4 "Ramipril 1.25 mg PO nightly (titrate q1-2 wk)" 
+* code.coding[0] = https://www.gravitatehealth.eu/sid/doc#himss-ramipril "Ramipril 1.25 mg"
 
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
@@ -359,7 +360,7 @@ Usage: #inline
 Instance: renee-med-5
 InstanceOf: Medication
 Usage: #inline
-* code.coding[+] = $spor-man#himss-5 "Bisoprolol 1.25 mg PO OD" 
+* code.coding[+] = $spor-man#himss-5 "Bisoprolol 1.25 mg" 
 
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
