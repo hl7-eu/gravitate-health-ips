@@ -97,8 +97,8 @@ Avoid if resting HR < 60 bpm, SBP < 100 mmHg, or moderate-severe AR. Start low, 
 * entry[=].resource = Renee-med-stat-3
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-4" // Medication Statement 4 - "Ramipril 1.25 mg PO nightly (titrate q1-2 wk)"
 * entry[=].resource = Renee-med-stat-4
-//* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-5" // Medication Statement 5 - "Bisoprolol 1.25 mg PO OD"
-//* entry[=].resource = Renee-med-stat-5
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-5" // Medication Statement 5 - "Loratadine"
+* entry[=].resource = Renee-med-stat-5
 
 
 
@@ -153,7 +153,7 @@ Description: "Example of International Patient Summary for Renee Gravitate"
 * section[=].entry[+] = Reference(Renee-med-stat-2) "Atorvastatin 40 mg PO nightly"
 * section[=].entry[+] = Reference(Renee-med-stat-3) "Furosemide 20 mg PO AM (↑ PRN)"
 * section[=].entry[+] = Reference(Renee-med-stat-4) "Ramipril 1.25 mg PO nightly (titrate q1-2 wk)"
-//* section[=].entry[+] = Reference(Renee-med-stat-5) "Bisoprolol 1.25 mg PO OD"
+* section[=].entry[+] = Reference(Renee-med-stat-5) "Loratadine"
 
 
 
@@ -277,7 +277,7 @@ Instance: Renee-med-stat-5
 InstanceOf: MedicationStatement
 Usage: #inline
 * status = #active
-* medicationReference = Reference(renee-med-5) "Bisoprolol 1.25 mg PO OD"
+* medicationReference = Reference(renee-med-5) "Loratadine"
 * subject = Reference(Renee-patient) "Renee Gravitate"
 * dosage.route = $edqm#20053000 "Oral use"
 
@@ -360,13 +360,14 @@ Usage: #inline
 Instance: renee-med-5
 InstanceOf: Medication
 Usage: #inline
-* code.coding[+] = $spor-man#himss-5 "Bisoprolol 1.25 mg" 
+* code.coding[0] = https://www.gravitatehealth.eu/sid/doc#himss-loratadine "Loratadine 10 mg"
+
 
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
 * ingredient.itemCodeableConcept = $unii#TU2UN5CG9C "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"
 * ingredient.itemCodeableConcept.text = "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"
-* ingredient.strength.numerator = 1.25 'mg'
+* ingredient.strength.numerator = 10 'mg'
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.code = #15054000
 * ingredient.strength.denominator.system = $edqm
