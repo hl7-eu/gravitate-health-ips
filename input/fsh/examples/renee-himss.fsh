@@ -97,8 +97,8 @@ Avoid if resting HR < 60 bpm, SBP < 100 mmHg, or moderate-severe AR. Start low, 
 * entry[=].resource = Renee-med-stat-3
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-4" // Medication Statement 4 - "Ramipril 1.25 mg PO nightly (titrate q1-2 wk)"
 * entry[=].resource = Renee-med-stat-4
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-5" // Medication Statement 5 - "Bisoprolol 1.25 mg PO OD"
-* entry[=].resource = Renee-med-stat-5
+//* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Renee-med-stat-5" // Medication Statement 5 - "Bisoprolol 1.25 mg PO OD"
+//* entry[=].resource = Renee-med-stat-5
 
 
 
@@ -153,7 +153,7 @@ Description: "Example of International Patient Summary for Renee Gravitate"
 * section[=].entry[+] = Reference(Renee-med-stat-2) "Atorvastatin 40 mg PO nightly"
 * section[=].entry[+] = Reference(Renee-med-stat-3) "Furosemide 20 mg PO AM (↑ PRN)"
 * section[=].entry[+] = Reference(Renee-med-stat-4) "Ramipril 1.25 mg PO nightly (titrate q1-2 wk)"
-* section[=].entry[+] = Reference(Renee-med-stat-5) "Bisoprolol 1.25 mg PO OD"
+//* section[=].entry[+] = Reference(Renee-med-stat-5) "Bisoprolol 1.25 mg PO OD"
 
 
 
