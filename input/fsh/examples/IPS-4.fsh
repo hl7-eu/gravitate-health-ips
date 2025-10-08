@@ -491,25 +491,6 @@ Usage: #example
 * item[=].answer[0].valueInteger = 78
 
 
-CodeSystem: LiteracyCS
-Id: literacy-cs
-Title: "Local Literacy Codes"
-* ^content = #complete
-* #health-literacy "Health literacy (self-reported)"
-* #digital-literacy "Digital literacy (self-reported)"
-* #low "Low"
-* #medium "Medium"
-* #high "High"
-* #yes "Yes"
-* #no "No"
-
-ValueSet: LiteracyLevelVS
-Id: literacy-level-vs
-Title: "Literacy Level (Low/Medium/High)"
-* include LiteracyCS#low
-* include LiteracyCS#medium
-* include LiteracyCS#high
-
 // Health literacy (yes/no) example
 Instance: Obs-Health-Literacy-YesNo
 InstanceOf: Observation
@@ -551,12 +532,10 @@ InstanceOf: Observation
 Usage: #inline
 
 * status = #final
-
-* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-
-* code =  http://loinc.org#6298-4 "Potassium [Moles/volume] in Blood"
+* category[+] = http://terminology.hl7.org/CodeSystem/observation-category#activity "Activity"
+* code = http://loinc.org#89555-7 "Physical activity level"
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
-
 * effectiveDateTime = "2013-04-02T09:30:10+01:00"
 
-* valueQuantity = 2.5 'mmol/L' "mmol/L"
+// Example categorical value: "Moderate physical activity level"
+* valueCodeableConcept = http://snomed.info/sct#228400000 "Moderately active physical exercise level"
