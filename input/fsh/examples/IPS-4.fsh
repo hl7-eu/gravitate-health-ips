@@ -437,3 +437,100 @@ Usage: #inline
 * effectiveDateTime = "2013-04-02T09:30:10+01:00"
 
 * valueQuantity = 2.5 'mmol/L' "mmol/L"
+
+// https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/artifacts.html
+// https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/ValueSet-SDOHCC-ValueSetSDOHCategory.html
+
+
+
+Instance: QR-EQ5D-5L-Example
+InstanceOf: QuestionnaireResponse
+Title: "EQ-5D-5L Response Example"
+Usage: #example
+* status = #completed
+* questionnaire = Canonical(Questionnaire-EQ5D-5L)
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
+* authored = "2025-10-08T10:35:00Z"
+* item[0].linkId = "d1"
+* item[=].answer[0].valueCoding = EQ5DLevelsCS#2 "Slight problems"
+* item[+].linkId = "d2"
+* item[=].answer[0].valueCoding = EQ5DLevelsCS#1 "No problems"
+* item[+].linkId = "d3"
+* item[=].answer[0].valueCoding = EQ5DLevelsCS#3 "Moderate problems"
+* item[+].linkId = "d4"
+* item[=].answer[0].valueCoding = EQ5DLevelsCS#2 "Slight problems"
+* item[+].linkId = "d5"
+* item[=].answer[0].valueCoding = EQ5DLevelsCS#1 "No problems"
+* item[+].linkId = "vas"
+* item[=].answer[0].valueInteger = 78
+
+
+CodeSystem: LiteracyCS
+Id: literacy-cs
+Title: "Local Literacy Codes"
+* ^content = #complete
+* #health-literacy "Health literacy (self-reported)"
+* #digital-literacy "Digital literacy (self-reported)"
+* #low "Low"
+* #medium "Medium"
+* #high "High"
+* #yes "Yes"
+* #no "No"
+
+ValueSet: LiteracyLevelVS
+Id: literacy-level-vs
+Title: "Literacy Level (Low/Medium/High)"
+* include LiteracyCS#low
+* include LiteracyCS#medium
+* include LiteracyCS#high
+
+// Health literacy (yes/no) example
+Instance: Obs-Health-Literacy-YesNo
+InstanceOf: Observation
+Title: "Observation - Health Literacy (Yes/No)"
+Usage: #example
+* status = #final
+* category[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
+* category[0].coding[0].code = #social-history
+* code.coding[0].system = "http://example.org/fhir/CodeSystem/literacy"
+* code.coding[0].code = #health-literacy
+* code.coding[0].display = "Health literacy (self-reported)"
+* subject = Reference(Patient/example)
+* effectiveDateTime = "2025-10-08"
+* valueCodeableConcept.coding[0].system = "http://example.org/fhir/CodeSystem/literacy"
+* valueCodeableConcept.coding[0].code = #yes
+* valueCodeableConcept.coding[0].display = "Yes"
+
+// Digital literacy (ordinal 1–3) example
+Instance: Obs-Digital-Literacy-Scale
+InstanceOf: Observation
+Title: "Observation - Digital Literacy (1–3)"
+Usage: #example
+* status = #final
+* category[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
+* category[0].coding[0].code = #social-history
+* code.coding[0].system = "http://example.org/fhir/CodeSystem/literacy"
+* code.coding[0].code = #digital-literacy
+* code.coding[0].display = "Digital literacy (self-reported)"
+* subject = Reference(Patient/example)
+* effectiveDateTime = "2025-10-08"
+* valueInteger = 2
+* interpretation.coding[0].system = "http://example.org/fhir/CodeSystem/literacy"
+* interpretation.coding[0].code = #medium
+* interpretation.coding[0].display = "Medium"
+
+
+Instance: physical-activity
+InstanceOf: Observation
+Usage: #inline
+
+* status = #final
+
+* category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+
+* code =  http://loinc.org#6298-4 "Potassium [Moles/volume] in Blood"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
+
+* effectiveDateTime = "2013-04-02T09:30:10+01:00"
+
+* valueQuantity = 2.5 'mmol/L' "mmol/L"
