@@ -70,6 +70,19 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[+].fullUrl = "https://myserver.org/Observation/potassium" // potassium (Observation)
 * entry[=].resource = potassium
 
+
+* entry[+].fullUrl = "https://myserver.org/Observation/QR-EQ5D-5L-Example" // QR-EQ5D-5L-Example (QuestionnaireResponse)
+* entry[=].resource =  QR-EQ5D-5L-Example
+
+* entry[+].fullUrl = "https://myserver.org/Observation/Obs-Health-Literacy-YesNo" // Obs-Health-Literacy-YesNo (Observation)
+* entry[=].resource = Obs-Health-Literacy-YesNo
+
+* entry[+].fullUrl = "https://myserver.org/Observation/Obs-Digital-Literacy-Scale" // Obs-Digital-Literacy-Scale (Observation)
+* entry[=].resource = Obs-Digital-Literacy-Scale
+
+* entry[+].fullUrl = "https://myserver.org/Observation/physical-activity" // physical activity (Observation)
+* entry[=].resource = physical-activity
+
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73579
 InstanceOf: Composition
@@ -126,8 +139,19 @@ Usage: #inline
 * section[=].code = $loinc#10162-6 "Pregnancies Hx"
 * section[=].entry[0] = Reference(e06e43a1-38d4-468f-8c35-f7f12da91062) "Pregrancy Status"
 
+// ======== Social History
+* section[+].title = "Social History"
+* section[=].code = $loinc#29762-2 "Social History"
+* section[=].entry[0] = Reference(physical-activity) "Physical Activity"
+* section[=].entry[+] = Reference(Obs-Health-Literacy-YesNo) "Health Literacy"
+* section[=].entry[+] = Reference(Obs-Digital-Literacy-Scale) "Digital Literacy"
+* section[=].entry[+] = Reference(QR-EQ5D-5L-Example) "EQ-5D-5L"
 
-// == PATIENT ===
+
+
+
+
+// ======== PATIENT =======
 Instance: c154158f-6a43-4ab7-8443-e7f4bf915dd2
 InstanceOf: Patient
 Usage: #inline
@@ -144,6 +168,8 @@ Usage: #inline
 * name.given = "IPS 4 example"
 * gender = #female
 * birthDate = "1989-05-05"
+
+
 // == Practitioner ===
 Instance: 1ece89c5-fda3-4db9-ace6-decbe6c603d2
 InstanceOf: Practitioner
@@ -156,7 +182,7 @@ Usage: #inline
 
 
 
-// == ALLERGIES ===
+// ======== ALLERGIES =======
 Instance: 1dff4474-fa08-4f45-8260-dbb23094bf02
 InstanceOf: AllergyIntolerance
 Usage: #inline
@@ -262,7 +288,7 @@ Usage: #inline
 * dosage.route = $edqm#20066000 "Subcutaneous use"
 
 
-// ====== MEDICATIONS
+// ====== MEDICATIONS ======
 Instance: b50ae644-e0b7-4007-809f-26f493cbe362
 InstanceOf: Medication
 Usage: #inline
