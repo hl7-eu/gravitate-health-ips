@@ -472,7 +472,7 @@ Usage: #inline
 Instance: QR-EQ5D-5L-Example
 InstanceOf: QuestionnaireResponse
 Title: "EQ-5D-5L Response Example"
-Usage: #example
+Usage: #inline
 * status = #completed
 * questionnaire = Canonical(Questionnaire-EQ5D-5L)
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
@@ -495,14 +495,14 @@ Usage: #example
 Instance: Obs-Health-Literacy-YesNo
 InstanceOf: Observation
 Title: "Observation - Health Literacy (Yes/No)"
-Usage: #example
+Usage: #inline
 * status = #final
 * category[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[0].coding[0].code = #social-history
 * code.coding[0].system = "http://example.org/fhir/CodeSystem/literacy"
 * code.coding[0].code = #health-literacy
 * code.coding[0].display = "Health literacy (self-reported)"
-* subject = Reference(Patient/example)
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
 * effectiveDateTime = "2025-10-08"
 * valueCodeableConcept.coding[0].system = "http://example.org/fhir/CodeSystem/literacy"
 * valueCodeableConcept.coding[0].code = #yes
@@ -512,14 +512,14 @@ Usage: #example
 Instance: Obs-Digital-Literacy-Scale
 InstanceOf: Observation
 Title: "Observation - Digital Literacy (1–3)"
-Usage: #example
+Usage: #inline
 * status = #final
 * category[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category[0].coding[0].code = #social-history
 * code.coding[0].system = "http://example.org/fhir/CodeSystem/literacy"
 * code.coding[0].code = #digital-literacy
 * code.coding[0].display = "Digital literacy (self-reported)"
-* subject = Reference(Patient/example)
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
 * effectiveDateTime = "2025-10-08"
 * valueInteger = 2
 * interpretation.coding[0].system = "http://example.org/fhir/CodeSystem/literacy"
