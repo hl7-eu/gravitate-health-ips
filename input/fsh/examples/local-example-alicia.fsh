@@ -11,36 +11,39 @@ Description: "Example of a Local copy (overlay) of International Patient Summary
 * identifier.value = "alicia-ips-1"
 * type = #document
 * timestamp = "2023-04-18T09:22:00+02:00"
-* entry[0].fullUrl = "https://myserver.org/Composition/alicia-comp" // Composition
-* entry[=].resource = alicia-comp
-* entry[+].fullUrl = "https://myserver.org/Patient/alicia-patient" // Patient
-* entry[=].resource = alicia-patient
-* entry[+].fullUrl = "https://myserver.org/Practitioner/alicia-pract" // Practictioner
-* entry[=].resource = alicia-pract
+* entry[0].fullUrl = "https://myserver.org/Composition/Ovl-alicia-comp" // Composition
+* entry[=].resource = Ovl-alicia-comp
+* entry[+].fullUrl = "https://myserver.org/Patient/Ovl-alicia-patient" // Patient
+* entry[=].resource = Ovl-alicia-patient
+* entry[+].fullUrl = "https://myserver.org/Practitioner/Ovl-alicia-pract" // Practictioner
+* entry[=].resource = Ovl-alicia-pract
 
-* entry[+].fullUrl = "https://myserver.org/Condition/alicia-cond-1" // Condition 2
-* entry[=].resource = alicia-cond-1
-* entry[+].fullUrl = "https://myserver.org/Condition/alicia-cond-2" // Condition 2
-* entry[=].resource = alicia-cond-2
-* entry[+].fullUrl = "https://myserver.org/Condition/alicia-cond-3" // Condition 2
-* entry[=].resource = alicia-cond-3
-* entry[+].fullUrl = "https://myserver.org/Condition/alicia-cond-4" // Condition 2
-* entry[=].resource = alicia-cond-4
+* entry[+].fullUrl = "https://myserver.org/Condition/Ovl-alicia-cond-1" // Condition 2
+* entry[=].resource = Ovl-alicia-cond-1
+* entry[+].fullUrl = "https://myserver.org/Condition/Ovl-alicia-cond-2" // Condition 2
+* entry[=].resource = Ovl-alicia-cond-2
+* entry[+].fullUrl = "https://myserver.org/Condition/Ovl-alicia-cond-3" // Condition 2
+* entry[=].resource = Ovl-alicia-cond-3
+* entry[+].fullUrl = "https://myserver.org/Condition/Ovl-alicia-cond-4" // Condition 2
+* entry[=].resource = Ovl-alicia-cond-4
 
 
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-1" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
-* entry[=].resource = alicia-med-stat-1
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-3" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = alicia-med-stat-3
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-4" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = alicia-med-stat-4
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-5" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = alicia-med-stat-5
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-6" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = alicia-med-stat-6
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Ovl-alicia-med-stat-1" // Medication Statement 1 - "Humalog Mix50 Insulin KwikPen, 3ml pre-fill"
+* entry[=].resource = Ovl-alicia-med-stat-1
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Ovl-alicia-med-stat-3" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[=].resource = Ovl-alicia-med-stat-3
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Ovl-alicia-med-stat-4" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[=].resource = Ovl-alicia-med-stat-4
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Ovl-alicia-med-stat-5" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[=].resource = Ovl-alicia-med-stat-5
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Ovl-alicia-med-stat-6" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[=].resource = Ovl-alicia-med-stat-6
 
-* entry[+].fullUrl = "https://myserver.org/MedicationStatement/alicia-med-stat-8" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
-* entry[=].resource = alicia-med-stat-8
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Ovl-alicia-med-stat-8" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[=].resource = Ovl-alicia-med-stat-8
+
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/Ovl-alicia-med-stat-added" // Medication Statement 2 - "Monuril 3 g granules for oral solution"
+* entry[=].resource = Ovl-alicia-med-stat-added
 
 
 * entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78367" 
@@ -54,14 +57,14 @@ Description: "Example of a Local copy (overlay) of International Patient Summary
 
 
 
-* entry[+].fullUrl = "https://myserver.org/Medication/9d7be868-8264-4d94-ad04-ef04ecc92i99" 
-* entry[=].resource = 9d7be868-8264-4d94-ad04-ef04ecc92i99
+* entry[+].fullUrl = "https://myserver.org/Medication/Ovl-9d7be868-8264-4d94-ad04-ef04ecc92i99" 
+* entry[=].resource = Ovl-9d7be868-8264-4d94-ad04-ef04ecc92i99
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78356" 
-* entry[=].resource =  6f4151e9-91f6-4f1e-adc3-fb94dda78356
+* entry[+].fullUrl = "https://myserver.org/Medication/Ovl-6f4151e9-91f6-4f1e-adc3-fb94dda78356" 
+* entry[=].resource = Ovl-6f4151e9-91f6-4f1e-adc3-fb94dda78356
 
-* entry[+].fullUrl = "https://myserver.org/Medication/6f4151e9-91f6-4f1e-adc3-fb94dda78333" 
-* entry[=].resource =   6f4151e9-91f6-4f1e-adc3-fb94dda78333
+* entry[+].fullUrl = "https://myserver.org/Medication/Ovl-6f4151e9-91f6-4f1e-adc3-fb94dda78333" 
+* entry[=].resource = Ovl-6f4151e9-91f6-4f1e-adc3-fb94dda78333
 
 
 * entry[+].fullUrl = "https://myserver.org/Observation/Ovl-alicia-pregnancy" // Pregnancy (Observation)
@@ -89,7 +92,7 @@ Description: "Example of a Local copy (overlay) of International Patient Summary
 
 
 * entry[+].fullUrl = "https://myserver.org/Observation/Ovl-alicia-QR-EQ5D-5L" // QR-EQ5D-5L-Example (QuestionnaireResponse)
-* entry[=].resource =  Ovl-alicia-QR-EQ5D-5L
+* entry[=].resource = Ovl-alicia-QR-EQ5D-5L
 
 * entry[+].fullUrl = "https://myserver.org/Observation/Ovl-alicia-Health-Literacy-YesNo" // Obs-Health-Literacy-YesNo (Observation)
 * entry[=].resource = Ovl-alicia-Health-Literacy-YesNo
@@ -141,6 +144,9 @@ Description: "Example of International Patient Summary for Alicia Gravitate"
 * section[=].entry[+] = Reference(Ovl-alicia-med-stat-6) "St. John’s Wort 2 cp BID"
 //* section[=].entry[+] = Reference(Ovl-alicia-med-stat-7) "Collagen and magnesium supplements"
 * section[=].entry[+] = Reference(Ovl-alicia-med-stat-8) "Flucelvax"
+* section[=].entry[+] = Reference(Ovl-alicia-med-stat-added) "Flucelvax"
+
+
 
 // ====================================================== PATIENT ======================================================
 Instance: Ovl-alicia-patient
