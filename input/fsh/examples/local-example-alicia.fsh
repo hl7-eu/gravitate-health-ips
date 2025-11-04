@@ -1,8 +1,8 @@
 Instance: Ovl-gravitate-Alicia
 InstanceOf: Bundle-uv-ips
-Title:   "Alicia Gravitate's IPS"
+Title:   "Alicia Gravitate's IPS - Local"
 Usage: #example
-Description: "Example of International Patient Summary for Alicia Gravitate"
+Description: "Example of a Local copy (overlay) of International Patient Summary for Alicia Gravitate"
 
 
 
