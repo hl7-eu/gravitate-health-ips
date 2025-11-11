@@ -156,9 +156,8 @@ Usage: #inline
 * extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#ES "Spain"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
-* identifier[=].value = "alicia-1"
-* identifier[+].system = "keycloak-id"
-* identifier[=].value = "31297ad1-cb3c-4138-a132-e64016170e1d"
+* identifier[=].value = "alicia-1-local"
+
 * active = true
 * name.family = "Gravitate"
 * name.given = "Alicia"
