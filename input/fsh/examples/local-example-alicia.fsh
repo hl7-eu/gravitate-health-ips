@@ -66,6 +66,15 @@ Description: "Example of a Local copy (overlay) of International Patient Summary
 * entry[+].fullUrl = "https://myserver.org/Medication/Ovl-6f4151e9-91f6-4f1e-adc3-fb94dda78333" 
 * entry[=].resource = Ovl-6f4151e9-91f6-4f1e-adc3-fb94dda78333
 
+* entry[+].fullUrl = "https://myserver.org/Medication/Ovl-6f4151e9-91f6-4f1e-adc3-fb94dda78367" 
+* entry[=].resource = Ovl-6f4151e9-91f6-4f1e-adc3-fb94dda78367
+
+* entry[+].fullUrl = "https://myserver.org/Medication/Ovl-6f4151e9-91f6-4f1e-adc3-fb94dda7785h" 
+* entry[=].resource = Ovl-6f4151e9-91f6-4f1e-adc3-fb94dda7785h
+
+* entry[+].fullUrl = "https://myserver.org/Medication/Ovl-6f4151e9-91f6-4f1e-adc3-fb94dda79261" 
+* entry[=].resource = Ovl-6f4151e9-91f6-4f1e-adc3-fb94dda79261
+
 
 * entry[+].fullUrl = "https://myserver.org/Observation/Ovl-alicia-pregnancy" // Pregnancy (Observation)
 * entry[=].resource = Ovl-alicia-pregnancy
