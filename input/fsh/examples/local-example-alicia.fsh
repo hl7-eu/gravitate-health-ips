@@ -111,7 +111,6 @@ Title:   "Alicia Gravitate's IPS Composition"
 Usage: #inline
 Description: "Example of International Patient Summary for Alicia Gravitate"
 
-* id = "gravitate-Alicia"
 * status = #final
 
 * type = $loinc#60591-5 "Patient summary Document"
