@@ -132,6 +132,8 @@ Description: "Example of International Patient Summary for Alicia Gravitate"
 // ====================================================== PROBLEMS
 * section[+].title = "Problem List"
 * section[=].code = $loinc#11450-4 "Problem list Reported"
+* section[=].text.div = "<div>Problem List</div>"
+* section[=].text.status = #additional
 
 * section[=].entry[0] = Reference(Ovl-alicia-cond-1) "Depression"
 * section[=].entry[+] = Reference(Ovl-alicia-cond-2) "HIV" 
@@ -154,6 +156,40 @@ Description: "Example of International Patient Summary for Alicia Gravitate"
 * section[=].entry[+] = Reference(Ovl-alicia-med-stat-8) "Flucelvax"
 * section[=].entry[+] = Reference(Ovl-alicia-med-stat-added) "Flucelvax"
 
+* section[+].title = "Allergies and Intolerances"
+* section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergies</div>"
+* section[=].entry = Reference(Ovl-Alicia-medication-allergy)
+
+* section[+].title = "Pregnancy"
+* section[=].code = $loinc#10162-6 "Pregnancy history"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pregnancy</div>"
+* section[=].entry = Reference(Ovl-Alicia-pregnancy) "Pregnancy Observation"
+
+
+* section[+].title = "Social History"
+* section[=].code = $loinc#129762-2 "Social history"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Social History</div>"
+* section[=].entry[+] = Reference(tobacco-use-example) "Tobacco Use Observation"
+* section[=].entry[+] = Reference(alcohol-use-example) "Alcohol Use Observation"
+* section[=].entry[+] = Reference(Ovl-alicia-physical-activity) "Physical Activity Observation"
+* section[=].entry[+] = Reference(Ovl-alicia-Digital-Literacy-Scale) "Digital Literacy Scale Observation"
+* section[=].entry[+] = Reference(Ovl-alicia-Health-Literacy-YesNo) "Health Literacy Observation"
+* section[=].entry[+] = Reference(Ovl-alicia-QR-EQ5D-5L) "EQ-5D-5L Observation"
+
+* section[+].title = "Vital Signs"
+* section[=].code = $loinc#18716-3
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vital Signs</div>"
+* section[=].entry[+] = Reference(Ovl-alicia-bw) "Vital Signs Observation"
+* section[=].entry[+] = Reference(Ovl-alicia-bh) "Vital Signs Observation"
+* section[=].entry[+] = Reference(Ovl-alicia-bp) "Vital Signs Observation"
+* section[=].entry[+] = Reference(Ovl-alicia-glucose) "Vital Signs Observation"
+* section[=].entry[+] = Reference(Ovl-alicia-egfr) "Vital Signs Observation"
+* section[=].entry[+] = Reference(Ovl-alicia-potassium) "Vital Signs Observation"
 
 
 // ====================================================== PATIENT ======================================================
@@ -308,7 +344,7 @@ Usage: #inline
 
 * code.coding[0] = $spor-man#EU/1/18/1289/001 "Biktarvy 30 mg/120 mg/15 mg film-coated tablets" 
 * code.coding[+] = $phpid#0x073AF2E5B92AE19E8B67635AFFB3D9nq "Biktarvy 30 mg/120 mg/15 mg film-coated tablets" //not real PhPID
-* code.coding[+] = http://snomed.info/sct#774856007 "Product containing only bictegravir and emtricitabine and tenofovir (medicinal product)" 
+* code.coding[+] = $sct#774856007 "Product containing only bictegravir and emtricitabine and tenofovir (medicinal product)" 
 * code.coding[+] = $atc#J05AR20 "emtricitabine, tenofovir alafenamide and bictegravir"
 * form = $edqm#10220000 "Coated tablet"
 
@@ -443,10 +479,10 @@ Instance: Ovl-alicia-pregnancy
 InstanceOf: Observation
 Usage: #inline
 * status = #final
-* code = http://loinc.org#82810-3 "Pregnancy status"
+* code = $loinc#82810-3 "Pregnancy status"
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
 * effectiveDateTime = "2020-01-10"
-* valueCodeableConcept = http://loinc.org#LA15173-0 "Pregnant"
+* valueCodeableConcept = $loinc#LA15173-0 "Pregnant"
 
 
 // ======== Vital Signs =====
@@ -458,7 +494,7 @@ Usage: #inline
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
-* code =  http://loinc.org#29463-7 "Body weight"
+* code =  $loinc#29463-7 "Body weight"
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
 
 * effectiveDateTime = "2009-10-09"
@@ -473,7 +509,7 @@ Usage: #inline
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
-* code =  http://loinc.org#8302-2 "Body height"
+* code =  $loinc#8302-2 "Body height"
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
 
 * effectiveDateTime = "2009-10-09"
@@ -488,15 +524,15 @@ Usage: #inline
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
-* code =  http://loinc.org#85354-9 "Blood pressure panel with all children optional"
+* code =  $loinc#85354-9 "Blood pressure panel with all children optional"
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
 
 * effectiveDateTime = "2009-10-09"
 
-* component[+].code = http://loinc.org#8462-4 "Diastolic blood pressure"
+* component[+].code = $loinc#8462-4 "Diastolic blood pressure"
 * component[=].valueQuantity = 80 'mm[Hg]'
 
-* component[+].code = http://loinc.org#8480-6 "Systolic blood pressure"
+* component[+].code = $loinc#8480-6 "Systolic blood pressure"
 * component[=].valueQuantity = 120 'mm[Hg]'
 
 
@@ -509,7 +545,7 @@ Usage: #inline
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
-* code =  http://loinc.org#15074-8 "Glucose [Moles/volume] in Blood"
+* code =  $loinc#15074-8 "Glucose [Moles/volume] in Blood"
 * subject = Reference(Ovl-alicia-patient) 
 
 * effectiveDateTime = "2013-04-02T09:30:10+01:00"
@@ -528,7 +564,7 @@ Usage: #inline
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
-* code =  http://loinc.org#48643-1 "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M among black population"
+* code =  $loinc#48643-1 "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M among black population"
 * subject = Reference(Ovl-alicia-patient) 
 
 * effectiveDateTime = "2013-04-02T09:30:10+01:00"
@@ -543,7 +579,7 @@ Usage: #inline
 
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
-* code =  http://loinc.org#6298-4 "Potassium [Moles/volume] in Blood"
+* code =  $loinc#6298-4 "Potassium [Moles/volume] in Blood"
 * subject = Reference(Ovl-alicia-patient) 
 * effectiveDateTime = "2013-04-02T09:30:10+01:00"
 
@@ -617,9 +653,51 @@ Usage: #inline
 
 * status = #final
 * category[+] = http://terminology.hl7.org/CodeSystem/observation-category#activity "Activity"
-* code = http://loinc.org#89555-7 "Physical activity level"
+* code = $loinc#89555-7 "Physical activity level"
 * subject = Reference(Ovl-alicia-patient) 
 * effectiveDateTime = "2013-04-02T09:30:10+01:00"
 
 // Example categorical value: "Moderate physical activity level"
-* valueCodeableConcept = http://snomed.info/sct#228400000 "Moderately active physical exercise level"
+* valueCodeableConcept = $sct#228400000 "Moderately active physical exercise level"
+
+
+
+Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
+
+Instance: Ovl-Alicia-medication-allergy
+InstanceOf: AllergyIntolerance
+Usage: #example
+* clinicalStatus = $allergyintolerance-clinical#active "Active"
+* verificationStatus = $allergyintolerance-verification#unconfirmed "Unconfirmed"
+* category = #medication
+* criticality = #high
+* code = $rxnorm#7980 "Penicillin G"
+* patient = Reference(Ovl-alicia-patient) 
+* recordedDate = "2025-03-01"
+* recorder = Reference(Ovl-alicia-pract) "Dr. Walter Waltz"
+* reaction.manifestation = $sct#247472004 "Hives"
+
+
+Instance: alcohol-use-example
+InstanceOf: Observation-alcoholuse-uv-ips
+Usage: #example
+* language = #en
+* status = #final
+* code = $loinc#74013-4 "Alcoholic drinks per day"
+* subject = Reference(Ovl-alicia-patient) 
+* effectiveDateTime = "2019-07-15"
+* performer = Reference(Ovl-alicia-pract) "Dr. Walter Waltz"
+* valueQuantity = 2 '/d' "wine glasses per day"
+
+Instance: tobacco-use-example
+InstanceOf: Observation-tobaccouse-uv-ips
+Usage: #example
+* language = #en
+* status = #final
+* code = $loinc#72166-2 "Tobacco smoking status"
+* subject = Reference(Ovl-alicia-patient) 
+* effectiveDateTime = "2019-07-15"
+* performer = Reference(Ovl-alicia-pract) "Dr. Walter Waltz"
+* valueCodeableConcept = $loinc#LA15920-4 "Former smoker"
