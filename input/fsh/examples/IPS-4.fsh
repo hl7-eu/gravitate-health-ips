@@ -163,6 +163,8 @@ Usage: #inline
 * extension[=].valueCodeableConcept = http://www.ilo.org/public/english/bureau/stat/isco#3421 "Athletes and sports players"
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier[=].value = "ips-4"
+* identifier[+].system = "keycloak-id"
+* identifier[=].value = "370887cf-f2c5-4e07-971a-827397d4ea45"
 * active = true
 * name.family = "Gravitate"
 * name.given = "IPS 4 example"
