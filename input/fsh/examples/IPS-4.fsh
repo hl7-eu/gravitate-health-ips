@@ -36,6 +36,12 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[+].fullUrl = "https://myserver.org/MedicationStatement/citalopram-statement" // Medication Statement 3
 * entry[=].resource = citalopram-statement
 
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/amlo-italy-statement" // UNICOM
+* entry[=].resource = amlo-italy-statement
+
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/amlo-norway-statement" // UNICOM
+* entry[=].resource = amlo-norway-statement
+
 
 * entry[+].fullUrl = "https://myserver.org/Medication/b50ae644-e0b7-4007-809f-26f493cbe362" // Medication 1
 * entry[=].resource = b50ae644-e0b7-4007-809f-26f493cbe362
@@ -45,6 +51,12 @@ Description: "Example of International Patient Summary for Gravitate"
 * entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2ef12
 * entry[+].fullUrl = "https://myserver.org/Medication/citalopram" // Medication 3
 * entry[=].resource = citalopram
+
+* entry[+].fullUrl = "https://myserver.org/Medication/amlo-italy" // Medication 3
+* entry[=].resource = amlo-italy
+
+* entry[+].fullUrl = "https://myserver.org/Medication/amlo-norway" // Medication 3
+* entry[=].resource = amlo-norway
 
 
 * entry[+].fullUrl = "https://myserver.org/Observation/e06e43a1-38d4-468f-8c35-f7f12da91062" // Pregnancy (Observation)
@@ -117,6 +129,8 @@ Usage: #inline
 * section[=].entry[+] = Reference(f6cb1218-f81c-4338-80d8-3c10910f78f2) "Irbesartan 75 mg Tablet"
 * section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade87b2) "Pentasa Slow Release Tablets 1g"
 * section[=].entry[+] = Reference(citalopram-statement) "citalopram statement"
+* section[=].entry[+] = Reference(amlo-italy-statement) "Amlodipine Italy statement"
+* section[=].entry[+] = Reference(amlo-norway-statement) "Amlodipine Norway statement"
 
 // ======== Vital Signs
 * section[+].title = "Vital Signs"
@@ -289,6 +303,21 @@ Usage: #inline
 * subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
 * dosage.route = $edqm#20066000 "Subcutaneous use"
 
+Instance: amlo-norway-statement
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationReference = Reference(amlo-norway) "Amlodipine Norway"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
+* dosage.route = $edqm#20053000 "Oral use"
+
+Instance: amlo-italy-statement
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationReference = Reference(amlo-italy) "Amlodipine Italy"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd2) "IPS 4 Gravitate"
+* dosage.route = $edqm#20053000 "Oral use"
 
 // ====== MEDICATIONS ======
 Instance: b50ae644-e0b7-4007-809f-26f493cbe362
@@ -349,9 +378,19 @@ Usage: #inline
 Instance: citalopram
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#204447 "citalopram"
+* code.coding[0] = $spor-man#204447 "Citalopram Aurovitas 10 mg	tablet"
 
 
+Instance: amlo-norway
+InstanceOf: Medication
+Usage: #inline
+* code.coding[0] = $spor-man#xxx "Amlodipin sandoz 10 mg TABLETTER"
+
+
+Instance: amlo-italy
+InstanceOf: Medication
+Usage: #inline
+* code.coding[0] = $spor-man#EU/1/13/753/ttt "Amlodipine Besylate Teva 5 mg Tablet" 
 
 
 // --- "Pregnancy"
