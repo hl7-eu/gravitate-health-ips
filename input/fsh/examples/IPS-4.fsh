@@ -384,13 +384,13 @@ Usage: #inline
 Instance: amlo-norway
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#xxx "Amlodipin sandoz 10 mg TABLETTER"
+* code.coding[0] = $spor-man#AMLODIPINA-SANDOZ-tablet-10mg--3-NO-MPD "Amlodipin sandoz 10 mg TABLETTER"
 
 
 Instance: amlo-italy
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#EU/1/13/753/ttt "Amlodipine Besylate Teva 5 mg Tablet" 
+* code.coding[0] = $spor-man#AMLODIPINA-DOC-GENERICI-tablet-10mg--71-ITA-MPD "Amlodipine Besylate Teva 5 mg Tablet" 
 
 
 // --- "Pregnancy"
