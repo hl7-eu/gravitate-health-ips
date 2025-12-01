@@ -390,7 +390,7 @@ Usage: #inline
 Instance: amlo-italy
 InstanceOf: Medication
 Usage: #inline
-* code.coding[0] = $spor-man#AMLODIPINA-DOC-GENERICI-tablet-10mg--71-ITA-MPD "Amlodipine Besylate Teva 5 mg Tablet" 
+* code.coding[0] = $spor-man#AMLODIPINA-DOC-GENERICI-tablet-10mg--71-ITA-MPD "AMLODIPINA DOC GENERICI compresse 10 mg" 
 
 
 // --- "Pregnancy"
