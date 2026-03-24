@@ -332,7 +332,7 @@ Usage: #inline
 * code.coding[+] = $atc#J05AR20 "emtricitabine, tenofovir alafenamide and bictegravir"
 * form = $edqm#10220000 "Coated tablet"
 
-* ingredient.itemCodeableConcept = $unii#8GB79LOJ07 "bictegravir"
+* ingredient.itemCodeableConcept = $ginas#8GB79LOJ07 "bictegravir"
 * ingredient.itemCodeableConcept.text = "bictegravir"
 * ingredient.strength.numerator = 30 'mg'
 
@@ -341,7 +341,7 @@ Usage: #inline
 * ingredient.strength.denominator.system = $edqm
 * ingredient.strength.denominator.unit = "Tablet"
 
-* ingredient[+].itemCodeableConcept = $unii#G70B4ETF4S "emtricitabine"
+* ingredient[+].itemCodeableConcept = $ginas#G70B4ETF4S "emtricitabine"
 * ingredient[=].itemCodeableConcept.text = "emtricitabine"
 * ingredient[=].strength.numerator = 120 'mg'
 
@@ -350,7 +350,7 @@ Usage: #inline
 * ingredient[=].strength.denominator.system = $edqm
 * ingredient[=].strength.denominator.unit = "Tablet"
 
-* ingredient[+].itemCodeableConcept = $unii#EL9943AG5J "tenofovir alafenamida"
+* ingredient[+].itemCodeableConcept = $ginas#EL9943AG5J "tenofovir alafenamida"
 * ingredient[=].itemCodeableConcept.text = "tenofovir alafenamida"
 * ingredient[=].strength.numerator = 15 'mg'
 
@@ -367,7 +367,7 @@ Usage: #inline
 * code.coding[+] = $phpid#0x6c47381b040e5b588db23b2272f22ppf "Folic Acid + Cyanocobalamin + Iodur 1 t QD" //not real PhPID
 * code.coding[+] = $atc#B03B "VITAMIN B12 AND FOLIC ACID"
 * form = $edqm#10220000 "Coated tablet"
-* ingredient.itemCodeableConcept = $unii#935E97BOY8 "FOLIC ACID"
+* ingredient.itemCodeableConcept = $ginas#935E97BOY8 "FOLIC ACID"
 * ingredient.itemCodeableConcept.text = "FOLIC ACID"
 * ingredient.strength.numerator = 30 'g'
 * ingredient.strength.denominator.value = 1
@@ -385,7 +385,7 @@ Usage: #inline
 //* code.coding[+] = $atc#A12AA04 "calcium carbonate"
 * form = $edqm#10222000 "Effervescent tablet"
 * form.text = "Effervescent tablet"
-* ingredient.itemCodeableConcept = $unii#H0G9379FGK "Calcium carbonate"
+* ingredient.itemCodeableConcept = $ginas#H0G9379FGK "Calcium carbonate"
 * ingredient.itemCodeableConcept.text = "calcium carbonate"
 * ingredient.strength.numerator = 1000 'mg'
 * ingredient.strength.denominator.value = 1
@@ -393,7 +393,7 @@ Usage: #inline
 * ingredient.strength.denominator.system = $edqm
 * ingredient.strength.denominator.unit = "Tablet"
 
-* ingredient[+].itemCodeableConcept = $unii#1C6V77QF41 "cholecalciferol"
+* ingredient[+].itemCodeableConcept = $ginas#1C6V77QF41 "cholecalciferol"
 * ingredient[=].itemCodeableConcept.text = "cholecalciferol"
 * ingredient[=].strength.numerator = 880 '{UI}'
 * ingredient[=].strength.denominator.value = 1
@@ -411,7 +411,7 @@ Usage: #inline
 * code.coding[+] = $atc#A03FA02 "HYPERICUM PERFORATUM WHOLE" // ATC NOT FOUND
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
-* ingredient.itemCodeableConcept = $unii#XK4IUX8MNB "HYPERICUM PERFORATUM WHOLE"
+* ingredient.itemCodeableConcept = $ginas#XK4IUX8MNB "HYPERICUM PERFORATUM WHOLE"
 * ingredient.itemCodeableConcept.text = "HYPERICUM PERFORATUM WHOLE"
 * ingredient.strength.numerator = 175 'mg'
 * ingredient.strength.denominator.value = 1
@@ -429,11 +429,11 @@ Usage: #inline
 //* code.coding[+] = $phpid#0xF79CABF272B6A7EEF104DDDA44E82716 "Oxymetazoline hydrochloride, 0.5 mg/ 1 ml, Nasal spray, solution"
 * form = $edqm#10201000 "Oral powder"
 * form.text = "Oral powder"
-* ingredient.itemCodeableConcept = $unii#I38ZP9992A "MAGNESIUM"
+* ingredient.itemCodeableConcept = $ginas#I38ZP9992A "MAGNESIUM"
 * ingredient.itemCodeableConcept.text = "MAGNESIUM"
-* ingredient[+].itemCodeableConcept = $unii#S270N0TRQY "HYALURONIC ACID"
+* ingredient[+].itemCodeableConcept = $ginas#S270N0TRQY "HYALURONIC ACID"
 * ingredient[=].itemCodeableConcept.text = "HYALURONIC ACID"
-* ingredient[+].itemCodeableConcept = $unii#PT3TGI7OIP "HUMAN TYPE I COLLAGEN"
+* ingredient[+].itemCodeableConcept = $ginas#PT3TGI7OIP "HUMAN TYPE I COLLAGEN"
 * ingredient[=].itemCodeableConcept.text = "HUMAN TYPE I COLLAGEN"
 */ //missing epI
 
@@ -446,7 +446,7 @@ Usage: #inline
 * code.coding[+] = $atc#A03ku92 "Flucelvax" // ATC NOT FOUND
 * form = $edqm#10219999 "suspension for injection in pre-filled syringe" //not real EDQM code
 * form.text = "suspension for injection in pre-filled syringe"
-* ingredient.itemCodeableConcept = $unii#TU2UN5CG9C "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"
+* ingredient.itemCodeableConcept = $ginas#TU2UN5CG9C "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"
 * ingredient.itemCodeableConcept.text = "INFLUENZA A VIRUS A/WISCONSIN/588/2019 (H1N1) WHOLE"
 * ingredient.strength.numerator = 15 'mcg'
 * ingredient.strength.denominator.value = 1
@@ -462,7 +462,7 @@ Usage: #inline
 * code.coding[+] = $phpid#0x6e5dd079852edc5c3b8efce075c80a2e "Carbamazepine 200 mg tablets" //not real PhPID
 * form = $edqm#10219000 "Tablet"
 * form.text = "Tablet"
-* ingredient.itemCodeableConcept = $unii#33CM23913M "CARBAMAZEPINE"
+* ingredient.itemCodeableConcept = $ginas#33CM23913M "CARBAMAZEPINE"
 * ingredient.itemCodeableConcept.text = "CARBAMAZEPINE"
 * ingredient.strength.numerator = 200 'mg'
 * ingredient.strength.denominator.value = 1
@@ -479,7 +479,7 @@ Usage: #inline
 * code.coding[+] = $phpid#0xc805ef896d1c2f5f17f84f34c909a9db "Xenical (Orlistat) 60 mg capsule" //not real PhPID
 * form = $edqm#10210000 "Capsule, hard" 
 * form.text = "Capsule, hard"
-* ingredient.itemCodeableConcept = $unii#95M8R751W8 "ORLISTAT"
+* ingredient.itemCodeableConcept = $ginas#95M8R751W8 "ORLISTAT"
 * ingredient.itemCodeableConcept.text = "ORLISTAT"
 * ingredient.strength.numerator = 60 'mg'
 * ingredient.strength.denominator.value = 1

@@ -35,6 +35,15 @@ Description: "Example of International Patient Summary for Maria Gravitate"
 * entry[=].resource = de131e15-ed13-4b31-b38c-3204a84d99c7
 * entry[+].fullUrl = "https://myserver.org/Medication/9ac3356c-4ea4-4814-84c3-235484f2ef10" // Medication 3
 * entry[=].resource = 9ac3356c-4ea4-4814-84c3-235484f2ef10
+
+
+
+* entry[+].fullUrl = "https://myserver.org/MedicationStatement/amlo-norway-statement-maria" // UNICOM
+* entry[=].resource = amlo-norway-statement-maria
+* entry[+].fullUrl = "https://myserver.org/Medication/amlo-norway" // Medication 3
+* entry[=].resource = amlo-norway
+
+
 // ======== COMPOSITION
 Instance: 2fa5b223-ebce-4f39-9c66-5dc014f73572
 InstanceOf: Composition
@@ -127,6 +136,7 @@ Description: "Example of International Patient Summary Composition for Maria Gra
 * section[=].entry[0] = Reference(29074ca4-efcb-4ff4-8446-feed2399a899) "Dimethyl fumarate 30 mg Gastro-resistant tablet"
 * section[=].entry[+] = Reference(f6cb1218-f81c-4338-80d8-3c10910f78fd) "Irbesartan 75 mg Tablet"
 * section[=].entry[+] = Reference(f26084c9-b1c8-46d9-acb2-1d400ade87ba) "Oxymetazoline hydrochloride  0.05 mg / 1 ml Spray"
+* section[=].entry[+] = Reference(amlo-norway-statement) "Amlodipine Norway statement"
 // == PATIENT ===
 Instance: c154158f-6a43-4ab7-8443-e7f4bf915dd5
 InstanceOf: Patient
@@ -140,6 +150,8 @@ Usage: #inline
 </div>"
 * identifier[0].system = "https://www.gravitatehealth.eu/sid/doc"
 * identifier[=].value = "maria-1"
+* identifier[+].system = "keycloak-id"
+* identifier[=].value = "d7487c65-3fff-4982-8cde-ca9b5717301b"
 * active = true
 * name.family = "Gravitate"
 * name.given = "Maria"
@@ -276,6 +288,13 @@ Usage: #inline
 * dosage.timing.repeat.period = 1
 * dosage.timing.repeat.periodUnit = #d
 ===*/
+Instance: amlo-norway-statement-maria
+InstanceOf: MedicationStatement
+Usage: #inline
+* status = #active
+* medicationReference = Reference(amlo-norway) "Amlodipine Norway"
+* subject = Reference(c154158f-6a43-4ab7-8443-e7f4bf915dd5) "Maria Gravitate"
+* dosage.route = $edqm#20053000 "Oral use"
 // ====== MEDICATIONS
 Instance: b50ae644-e0b7-4007-809f-26f493cbe36b
 InstanceOf: Medication
